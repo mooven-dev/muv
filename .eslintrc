@@ -1,0 +1,15 @@
+{
+  "env": {
+    "es6": true
+  },
+  "extends": [
+    "eslint-config-airbnb"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [0]
+  },
+  "globals": {
+    "documment": true,
+    "window": true
+  }
+}
