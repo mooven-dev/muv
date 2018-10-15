@@ -1,0 +1,24 @@
+{
+  "name": "muv",
+  "version": "0.0.1",
+  "description": "mooven component lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooven-dev/muv.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "lib"
+  ],
+  "author": "clayton-duarte, drd-2rcl, igorassis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mooven-dev/muv/issues"
+  },
+  "homepage": "https://github.com/mooven-dev/muv#readme"
+}
