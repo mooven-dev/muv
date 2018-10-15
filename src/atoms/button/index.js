@@ -4,30 +4,27 @@ import styled from 'styled-components';
 import React from 'react';
 
 // STYLES
-const StyledText = styled.p`
-font-weight: ${({ strong }) => (strong ? 'bold' : 'inherit')};
-color: ${({ color }) => color};
-font-family: sans-serif;
+const StyledButton = styled.button`
 font-size: 20px;
 `;
 
 // COMPONENT
-const Text = props => (
-  <StyledText {...props} />
+const Button = props => (
+  <StyledButton {...props} />
 );
 
 // DOCUMENTATION
-Text.propTypes = {
+Button.propTypes = {
   children: string, // texto dentro da parada
   color: string,
   strong: bool,
 };
 
-Text.defaultProps = {
+Button.defaultProps = {
   children: 'Default text',
   color: 'tomato',
   strong: false,
 };
 
 // EXPORT
-export default Text;
+export default Button;

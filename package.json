@@ -4,8 +4,11 @@
   "description": "mooven component lib",
   "main": "dist/muv.min.js",
   "scripts": {
+    "start": "npm run storybook",
     "build": "webpack --progress",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -23,7 +26,19 @@
   },
   "homepage": "https://github.com/mooven-dev/muv#readme",
   "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^4.0.0-rc.0",
+    "@storybook/addon-info": "^4.0.0-rc.0",
+    "@storybook/addon-links": "^4.0.0-rc.0",
+    "@storybook/addons": "^4.0.0-rc.0",
+    "@storybook/react": "^4.0.0-rc.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-react-docgen": "^2.0.0",
+    "babel-runtime": "^6.26.0",
     "clean-webpack-plugin": "^0.1.19",
     "eslint": "^5.7.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -35,16 +50,11 @@
     "lodash-webpack-plugin": "^0.11.5",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "styled-components": "^3.4.10",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
     "webpack-ver-plugin": "0.0.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "webpack-cli": "^3.1.2"
   }
 }
