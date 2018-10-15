@@ -20,7 +20,10 @@
     ]
   },
   "pre-commit": {
-    "run": "lint",
+    "run": [
+      "lint",
+      "test"
+    ],
     "silent": true
   },
   "repository": {
