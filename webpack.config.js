@@ -31,7 +31,7 @@ const config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader?cacheDirectory',
+        loader: 'babel-loader',
       },
     ],
   },
