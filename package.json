@@ -9,21 +9,16 @@
     "build": "webpack --progress",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest -u",
     "test": "jest"
   },
   "jest": {
-    "setupFiles": [
-      "./.jest/setup.js"
-    ],
-    "snapshotSerializers": [
-      "<rootDir>/node_modules/enzyme-to-json/serializer"
-    ]
+    "setupFiles": ["./.jest/setup.js"],
+    "snapshotSerializers": ["<rootDir>/node_modules/enzyme-to-json/serializer"]
   },
   "pre-commit": {
-    "run": [
-      "lint",
-      "test"
-    ],
+    "run": ["lint", "test"],
     "silent": true
   },
   "repository": {

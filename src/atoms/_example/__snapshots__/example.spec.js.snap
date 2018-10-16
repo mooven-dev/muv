@@ -9,6 +9,15 @@ exports[`should render a component 1`] = `
 </p>
 `;
 
+exports[`should render a component with a color 1`] = `
+<p
+  className="sc-bdVaJa ceQhJg"
+  color="black"
+>
+  Default text
+</p>
+`;
+
 exports[`should render a component with a prop 1`] = `
 <p
   className="sc-bdVaJa jbrfPx"
