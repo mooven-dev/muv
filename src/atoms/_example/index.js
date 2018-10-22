@@ -18,14 +18,17 @@ const Text = props => (
 
 // DOCUMENTATION
 Text.propTypes = {
-  children: string, // texto dentro da parada
+  /** accepts only text as children */
+  children: string,
+  /** sets color of the text as the color prop */
   color: string,
+  /** sets font-weight as bold */
   strong: bool,
 };
 
 Text.defaultProps = {
-  children: 'Default text',
-  color: 'tomato',
+  children: 'default text',
+  color: '#0082c8',
   strong: false,
 };
 

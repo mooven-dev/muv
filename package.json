@@ -4,14 +4,17 @@
   "description": "mooven component lib",
   "main": "dist/muv.min.js",
   "scripts": {
-    "start": "npm run storybook",
+    "start": "serve docz",
+    "dev": "npm run docz:dev",
+    "build": "docz docz:prod",
     "lint": "eslint --fix src",
-    "build": "webpack --progress",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "test:coverage": "jest --coverage",
+    "docz:dev": "docz dev",
+    "docz:prod": "docz build",
+    "export": "webpack --progress",
+    "test": "jest",
     "test:update": "jest -u",
-    "test": "jest"
+    "test:coverage": "jest --coverage",
+    "deploy": "now && now alias"
   },
   "jest": {
     "setupFiles": ["./.jest/setup.js"],
@@ -20,6 +23,12 @@
   "pre-commit": {
     "run": ["lint", "test"],
     "silent": true
+  },
+  "now": {
+    "alias": "muv-docs",
+    "name": "muv-docs",
+    "public": true,
+    "type": "npm"
   },
   "repository": {
     "type": "git",
@@ -40,17 +49,13 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^4.0.0-rc.0",
-    "@storybook/addon-info": "^4.0.0-rc.0",
-    "@storybook/addon-links": "^4.0.0-rc.0",
-    "@storybook/addons": "^4.0.0-rc.0",
-    "@storybook/react": "^4.0.0-rc.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
-    "babel-plugin-react-docgen": "^2.0.0",
+    "buble": "0.19.4",
     "clean-webpack-plugin": "^0.1.19",
+    "docz": "^0.12.5",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "enzyme-to-json": "^3.3.4",
@@ -68,6 +73,7 @@
     "react": "^16.5.2",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.5.2",
+    "serve": "^10.0.2",
     "styled-components": "^3.4.10",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.20.2",

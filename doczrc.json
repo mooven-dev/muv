@@ -1,0 +1,23 @@
+{
+  "title": "MUV",
+  "description": "This is my awesome documentation",
+  "dest": "/docz",
+  "themeConfig": {
+    "colors": {
+      "background": "#fefefe",
+      "primary": "#0082c8",
+      "border": "#ddd",
+      "theadColor": "#666",
+      "theadBg": "#eee",
+      "text": "#333",
+      "link": "#0082c8",
+      "sidebarBg": "#eee",
+      "sidebarText": "#222"
+    }
+  },
+  "styles": {
+    "body": {
+      "fontSize": 20
+    }
+  }
+}

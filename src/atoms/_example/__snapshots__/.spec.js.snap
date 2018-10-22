@@ -2,10 +2,10 @@
 
 exports[`should render a component 1`] = `
 <p
-  className="sc-bdVaJa EuHED"
-  color="tomato"
+  className="sc-bdVaJa gryQsq"
+  color="#0082c8"
 >
-  Default text
+  default text
 </p>
 `;
 
@@ -14,15 +14,15 @@ exports[`should render a component with a color 1`] = `
   className="sc-bdVaJa ceQhJg"
   color="black"
 >
-  Default text
+  default text
 </p>
 `;
 
 exports[`should render a component with a prop 1`] = `
 <p
-  className="sc-bdVaJa jbrfPx"
-  color="tomato"
+  className="sc-bdVaJa cZFZBJ"
+  color="#0082c8"
 >
-  Default text
+  default text
 </p>
 `;
