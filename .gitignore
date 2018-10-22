@@ -1,5 +1,12 @@
+# general
 node_modules
+*.idea
 *.log
+.env
+
+# testing
+coverage
 
 # docummentation
 .docz
+docz
