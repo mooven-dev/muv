@@ -4,21 +4,27 @@
   "description": "mooven component lib",
   "main": "dist/muv.min.js",
   "scripts": {
-    "start": "serve docz",
-    "dev": "npm run docz:dev",
-    "build": "docz docz:prod",
+    "start": "docz dev",
+    "build": "webpack --progress",
     "lint": "eslint --fix src",
-    "docz:dev": "docz dev",
-    "docz:prod": "docz build",
-    "export": "webpack --progress",
     "test": "jest",
     "test:update": "jest -u",
-    "test:coverage": "jest --coverage",
+    "test:cover": "jest --coverage",
+    "now-start": "serve docz",
+    "now-build": "docz build",
     "deploy": "now && now alias"
   },
   "jest": {
+    "snapshotSerializers": ["<rootDir>/node_modules/enzyme-to-json/serializer"],
     "setupFiles": ["./.jest/setup.js"],
-    "snapshotSerializers": ["<rootDir>/node_modules/enzyme-to-json/serializer"]
+    "coverageThreshold": {
+      "global": {
+        "statements": -10,
+        "functions": 80,
+        "branches": 80,
+        "lines": 80
+      }
+    }
   },
   "pre-commit": {
     "run": ["lint", "test"],

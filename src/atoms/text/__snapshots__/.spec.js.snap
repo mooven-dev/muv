@@ -2,27 +2,30 @@
 
 exports[`should render a component 1`] = `
 <p
-  className="sc-bdVaJa gryQsq"
+  className="sc-bdVaJa hQcjfZ"
   color="#0082c8"
+  transform="normal"
 >
-  default text
+  default
 </p>
 `;
 
 exports[`should render a component with a color 1`] = `
 <p
-  className="sc-bdVaJa ceQhJg"
+  className="sc-bdVaJa vyQnj"
   color="black"
+  transform="normal"
 >
-  default text
+  default
 </p>
 `;
 
 exports[`should render a component with a prop 1`] = `
 <p
-  className="sc-bdVaJa cZFZBJ"
+  className="sc-bdVaJa evIKLC"
   color="#0082c8"
+  transform="normal"
 >
-  default text
+  default
 </p>
 `;

@@ -1,18 +1,19 @@
 {
   "title": "MUV",
+  "port": "4000",
   "description": "This is my awesome documentation",
   "dest": "/docz",
   "themeConfig": {
     "colors": {
       "background": "#fefefe",
+      "sidebarText": "#222",
       "primary": "#0082c8",
-      "border": "#ddd",
       "theadColor": "#666",
-      "theadBg": "#eee",
-      "text": "#333",
-      "link": "#0082c8",
       "sidebarBg": "#eee",
-      "sidebarText": "#222"
+      "link": "#0082c8",
+      "theadBg": "#eee",
+      "border": "#ddd",
+      "text": "#333"
     }
   },
   "styles": {

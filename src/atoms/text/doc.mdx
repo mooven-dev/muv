@@ -1,0 +1,75 @@
+
+---
+menu: Atoms
+name: Text
+route: /text
+---
+
+import { Playground, PropsTable } from 'docz';
+import Text from './';
+
+# Text
+
+## Use cases
+
+<div>
+  <Text h={1}/>
+  <Text h={2}/>
+  <Text h={3}/>
+  <Text h={4}/>
+  <Text h={5}/>
+  <Text h={6}/>
+  <Text/>
+</div>
+
+## Props
+
+<PropsTable of={Text} />
+
+## align:string
+
+<Playground>
+  <Text/>
+  <Text align="center">center</Text>
+  <Text align="right">right</Text>
+</Playground>
+
+## strong:bool
+
+<Playground>
+  <Text/>
+  <Text strong>strong</Text>
+</Playground>
+
+## transform:string
+
+<Playground>
+  <Text/>
+  <Text transform="capitalize">capitalize</Text>
+  <Text transform="uppercase">uppercase</Text>
+</Playground>
+
+## margin:string
+
+<Playground>
+  <Text/>
+  <Text margin="8px">margin all sides</Text>
+  <Text margin=".5rem 0 0 1rem">margin top left</Text>
+</Playground>
+
+## color:string
+
+<Playground>
+  <Text/>
+  <Text color="tomato">tomato</Text>
+  <Text color="rgb(50, 150, 50)">rgb green</Text>
+</Playground>
+
+## h:number
+
+<Playground>
+  <Text/>
+  <Text h={1}>h1</Text>
+  <Text h={2}>h2</Text>
+  <Text h={3}>h3</Text>
+</Playground>

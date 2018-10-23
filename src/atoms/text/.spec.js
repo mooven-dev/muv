@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Component from './index';
+import Component from './';
 
 it('should render a component', () => {
   const wrapper = shallow(

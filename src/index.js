@@ -2,7 +2,7 @@
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 // ATOMS
-import Text from './atoms/_example';
+import Text from './atoms/text';
 
 // MOLECULES
 
