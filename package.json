@@ -6,6 +6,7 @@
   "scripts": {
     "start": "docz dev",
     "build": "webpack --progress",
+    "muv": "node ./factory/index.js",
     "lint": "eslint --fix src",
     "test": "jest",
     "test:update": "jest -u",
@@ -15,8 +16,12 @@
     "deploy": "now && now alias"
   },
   "jest": {
-    "snapshotSerializers": ["<rootDir>/node_modules/enzyme-to-json/serializer"],
-    "setupFiles": ["./.jest/setup.js"],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./.jest/setup.js"
+    ],
     "coverageThreshold": {
       "global": {
         "statements": -10,
@@ -27,7 +32,10 @@
     }
   },
   "pre-commit": {
-    "run": ["lint", "test"],
+    "run": [
+      "lint",
+      "test"
+    ],
     "silent": true
   },
   "now": {
@@ -60,6 +68,7 @@
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "buble": "0.19.4",
+    "chalk": "^2.4.1",
     "clean-webpack-plugin": "^0.1.19",
     "docz": "^0.12.5",
     "enzyme": "^3.7.0",
@@ -85,5 +94,6 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-ver-plugin": "0.0.2"
-  }
+  },
+  "devDependencies": {}
 }
