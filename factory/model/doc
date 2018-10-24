@@ -1,0 +1,27 @@
+
+---
+menu: Atoms
+name: __COMPONENT__
+route: /__component__
+---
+
+import { Playground, PropsTable } from 'docz';
+import Text from './';
+
+# Text
+
+## Use cases
+
+<div>
+  <__COMPONENT__/>
+</div>
+
+## Props
+
+<PropsTable of={__COMPONENT__} />
+
+## Playground
+
+<Playground>
+  <__COMPONENT__/>
+</Playground>

@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 
 // DEFINE
-const crateNewComponent = (args) => {
+const crateNewComponent = async (args) => {
   // SETUP
   const type = args[2];
   const { log } = console;
@@ -48,86 +48,107 @@ const crateNewComponent = (args) => {
     return helpMessage('component name must be unique');
   }
 
-  // save component name on list
-  nameList.push(component);
-  nameList = JSON.stringify(nameList);
-  fs.writeFileSync(nameListPath, nameList, 'utf-8');
-
   // PREPARE
+  const TYPE = type.toUpperCase();
   const exportPath = 'src/index.js';
   const modelPath = 'factory/model';
   const destPath = `src/${type}s`;
   const documentPath = 'src/index.mdx';
   const componentPath = `${destPath}/${component}`;
+  const Component = component.charAt(0).toUpperCase() + component.slice(1);
 
   // log messages
   const success = message => log(chalk.bgGreen.bold(' SUCCESS '), chalk.green(message));
   const error = (message, debug) => log(chalk.bgRed.bold(' ERROR '), chalk.red(message), '\n', debug);
 
-  // CMD
-  return fs.mkdir(componentPath, {}, (errmk) => {
-    // create directory
-    if (errmk) return error(`Error creating diretory ${chalk.bold(component)} on ${destPath}`, errmk);
+  // CMDs
+
+  // create directory
+  try {
+    await fs.mkdirSync(componentPath);
     success(`${chalk.bold(component)} folder created on ${destPath}`, '✓');
-    fs.readdir(modelPath, (errread, files) => {
-      // read files from model
-      if (errread) return error(`Error reading directory ${chalk.bold(component)}`, errread);
-      return files.forEach((file) => {
-        // copy each model file to the new directory
-        const fileName = (file === 'index.js') ? file : component + file;
-        fs.copyFile(`${modelPath}/${file}`, `${componentPath}/${fileName}`, (errcopy) => {
-          if (errcopy) return error(`Error coping file ${fileName} to ${componentPath}`, errcopy);
-          return success(`${fileName} file created on ${componentPath}`);
-        });
-      });
+  } catch (err) {
+    return error(`Error creating diretory ${chalk.bold(component)} on ${destPath}`, err);
+  }
+
+  // save component name on list
+  try {
+    nameList.push(component);
+    nameList = JSON.stringify(nameList);
+    fs.writeFileSync(nameListPath, nameList, 'utf-8');
+  } catch (err) {
+    return error(`Error saving ${chalk.bold(component)} name`, err);
+  }
+
+  // copy each model file to the new directory
+  try {
+    // read model folder
+    const folder = fs.readdirSync(modelPath);
+    folder.forEach(async (file) => {
+      const fileName = {
+        test: `${component}.spec.js`,
+        doc: `${component}.mdx`,
+        index: 'index.js',
+      };
+      try {
+        // copy files
+        await fs.copyFileSync(`${modelPath}/${file}`, `${componentPath}/${fileName[file]}`);
+        return success(`${fileName[file]} file created on ${componentPath}`);
+      } catch (err) {
+        return error(`Error coping file ${fileName[file]} to ${componentPath}`, err);
+      }
     });
+  } catch (err) {
+    return error(`Error reading directory ${chalk.bold(component)}`, err);
+  }
 
-    // read export file
-    fs.readFile(exportPath, 'utf-8', (readerr, content) => {
-      if (readerr) return error(`Exporting ${component} to module`, readerr);
-      const Component = component.charAt(0).toUpperCase() + component.slice(1);
-      const TYPE = type.toUpperCase();
+  // read export file
+  try {
+    const exportsContent = fs.readFileSync(exportPath, 'utf-8');
+    // edit content to import file on right list
+    const withImport = exportsContent.replace(
+      `// ${TYPE}S`,
+      `// ${TYPE}S\nimport ${Component} from './atoms/${component}';`,
+    );
+    // edit content to export file to module
+    const withExport = withImport.replace(
+      '// COMPONENTS',
+      `// COMPONENTS\n  ${Component},`,
+    );
 
-      // edit content to import file on right list
-      const withImport = content.replace(
-        `// ${TYPE}S`,
-        `// ${TYPE}S\nimport ${Component} from './atoms/${component}';`,
-      );
+    // add new content on export file
+    try {
+      await fs.writeFileSync(exportPath, withExport, 'utf-8');
+      success(`${Component} exported on ${exportPath}`);
+    } catch (err) {
+      return error(`Exporting ${component} to module`, err);
+    }
+  } catch (err) {
+    return error(`Exporting ${component} to module`, err);
+  }
 
-      // edit content to export file to module
-      const withExport = withImport.replace(
-        '// COMPONENTS',
-        `// COMPONENTS\n  ${Component},`,
-      );
 
-      // add new content on export file
-      fs.writeFile(exportPath, withExport, 'utf-8', (writeerr) => {
-        if (writeerr) return error(`Exporting ${component} to module`, readerr);
-        return success(`${Component} exported on ${exportPath}`);
-      });
-      return true;
-    });
+  // read index documentation
+  try {
+    const docsContent = fs.readFileSync(documentPath, 'utf-8');
+    // edit content to import file on right list
+    const withDoc = docsContent.replace(
+      `## ${TYPE}S`,
+      `## ${TYPE}S\n- [${Component}](/${component})`,
+    );
+    // add new content on export file
+    try {
+      await fs.writeFileSync(documentPath, withDoc, 'utf-8');
+      success(`${Component} included on ${documentPath}`);
+    } catch (err) {
+      return error(`Writing ${component} on documentation index`, err);
+    }
+  } catch (err) {
+    return error(`Exporting ${component} to module`, err);
+  }
 
-    // read index documentation
-    fs.readFile(documentPath, 'utf-8', (readerr, content) => {
-      if (readerr) return error(`Exporting ${component} to module`, readerr);
-      const Component = component.charAt(0).toUpperCase() + component.slice(1);
-      const TYPE = type.toUpperCase();
-      // edit content to import file on right list
-      const withDoc = content.replace(
-        `## ${TYPE}S`,
-        `## ${TYPE}S\n- [${Component}](/${component})`,
-      );
-
-      // add new content on export file
-      fs.writeFile(documentPath, withDoc, 'utf-8', (writeerr) => {
-        if (writeerr) return error(`Writing ${component} on documentation index`, readerr);
-        return success(`${Component} included on ${documentPath}`);
-      });
-      return true;
-    });
-    return true;
-  });
+  // DONE
+  return success('DONE');
 };
 
 // EXECUTE

@@ -1,0 +1,30 @@
+// IMPORTS
+import { node, string } from 'prop-types';
+import styled from 'styled-components';
+import React from 'react';
+
+// STYLES
+const Styled__COMPONENT__ = styled.p`
+color: ${({ color }) => color};
+`;
+
+// COMPONENT
+const __COMPONENT__ = props => (
+  <Styled__COMPONENT__ {...props} />
+);
+
+// DOCUMENTATION
+__COMPONENT__.propTypes = {
+  /** accepts only react valid nodes as children */
+  children: node,
+  /** sets color of the text as the color prop */
+  color: string,
+};
+
+__COMPONENT__.defaultProps = {
+  children: 'default',
+  color: '#0082c8',
+};
+
+// EXPORT
+export default __COMPONENT__;
