@@ -1,14 +1,14 @@
 
 ---
-menu: Atoms
+menu: __Type__
 name: __COMPONENT__
 route: /__component__
 ---
 
 import { Playground, PropsTable } from 'docz';
-import Text from './';
+import __COMPONENT__ from './';
 
-# Text
+# __COMPONENT__
 
 ## Use cases
 

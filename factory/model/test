@@ -1,10 +1,10 @@
 import React from 'react';
 
-import __COMPONENT__ from './';
+import __COMPONENT__ from '.';
 
 it('should render a __component__', () => {
   const wrapper = shallow(
-    <__COMPONENT__ color='#0082c8' />,
+    <__COMPONENT__ color="#0082c8" />,
   ).dive();
   expect(wrapper.props().color).toEqual('#0082c8');
   expect(wrapper).toMatchSnapshot();

@@ -9,7 +9,7 @@ const crateNewComponent = async (args) => {
   const { log } = console;
   const component = args[3];
   const typeList = ['atom', 'molecule', 'organism', 'template'];
-  const nameListPath = './factory/components.txt';
+  const nameListPath = './factory/components';
   let nameList = fs.readFileSync(nameListPath, 'utf8');
   nameList = nameList.replace(/'/g, '"');
   nameList = JSON.parse(nameList);
@@ -56,8 +56,7 @@ const crateNewComponent = async (args) => {
   const documentPath = 'src/index.mdx';
   const componentPath = `${destPath}/${component}`;
   const Component = component.charAt(0).toUpperCase() + component.slice(1);
-
-  // log messages
+  const Type = type.charAt(0).toUpperCase() + type.slice(1);
   const success = message => log(chalk.bgGreen.bold(' SUCCESS '), chalk.green(message));
   const error = (message, debug) => log(chalk.bgRed.bold(' ERROR '), chalk.red(message), '\n', debug);
 
@@ -92,7 +91,25 @@ const crateNewComponent = async (args) => {
       };
       try {
         // copy files
-        await fs.copyFileSync(`${modelPath}/${file}`, `${componentPath}/${fileName[file]}`);
+        const filePath = `${componentPath}/${fileName[file]}`;
+        await fs.copyFileSync(`${modelPath}/${file}`, filePath);
+        // read file content
+        try {
+          const content = fs.readFileSync(filePath, 'utf-8');
+          // edit file contentType
+          const withComponent = content.replace(/__COMPONENT__/g, Component);
+          const withPath = withComponent.replace(/__component__/g, component);
+          const editedContent = withPath.replace(/__Type__/g, Type);
+          try {
+            // write new content on file
+            await fs.writeFileSync(filePath, editedContent, 'utf-8');
+            success(`${filePath} prepared`);
+          } catch (err) {
+            return error(`Exporting ${component} to module`, err);
+          }
+        } catch (err) {
+          return error(`Error preparing file ${filePath}`, err);
+        }
         return success(`${fileName[file]} file created on ${componentPath}`);
       } catch (err) {
         return error(`Error coping file ${fileName[file]} to ${componentPath}`, err);

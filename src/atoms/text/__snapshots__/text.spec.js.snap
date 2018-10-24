@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a component 1`] = `
+<p
+  className="sc-bdVaJa eaQUqD"
+  color="#0082c8"
+  transform="normal"
+>
+  default
+</p>
+`;
+
+exports[`should render a component with a color 1`] = `
+<p
+  className="sc-bdVaJa cOFsOe"
+  color="black"
+  transform="normal"
+>
+  default
+</p>
+`;
+
+exports[`should render a component with a prop 1`] = `
+<p
+  className="sc-bdVaJa lnAKbn"
+  color="#0082c8"
+  transform="normal"
+>
+  default
+</p>
+`;
