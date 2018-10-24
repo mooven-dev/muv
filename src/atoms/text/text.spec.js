@@ -6,7 +6,6 @@ it('should render a component', () => {
   const wrapper = shallow(
     <Component color="#0082c8" />,
   ).dive();
-  expect(wrapper.props().color).toEqual('#0082c8');
   expect(wrapper).toMatchSnapshot();
 });
 

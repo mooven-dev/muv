@@ -6,14 +6,14 @@ route: /__component__
 ---
 
 import { Playground, PropsTable } from 'docz';
-import __COMPONENT__ from './';
+import __COMPONENT__ from '.';
 
 # __COMPONENT__
 
 ## Use cases
 
 <div>
-  <__COMPONENT__/>
+  <__COMPONENT__ />
 </div>
 
 ## Props
@@ -23,5 +23,5 @@ import __COMPONENT__ from './';
 ## Playground
 
 <Playground>
-  <__COMPONENT__/>
+  <__COMPONENT__ />
 </Playground>

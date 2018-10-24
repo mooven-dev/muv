@@ -1,10 +1,27 @@
 
 ---
-name: Components
+name: Getting Started
 route: /
 ---
 
 # **M**ooven **U**niversal **V**iews
+
+## Installation
+
+Run this command on your project folder:
+
+`npm add git+ssh://git@github.com/mooven-dev/muv.git`
+
+Then import the module anywhere to use the components:
+
+`import styled, { Text, Button } from 'muv';`
+
+⧩
+
+Thats all! 
+
+Look at the component list below to know what to use and how!
+
 
 ## ATOMS
 - [Text](/text)
@@ -14,3 +31,41 @@ route: /
 ## ORGANISMS
 
 ## TEMPLATES
+
+## Advanced
+
+MUV uses [styled-components](https://www.styled-components.com/) as style library.
+
+To style MUV components or create your own, just import MUV like the follow:
+
+`import styled, { Text, Button } from 'muv';`
+
+⧩
+
+Remember to import a component from the list available on this documentation:
+
+[ATOMS](/#atoms) | [MOLECULES](/#molecules) | [ORGANISMS](/#organisms) | [TEMPLATES](/#templates)
+
+⧩
+
+You can create your own component this way:
+
+`const MyComponent = style.p`` `
+
+More documentation can be found on [styled-components](https://www.styled-components.com/).
+
+⧩
+
+There are another way to style MUV components, is using a Theme prop that can  be passad directly or through a ThemeProvider.
+
+You can do this importing the ThemeProvider from MUV like this:
+
+`import { ThemeProvider } from 'muv'`
+
+Then passing it arround your application, like the Provider from Redux.
+
+For more info, please visit the complete documentation on [styled-components](https://www.styled-components.com/docs/advanced).
+
+⧩
+
+**IMPORTANT**: do not install styled-component in your application, just use the styled methods exported by MUV.

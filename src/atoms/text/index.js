@@ -1,5 +1,5 @@
 // IMPORTS
-import { string, bool } from 'prop-types';
+import { bool, objectOf, string } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -10,14 +10,14 @@ const commonStyles = ({
   margin,
   strong,
   align,
-  color,
+  theme,
 }) => (`
 font-weight: ${(strong ? 'bold' : 'inherit')};
+color: ${theme.color.primary};
 text-transform: ${transform};
 font-family: sans-serif;
 text-align: ${align};
 margin: ${margin};
-color: ${color};
 `);
 
 export const P = styled.p`
@@ -84,10 +84,10 @@ const Text = ({ type, strong, ...props }) => {
 
 // DOCUMENTATION
 Text.propTypes = {
+  /** receive theme props from Theme Provider or default */
+  theme: objectOf(objectOf(string)),
   /** accepts only text as children */
   children: string,
-  /** sets color of the text as the color prop */
-  color: string,
   /** sets text-transform value */
   transform: string,
   /** sets font-weight as bold */
@@ -101,10 +101,10 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
+  theme: { color: { primary: '#0082c8' } },
   children: 'default',
   transform: 'normal',
   margin: '0 0 0 0',
-  color: '#0082c8',
   strong: false,
   align: 'left',
   type: 0,

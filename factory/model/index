@@ -1,5 +1,5 @@
 // IMPORTS
-import { node, string } from 'prop-types';
+import { node, objectOf, string } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -17,13 +17,13 @@ const __COMPONENT__ = props => (
 __COMPONENT__.propTypes = {
   /** accepts only react valid nodes as children */
   children: node,
-  /** sets color of the text as the color prop */
-  color: string,
+  /** receive theme props from Theme Provider or default */
+  theme: objectOf(objectOf(string)),
 };
 
 __COMPONENT__.defaultProps = {
+  theme: { color: { primary: '#0082c8' } },
   children: 'default',
-  color: '#0082c8',
 };
 
 // EXPORT

@@ -4,8 +4,7 @@ import __COMPONENT__ from '.';
 
 it('should render a __component__', () => {
   const wrapper = shallow(
-    <__COMPONENT__ color="#0082c8" />,
+    <__COMPONENT__ />,
   ).dive();
-  expect(wrapper.props().color).toEqual('#0082c8');
   expect(wrapper).toMatchSnapshot();
 });
