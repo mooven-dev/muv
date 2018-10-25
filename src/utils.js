@@ -14,4 +14,8 @@ export const setColor = ({ theme, primary, secondary, warn, success, outline }, 
   return defaultColor;
 };
 
-export const setBackground = setColor;
+export const disabledStyle = `
+filter: grayscale(100%);
+pointer-events: none;
+cursor: not-allowed;
+`;

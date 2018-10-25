@@ -3,8 +3,8 @@ import { node, objectOf, string, func, bool } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
+import { setColor, disabledStyle } from '../../utils';
 import themeDefault from '../../theme';
-import { setColor } from '../../utils';
 
 // STYLES
 const setBackground = ({ theme, ...rest }) => setColor({ theme, ...rest }, theme.color.primary);
@@ -18,12 +18,6 @@ const setBordColor = ({ outline, theme, ...rest }) => {
   if (outline) return setColor({ theme, ...rest }, theme.color.primary); // do not pass outline
   return null;
 };
-
-const disabledStyle = `
-filter: grayscale(100%);
-pointer-events: none;
-cursor: not-allowed;
-`;
 
 const commonStyles = ({ disabled, theme, ...rest }) => (`
 border: ${theme.shape.border}; /* keep this line first */

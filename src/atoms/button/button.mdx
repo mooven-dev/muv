@@ -36,35 +36,36 @@ This component needs a valid props href or onClick:
 - Otherwise, it will render null.
 
 <Playground>
-  <Button />
-  <Button href='#navigation' />
-  <Button onClick={() => alert('clicked!') } />
+  <Button>null</Button>
+  <Button href='#navigation'>anchor</Button>
+  <Button onClick={() => alert('clicked!') } >button</Button>
 </Playground>
 
 ## outline:bool
 
 <Playground>
   <Button href='#outlinebool' />
-  <Button outline href='#outlinebool' />
+  <Button outline href='#outlinebool'>default outline</Button>
 </Playground>
 
 ## secondary:bool
 
 <Playground>
-  <Button secondary href='#secondarybool' />
-  <Button secondary outline href='#secondarybool' />
+  <Button secondary href='#secondarybool'>secondary</Button>
+  <Button secondary outline href='#secondarybool'>secondary outline</Button>
 </Playground>
 
 ## warn:bool
 
 <Playground>
-  <Button warn href='#warnbool' />
-  <Button warn outline href='#warnbool' />
+  <Button warn href='#warnbool'>warn</Button>
+  <Button warn outline href='#warnbool'>warn outline</Button>
 </Playground>
 
 ## disabled:bool
 
 <Playground>
-  <Button disabled href='#disabledbool' />
-  <Button disabled outline href='#disabledbool' />
+  <Button href='#disabledbool'>enable</Button>
+  <Button disabled href='#disabledbool'>disable</Button>
+  <Button disabled outline href='#disabledbool'>disable outline</Button>
 </Playground>

@@ -1,0 +1,63 @@
+
+---
+menu: Atoms
+name: Link
+route: /link
+---
+
+import { Playground, PropsTable } from 'docz';
+import Link from '.';
+
+# Link
+
+## Use cases
+
+<div>
+  <Link href='#' /><br />
+  <Link href='#' strong  >strong</Link><br />
+  <Link href='#' secondary >secondary</Link><br />
+  <Link href='#' success >success</Link><br />
+  <Link href='#' warn >warn</Link><br />
+  <Link href='#' disabled >disabled</Link>
+</div>
+
+## PropsTable
+
+<PropsTable of={Link} />
+
+## Navigation
+
+This component needs a valid props href or onClick:
+
+- If a prop href is provided, it will render a anchor tag; 
+- If you provide a onClick prop, it will render a button tag; 
+- Otherwise, it will render null.
+
+<Playground>
+  <Link>null</Link><br />
+  <Link href='#navigation'>anchor</Link><br />
+  <Link onClick={() => alert('clicked!') }>button</Link>
+</Playground>
+
+## Theme Colors
+
+This component accepts a variety of props listed on this docs, between that are the "theme color props":
+
+- primary
+- secondary
+- success
+- warn
+
+<Playground>
+  <Link href='#theme-colors' /><br />
+  <Link secondary href='#theme-colors' >secondary</Link><br />
+  <Link success href='#theme-colors' >success</Link><br />
+  <Link warn href='#theme-colors' >warn</Link>
+</Playground>
+
+## disabled:bool
+
+<Playground>
+  <Link href='#disabledbool'>enabled</Link><br />
+  <Link disabled href='#disabledbool'>disabled</Link><br />
+</Playground>
