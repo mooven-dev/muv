@@ -4,28 +4,19 @@ import styled from 'styled-components';
 import React from 'react';
 
 import themeDefault from '../../theme';
+import { setColor } from '../../utils';
 
 // STYLES
-const setBackground = ({ theme, secondary, outline, warn }) => {
-  if (outline) return theme.color.white;
-  if (secondary) return theme.color.secondary;
-  if (warn) return theme.color.warn;
-  return theme.color.primary;
-};
+const setBackground = ({ theme, ...rest }) => setColor({ theme, ...rest }, theme.color.primary);
 
-const setColor = ({ theme, outline, secondary, warn }) => {
-  if (outline) {
-    if (secondary) return theme.color.secondary;
-    if (warn) return theme.color.warn;
-    return theme.color.primary;
-  }
+const setTextColor = ({ outline, theme, ...rest }) => {
+  if (outline) return setColor({ theme, ...rest }, theme.color.primary); // do not pass outline
   return theme.color.white;
 };
 
-const setBorder = ({ theme, secondary, warn }) => {
-  if (secondary) return `${theme.shape.border}; border-color: ${theme.color.secondary}`;
-  if (warn) return `${theme.shape.border}; border-color: ${theme.color.warn}`;
-  return `${theme.shape.border}`;
+const setBordColor = ({ outline, theme, ...rest }) => {
+  if (outline) return setColor({ theme, ...rest }, theme.color.primary); // do not pass outline
+  return null;
 };
 
 const disabledStyle = `
@@ -34,10 +25,11 @@ pointer-events: none;
 cursor: not-allowed;
 `;
 
-const commonStyles = ({ theme, disabled, ...props }) => (`
-background: ${setBackground({ theme, ...props })};
-border: ${setBorder({ theme, ...props })};
-color: ${setColor({ theme, ...props })};
+const commonStyles = ({ disabled, theme, ...rest }) => (`
+border: ${theme.shape.border}; /* keep this line first */
+border-color: ${setBordColor({ theme, ...rest })};
+background: ${setBackground({ theme, ...rest })};
+color: ${setTextColor({ theme, ...rest })};
 border-radius: ${theme.shape.radius};
 transition: ${theme.transition.time};
 box-shadow: ${theme.shape.shadow};

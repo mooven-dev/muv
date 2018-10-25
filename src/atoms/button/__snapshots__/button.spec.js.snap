@@ -2,7 +2,7 @@
 
 exports[`should render a anchor 1`] = `
 <a
-  className="sc-bwzfXH falBOK"
+  className="sc-bwzfXH fjTDkT"
   disabled={false}
   href="#"
   onClick={null}
@@ -13,7 +13,7 @@ exports[`should render a anchor 1`] = `
 
 exports[`should render a button 1`] = `
 <button
-  className="sc-bdVaJa dbAUeQ"
+  className="sc-bdVaJa kWOzWT"
   disabled={false}
   href={null}
   onClick={[Function]}
