@@ -99,7 +99,7 @@ const crateNewComponent = async (args) => {
           // edit file contentType
           const withComponent = content.replace(/__COMPONENT__/g, Component);
           const withPath = withComponent.replace(/__component__/g, component);
-          const editedContent = withPath.replace(/__Type__/g, Type);
+          const editedContent = withPath.replace(/__Type__/g, `${Type}s`);
           try {
             // write new content on file
             await fs.writeFileSync(filePath, editedContent, 'utf-8');

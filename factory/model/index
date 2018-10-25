@@ -3,9 +3,11 @@ import { node, objectOf, string } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
+import themeDefault from '../../theme';
+
 // STYLES
 const Styled__COMPONENT__ = styled.p`
-color: ${({ color }) => color};
+color: ${({ theme }) => theme.color.primary};
 `;
 
 // COMPONENT
@@ -22,8 +24,8 @@ __COMPONENT__.propTypes = {
 };
 
 __COMPONENT__.defaultProps = {
-  theme: { color: { primary: '#0082c8' } },
   children: 'default',
+  theme: themeDefault,
 };
 
 // EXPORT

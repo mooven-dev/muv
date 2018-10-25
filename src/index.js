@@ -9,6 +9,7 @@
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 // ATOMS
+import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
@@ -23,5 +24,6 @@ export {
   ThemeProvider,
   injectGlobal,
   // COMPONENTS
+  Button,
   Text,
 };

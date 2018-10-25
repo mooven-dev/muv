@@ -3,21 +3,17 @@ import { bool, objectOf, string } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
+import themeDefault from '../../theme';
+
 // STYLES
 
-const commonStyles = ({
-  transform,
-  margin,
-  strong,
-  align,
-  theme,
-}) => (`
+const commonStyles = ({ transform, strong, align, theme }) => (`
 font-weight: ${(strong ? 'bold' : 'inherit')};
+margin: ${theme.shape.margin};
 color: ${theme.color.primary};
 text-transform: ${transform};
 font-family: sans-serif;
 text-align: ${align};
-margin: ${margin};
 `);
 
 export const P = styled.p`
@@ -92,8 +88,6 @@ Text.propTypes = {
   transform: string,
   /** sets font-weight as bold */
   strong: bool,
-  /** sets the margins */
-  margin: string,
   /** sets the text-align */
   align: string,
   /** sets the heading hierarch */
@@ -101,13 +95,12 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  theme: { color: { primary: '#0082c8' } },
-  children: 'default',
   transform: 'normal',
-  margin: '0 0 0 0',
+  children: 'default',
+  theme: themeDefault,
   strong: false,
   align: 'left',
-  type: 0,
+  type: '',
 };
 
 // EXPORT

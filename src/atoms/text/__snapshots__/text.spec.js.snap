@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a component 1`] = `
+<p
+  className="sc-bdVaJa bEPDjo"
+  transform="normal"
+>
+  default
+</p>
+`;
+
+exports[`should render a component with a prop 1`] = `
+<p
+  className="sc-bdVaJa zdWnK"
+  transform="normal"
+>
+  default
+</p>
+`;
