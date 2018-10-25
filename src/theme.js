@@ -2,6 +2,7 @@ const color = {
   overlay: 'rgba(0, 0, 0, .15)',
   secondary: '#00baf2',
   primary: '#0082c8',
+  success: '#33bb33',
   white: '#fefefe',
   black: '#484848',
   warn: '#dd3333',

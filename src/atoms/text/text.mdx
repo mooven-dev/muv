@@ -13,18 +13,45 @@ import Text from './';
 ## Use cases
 
 <div>
-  <Text type="h1"/>
-  <Text type="h2"/>
-  <Text type="h3"/>
-  <Text type="h4"/>
-  <Text type="h5"/>
-  <Text type="h6"/>
+  <Text type="h1">h1</Text>
+  <Text type="h2">h2</Text>
+  <Text type="h3">h3</Text>
   <Text/>
+  <Text strong>strong</Text>
+</div>
+<div>
+  <Text primary >primary</Text>
+  <Text secondary >secondary</Text>
+  <Text success >success</Text>
+  <Text warn >warn</Text>
+</div>
+<div>
+  <Text primary strong align='center' transform='capitalize' type='h3' >
+    capital strong center primary h3 example
+  </Text>
 </div>
 
 ## PropsTable
 
 <PropsTable of={Text} />
+
+## Theme Colors
+
+Text component accepts a variety of props listed on this docs, between that are the "theme color props":
+
+- primary
+- secondary
+- success
+- warn
+
+<Playground>
+  <Text/>
+  <Text primary >primary</Text>
+  <Text secondary >secondary</Text>
+  <Text success >success</Text>
+  <Text warn >warn</Text>
+</Playground>
+
 
 ## align:string
 

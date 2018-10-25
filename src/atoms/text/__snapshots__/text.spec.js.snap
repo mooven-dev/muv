@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a component 1`] = `
+exports[`should render a text 1`] = `
 <p
-  className="sc-bdVaJa dPLIxs"
+  className="sc-bdVaJa kNsyYD"
   transform="normal"
 >
   default
 </p>
 `;
 
-exports[`should render a component with a prop 1`] = `
+exports[`should render a text with a prop 1`] = `
 <p
-  className="sc-bdVaJa fqNXsQ"
+  className="sc-bdVaJa jDrYri"
   transform="normal"
 >
   default

@@ -6,11 +6,18 @@ import React from 'react';
 import themeDefault from '../../theme';
 
 // STYLES
+const setColor = ({ theme, primary, secondary, warn, success }) => {
+  if (secondary) return theme.color.secondary;
+  if (primary) return theme.color.primary;
+  if (success) return theme.color.success;
+  if (warn) return theme.color.warn;
+  return theme.text.color;
+};
 
-const commonStyles = ({ transform, strong, align, theme }) => (`
+const commonStyles = ({ transform, strong, align, theme, ...rest }) => (`
 font-weight: ${(strong ? 'bold' : 'inherit')};
+color: ${setColor({ theme, ...rest })};
 margin: ${theme.shape.margin};
-color: ${theme.text.color};
 text-transform: ${transform};
 font-family: sans-serif;
 text-align: ${align};

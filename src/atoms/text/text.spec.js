@@ -1,17 +1,17 @@
 import React from 'react';
 
-import Component from '.';
+import Text from '.';
 
-it('should render a component', () => {
+it('should render a text', () => {
   const wrapper = shallow(
-    <Component />,
+    <Text />,
   ).dive();
   expect(wrapper).toMatchSnapshot();
 });
 
-it('should render a component with a prop', () => {
+it('should render a text with a prop', () => {
   const wrapper = shallow(
-    <Component strong />,
+    <Text strong />,
   ).dive();
   expect(wrapper).toMatchSnapshot();
 });
