@@ -13,12 +13,14 @@ import Button from '.';
 ## Use cases
 
 <div>
-  <Button href='#'/>
-  <Button secondary href='#'/>
-  <Button warn href='#'/>
-  <Button outline href='#'/>
-  <Button outline secondary href='#'/>
-  <Button outline warn href='#'/>
+  <Button href='#'>primary</Button>
+  <Button secondary href='#'>secondary</Button>
+  <Button warn href='#'>warning</Button>
+  <Button disabled href='#'>disabled</Button>
+  <Button outline href='#'>primary outline</Button>
+  <Button outline secondary href='#'>secondary outline</Button>
+  <Button outline warn href='#'>warning outline</Button>
+  <Button outline disabled href='#'>disabled outline</Button>
 </div>
 
 ## PropsTable
@@ -58,4 +60,11 @@ This component needs a valid props href or onClick:
 <Playground>
   <Button warn href='#warnbool' />
   <Button warn outline href='#warnbool' />
+</Playground>
+
+## disabled:bool
+
+<Playground>
+  <Button disabled href='#disabledbool' />
+  <Button disabled outline href='#disabledbool' />
 </Playground>

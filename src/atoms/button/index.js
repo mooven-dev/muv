@@ -7,7 +7,7 @@ import themeDefault from '../../theme';
 
 // STYLES
 const setBackground = ({ theme, secondary, outline, warn }) => {
-  if (outline) return theme.color.white; // these first !!!
+  if (outline) return theme.color.white;
   if (secondary) return theme.color.secondary;
   if (warn) return theme.color.warn;
   return theme.color.primary;
@@ -28,7 +28,13 @@ const setBorder = ({ theme, secondary, warn }) => {
   return `${theme.shape.border}`;
 };
 
-const commonStyles = ({ theme, ...props }) => (`
+const disabledStyle = `
+filter: grayscale(100%);
+pointer-events: none;
+cursor: not-allowed;
+`;
+
+const commonStyles = ({ theme, disabled, ...props }) => (`
 background: ${setBackground({ theme, ...props })};
 border: ${setBorder({ theme, ...props })};
 color: ${setColor({ theme, ...props })};
@@ -43,6 +49,10 @@ text-align: center;
 cursor: pointer;
 line-height: 1;
 width: 100%;
+${disabled ? disabledStyle : ''}
+&:disabled {
+  ${disabledStyle}
+}
 &:hover, &:focus {
   box-shadow: none;
 }
@@ -76,6 +86,8 @@ Button.propTypes = {
   href: string,
   /** sets style to match secondary theme color */
   secondary: bool,
+  /** disables the element actions and changes its styles */
+  disabled: bool,
   /** sets background to transparent and adds a border */
   outline: bool,
 };
@@ -84,6 +96,7 @@ Button.defaultProps = {
   children: 'default',
   theme: themeDefault,
   secondary: false,
+  disabled: false,
   outline: false,
   onClick: null,
   href: null,
