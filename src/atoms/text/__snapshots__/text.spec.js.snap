@@ -2,7 +2,7 @@
 
 exports[`should render a component 1`] = `
 <p
-  className="sc-bdVaJa bEPDjo"
+  className="sc-bdVaJa dPLIxs"
   transform="normal"
 >
   default
@@ -11,7 +11,7 @@ exports[`should render a component 1`] = `
 
 exports[`should render a component with a prop 1`] = `
 <p
-  className="sc-bdVaJa zdWnK"
+  className="sc-bdVaJa fqNXsQ"
   transform="normal"
 >
   default

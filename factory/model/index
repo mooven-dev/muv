@@ -17,7 +17,7 @@ const __COMPONENT__ = props => (
 
 // DOCUMENTATION
 __COMPONENT__.propTypes = {
-  /** accepts only react valid nodes as children */
+  /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
   theme: objectOf(objectOf(string)),

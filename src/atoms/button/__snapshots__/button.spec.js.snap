@@ -1,8 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render a anchor 1`] = `
+<a
+  className="sc-bwzfXH gxeAtD"
+  href="#"
+  onClick={null}
+>
+  default
+</a>
+`;
+
 exports[`should render a button 1`] = `
 <button
-  className="sc-bdVaJa cyvWsT"
+  className="sc-bdVaJa jblQdl"
+  href={null}
+  onClick={[Function]}
 >
   default
 </button>

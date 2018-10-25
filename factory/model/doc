@@ -16,7 +16,7 @@ import __COMPONENT__ from '.';
   <__COMPONENT__ />
 </div>
 
-## Props
+## PropsTable
 
 <PropsTable of={__COMPONENT__} />
 

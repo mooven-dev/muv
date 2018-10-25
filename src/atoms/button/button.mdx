@@ -13,15 +13,49 @@ import Button from '.';
 ## Use cases
 
 <div>
-  <Button />
+  <Button href='#'/>
+  <Button secondary href='#'/>
+  <Button warn href='#'/>
+  <Button outline href='#'/>
+  <Button outline secondary href='#'/>
+  <Button outline warn href='#'/>
 </div>
 
-## Props
+## PropsTable
 
 <PropsTable of={Button} />
 
-## Playground
+## Navigation
+
+This component needs a valid props href or onClick:
+
+- If a prop href is provided, it will render a anchor tag; 
+- If you provide a onClick prop, it will render a button tag; 
+- Otherwise, it will render null.
 
 <Playground>
   <Button />
+  <Button href='#navigation' />
+  <Button onClick={() => alert('clicked!') } />
+</Playground>
+
+## outline:bool
+
+<Playground>
+  <Button href='#outlinebool' />
+  <Button outline href='#outlinebool' />
+</Playground>
+
+## secondary:bool
+
+<Playground>
+  <Button secondary href='#secondarybool' />
+  <Button secondary outline href='#secondarybool' />
+</Playground>
+
+## warn:bool
+
+<Playground>
+  <Button warn href='#warnbool' />
+  <Button warn outline href='#warnbool' />
 </Playground>

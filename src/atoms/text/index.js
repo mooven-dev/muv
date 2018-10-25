@@ -10,10 +10,11 @@ import themeDefault from '../../theme';
 const commonStyles = ({ transform, strong, align, theme }) => (`
 font-weight: ${(strong ? 'bold' : 'inherit')};
 margin: ${theme.shape.margin};
-color: ${theme.color.primary};
+color: ${theme.text.color};
 text-transform: ${transform};
 font-family: sans-serif;
 text-align: ${align};
+line-height: 1;
 `);
 
 export const P = styled.p`
