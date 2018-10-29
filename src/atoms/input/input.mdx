@@ -1,0 +1,57 @@
+
+---
+menu: Atoms
+name: Input
+route: /input
+---
+
+import { Playground, PropsTable } from 'docz';
+import Input from '.';
+
+# Input
+
+## Use cases
+
+<div>
+  <Input autoFocus placeholder='default' />
+  <Input required placeholder='required' />
+  <Input success placeholder='success' />
+  <Input error placeholder='error' />
+  <Input disabled placeholder='disabled or readonly' />
+</div>
+
+## PropsTable
+
+<PropsTable of={Input} />
+
+## onFocus:event
+
+The input component changes its style while on focus state. Click to test changes.
+
+<Playground>
+  <Input />
+</Playground>
+
+## error:bool
+
+Props to give a visual feedback in case of error
+
+<Playground>
+  <Input error placeholder='error' />
+</Playground>
+
+## success:bool
+
+Props to give a visual feedback in case of success
+
+<Playground>
+  <Input success placeholder='success' />
+</Playground>
+
+## required:bool
+
+Props to give a visual feedback of error in case of not filled properly
+
+<Playground>
+  <Input required placeholder='required' />
+</Playground>

@@ -9,6 +9,7 @@
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 // ATOMS
+import Input from './atoms/input';
 import Link from './atoms/link';
 import Button from './atoms/button';
 import Text from './atoms/text';
@@ -25,6 +26,7 @@ export {
   ThemeProvider,
   injectGlobal,
   // COMPONENTS
+  Input,
   Link,
   Button,
   Text,
