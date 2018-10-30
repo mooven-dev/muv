@@ -15,6 +15,7 @@
     "shallow": true,
     "window": true,
     "expect": true,
+    "mount": true,
     "it": true
   }
 }

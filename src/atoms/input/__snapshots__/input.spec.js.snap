@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should change its style if disabled 1`] = `
+<input
+  className="sc-bdVaJa jHSaue"
+  disabled={true}
+  placeholder="placeholder"
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`should change its style if required 1`] = `
+<input
+  className="sc-bdVaJa jHSaue"
+  disabled={false}
+  placeholder="placeholder"
+  required={true}
+  type="text"
+/>
+`;
+
+exports[`should change its style on error 1`] = `
+<input
+  className="sc-bdVaJa XtVuF"
+  disabled={false}
+  placeholder="placeholder"
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`should change its style on success 1`] = `
+<input
+  className="sc-bdVaJa bWaSHo"
+  disabled={false}
+  placeholder="placeholder"
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`should render a input 1`] = `
+<input
+  className="sc-bdVaJa jHSaue"
+  disabled={false}
+  placeholder="placeholder"
+  required={false}
+  type="text"
+/>
+`;

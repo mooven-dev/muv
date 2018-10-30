@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should change its style on outline 1`] = `
+<a
+  className="sc-bwzfXH ipSng"
+  disabled={false}
+  href="#"
+  onClick={null}
+>
+  default
+</a>
+`;
+
+exports[`should change its style on success 1`] = `
+<a
+  className="sc-bwzfXH chZcWg"
+  disabled={false}
+  href="#"
+  onClick={null}
+>
+  default
+</a>
+`;
+
+exports[`should change its style on warn 1`] = `
+<a
+  className="sc-bwzfXH cvkJuz"
+  disabled={false}
+  href="#"
+  onClick={null}
+>
+  default
+</a>
+`;
+
 exports[`should render a anchor 1`] = `
 <a
   className="sc-bwzfXH fjTDkT"

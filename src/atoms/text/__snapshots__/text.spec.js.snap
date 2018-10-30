@@ -1,17 +1,107 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a text 1`] = `
+exports[`should change its content concerning the type 1`] = `
+<h1
+  className="sc-htpNat dltwvX"
+  transform="normal"
+>
+  default
+</h1>
+`;
+
+exports[`should change its content concerning the type 2`] = `
+<h2
+  className="sc-bxivhb dHZSzK"
+  transform="normal"
+>
+  default
+</h2>
+`;
+
+exports[`should change its content concerning the type 3`] = `
+<h3
+  className="sc-ifAKCX gCKZtU"
+  transform="normal"
+>
+  default
+</h3>
+`;
+
+exports[`should change its content concerning the type 4`] = `
+<h4
+  className="sc-EHOje hHqVWm"
+  transform="normal"
+>
+  default
+</h4>
+`;
+
+exports[`should change its content concerning the type 5`] = `
+<h5
+  className="sc-bZQynM hneOUi"
+  transform="normal"
+>
+  default
+</h5>
+`;
+
+exports[`should change its content concerning the type 6`] = `
+<h6
+  className="sc-gzVnrw bqeFsm"
+  transform="normal"
+>
+  default
+</h6>
+`;
+
+exports[`should change its style if strong 1`] = `
 <p
-  className="sc-bdVaJa kNsyYD"
+  className="sc-bdVaJa jDrYri"
   transform="normal"
 >
   default
 </p>
 `;
 
-exports[`should render a text with a prop 1`] = `
+exports[`should change its style on primary 1`] = `
 <p
-  className="sc-bdVaJa jDrYri"
+  className="sc-bdVaJa dErEiA"
+  transform="normal"
+>
+  default
+</p>
+`;
+
+exports[`should change its style on secondary 1`] = `
+<p
+  className="sc-bdVaJa dZlZdI"
+  transform="normal"
+>
+  default
+</p>
+`;
+
+exports[`should change its style on success 1`] = `
+<p
+  className="sc-bdVaJa bjPWSd"
+  transform="normal"
+>
+  default
+</p>
+`;
+
+exports[`should change its style on warn 1`] = `
+<p
+  className="sc-bdVaJa kxFsSg"
+  transform="normal"
+>
+  default
+</p>
+`;
+
+exports[`should render a text 1`] = `
+<p
+  className="sc-bdVaJa kNsyYD"
   transform="normal"
 >
   default

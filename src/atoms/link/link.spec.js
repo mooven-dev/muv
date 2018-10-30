@@ -16,3 +16,24 @@ it('should render a anchor', () => {
   ).dive();
   expect(wrapper).toMatchSnapshot();
 });
+
+it('should change its style on warn', () => {
+  const wrapper = shallow(
+    <Link warn href="#" />,
+  ).dive();
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('should change its style on success', () => {
+  const wrapper = shallow(
+    <Link success href="#" />,
+  ).dive();
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('should change its style on secondary', () => {
+  const wrapper = shallow(
+    <Link secondary href="#" />,
+  ).dive();
+  expect(wrapper).toMatchSnapshot();
+});
