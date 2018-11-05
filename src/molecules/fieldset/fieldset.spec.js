@@ -3,8 +3,8 @@ import React from 'react';
 import Fieldset from '.';
 
 it('should render a fieldset', () => {
-  const wrapper = shallow(
+  const wrapper = mount(
     <Fieldset />,
-  ).dive();
+  );
   expect(wrapper).toMatchSnapshot();
 });
