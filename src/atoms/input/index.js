@@ -16,6 +16,7 @@ padding: ${({ theme }) => theme.shape.padding};
 font-size: ${({ theme }) => theme.shape.base};
 margin: ${({ theme }) => theme.shape.margin};
 color: ${({ theme }) => theme.text.color};
+display: inline-block;
 position: relative;
 width: 100%;
 &:focus {

@@ -1,109 +1,1005 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should change its content concerning the type 1`] = `
-<h1
-  className="sc-htpNat dltwvX"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type="h1"
 >
-  default
-</h1>
+  <styled.h1
+    align="left"
+    label={false}
+    strong={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <h1
+      className="sc-htpNat dltwvX"
+      label={false}
+      transform="normal"
+    >
+      default
+    </h1>
+  </styled.h1>
+</Text>
 `;
 
 exports[`should change its content concerning the type 2`] = `
-<h2
-  className="sc-bxivhb dHZSzK"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type="h2"
 >
-  default
-</h2>
+  <styled.h2
+    align="left"
+    label={false}
+    strong={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <h2
+      className="sc-bxivhb dHZSzK"
+      label={false}
+      transform="normal"
+    >
+      default
+    </h2>
+  </styled.h2>
+</Text>
 `;
 
 exports[`should change its content concerning the type 3`] = `
-<h3
-  className="sc-ifAKCX gCKZtU"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type="h3"
 >
-  default
-</h3>
+  <styled.h3
+    align="left"
+    label={false}
+    strong={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <h3
+      className="sc-ifAKCX gCKZtU"
+      label={false}
+      transform="normal"
+    >
+      default
+    </h3>
+  </styled.h3>
+</Text>
 `;
 
 exports[`should change its content concerning the type 4`] = `
-<h4
-  className="sc-EHOje hHqVWm"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type="h4"
 >
-  default
-</h4>
+  <styled.h4
+    align="left"
+    label={false}
+    strong={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <h4
+      className="sc-EHOje hHqVWm"
+      label={false}
+      transform="normal"
+    >
+      default
+    </h4>
+  </styled.h4>
+</Text>
 `;
 
 exports[`should change its content concerning the type 5`] = `
-<h5
-  className="sc-bZQynM hneOUi"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type="h5"
 >
-  default
-</h5>
+  <styled.h5
+    align="left"
+    label={false}
+    strong={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <h5
+      className="sc-bZQynM deybaK"
+      label={false}
+      transform="normal"
+    >
+      default
+    </h5>
+  </styled.h5>
+</Text>
 `;
 
 exports[`should change its content concerning the type 6`] = `
-<h6
-  className="sc-gzVnrw bqeFsm"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type="h6"
 >
-  default
-</h6>
+  <styled.h6
+    align="left"
+    label={false}
+    strong={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <h6
+      className="sc-gzVnrw cOxJiZ"
+      label={false}
+      transform="normal"
+    >
+      default
+    </h6>
+  </styled.h6>
+</Text>
 `;
 
 exports[`should change its style if strong 1`] = `
-<p
-  className="sc-bdVaJa jDrYri"
+<Text
+  align="left"
+  label={false}
+  strong={true}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type=""
 >
-  default
-</p>
+  <styled.p
+    align="left"
+    label={false}
+    strong={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <p
+      className="sc-bdVaJa cPKyeJ"
+      label={false}
+      transform="normal"
+    >
+      default
+    </p>
+  </styled.p>
+</Text>
 `;
 
 exports[`should change its style on primary 1`] = `
-<p
-  className="sc-bdVaJa dErEiA"
+<Text
+  align="left"
+  label={false}
+  primary={true}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type=""
 >
-  default
-</p>
+  <styled.p
+    align="left"
+    label={false}
+    primary={true}
+    strong={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <p
+      className="sc-bdVaJa kKhBxm"
+      label={false}
+      transform="normal"
+    >
+      default
+    </p>
+  </styled.p>
+</Text>
 `;
 
 exports[`should change its style on secondary 1`] = `
-<p
-  className="sc-bdVaJa dZlZdI"
+<Text
+  align="left"
+  label={false}
+  secondary={true}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type=""
 >
-  default
-</p>
+  <styled.p
+    align="left"
+    label={false}
+    secondary={true}
+    strong={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <p
+      className="sc-bdVaJa crdbRz"
+      label={false}
+      transform="normal"
+    >
+      default
+    </p>
+  </styled.p>
+</Text>
 `;
 
 exports[`should change its style on success 1`] = `
-<p
-  className="sc-bdVaJa bjPWSd"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  success={true}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type=""
 >
-  default
-</p>
+  <styled.p
+    align="left"
+    label={false}
+    strong={false}
+    success={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <p
+      className="sc-bdVaJa gSJdpt"
+      label={false}
+      transform="normal"
+    >
+      default
+    </p>
+  </styled.p>
+</Text>
 `;
 
 exports[`should change its style on warn 1`] = `
-<p
-  className="sc-bdVaJa kxFsSg"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type=""
+  warn={true}
 >
-  default
-</p>
+  <styled.p
+    align="left"
+    label={false}
+    strong={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+    warn={true}
+  >
+    <p
+      className="sc-bdVaJa hnEghf"
+      label={false}
+      transform="normal"
+    >
+      default
+    </p>
+  </styled.p>
+</Text>
 `;
 
 exports[`should render a text 1`] = `
-<p
-  className="sc-bdVaJa kNsyYD"
+<Text
+  align="left"
+  label={false}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   transform="normal"
+  type=""
 >
-  default
-</p>
+  <styled.p
+    align="left"
+    label={false}
+    strong={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    transform="normal"
+  >
+    <p
+      className="sc-bdVaJa fGrUcG"
+      label={false}
+      transform="normal"
+    >
+      default
+    </p>
+  </styled.p>
+</Text>
 `;

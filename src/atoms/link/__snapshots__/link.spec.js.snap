@@ -1,56 +1,422 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should change its style on secondary 1`] = `
-<a
-  className="sc-bdVaJa dOEelP"
+<Link
   disabled={false}
   href="#"
   onClick={null}
+  secondary={true}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
 >
-  default
-</a>
+  <styled.a
+    disabled={false}
+    href="#"
+    onClick={null}
+    secondary={true}
+    strong={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+  >
+    <a
+      className="sc-bdVaJa dOEelP"
+      disabled={false}
+      href="#"
+      onClick={null}
+    >
+      default
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`should change its style on success 1`] = `
-<a
-  className="sc-bdVaJa ZkBSw"
+<Link
   disabled={false}
   href="#"
   onClick={null}
+  strong={false}
+  success={true}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
 >
-  default
-</a>
+  <styled.a
+    disabled={false}
+    href="#"
+    onClick={null}
+    strong={false}
+    success={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+  >
+    <a
+      className="sc-bdVaJa ZkBSw"
+      disabled={false}
+      href="#"
+      onClick={null}
+    >
+      default
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`should change its style on warn 1`] = `
-<a
-  className="sc-bdVaJa kZkzKq"
+<Link
   disabled={false}
   href="#"
   onClick={null}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
+  warn={true}
 >
-  default
-</a>
+  <styled.a
+    disabled={false}
+    href="#"
+    onClick={null}
+    strong={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    warn={true}
+  >
+    <a
+      className="sc-bdVaJa kZkzKq"
+      disabled={false}
+      href="#"
+      onClick={null}
+    >
+      default
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`should render a anchor 1`] = `
-<a
-  className="sc-bdVaJa dcmrHC"
+<Link
   disabled={false}
   href="#"
   onClick={null}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
 >
-  default
-</a>
+  <styled.a
+    disabled={false}
+    href="#"
+    onClick={null}
+    strong={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+  >
+    <a
+      className="sc-bdVaJa dcmrHC"
+      disabled={false}
+      href="#"
+      onClick={null}
+    >
+      default
+    </a>
+  </styled.a>
+</Link>
 `;
 
 exports[`should render a button 1`] = `
-<button
-  className="sc-bwzfXH dpVkfR"
+<Link
   disabled={false}
   href={null}
   onClick={[Function]}
+  strong={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
 >
-  default
-</button>
+  <styled.button
+    disabled={false}
+    href={null}
+    onClick={[Function]}
+    strong={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+  >
+    <button
+      className="sc-bwzfXH dpVkfR"
+      disabled={false}
+      href={null}
+      onClick={[Function]}
+    >
+      default
+    </button>
+  </styled.button>
+</Link>
 `;

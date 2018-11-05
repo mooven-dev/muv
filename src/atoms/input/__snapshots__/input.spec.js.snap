@@ -1,51 +1,431 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should change its style if disabled 1`] = `
-<input
-  className="sc-bdVaJa giHyZP"
+<Input
   disabled={true}
+  error={false}
   placeholder="placeholder"
   required={false}
+  success={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   type="text"
-/>
+>
+  <styled.input
+    disabled={true}
+    placeholder="placeholder"
+    required={false}
+    success={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    type="text"
+    warn={false}
+  >
+    <input
+      className="sc-bdVaJa bpbGmI"
+      disabled={true}
+      placeholder="placeholder"
+      required={false}
+      type="text"
+    />
+  </styled.input>
+</Input>
 `;
 
 exports[`should change its style if required 1`] = `
-<input
-  className="sc-bdVaJa giHyZP"
+<Input
   disabled={false}
+  error={false}
   placeholder="placeholder"
   required={true}
+  success={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   type="text"
-/>
+>
+  <styled.input
+    disabled={false}
+    placeholder="placeholder"
+    required={true}
+    success={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    type="text"
+    warn={false}
+  >
+    <input
+      className="sc-bdVaJa bpbGmI"
+      disabled={false}
+      placeholder="placeholder"
+      required={true}
+      type="text"
+    />
+  </styled.input>
+</Input>
 `;
 
 exports[`should change its style on error 1`] = `
-<input
-  className="sc-bdVaJa buaVRE"
+<Input
   disabled={false}
+  error={true}
   placeholder="placeholder"
   required={false}
+  success={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   type="text"
-/>
+>
+  <styled.input
+    disabled={false}
+    placeholder="placeholder"
+    required={false}
+    success={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    type="text"
+    warn={true}
+  >
+    <input
+      className="sc-bdVaJa gUMBqC"
+      disabled={false}
+      placeholder="placeholder"
+      required={false}
+      type="text"
+    />
+  </styled.input>
+</Input>
 `;
 
 exports[`should change its style on success 1`] = `
-<input
-  className="sc-bdVaJa lgkmwE"
+<Input
   disabled={false}
+  error={false}
   placeholder="placeholder"
   required={false}
+  success={true}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   type="text"
-/>
+>
+  <styled.input
+    disabled={false}
+    placeholder="placeholder"
+    required={false}
+    success={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    type="text"
+    warn={false}
+  >
+    <input
+      className="sc-bdVaJa jqnKtK"
+      disabled={false}
+      placeholder="placeholder"
+      required={false}
+      type="text"
+    />
+  </styled.input>
+</Input>
 `;
 
 exports[`should render a input 1`] = `
-<input
-  className="sc-bdVaJa giHyZP"
+<Input
   disabled={false}
+  error={false}
   placeholder="placeholder"
   required={false}
+  success={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
   type="text"
-/>
+>
+  <styled.input
+    disabled={false}
+    placeholder="placeholder"
+    required={false}
+    success={false}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    type="text"
+    warn={false}
+  >
+    <input
+      className="sc-bdVaJa bpbGmI"
+      disabled={false}
+      placeholder="placeholder"
+      required={false}
+      type="text"
+    />
+  </styled.input>
+</Input>
 `;

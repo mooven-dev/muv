@@ -3,8 +3,8 @@ import React from 'react';
 import __COMPONENT__ from '.';
 
 it('should render a __component__', () => {
-  const wrapper = shallow(
+  const wrapper = mount(
     <__COMPONENT__ />,
-  ).dive();
+  );
   expect(wrapper).toMatchSnapshot();
 });

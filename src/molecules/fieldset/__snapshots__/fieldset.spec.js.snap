@@ -1,9 +1,322 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render a fieldset 1`] = `
-<p
-  className="sc-bdVaJa raiIJ"
+<Fieldset
+  disabled={false}
+  label="label"
+  success={false}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
+  warn={false}
 >
-  default
-</p>
+  <styled.fieldset
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+  >
+    <fieldset
+      className="sc-dnqmqq eYsipw"
+    >
+      <Text
+        align="left"
+        label={true}
+        strong={false}
+        theme={
+          Object {
+            "color": Object {
+              "black": "#484848",
+              "gray": "#f0f0f0",
+              "overlay": "rgba(0, 0, 0, .15)",
+              "primary": "#0082c8",
+              "secondary": "#00baf2",
+              "success": "#33bb33",
+              "warn": "#dd3333",
+              "white": "#fefefe",
+            },
+            "shape": Object {
+              "base": "1rem",
+              "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "margin": ".25rem 0",
+              "padding": ".825rem 1.2rem",
+              "radius": ".25rem",
+              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            },
+            "text": Object {
+              "color": "#484848",
+              "size": "1rem",
+            },
+            "transition": Object {
+              "time": ".2s ease",
+            },
+          }
+        }
+        transform="capitalize"
+        type=""
+      >
+        <styled.p
+          align="left"
+          label={true}
+          strong={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#484848",
+                "gray": "#f0f0f0",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0082c8",
+                "secondary": "#00baf2",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "shape": Object {
+                "base": "1rem",
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "margin": ".25rem 0",
+                "padding": ".825rem 1.2rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+              },
+              "text": Object {
+                "color": "#484848",
+                "size": "1rem",
+              },
+              "transition": Object {
+                "time": ".2s ease",
+              },
+            }
+          }
+          transform="capitalize"
+        >
+          <p
+            className="sc-bwzfXH dRxSDs"
+            label={true}
+            transform="capitalize"
+          >
+            label:
+          </p>
+        </styled.p>
+      </Text>
+      <Input
+        disabled={false}
+        error={false}
+        placeholder="placeholder"
+        required={false}
+        success={false}
+        theme={
+          Object {
+            "color": Object {
+              "black": "#484848",
+              "gray": "#f0f0f0",
+              "overlay": "rgba(0, 0, 0, .15)",
+              "primary": "#0082c8",
+              "secondary": "#00baf2",
+              "success": "#33bb33",
+              "warn": "#dd3333",
+              "white": "#fefefe",
+            },
+            "shape": Object {
+              "base": "1rem",
+              "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "margin": ".25rem 0",
+              "padding": ".825rem 1.2rem",
+              "radius": ".25rem",
+              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            },
+            "text": Object {
+              "color": "#484848",
+              "size": "1rem",
+            },
+            "transition": Object {
+              "time": ".2s ease",
+            },
+          }
+        }
+        type="text"
+        warn={false}
+      >
+        <styled.input
+          disabled={false}
+          placeholder="placeholder"
+          required={false}
+          success={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#484848",
+                "gray": "#f0f0f0",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0082c8",
+                "secondary": "#00baf2",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "shape": Object {
+                "base": "1rem",
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "margin": ".25rem 0",
+                "padding": ".825rem 1.2rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+              },
+              "text": Object {
+                "color": "#484848",
+                "size": "1rem",
+              },
+              "transition": Object {
+                "time": ".2s ease",
+              },
+            }
+          }
+          type="text"
+          warn={false}
+        >
+          <input
+            className="sc-bdVaJa bpbGmI"
+            disabled={false}
+            placeholder="placeholder"
+            required={false}
+            type="text"
+          />
+        </styled.input>
+      </Input>
+      <Text
+        align="left"
+        label={false}
+        small={true}
+        strong={false}
+        theme={
+          Object {
+            "color": Object {
+              "black": "#484848",
+              "gray": "#f0f0f0",
+              "overlay": "rgba(0, 0, 0, .15)",
+              "primary": "#0082c8",
+              "secondary": "#00baf2",
+              "success": "#33bb33",
+              "warn": "#dd3333",
+              "white": "#fefefe",
+            },
+            "shape": Object {
+              "base": "1rem",
+              "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "margin": ".25rem 0",
+              "padding": ".825rem 1.2rem",
+              "radius": ".25rem",
+              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            },
+            "text": Object {
+              "color": "#484848",
+              "size": "1rem",
+            },
+            "transition": Object {
+              "time": ".2s ease",
+            },
+          }
+        }
+        transform="normal"
+        type=""
+      >
+        <styled.p
+          align="left"
+          label={false}
+          small={true}
+          strong={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#484848",
+                "gray": "#f0f0f0",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0082c8",
+                "secondary": "#00baf2",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "shape": Object {
+                "base": "1rem",
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "margin": ".25rem 0",
+                "padding": ".825rem 1.2rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+              },
+              "text": Object {
+                "color": "#484848",
+                "size": "1rem",
+              },
+              "transition": Object {
+                "time": ".2s ease",
+              },
+            }
+          }
+          transform="normal"
+        >
+          <p
+            className="sc-bwzfXH lcQmfk"
+            label={false}
+            transform="normal"
+          >
+             
+          </p>
+        </styled.p>
+      </Text>
+    </fieldset>
+  </styled.fieldset>
+</Fieldset>
 `;

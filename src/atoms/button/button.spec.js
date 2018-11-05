@@ -3,37 +3,37 @@ import React from 'react';
 import Button from '.';
 
 it('should render a button', () => {
-  const wrapper = shallow(
+  const wrapper = mount(
     <Button onClick={() => true} />,
-  ).dive();
+  );
   expect(wrapper).toMatchSnapshot();
 });
 
 it('should render a anchor', () => {
-  const wrapper = shallow(
+  const wrapper = mount(
     <Button href="#" />,
-  ).dive();
+  );
   expect(wrapper).toMatchSnapshot();
 });
 
 it('should change its style on warn', () => {
-  const wrapper = shallow(
+  const wrapper = mount(
     <Button warn href="#" />,
-  ).dive();
+  );
   expect(wrapper).toMatchSnapshot();
 });
 
 it('should change its style on success', () => {
-  const wrapper = shallow(
+  const wrapper = mount(
     <Button success href="#" />,
-  ).dive();
+  );
   expect(wrapper).toMatchSnapshot();
 });
 
 
 it('should change its style on outline', () => {
-  const wrapper = shallow(
+  const wrapper = mount(
     <Button outline href="#" />,
-  ).dive();
+  );
   expect(wrapper).toMatchSnapshot();
 });

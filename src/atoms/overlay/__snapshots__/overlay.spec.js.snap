@@ -1,7 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render a overlay 1`] = `
-<aside
-  className="sc-bdVaJa clktxK"
-/>
+<Overlay
+  theme={
+    Object {
+      "color": Object {
+        "black": "#484848",
+        "gray": "#f0f0f0",
+        "overlay": "rgba(0, 0, 0, .15)",
+        "primary": "#0082c8",
+        "secondary": "#00baf2",
+        "success": "#33bb33",
+        "warn": "#dd3333",
+        "white": "#fefefe",
+      },
+      "shape": Object {
+        "base": "1rem",
+        "border": ".125rem solid rgba(0, 0, 0, .15)",
+        "margin": ".25rem 0",
+        "padding": ".825rem 1.2rem",
+        "radius": ".25rem",
+        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+      },
+      "text": Object {
+        "color": "#484848",
+        "size": "1rem",
+      },
+      "transition": Object {
+        "time": ".2s ease",
+      },
+    }
+  }
+  visible={false}
+>
+  <styled.aside
+    theme={
+      Object {
+        "color": Object {
+          "black": "#484848",
+          "gray": "#f0f0f0",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0082c8",
+          "secondary": "#00baf2",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "shape": Object {
+          "base": "1rem",
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem 0",
+          "padding": ".825rem 1.2rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        },
+        "text": Object {
+          "color": "#484848",
+          "size": "1rem",
+        },
+        "transition": Object {
+          "time": ".2s ease",
+        },
+      }
+    }
+    visible={false}
+  >
+    <aside
+      className="sc-bdVaJa clktxK"
+    />
+  </styled.aside>
+</Overlay>
 `;
