@@ -2,7 +2,7 @@
 
 exports[`should change its style on outline 1`] = `
 <a
-  className="sc-bwzfXH ipSng"
+  className="sc-bwzfXH buCeHw"
   disabled={false}
   href="#"
   onClick={null}
@@ -13,7 +13,7 @@ exports[`should change its style on outline 1`] = `
 
 exports[`should change its style on success 1`] = `
 <a
-  className="sc-bwzfXH chZcWg"
+  className="sc-bwzfXH eGVawg"
   disabled={false}
   href="#"
   onClick={null}
@@ -24,7 +24,7 @@ exports[`should change its style on success 1`] = `
 
 exports[`should change its style on warn 1`] = `
 <a
-  className="sc-bwzfXH cvkJuz"
+  className="sc-bwzfXH ljeNxs"
   disabled={false}
   href="#"
   onClick={null}
@@ -35,7 +35,7 @@ exports[`should change its style on warn 1`] = `
 
 exports[`should render a anchor 1`] = `
 <a
-  className="sc-bwzfXH fjTDkT"
+  className="sc-bwzfXH ecSw"
   disabled={false}
   href="#"
   onClick={null}
@@ -46,7 +46,7 @@ exports[`should render a anchor 1`] = `
 
 exports[`should render a button 1`] = `
 <button
-  className="sc-bdVaJa kWOzWT"
+  className="sc-bdVaJa bMyNl"
   disabled={false}
   href={null}
   onClick={[Function]}

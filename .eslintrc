@@ -6,6 +6,7 @@
     "eslint-config-airbnb"
   ],
   "rules": {
+    "react/destructuring-assignment": [0],
     "react/jsx-filename-extension": [0],
     "jsx-a11y/anchor-is-valid": [0],
     "object-curly-newline": [0]
@@ -13,6 +14,7 @@
   "globals": {
     "documment": true,
     "shallow": true,
+    "render": true,
     "window": true,
     "expect": true,
     "mount": true,

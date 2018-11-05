@@ -2,7 +2,7 @@
 
 exports[`should change its style if disabled 1`] = `
 <input
-  className="sc-bdVaJa jHSaue"
+  className="sc-bdVaJa giHyZP"
   disabled={true}
   placeholder="placeholder"
   required={false}
@@ -12,7 +12,7 @@ exports[`should change its style if disabled 1`] = `
 
 exports[`should change its style if required 1`] = `
 <input
-  className="sc-bdVaJa jHSaue"
+  className="sc-bdVaJa giHyZP"
   disabled={false}
   placeholder="placeholder"
   required={true}
@@ -22,7 +22,7 @@ exports[`should change its style if required 1`] = `
 
 exports[`should change its style on error 1`] = `
 <input
-  className="sc-bdVaJa XtVuF"
+  className="sc-bdVaJa buaVRE"
   disabled={false}
   placeholder="placeholder"
   required={false}
@@ -32,7 +32,7 @@ exports[`should change its style on error 1`] = `
 
 exports[`should change its style on success 1`] = `
 <input
-  className="sc-bdVaJa bWaSHo"
+  className="sc-bdVaJa lgkmwE"
   disabled={false}
   placeholder="placeholder"
   required={false}
@@ -42,7 +42,7 @@ exports[`should change its style on success 1`] = `
 
 exports[`should render a input 1`] = `
 <input
-  className="sc-bdVaJa jHSaue"
+  className="sc-bdVaJa giHyZP"
   disabled={false}
   placeholder="placeholder"
   required={false}

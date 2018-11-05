@@ -125,7 +125,7 @@ const crateNewComponent = async (args) => {
     // edit content to import file on right list
     const withImport = exportsContent.replace(
       `// ${TYPE}S`,
-      `// ${TYPE}S\nimport ${Component} from './atoms/${component}';`,
+      `// ${TYPE}S\nimport ${Component} from '../${componentPath}';`,
     );
     // edit content to export file to module
     const withExport = withImport.replace(

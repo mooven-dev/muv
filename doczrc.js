@@ -3,7 +3,7 @@ import theme from './src/theme';
 
 export default {
   title: 'MUV',
-  port: '4000',
+  port: '8000',
   dest: '/docz',
   description: 'This is my awesome documentation',
   themeConfig: {

@@ -24,7 +24,7 @@ const text = {
 };
 
 const transition = {
-  time: '.2s',
+  time: '.2s ease',
 };
 
 export default {
