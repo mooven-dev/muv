@@ -14,8 +14,8 @@ const setColor = ({ theme, primary, secondary, warn, success }) => {
   return theme.text.color;
 };
 
-const commonStyles = ({ transform, strong, align, theme, ...rest }) => (`
-font-weight: ${(strong ? 'bold' : 'inherit')};
+const commonStyles = ({ transform, strong, align, theme, label, ...rest }) => (`
+font-weight: ${(strong || label ? 'bold' : 'inherit')};
 color: ${setColor({ theme, ...rest })};
 margin: ${theme.shape.margin};
 text-transform: ${transform};
@@ -25,13 +25,13 @@ line-height: 1;
 `);
 
 export const P = styled.p`
+font-size: ${({ label, small }) => (label || small ? '.875rem' : '1rem')};
 ${props => commonStyles(props)}
-font-size: 1rem;
 `;
 
 export const Span = styled.span`
+font-size: ${({ label, small }) => (label || small ? '.875rem' : '1rem')};
 ${props => commonStyles(props)}
-font-size: 1rem;
 `;
 
 export const H1 = styled.h1`
@@ -56,12 +56,12 @@ font-size: 1rem;
 
 export const H5 = styled.h5`
 ${props => commonStyles(props)}
-font-size: .9rem;
+font-size: .9375rem;
 `;
 
 export const H6 = styled.h6`
 ${props => commonStyles(props)}
-font-size: .825rem;
+font-size: .875rem;
 `;
 
 // COMPONENT
@@ -96,6 +96,8 @@ Text.propTypes = {
   transform: string,
   /** sets font-weight as bold */
   strong: bool,
+  /** sets font-weight and size to matchs label style */
+  label: bool,
   /** sets the text-align */
   align: string,
   /** sets the heading hierarch */
@@ -107,6 +109,7 @@ Text.defaultProps = {
   children: 'default',
   theme: themeDefault,
   strong: false,
+  label: false,
   align: 'left',
   type: '',
 };
