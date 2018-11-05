@@ -9,12 +9,15 @@
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 // ATOMS
+import Overlay from './atoms/overlay';
 import Input from './atoms/input';
 import Link from './atoms/link';
 import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
+import Fieldset from './molecules/fieldset';
+import Modal from './molecules/modal';
 
 // ORGANISMS
 
@@ -26,6 +29,9 @@ export {
   ThemeProvider,
   injectGlobal,
   // COMPONENTS
+  Fieldset,
+  Overlay,
+  Modal,
   Input,
   Link,
   Button,

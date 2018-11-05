@@ -1,0 +1,29 @@
+
+---
+menu: Atoms
+name: Overlay
+route: /overlay
+---
+
+import { Playground, PropsTable } from 'docz';
+import Overlay from '.';
+
+# Overlay
+
+## Use cases
+
+Overlay component covers all screen and block interactions with any element outside it. For this reason, we don't displays it automatically on this documentation.
+
+You can test this component rendering changing the visible prop on the playground bellow to true.
+
+## PropsTable
+<PropsTable of={Overlay} />
+
+## Playground
+
+<Playground>
+  <div>
+    belows
+    <Overlay visible={false}>insides</Overlay>
+  </div>
+</Playground>

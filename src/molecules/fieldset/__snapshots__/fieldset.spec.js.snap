@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a fieldset 1`] = `
+<p
+  className="sc-bdVaJa raiIJ"
+>
+  default
+</p>
+`;
