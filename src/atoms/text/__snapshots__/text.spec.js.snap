@@ -20,7 +20,7 @@ exports[`should change its content concerning the type 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -56,7 +56,7 @@ exports[`should change its content concerning the type 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -73,7 +73,7 @@ exports[`should change its content concerning the type 1`] = `
     transform="normal"
   >
     <h1
-      className="sc-htpNat dltwvX"
+      className="sc-htpNat clpkGo"
       label={false}
       transform="normal"
     >
@@ -103,7 +103,7 @@ exports[`should change its content concerning the type 2`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -139,7 +139,7 @@ exports[`should change its content concerning the type 2`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -156,7 +156,7 @@ exports[`should change its content concerning the type 2`] = `
     transform="normal"
   >
     <h2
-      className="sc-bxivhb dHZSzK"
+      className="sc-bxivhb imVoGD"
       label={false}
       transform="normal"
     >
@@ -186,7 +186,7 @@ exports[`should change its content concerning the type 3`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -222,7 +222,7 @@ exports[`should change its content concerning the type 3`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -239,7 +239,7 @@ exports[`should change its content concerning the type 3`] = `
     transform="normal"
   >
     <h3
-      className="sc-ifAKCX gCKZtU"
+      className="sc-ifAKCX kMguy"
       label={false}
       transform="normal"
     >
@@ -269,7 +269,7 @@ exports[`should change its content concerning the type 4`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -305,7 +305,7 @@ exports[`should change its content concerning the type 4`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -322,7 +322,7 @@ exports[`should change its content concerning the type 4`] = `
     transform="normal"
   >
     <h4
-      className="sc-EHOje hHqVWm"
+      className="sc-EHOje irSNBG"
       label={false}
       transform="normal"
     >
@@ -352,7 +352,7 @@ exports[`should change its content concerning the type 5`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -388,7 +388,7 @@ exports[`should change its content concerning the type 5`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -405,7 +405,7 @@ exports[`should change its content concerning the type 5`] = `
     transform="normal"
   >
     <h5
-      className="sc-bZQynM deybaK"
+      className="sc-bZQynM bnaBhs"
       label={false}
       transform="normal"
     >
@@ -435,7 +435,7 @@ exports[`should change its content concerning the type 6`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -471,7 +471,7 @@ exports[`should change its content concerning the type 6`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -488,7 +488,7 @@ exports[`should change its content concerning the type 6`] = `
     transform="normal"
   >
     <h6
-      className="sc-gzVnrw cOxJiZ"
+      className="sc-gzVnrw jQTwaD"
       label={false}
       transform="normal"
     >
@@ -518,7 +518,7 @@ exports[`should change its style if strong 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -554,7 +554,7 @@ exports[`should change its style if strong 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -571,7 +571,7 @@ exports[`should change its style if strong 1`] = `
     transform="normal"
   >
     <p
-      className="sc-bdVaJa cPKyeJ"
+      className="sc-bdVaJa hNDhZz"
       label={false}
       transform="normal"
     >
@@ -602,7 +602,7 @@ exports[`should change its style on primary 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -639,7 +639,7 @@ exports[`should change its style on primary 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -656,7 +656,7 @@ exports[`should change its style on primary 1`] = `
     transform="normal"
   >
     <p
-      className="sc-bdVaJa kKhBxm"
+      className="sc-bdVaJa MKBMS"
       label={false}
       transform="normal"
     >
@@ -687,7 +687,7 @@ exports[`should change its style on secondary 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -724,7 +724,7 @@ exports[`should change its style on secondary 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -741,7 +741,7 @@ exports[`should change its style on secondary 1`] = `
     transform="normal"
   >
     <p
-      className="sc-bdVaJa crdbRz"
+      className="sc-bdVaJa kMYrQE"
       label={false}
       transform="normal"
     >
@@ -772,7 +772,7 @@ exports[`should change its style on success 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -809,7 +809,7 @@ exports[`should change its style on success 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -826,7 +826,7 @@ exports[`should change its style on success 1`] = `
     transform="normal"
   >
     <p
-      className="sc-bdVaJa gSJdpt"
+      className="sc-bdVaJa eAekuO"
       label={false}
       transform="normal"
     >
@@ -856,7 +856,7 @@ exports[`should change its style on warn 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -893,7 +893,7 @@ exports[`should change its style on warn 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -911,7 +911,7 @@ exports[`should change its style on warn 1`] = `
     warn={true}
   >
     <p
-      className="sc-bdVaJa hnEghf"
+      className="sc-bdVaJa eznnO"
       label={false}
       transform="normal"
     >
@@ -941,7 +941,7 @@ exports[`should render a text 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -977,7 +977,7 @@ exports[`should render a text 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -994,7 +994,7 @@ exports[`should render a text 1`] = `
     transform="normal"
   >
     <p
-      className="sc-bdVaJa fGrUcG"
+      className="sc-bdVaJa jQvpMf"
       label={false}
       transform="normal"
     >

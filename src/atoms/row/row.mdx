@@ -1,0 +1,162 @@
+
+---
+menu: Atoms
+name: Row
+route: /row
+---
+
+import { Playground, PropsTable } from 'docz';
+import Container from '../container';
+import Text from '../text';
+import Row from '../row';
+import Col from '../col';
+
+# Row
+
+## Use cases
+
+A Row is a simple component that organizes the content horizontaly.
+<div>
+  <Row bordered content>
+    <Text/>
+    <Text primary/>
+    <Text secondary/>
+  </Row>
+</div>
+
+Combine with Col and Container components to build complex layouts.
+
+<div>
+  <Row bordered>
+    <Col bordered content/>
+    <Col bordered content/>
+    <Col bordered content/>
+  </Row>
+</div>
+<br />
+<div>
+  <Container bordered maxWidth="50%">
+    <Row bordered content/>
+    <Row bordered>
+      <Col bordered content/>
+      <Col bordered content/>
+    </Row>
+  </Container>
+</div>
+
+## PropsTable
+
+<PropsTable of={Row} />
+
+## Playground
+
+<Playground>
+  <Container bordered maxWidth="50%">
+    <Row bordered content/>
+    <Row bordered>
+      <Col bordered content/>
+      <Col bordered content/>
+    </Row>
+  </Container>
+</Playground>
+
+## justify:string
+
+Use this props to change how the blank space between children elements is distributed horizontally.
+
+<Playground>
+  <Row bordered content>
+    <Text/>
+    <Text primary/>
+    <Text secondary/>
+  </Row>
+  <br />
+  <Row bordered content justify="center">
+    <Text>center</Text>
+    <Text primary>center</Text>
+    <Text secondary>center</Text>
+  </Row>
+  <br />
+  <Row bordered content justify="flex-end">
+    <Text>flex-end</Text>
+    <Text primary>flex-end</Text>
+    <Text secondary>flex-end</Text>
+  </Row>
+  <br />
+  <Row bordered content justify="space-around">
+    <Text>space-around</Text>
+    <Text primary>space-around</Text>
+    <Text secondary>space-around</Text>
+  </Row>
+  <br />
+  <Row bordered content justify="space-between">
+    <Text>space-between</Text>
+    <Text primary>space-between</Text>
+    <Text secondary>space-between</Text>
+  </Row>
+</Playground>
+
+## align:string
+
+Use this props to change how the blank space between children elements is distributed vertically.
+
+<Playground>
+  <Container flex minHeight="100px">
+    <Row bordered content>
+      <Text/>
+      <Text primary/>
+      <Text secondary/>
+    </Row>
+  </Container>
+  <br />
+  <Container flex minHeight="100px">
+    <Row bordered content align="center">
+      <Text>center</Text>
+      <Text primary>center</Text>
+      <Text secondary>center</Text>
+    </Row>
+  </Container>
+  <br />
+  <Container flex minHeight="100px">
+    <Row bordered content align="flex-end">
+      <Text>flex-end</Text>
+      <Text primary>flex-end</Text>
+      <Text secondary>flex-end</Text>
+    </Row>
+  </Container>
+</Playground>
+
+## grow:number
+
+Use this props to set the flex-grow of your Row component.
+
+By default, this property is set as 1. Changing it, you can shape how much space a Row will take from the parent.
+
+The suggestion is to pass this props as a fraction, for example (element/parent), so 2/6 represents that this component will fit 2 parts of his parent and assume that the parent has 6 available parts.
+
+**IMPORTANT**: Just works when the Row component is wrapped inside a Container component.
+
+<Playground>
+  <Container bordered flex minHeight="500px">
+    <Row bordered grow={2/5} content>2/5</Row>
+    <Row bordered grow={1/5} content>1/5</Row>
+    <Row bordered grow={2/5} content>2/5</Row>
+  </Container>
+</Playground>
+
+## Warnings
+
+Row is a component part of the grid system of this library. Detailed info about the other grid components can be found on this pages:
+
+- [Grid System](/#grid-system)
+- [Container](/container)
+- [Container](/view)
+- [Col](/col)
+
+**bordered prop is just for debug use;*
+
+**content prop is to set a internal padding from theme, useful right?*
+
+<div>
+  <Row bordered content/>
+</div>

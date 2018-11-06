@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a overlay 1`] = `
-<Overlay
+exports[`should render a Container 1`] = `
+<Container
+  full={false}
+  height="auto"
+  maxHeight="auto"
+  maxWidth="auto"
+  minHeight="auto"
+  minWidth="auto"
   theme={
     Object {
       "color": Object {
@@ -31,9 +37,15 @@ exports[`should render a overlay 1`] = `
       },
     }
   }
-  visible={false}
+  width="auto"
 >
-  <styled.aside
+  <styled.div
+    full={false}
+    height="auto"
+    maxHeight="auto"
+    maxWidth="auto"
+    minHeight="auto"
+    minWidth="auto"
     theme={
       Object {
         "color": Object {
@@ -63,11 +75,15 @@ exports[`should render a overlay 1`] = `
         },
       }
     }
-    visible={false}
+    width="auto"
   >
-    <aside
-      className="sc-bdVaJa clktxK"
-    />
-  </styled.aside>
-</Overlay>
+    <div
+      className="sc-bdVaJa eGlEDl"
+      height="auto"
+      width="auto"
+    >
+      container
+    </div>
+  </styled.div>
+</Container>
 `;

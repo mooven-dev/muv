@@ -13,7 +13,7 @@ const shape = {
   shadow: `0 .25rem .25rem 0 ${color.overlay}`,
   border: `.125rem solid ${color.overlay}`,
   padding: '.825rem 1.2rem',
-  margin: '.25rem 0',
+  margin: '.25rem .125rem',
   radius: '.25rem',
   base: '1rem',
 };

@@ -22,7 +22,7 @@ exports[`should change its style on secondary 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -58,7 +58,7 @@ exports[`should change its style on secondary 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -107,7 +107,7 @@ exports[`should change its style on success 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -143,7 +143,7 @@ exports[`should change its style on success 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -191,7 +191,7 @@ exports[`should change its style on warn 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -227,7 +227,7 @@ exports[`should change its style on warn 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -276,7 +276,7 @@ exports[`should render a anchor 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -311,7 +311,7 @@ exports[`should render a anchor 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -359,7 +359,7 @@ exports[`should render a button 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -394,7 +394,7 @@ exports[`should render a button 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",

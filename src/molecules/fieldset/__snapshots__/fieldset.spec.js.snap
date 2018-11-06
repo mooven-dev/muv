@@ -20,7 +20,7 @@ exports[`should render a fieldset 1`] = `
       "shape": Object {
         "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem 0",
+        "margin": ".25rem .125rem",
         "padding": ".825rem 1.2rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -52,7 +52,7 @@ exports[`should render a fieldset 1`] = `
         "shape": Object {
           "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem 0",
+          "margin": ".25rem .125rem",
           "padding": ".825rem 1.2rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -68,7 +68,7 @@ exports[`should render a fieldset 1`] = `
     }
   >
     <fieldset
-      className="sc-dnqmqq eYsipw"
+      className="sc-dnqmqq gyHpke"
     >
       <Text
         align="left"
@@ -89,7 +89,7 @@ exports[`should render a fieldset 1`] = `
             "shape": Object {
               "base": "1rem",
               "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "margin": ".25rem 0",
+              "margin": ".25rem .125rem",
               "padding": ".825rem 1.2rem",
               "radius": ".25rem",
               "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -125,7 +125,7 @@ exports[`should render a fieldset 1`] = `
               "shape": Object {
                 "base": "1rem",
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "margin": ".25rem 0",
+                "margin": ".25rem .125rem",
                 "padding": ".825rem 1.2rem",
                 "radius": ".25rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -142,7 +142,7 @@ exports[`should render a fieldset 1`] = `
           transform="capitalize"
         >
           <p
-            className="sc-bwzfXH dRxSDs"
+            className="sc-bwzfXH exLwDr"
             label={true}
             transform="capitalize"
           >
@@ -171,7 +171,7 @@ exports[`should render a fieldset 1`] = `
             "shape": Object {
               "base": "1rem",
               "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "margin": ".25rem 0",
+              "margin": ".25rem .125rem",
               "padding": ".825rem 1.2rem",
               "radius": ".25rem",
               "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -208,7 +208,7 @@ exports[`should render a fieldset 1`] = `
               "shape": Object {
                 "base": "1rem",
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "margin": ".25rem 0",
+                "margin": ".25rem .125rem",
                 "padding": ".825rem 1.2rem",
                 "radius": ".25rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -226,7 +226,7 @@ exports[`should render a fieldset 1`] = `
           warn={false}
         >
           <input
-            className="sc-bdVaJa bpbGmI"
+            className="sc-bdVaJa joRTBB"
             disabled={false}
             placeholder="placeholder"
             required={false}
@@ -254,7 +254,7 @@ exports[`should render a fieldset 1`] = `
             "shape": Object {
               "base": "1rem",
               "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "margin": ".25rem 0",
+              "margin": ".25rem .125rem",
               "padding": ".825rem 1.2rem",
               "radius": ".25rem",
               "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -291,7 +291,7 @@ exports[`should render a fieldset 1`] = `
               "shape": Object {
                 "base": "1rem",
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "margin": ".25rem 0",
+                "margin": ".25rem .125rem",
                 "padding": ".825rem 1.2rem",
                 "radius": ".25rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -308,7 +308,7 @@ exports[`should render a fieldset 1`] = `
           transform="normal"
         >
           <p
-            className="sc-bwzfXH lcQmfk"
+            className="sc-bwzfXH bjGlFl"
             label={false}
             transform="normal"
           >

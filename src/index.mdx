@@ -4,6 +4,13 @@ name: Getting Started
 route: /
 ---
 
+import { Playground } from 'docz';
+
+import Container from './atoms/container';
+import Text from './atoms/text';
+import Row from './atoms/row';
+import Col from './atoms/col';
+
 # **M**ooven **U**niversal **V**iews
 
 ## Installation
@@ -23,7 +30,33 @@ Thats all!
 Look at the component list below to know what to use and how!
 
 
+## Inline Style Logic
+
+Some components uses a "inline style" logic to customize its styles. 
+
+In this cases, it will provide some props that have the same name of CSS properties.
+
+⧩
+
+For example, the [Container](/view) component can receive a maxWidth prop to change its style directly.
+
+<Playground>
+  <Container bordered maxWidth='50%'>50%</Container>
+  <Container bordered maxWidth='200px'>200px</Container>
+</Playground>
+
+
+## Grid System
+
+- [Container](/container)
+- [Row](/row)
+- [Col](/col)
+
+
 ## ATOMS
+- [Container](/container)
+- [Col](/col)
+- [Row](/row)
 - [Overlay](/overlay)
 - [Input](/input)
 - [Link](/link)
@@ -56,7 +89,11 @@ Remember to import a component from the list available on this documentation:
 
 You can create your own component this way:
 
-`const MyComponent = style.p`` `
+`const StyledDiv = style.div`` `
+
+And use it anywhere, preserving its style:
+
+`<StyledDiv>My awesome content</StyledDiv> `
 
 More documentation can be found on [styled-components](https://www.styled-components.com/).
 

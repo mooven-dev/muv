@@ -9,6 +9,9 @@
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 // ATOMS
+import Container from './atoms/container';
+import Col from './atoms/col';
+import Row from './atoms/row';
 import Overlay from './atoms/overlay';
 import Input from './atoms/input';
 import Link from './atoms/link';
@@ -29,6 +32,9 @@ export {
   ThemeProvider,
   injectGlobal,
   // COMPONENTS
+  Container,
+  Col,
+  Row,
   Fieldset,
   Overlay,
   Modal,

@@ -1,0 +1,160 @@
+
+---
+menu: Atoms
+name: Col
+route: /col
+---
+
+import { Playground, PropsTable } from 'docz';
+import Container from '../container';
+import Text from '../text';
+import Row from '../row';
+import Col from '../col';
+
+# Col
+
+## Use cases
+
+A Col is a simple component that organizes the content vertically.
+<div>
+  <Col bordered content>
+    <Text/>
+    <Text primary/>
+    <Text secondary/>
+  </Col>
+</div>
+
+Combine with Row and Container components to build complex layouts.
+
+<div>
+  <Row bordered>
+    <Col bordered content/>
+    <Col bordered content/>
+    <Col bordered content/>
+  </Row>
+</div>
+<br />
+<div>
+  <Container bordered maxWidth="50%">
+    <Row bordered content/>
+    <Row bordered>
+      <Col bordered content/>
+      <Col bordered content/>
+    </Row>
+  </Container>
+</div>
+
+## PropsTable
+
+<PropsTable of={Col} />
+
+## Playground
+
+<Playground>
+  <Container bordered maxWidth="50%">
+    <Row bordered content/>
+    <Row bordered>
+      <Col bordered content/>
+      <Col bordered content/>
+    </Row>
+  </Container>
+</Playground>
+
+## justify:string
+
+Use this props to change how the blank space between children elements is distributed vertically.
+
+<Playground>
+  <Container bordered flex minHeight="300px">
+    <Row bordered>
+      <Col bordered content>
+        <Text/>
+        <Text primary/>
+        <Text secondary/>
+      </Col>
+      <br />
+      <Col bordered content justify="center">
+        <Text>center</Text>
+        <Text primary>center</Text>
+        <Text secondary>center</Text>
+      </Col>
+      <br />
+      <Col bordered content justify="flex-end">
+        <Text>flex-end</Text>
+        <Text primary>flex-end</Text>
+        <Text secondary>flex-end</Text>
+      </Col>
+      <br />
+      <Col bordered content justify="space-around">
+        <Text>space-around</Text>
+        <Text primary>space-around</Text>
+        <Text secondary>space-around</Text>
+      </Col>
+      <br />
+      <Col bordered content justify="space-between">
+        <Text>space-between</Text>
+        <Text primary>space-between</Text>
+        <Text secondary>space-between</Text>
+      </Col>
+    </Row>
+  </Container>
+</Playground>
+
+## align:string
+
+Use this props to change how the blank space between children elements is distributed horizontally.
+
+<Playground>
+  <Col bordered content>
+    <Text/>
+    <Text primary/>
+    <Text secondary/>
+  </Col>
+  <br />
+  <Col bordered content align="center">
+    <Text>center</Text>
+    <Text primary>center</Text>
+    <Text secondary>center</Text>
+  </Col>
+  <br />
+  <Col bordered content align="flex-end">
+    <Text>flex-end</Text>
+    <Text primary>flex-end</Text>
+    <Text secondary>flex-end</Text>
+  </Col>
+</Playground>
+
+## grow:number
+
+Use this props to set the flex-grow of your Col component.
+
+By default, this property is set as 1. Changing it, you can shape how much space a Col will take from the parent.
+
+The suggestion is to pass this props as a fraction, for example (element/parent), so 2/6 represents that this component will fit 2 parts of his parent and assume that the parent has 6 available parts.
+
+**IMPORTANT**: Just works when the Col component is wrapped inside a Row component.
+
+<Playground>
+  <Row bordered flex minHeight="250px">
+    <Col bordered content grow={2/5}>2/5</Col>
+    <Col bordered content grow={1/5}>1/5</Col>
+    <Col bordered content grow={2/5}>2/5</Col>
+  </Row>
+</Playground>
+
+## Warnings
+
+Col is a component part of the grid system of this library. Detailed info about the other grid components can be found on this pages:
+
+- [Grid System](/#grid-system)
+- [Container](/container)
+- [Container](/view)
+- [Row](/row)
+
+**bordered prop is just for debug use;*
+
+**content prop is to set a internal padding from theme, useful right?*
+
+<div>
+  <Col bordered content/>
+</div>

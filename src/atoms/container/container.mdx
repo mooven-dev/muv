@@ -1,0 +1,74 @@
+
+---
+menu: Atoms
+name: Container
+route: /view
+---
+
+import { Playground, PropsTable } from 'docz';
+import Container from '../container';
+import Text from '../text';
+import Row from '../row';
+import Col from '../col';
+
+# Container
+
+## Use cases
+
+Container is the most simple content component, useful to create layouts as:
+
+<div>
+  <Container bordered>
+    <Col bordered content/>
+  </Container>
+</div>
+
+Combine Container with Col and Row component to create more complex layouts.
+
+<div>
+  <Container bordered>
+    <Row bordered>
+      <Col bordered content/>
+      <Col bordered content/>
+    </Row>
+  </Container>
+</div>
+
+You can create containers using Container, giving to then maximum or minimum size through this props.
+
+<div>
+  <Container bordered content maxWidth='50%' minHeight='10vh' />
+</div>
+
+## PropsTable
+
+<PropsTable of={Container} />
+
+## Playground
+
+<Playground>
+  <Container flex bordered maxWidth='50%' minHeight='20vh'>
+    <Row bordered>
+      <Col bordered content/>
+      <Col bordered content/>
+    </Row>
+    <Row bordered content/>
+  </Container>
+</Playground>
+
+## Warnings
+
+Container is a component part of the grid system of this library. Detailed info about the other grid components can be found on this pages:
+
+- [Grid System](/#grid-system)
+- [Container](/container)
+- [Col](/col)
+- [Row](/row)
+
+**bordered prop is just for debug use;*
+
+**content prop is to set a internal padding from theme, useful right?*
+
+<div>
+  <Container bordered content/>
+</div>
