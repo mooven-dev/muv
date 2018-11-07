@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a overlay 1`] = `
-<Overlay
+exports[`should render a select 1`] = `
+<Select
   theme={
     Object {
       "color": Object {
@@ -32,9 +32,8 @@ exports[`should render a overlay 1`] = `
       },
     }
   }
-  visible={false}
 >
-  <styled.aside
+  <styled.p
     theme={
       Object {
         "color": Object {
@@ -65,11 +64,12 @@ exports[`should render a overlay 1`] = `
         },
       }
     }
-    visible={false}
   >
-    <aside
-      className="sc-bdVaJa clktxK"
-    />
-  </styled.aside>
-</Overlay>
+    <p
+      className="sc-bdVaJa raiIJ"
+    >
+      default
+    </p>
+  </styled.p>
+</Select>
 `;

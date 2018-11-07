@@ -19,6 +19,7 @@ import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
+import Select from './molecules/select';
 import Fieldset from './molecules/fieldset';
 import Modal from './molecules/modal';
 
@@ -32,6 +33,7 @@ export {
   ThemeProvider,
   injectGlobal,
   // COMPONENTS
+  Select,
   Container,
   Col,
   Row,

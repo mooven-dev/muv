@@ -9,6 +9,7 @@ exports[`should change its content concerning the type 1`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -45,6 +46,7 @@ exports[`should change its content concerning the type 1`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -92,6 +94,7 @@ exports[`should change its content concerning the type 2`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -128,6 +131,7 @@ exports[`should change its content concerning the type 2`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -175,6 +179,7 @@ exports[`should change its content concerning the type 3`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -211,6 +216,7 @@ exports[`should change its content concerning the type 3`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -258,6 +264,7 @@ exports[`should change its content concerning the type 4`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -294,6 +301,7 @@ exports[`should change its content concerning the type 4`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -341,6 +349,7 @@ exports[`should change its content concerning the type 5`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -377,6 +386,7 @@ exports[`should change its content concerning the type 5`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -424,6 +434,7 @@ exports[`should change its content concerning the type 6`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -460,6 +471,7 @@ exports[`should change its content concerning the type 6`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -507,6 +519,7 @@ exports[`should change its style if strong 1`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -543,6 +556,7 @@ exports[`should change its style if strong 1`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -591,6 +605,7 @@ exports[`should change its style on primary 1`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -628,6 +643,7 @@ exports[`should change its style on primary 1`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -676,6 +692,7 @@ exports[`should change its style on secondary 1`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -713,6 +730,7 @@ exports[`should change its style on secondary 1`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -761,6 +779,7 @@ exports[`should change its style on success 1`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -798,6 +817,7 @@ exports[`should change its style on success 1`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -845,6 +865,7 @@ exports[`should change its style on warn 1`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -882,6 +903,7 @@ exports[`should change its style on warn 1`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",
@@ -930,6 +952,7 @@ exports[`should render a text 1`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -966,6 +989,7 @@ exports[`should render a text 1`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",

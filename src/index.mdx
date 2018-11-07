@@ -13,6 +13,11 @@ import Col from './atoms/col';
 
 # **M**ooven **U**niversal **V**iews
 
+
+## Intro
+
+⁞
+
 ## Installation
 
 Run this command on your project folder:
@@ -23,12 +28,48 @@ Then import the module anywhere to use the components:
 
 `import styled, { Text, Button } from 'muv';`
 
-⧩
+⁞
 
 Thats all! 
 
 Look at the component list below to know what to use and how!
 
+⁞
+
+## Default Theme
+
+⁞
+
+## Color Props
+
+Some components can receive prop that extends that change it according to some color of the theme.
+
+For example, to sets a Container component to the primary color of the theme, just add a primary prop on it, like this:
+
+`<Container primary></Container>`
+
+The same is valid for the following list of color variables:
+
+- primary
+- secondary
+- error
+- warn
+- success
+- black
+- white
+- gray
+- overlay
+
+The following components as known to accept this group of props:
+
+- Container
+- Button
+- Link
+- Text
+- Input
+
+There are some components that accepts different props to changes its style, more info is available in its own documentation.
+⁞
 
 ## Inline Style Logic
 
@@ -36,15 +77,17 @@ Some components uses a "inline style" logic to customize its styles.
 
 In this cases, it will provide some props that have the same name of CSS properties.
 
-⧩
+⁞
 
 For example, the [Container](/view) component can receive a maxWidth prop to change its style directly.
 
 <Playground>
-  <Container bordered maxWidth='50%'>50%</Container>
-  <Container bordered maxWidth='200px'>200px</Container>
+  <Container bordered content maxWidth='50%'>50%</Container>
+  <br/>
+  <Container bordered content maxWidth='200px'>200px</Container>
 </Playground>
 
+⁞
 
 ## Grid System
 
@@ -52,8 +95,9 @@ For example, the [Container](/view) component can receive a maxWidth prop to cha
 - [Row](/row)
 - [Col](/col)
 
+⁞
 
-## ATOMS
+## Components: Atoms
 - [Container](/container)
 - [Col](/col)
 - [Row](/row)
@@ -63,13 +107,22 @@ For example, the [Container](/view) component can receive a maxWidth prop to cha
 - [Button](/button)
 - [Text](/text)
 
-## MOLECULES
+⁞
+
+## Components: Molecules
+- [Select](/select)
 - [Fieldset](/fieldset)
 - [Modal](/modal)
 
-## ORGANISMS
+⁞
 
-## TEMPLATES
+## Components: Organisms
+
+⁞
+
+## Components: Templates
+
+⁞
 
 ## Advanced
 
@@ -79,13 +132,13 @@ To style MUV components or create your own, just import MUV like the follow:
 
 `import styled, { Text, Button } from 'muv';`
 
-⧩
+⁞
 
 Remember to import a component from the list available on this documentation:
 
 [ATOMS](/#atoms) | [MOLECULES](/#molecules) | [ORGANISMS](/#organisms) | [TEMPLATES](/#templates)
 
-⧩
+⁞
 
 You can create your own component this way:
 
@@ -97,7 +150,7 @@ And use it anywhere, preserving its style:
 
 More documentation can be found on [styled-components](https://www.styled-components.com/).
 
-⧩
+⁞
 
 There are another way to style MUV components, is using a Theme prop that can  be passad directly or through a ThemeProvider.
 
@@ -109,6 +162,6 @@ Then passing it arround your application, like the Provider from Redux.
 
 For more info, please visit the complete documentation on [styled-components](https://www.styled-components.com/docs/advanced).
 
-⧩
+⁞
 
 **IMPORTANT**: do not install styled-component in your application, just use the styled methods exported by MUV.

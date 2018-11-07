@@ -12,6 +12,7 @@ exports[`should render a Container 1`] = `
     Object {
       "color": Object {
         "black": "#484848",
+        "error": "#dd3333",
         "gray": "#f0f0f0",
         "overlay": "rgba(0, 0, 0, .15)",
         "primary": "#0082c8",
@@ -50,6 +51,7 @@ exports[`should render a Container 1`] = `
       Object {
         "color": Object {
           "black": "#484848",
+          "error": "#dd3333",
           "gray": "#f0f0f0",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0082c8",

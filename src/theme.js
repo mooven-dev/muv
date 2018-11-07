@@ -5,6 +5,7 @@ const color = {
   success: '#33bb33',
   white: '#fefefe',
   black: '#484848',
+  error: '#dd3333',
   warn: '#dd3333',
   gray: '#f0f0f0',
 };
