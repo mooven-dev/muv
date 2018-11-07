@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "description": "mooven component lib",
   "main": "dist/muv.min.js",
+  "bin": {
+    "muv": "bin/muv.js"
+  },
   "scripts": {
     "start": "docz dev",
     "build": "webpack --progress",
-    "muv": "node ./factory/index.js",
+    "dev": "npm link && npm start",
     "lint": "eslint --fix src",
     "test": "jest",
     "test:update": "jest -u",
@@ -75,8 +78,8 @@
     "silent": true
   },
   "now": {
-    "alias": "muv-docs",
-    "name": "muv-docs",
+    "alias": "muv",
+    "name": "muv",
     "public": true,
     "type": "npm"
   },
