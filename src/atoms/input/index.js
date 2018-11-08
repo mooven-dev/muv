@@ -3,33 +3,13 @@ import { objectOf, bool, string } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
-import { setColor, disabledStyle } from '../../utils';
+import { inputStyle } from '../../utils';
 import themeDefault from '../../theme';
 
 // STYLES
 const StyledInput = styled.input`
-border: ${({ theme }) => theme.shape.border};
-border-color: ${props => setColor(props, props.theme.color.overlay)};
-border-radius: ${({ theme }) => theme.shape.radius};
-transition: ${({ theme }) => theme.transition.time};
-padding: ${({ theme }) => theme.shape.padding};
-font-size: ${({ theme }) => theme.shape.base};
-margin: ${({ theme }) => theme.shape.margin};
-color: ${({ theme }) => theme.text.color};
-display: inline-block;
-position: relative;
-width: 100%;
-&:focus {
-  border-color: ${props => setColor(props, props.theme.color.primary)};
-  box-shadow: ${({ theme }) => theme.shape.shadow};
-  outline: none;
-}
-&:not(:valid) {
-  border-color: ${props => props.theme.color.warn};
-}
-&:disabled {
-  ${disabledStyle}
-}
+${props => inputStyle(props)}
+
 `;
 
 // COMPONENT
@@ -49,8 +29,6 @@ Input.propTypes = {
   error: bool,
   /** prop to visualy show if input is correctly filled */
   success: bool,
-  /** same as html atribute, but giving a error feedback until filled */
-  required: bool,
   /** receive placeholder props */
   placeholder: string,
 };
@@ -59,7 +37,6 @@ Input.defaultProps = {
   placeholder: 'placeholder',
   theme: themeDefault,
   disabled: false,
-  required: false,
   success: false,
   error: false,
   type: 'text',

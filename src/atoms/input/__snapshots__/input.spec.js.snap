@@ -5,7 +5,6 @@ exports[`should change its style if disabled 1`] = `
   disabled={true}
   error={false}
   placeholder="placeholder"
-  required={false}
   success={false}
   theme={
     Object {
@@ -21,19 +20,19 @@ exports[`should change its style if disabled 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -42,7 +41,6 @@ exports[`should change its style if disabled 1`] = `
   <styled.input
     disabled={true}
     placeholder="placeholder"
-    required={false}
     success={false}
     theme={
       Object {
@@ -58,19 +56,19 @@ exports[`should change its style if disabled 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
@@ -78,10 +76,9 @@ exports[`should change its style if disabled 1`] = `
     warn={false}
   >
     <input
-      className="sc-bdVaJa joRTBB"
+      className="sc-bdVaJa jyVtbm"
       disabled={true}
       placeholder="placeholder"
-      required={false}
       type="text"
     />
   </styled.input>
@@ -109,19 +106,19 @@ exports[`should change its style if required 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -146,19 +143,19 @@ exports[`should change its style if required 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
@@ -166,7 +163,7 @@ exports[`should change its style if required 1`] = `
     warn={false}
   >
     <input
-      className="sc-bdVaJa joRTBB"
+      className="sc-bdVaJa jyVtbm"
       disabled={false}
       placeholder="placeholder"
       required={true}
@@ -181,7 +178,6 @@ exports[`should change its style on error 1`] = `
   disabled={false}
   error={true}
   placeholder="placeholder"
-  required={false}
   success={false}
   theme={
     Object {
@@ -197,19 +193,19 @@ exports[`should change its style on error 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -218,7 +214,6 @@ exports[`should change its style on error 1`] = `
   <styled.input
     disabled={false}
     placeholder="placeholder"
-    required={false}
     success={false}
     theme={
       Object {
@@ -234,19 +229,19 @@ exports[`should change its style on error 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
@@ -254,10 +249,9 @@ exports[`should change its style on error 1`] = `
     warn={true}
   >
     <input
-      className="sc-bdVaJa gbJXtR"
+      className="sc-bdVaJa hMBjjO"
       disabled={false}
       placeholder="placeholder"
-      required={false}
       type="text"
     />
   </styled.input>
@@ -269,7 +263,6 @@ exports[`should change its style on success 1`] = `
   disabled={false}
   error={false}
   placeholder="placeholder"
-  required={false}
   success={true}
   theme={
     Object {
@@ -285,19 +278,19 @@ exports[`should change its style on success 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -306,7 +299,6 @@ exports[`should change its style on success 1`] = `
   <styled.input
     disabled={false}
     placeholder="placeholder"
-    required={false}
     success={true}
     theme={
       Object {
@@ -322,19 +314,19 @@ exports[`should change its style on success 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
@@ -342,10 +334,9 @@ exports[`should change its style on success 1`] = `
     warn={false}
   >
     <input
-      className="sc-bdVaJa gbhcEo"
+      className="sc-bdVaJa gxWLUz"
       disabled={false}
       placeholder="placeholder"
-      required={false}
       type="text"
     />
   </styled.input>
@@ -357,7 +348,6 @@ exports[`should render a input 1`] = `
   disabled={false}
   error={false}
   placeholder="placeholder"
-  required={false}
   success={false}
   theme={
     Object {
@@ -373,19 +363,19 @@ exports[`should render a input 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -394,7 +384,6 @@ exports[`should render a input 1`] = `
   <styled.input
     disabled={false}
     placeholder="placeholder"
-    required={false}
     success={false}
     theme={
       Object {
@@ -410,19 +399,19 @@ exports[`should render a input 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
@@ -430,10 +419,9 @@ exports[`should render a input 1`] = `
     warn={false}
   >
     <input
-      className="sc-bdVaJa joRTBB"
+      className="sc-bdVaJa jyVtbm"
       disabled={false}
       placeholder="placeholder"
-      required={false}
       type="text"
     />
   </styled.input>

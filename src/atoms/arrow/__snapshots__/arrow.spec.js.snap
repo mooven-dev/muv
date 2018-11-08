@@ -1,10 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a row 1`] = `
-<Row
-  align="stretch"
-  grow={1}
-  justify="flex-start"
+exports[`should render a arrow 1`] = `
+<Arrow
   theme={
     Object {
       "color": Object {
@@ -35,11 +32,9 @@ exports[`should render a row 1`] = `
       },
     }
   }
+  up={false}
 >
-  <Styled(Container)
-    align="stretch"
-    grow={1}
-    justify="flex-start"
+  <Styled(Text)
     theme={
       Object {
         "color": Object {
@@ -70,18 +65,14 @@ exports[`should render a row 1`] = `
         },
       }
     }
+    type="span"
+    up={false}
   >
-    <Container
-      align="stretch"
-      className="sc-bwzfXH jBHyaV"
-      full={false}
-      grow={1}
-      height="auto"
-      justify="flex-start"
-      maxHeight="auto"
-      maxWidth="auto"
-      minHeight="auto"
-      minWidth="auto"
+    <Text
+      align="left"
+      className="sc-htoDjs hEAdvI"
+      label={false}
+      strong={false}
       theme={
         Object {
           "color": Object {
@@ -112,19 +103,15 @@ exports[`should render a row 1`] = `
           },
         }
       }
-      width="auto"
+      transform="none"
+      type="span"
+      up={false}
     >
-      <styled.div
-        align="stretch"
-        className="sc-bwzfXH jBHyaV"
-        full={false}
-        grow={1}
-        height="auto"
-        justify="flex-start"
-        maxHeight="auto"
-        maxWidth="auto"
-        minHeight="auto"
-        minWidth="auto"
+      <styled.span
+        align="left"
+        className="sc-htoDjs hEAdvI"
+        label={false}
+        strong={false}
         theme={
           Object {
             "color": Object {
@@ -155,17 +142,18 @@ exports[`should render a row 1`] = `
             },
           }
         }
-        width="auto"
+        transform="none"
+        up={false}
       >
-        <div
-          className="sc-bwzfXH jBHyaV sc-bdVaJa eGlEDl"
-          height="auto"
-          width="auto"
+        <span
+          className="sc-htoDjs hEAdvI sc-bwzfXH daCHbB"
+          label={false}
+          transform="none"
         >
-          row
-        </div>
-      </styled.div>
-    </Container>
-  </Styled(Container)>
-</Row>
+          ◄
+        </span>
+      </styled.span>
+    </Text>
+  </Styled(Text)>
+</Arrow>
 `;

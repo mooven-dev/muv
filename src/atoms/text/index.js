@@ -105,7 +105,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  transform: 'normal',
+  transform: 'none',
   children: 'default',
   theme: themeDefault,
   strong: false,

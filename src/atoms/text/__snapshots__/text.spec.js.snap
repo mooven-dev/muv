@@ -19,23 +19,23 @@ exports[`should change its content concerning the type 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type="h1"
 >
   <styled.h1
@@ -56,28 +56,28 @@ exports[`should change its content concerning the type 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <h1
-      className="sc-htpNat clpkGo"
+      className="sc-htpNat ioWKrK"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </h1>
@@ -104,23 +104,23 @@ exports[`should change its content concerning the type 2`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type="h2"
 >
   <styled.h2
@@ -141,28 +141,28 @@ exports[`should change its content concerning the type 2`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <h2
-      className="sc-bxivhb imVoGD"
+      className="sc-bxivhb Bjdhb"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </h2>
@@ -189,23 +189,23 @@ exports[`should change its content concerning the type 3`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type="h3"
 >
   <styled.h3
@@ -226,28 +226,28 @@ exports[`should change its content concerning the type 3`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <h3
-      className="sc-ifAKCX kMguy"
+      className="sc-ifAKCX jcUeAt"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </h3>
@@ -274,23 +274,23 @@ exports[`should change its content concerning the type 4`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type="h4"
 >
   <styled.h4
@@ -311,28 +311,28 @@ exports[`should change its content concerning the type 4`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <h4
-      className="sc-EHOje irSNBG"
+      className="sc-EHOje iwTRAn"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </h4>
@@ -359,23 +359,23 @@ exports[`should change its content concerning the type 5`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type="h5"
 >
   <styled.h5
@@ -396,28 +396,28 @@ exports[`should change its content concerning the type 5`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <h5
-      className="sc-bZQynM bnaBhs"
+      className="sc-bZQynM geSjRL"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </h5>
@@ -444,23 +444,23 @@ exports[`should change its content concerning the type 6`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type="h6"
 >
   <styled.h6
@@ -481,28 +481,28 @@ exports[`should change its content concerning the type 6`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <h6
-      className="sc-gzVnrw jQTwaD"
+      className="sc-gzVnrw otBkM"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </h6>
@@ -529,23 +529,23 @@ exports[`should change its style if strong 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type=""
 >
   <styled.p
@@ -566,28 +566,28 @@ exports[`should change its style if strong 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <p
-      className="sc-bdVaJa hNDhZz"
+      className="sc-bdVaJa gbaNEY"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </p>
@@ -615,23 +615,23 @@ exports[`should change its style on primary 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type=""
 >
   <styled.p
@@ -653,28 +653,28 @@ exports[`should change its style on primary 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <p
-      className="sc-bdVaJa MKBMS"
+      className="sc-bdVaJa dpLaSA"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </p>
@@ -702,23 +702,23 @@ exports[`should change its style on secondary 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type=""
 >
   <styled.p
@@ -740,28 +740,28 @@ exports[`should change its style on secondary 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <p
-      className="sc-bdVaJa kMYrQE"
+      className="sc-bdVaJa cEmXqb"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </p>
@@ -789,23 +789,23 @@ exports[`should change its style on success 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type=""
 >
   <styled.p
@@ -827,28 +827,28 @@ exports[`should change its style on success 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <p
-      className="sc-bdVaJa eAekuO"
+      className="sc-bdVaJa iWuuOf"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </p>
@@ -875,23 +875,23 @@ exports[`should change its style on warn 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type=""
   warn={true}
 >
@@ -913,29 +913,29 @@ exports[`should change its style on warn 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
     warn={true}
   >
     <p
-      className="sc-bdVaJa eznnO"
+      className="sc-bdVaJa dQjvHT"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </p>
@@ -962,23 +962,23 @@ exports[`should render a text 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
-  transform="normal"
+  transform="none"
   type=""
 >
   <styled.p
@@ -999,28 +999,28 @@ exports[`should render a text 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
-    transform="normal"
+    transform="none"
   >
     <p
-      className="sc-bdVaJa jQvpMf"
+      className="sc-bdVaJa eaIhdW"
       label={false}
-      transform="normal"
+      transform="none"
     >
       default
     </p>

@@ -13,19 +13,19 @@ const color = {
 const shape = {
   shadow: `0 .25rem .25rem 0 ${color.overlay}`,
   border: `.125rem solid ${color.overlay}`,
-  padding: '.825rem 1.2rem',
   margin: '.25rem .125rem',
+  padding: '.875rem 1rem',
   radius: '.25rem',
-  base: '1rem',
+  size: '1rem',
 };
 
 const text = {
   color: color.black,
-  size: shape.base,
+  size: shape.size,
 };
 
 const transition = {
-  time: '.2s ease',
+  time: '.3s ease',
 };
 
 export default {

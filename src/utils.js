@@ -14,7 +14,8 @@ export const setColor = ({
 }, defaultColor = theme.text.color) => {
   // the order matters, has a hierarchy
   if (outline || white) return theme.color.white;
-  if (warn || error) return theme.color.warn;
+  if (error) return theme.color.error;
+  if (warn) return theme.color.warn;
   if (success) return theme.color.success;
   if (primary) return theme.color.primary;
   if (secondary) return theme.color.secondary;
@@ -24,3 +25,26 @@ export const setColor = ({
   // defaults
   return defaultColor;
 };
+
+export const inputStyle = ({ theme, ...props }) => (`
+border: ${theme.shape.border};
+border-color: ${setColor({ theme, ...props }, theme.color.overlay)};
+border-radius: ${theme.shape.radius};
+transition: ${theme.transition.time};
+padding: ${theme.shape.padding};
+font-size: ${theme.shape.size};
+margin: ${theme.shape.margin};
+color: ${theme.text.color};
+display: inline-block;
+position: relative;
+cursor: pointer;
+width: 100%;
+&:focus {
+  border-color: ${setColor({ theme, ...props }, theme.color.primary)};
+  box-shadow: ${theme.shape.shadow};
+  outline: none;
+}
+&:disabled {
+  ${disabledStyle}
+}
+`);

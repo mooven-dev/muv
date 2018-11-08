@@ -22,7 +22,7 @@ export default {
   },
   styles: {
     body: {
-      fontSize: theme.shape.base,
+      fontSize: theme.shape.size,
     },
   },
 };

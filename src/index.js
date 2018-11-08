@@ -9,6 +9,8 @@
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 // ATOMS
+import Divider from './atoms/divider';
+import Arrow from './atoms/arrow';
 import Container from './atoms/container';
 import Col from './atoms/col';
 import Row from './atoms/row';
@@ -33,6 +35,8 @@ export {
   ThemeProvider,
   injectGlobal,
   // COMPONENTS
+  Divider,
+  Arrow,
   Select,
   Container,
   Col,

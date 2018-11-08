@@ -21,19 +21,19 @@ exports[`should change its style on outline 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -58,25 +58,25 @@ exports[`should change its style on outline 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
   >
     <a
-      className="sc-bwzfXH jRqdVA"
+      className="sc-bwzfXH jCIPow"
       disabled={false}
       href="#"
       onClick={null}
@@ -109,19 +109,19 @@ exports[`should change its style on success 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -147,25 +147,25 @@ exports[`should change its style on success 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
   >
     <a
-      className="sc-bwzfXH iiiyOc"
+      className="sc-bwzfXH eCQXRx"
       disabled={false}
       href="#"
       onClick={null}
@@ -197,19 +197,19 @@ exports[`should change its style on warn 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -235,26 +235,26 @@ exports[`should change its style on warn 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
     warn={true}
   >
     <a
-      className="sc-bwzfXH GIOPS"
+      className="sc-bwzfXH kZfngM"
       disabled={false}
       href="#"
       onClick={null}
@@ -286,19 +286,19 @@ exports[`should render a anchor 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -323,25 +323,25 @@ exports[`should render a anchor 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
   >
     <a
-      className="sc-bwzfXH gwTSxf"
+      className="sc-bwzfXH jHbLIW"
       disabled={false}
       href="#"
       onClick={null}
@@ -373,19 +373,19 @@ exports[`should render a button 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -410,25 +410,25 @@ exports[`should render a button 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
   >
     <button
-      className="sc-bdVaJa fFvgW"
+      className="sc-bdVaJa lcElGm"
       disabled={false}
       href={null}
       onClick={[Function]}

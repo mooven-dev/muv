@@ -14,7 +14,7 @@ border-radius: ${({ theme }) => theme.shape.radius};
 transition: ${({ theme }) => theme.transition.time};
 box-shadow: ${({ theme }) => theme.shape.shadow};
 background: ${({ theme }) => theme.color.white};
-padding: ${({ theme }) => theme.shape.base};
+padding: ${({ theme }) => theme.shape.size};
 `;
 
 // COMPONENT

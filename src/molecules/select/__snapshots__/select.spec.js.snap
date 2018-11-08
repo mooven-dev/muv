@@ -2,6 +2,25 @@
 
 exports[`should render a select 1`] = `
 <Select
+  onCancel={[Function]}
+  onConfirm={[Function]}
+  placeholder="Selecione..."
+  render={
+    Object {
+      "data": Array [
+        Object {
+          "char": "a",
+        },
+        Object {
+          "char": "b",
+        },
+      ],
+      "title": Array [
+        "a",
+        "b",
+      ],
+    }
+  }
   theme={
     Object {
       "color": Object {
@@ -16,60 +35,760 @@ exports[`should render a select 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
 >
-  <styled.p
-    theme={
-      Object {
-        "color": Object {
-          "black": "#484848",
-          "error": "#dd3333",
-          "gray": "#f0f0f0",
-          "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
-          "success": "#33bb33",
-          "warn": "#dd3333",
-          "white": "#fefefe",
-        },
-        "shape": Object {
-          "base": "1rem",
-          "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
-          "radius": ".25rem",
-          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
-        },
-        "transition": Object {
-          "time": ".2s ease",
-        },
-      }
-    }
-  >
-    <p
-      className="sc-bdVaJa raiIJ"
+  <styled.div>
+    <div
+      className="sc-gqjmRU bDPTKv"
     >
-      default
-    </p>
-  </styled.p>
+      <Styled(Text)
+        theme={
+          Object {
+            "color": Object {
+              "black": "#484848",
+              "error": "#dd3333",
+              "gray": "#f0f0f0",
+              "overlay": "rgba(0, 0, 0, .15)",
+              "primary": "#0082c8",
+              "secondary": "#00baf2",
+              "success": "#33bb33",
+              "warn": "#dd3333",
+              "white": "#fefefe",
+            },
+            "shape": Object {
+              "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "margin": ".25rem .125rem",
+              "padding": ".875rem 1rem",
+              "radius": ".25rem",
+              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+              "size": "1rem",
+            },
+            "text": Object {
+              "color": "#484848",
+              "size": "1rem",
+            },
+            "transition": Object {
+              "time": ".3s ease",
+            },
+          }
+        }
+      >
+        <Text
+          align="left"
+          className="sc-iwsKbI faxcHL"
+          label={false}
+          strong={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#484848",
+                "error": "#dd3333",
+                "gray": "#f0f0f0",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0082c8",
+                "secondary": "#00baf2",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".875rem 1rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "1rem",
+              },
+              "text": Object {
+                "color": "#484848",
+                "size": "1rem",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            }
+          }
+          transform="none"
+          type=""
+        >
+          <styled.p
+            align="left"
+            className="sc-iwsKbI faxcHL"
+            label={false}
+            strong={false}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#484848",
+                  "error": "#dd3333",
+                  "gray": "#f0f0f0",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0082c8",
+                  "secondary": "#00baf2",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".875rem 1rem",
+                  "radius": ".25rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "1rem",
+                },
+                "text": Object {
+                  "color": "#484848",
+                  "size": "1rem",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
+            transform="none"
+          >
+            <p
+              className="sc-iwsKbI faxcHL sc-bdVaJa eaIhdW"
+              label={false}
+              transform="none"
+            >
+              Selecione...
+            </p>
+          </styled.p>
+        </Text>
+      </Styled(Text)>
+      <styled.button
+        length={2}
+        onBlur={[Function]}
+        onCancel={[Function]}
+        onClick={[Function]}
+        onConfirm={[Function]}
+        placeholder="Selecione..."
+        render={
+          Object {
+            "data": Array [
+              Object {
+                "char": "a",
+              },
+              Object {
+                "char": "b",
+              },
+            ],
+            "title": Array [
+              "a",
+              "b",
+            ],
+          }
+        }
+        selected={false}
+        theme={
+          Object {
+            "color": Object {
+              "black": "#484848",
+              "error": "#dd3333",
+              "gray": "#f0f0f0",
+              "overlay": "rgba(0, 0, 0, .15)",
+              "primary": "#0082c8",
+              "secondary": "#00baf2",
+              "success": "#33bb33",
+              "warn": "#dd3333",
+              "white": "#fefefe",
+            },
+            "shape": Object {
+              "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "margin": ".25rem .125rem",
+              "padding": ".875rem 1rem",
+              "radius": ".25rem",
+              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+              "size": "1rem",
+            },
+            "text": Object {
+              "color": "#484848",
+              "size": "1rem",
+            },
+            "transition": Object {
+              "time": ".3s ease",
+            },
+          }
+        }
+      >
+        <button
+          className="sc-dnqmqq dbHBuH"
+          onBlur={[Function]}
+          onClick={[Function]}
+          placeholder="Selecione..."
+          selected={false}
+        >
+          <Styled(Text)
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#484848",
+                  "error": "#dd3333",
+                  "gray": "#f0f0f0",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0082c8",
+                  "secondary": "#00baf2",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".875rem 1rem",
+                  "radius": ".25rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "1rem",
+                },
+                "text": Object {
+                  "color": "#484848",
+                  "size": "1rem",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
+          >
+            <Text
+              align="left"
+              className="sc-iwsKbI faxcHL"
+              label={false}
+              strong={false}
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#484848",
+                    "error": "#dd3333",
+                    "gray": "#f0f0f0",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0082c8",
+                    "secondary": "#00baf2",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".875rem 1rem",
+                    "radius": ".25rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "1rem",
+                  },
+                  "text": Object {
+                    "color": "#484848",
+                    "size": "1rem",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              transform="none"
+              type=""
+            >
+              <styled.p
+                align="left"
+                className="sc-iwsKbI faxcHL"
+                label={false}
+                strong={false}
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#484848",
+                      "error": "#dd3333",
+                      "gray": "#f0f0f0",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0082c8",
+                      "secondary": "#00baf2",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".875rem 1rem",
+                      "radius": ".25rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "1rem",
+                    },
+                    "text": Object {
+                      "color": "#484848",
+                      "size": "1rem",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+                transform="none"
+              >
+                <p
+                  className="sc-iwsKbI faxcHL sc-bdVaJa eaIhdW"
+                  label={false}
+                  transform="none"
+                >
+                  Selecione...
+                </p>
+              </styled.p>
+            </Text>
+          </Styled(Text)>
+          <Styled(Text)
+            key="a"
+            onClick={[Function]}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#484848",
+                  "error": "#dd3333",
+                  "gray": "#f0f0f0",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0082c8",
+                  "secondary": "#00baf2",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".875rem 1rem",
+                  "radius": ".25rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "1rem",
+                },
+                "text": Object {
+                  "color": "#484848",
+                  "size": "1rem",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
+          >
+            <Text
+              align="left"
+              className="sc-iwsKbI faxcHL"
+              label={false}
+              onClick={[Function]}
+              strong={false}
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#484848",
+                    "error": "#dd3333",
+                    "gray": "#f0f0f0",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0082c8",
+                    "secondary": "#00baf2",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".875rem 1rem",
+                    "radius": ".25rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "1rem",
+                  },
+                  "text": Object {
+                    "color": "#484848",
+                    "size": "1rem",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              transform="none"
+              type=""
+            >
+              <styled.p
+                align="left"
+                className="sc-iwsKbI faxcHL"
+                label={false}
+                onClick={[Function]}
+                strong={false}
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#484848",
+                      "error": "#dd3333",
+                      "gray": "#f0f0f0",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0082c8",
+                      "secondary": "#00baf2",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".875rem 1rem",
+                      "radius": ".25rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "1rem",
+                    },
+                    "text": Object {
+                      "color": "#484848",
+                      "size": "1rem",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+                transform="none"
+              >
+                <p
+                  className="sc-iwsKbI faxcHL sc-bdVaJa eaIhdW"
+                  label={false}
+                  onClick={[Function]}
+                  transform="none"
+                >
+                  a
+                </p>
+              </styled.p>
+            </Text>
+          </Styled(Text)>
+          <Styled(Text)
+            key="b"
+            onClick={[Function]}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#484848",
+                  "error": "#dd3333",
+                  "gray": "#f0f0f0",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0082c8",
+                  "secondary": "#00baf2",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".875rem 1rem",
+                  "radius": ".25rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "1rem",
+                },
+                "text": Object {
+                  "color": "#484848",
+                  "size": "1rem",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
+          >
+            <Text
+              align="left"
+              className="sc-iwsKbI faxcHL"
+              label={false}
+              onClick={[Function]}
+              strong={false}
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#484848",
+                    "error": "#dd3333",
+                    "gray": "#f0f0f0",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0082c8",
+                    "secondary": "#00baf2",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".875rem 1rem",
+                    "radius": ".25rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "1rem",
+                  },
+                  "text": Object {
+                    "color": "#484848",
+                    "size": "1rem",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              transform="none"
+              type=""
+            >
+              <styled.p
+                align="left"
+                className="sc-iwsKbI faxcHL"
+                label={false}
+                onClick={[Function]}
+                strong={false}
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#484848",
+                      "error": "#dd3333",
+                      "gray": "#f0f0f0",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0082c8",
+                      "secondary": "#00baf2",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".875rem 1rem",
+                      "radius": ".25rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "1rem",
+                    },
+                    "text": Object {
+                      "color": "#484848",
+                      "size": "1rem",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+                transform="none"
+              >
+                <p
+                  className="sc-iwsKbI faxcHL sc-bdVaJa eaIhdW"
+                  label={false}
+                  onClick={[Function]}
+                  transform="none"
+                >
+                  b
+                </p>
+              </styled.p>
+            </Text>
+          </Styled(Text)>
+          <Styled(Arrow)
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#484848",
+                  "error": "#dd3333",
+                  "gray": "#f0f0f0",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0082c8",
+                  "secondary": "#00baf2",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".875rem 1rem",
+                  "radius": ".25rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "1rem",
+                },
+                "text": Object {
+                  "color": "#484848",
+                  "size": "1rem",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
+          >
+            <Arrow
+              className="sc-gZMcBi jEkrVi"
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#484848",
+                    "error": "#dd3333",
+                    "gray": "#f0f0f0",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0082c8",
+                    "secondary": "#00baf2",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".875rem 1rem",
+                    "radius": ".25rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "1rem",
+                  },
+                  "text": Object {
+                    "color": "#484848",
+                    "size": "1rem",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              up={false}
+            >
+              <Styled(Text)
+                className="sc-gZMcBi jEkrVi"
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#484848",
+                      "error": "#dd3333",
+                      "gray": "#f0f0f0",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0082c8",
+                      "secondary": "#00baf2",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".875rem 1rem",
+                      "radius": ".25rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "1rem",
+                    },
+                    "text": Object {
+                      "color": "#484848",
+                      "size": "1rem",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+                type="span"
+                up={false}
+              >
+                <Text
+                  align="left"
+                  className="sc-gZMcBi jEkrVi sc-htoDjs hEAdvI"
+                  label={false}
+                  strong={false}
+                  theme={
+                    Object {
+                      "color": Object {
+                        "black": "#484848",
+                        "error": "#dd3333",
+                        "gray": "#f0f0f0",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0082c8",
+                        "secondary": "#00baf2",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".875rem 1rem",
+                        "radius": ".25rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "1rem",
+                      },
+                      "text": Object {
+                        "color": "#484848",
+                        "size": "1rem",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    }
+                  }
+                  transform="none"
+                  type="span"
+                  up={false}
+                >
+                  <styled.span
+                    align="left"
+                    className="sc-gZMcBi jEkrVi sc-htoDjs hEAdvI"
+                    label={false}
+                    strong={false}
+                    theme={
+                      Object {
+                        "color": Object {
+                          "black": "#484848",
+                          "error": "#dd3333",
+                          "gray": "#f0f0f0",
+                          "overlay": "rgba(0, 0, 0, .15)",
+                          "primary": "#0082c8",
+                          "secondary": "#00baf2",
+                          "success": "#33bb33",
+                          "warn": "#dd3333",
+                          "white": "#fefefe",
+                        },
+                        "shape": Object {
+                          "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "margin": ".25rem .125rem",
+                          "padding": ".875rem 1rem",
+                          "radius": ".25rem",
+                          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                          "size": "1rem",
+                        },
+                        "text": Object {
+                          "color": "#484848",
+                          "size": "1rem",
+                        },
+                        "transition": Object {
+                          "time": ".3s ease",
+                        },
+                      }
+                    }
+                    transform="none"
+                    up={false}
+                  >
+                    <span
+                      className="sc-gZMcBi jEkrVi sc-htoDjs hEAdvI sc-bwzfXH daCHbB"
+                      label={false}
+                      transform="none"
+                    >
+                      ◄
+                    </span>
+                  </styled.span>
+                </Text>
+              </Styled(Text)>
+            </Arrow>
+          </Styled(Arrow)>
+        </button>
+      </styled.button>
+    </div>
+  </styled.div>
 </Select>
 `;

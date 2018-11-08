@@ -22,19 +22,19 @@ exports[`should render a Container 1`] = `
         "white": "#fefefe",
       },
       "shape": Object {
-        "base": "1rem",
         "border": ".125rem solid rgba(0, 0, 0, .15)",
         "margin": ".25rem .125rem",
-        "padding": ".825rem 1.2rem",
+        "padding": ".875rem 1rem",
         "radius": ".25rem",
         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+        "size": "1rem",
       },
       "text": Object {
         "color": "#484848",
         "size": "1rem",
       },
       "transition": Object {
-        "time": ".2s ease",
+        "time": ".3s ease",
       },
     }
   }
@@ -61,19 +61,19 @@ exports[`should render a Container 1`] = `
           "white": "#fefefe",
         },
         "shape": Object {
-          "base": "1rem",
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".825rem 1.2rem",
+          "padding": ".875rem 1rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "1rem",
         },
         "text": Object {
           "color": "#484848",
           "size": "1rem",
         },
         "transition": Object {
-          "time": ".2s ease",
+          "time": ".3s ease",
         },
       }
     }
