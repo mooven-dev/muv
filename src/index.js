@@ -6,7 +6,7 @@
  */
 
 // EXTERNAL LIBS
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
+import styled, { ThemeProvider, injectGlobal, ServerStyleSheet } from 'styled-components';
 
 // ATOMS
 import Divider from './atoms/divider';
@@ -32,6 +32,7 @@ import Modal from './molecules/modal';
 // EXPORTS
 export default styled;
 export {
+  ServerStyleSheet,
   ThemeProvider,
   injectGlobal,
   // COMPONENTS

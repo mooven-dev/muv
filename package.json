@@ -1,6 +1,6 @@
 {
   "name": "muv",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "mooven component lib",
   "main": "dist/muv.min.js",
   "bin": {
@@ -76,12 +76,6 @@
       "test"
     ],
     "silent": true
-  },
-  "now": {
-    "alias": "muv",
-    "name": "muv",
-    "public": true,
-    "type": "npm"
   },
   "repository": {
     "type": "git",
