@@ -32,8 +32,10 @@ margin: ${theme.shape.margin};
 text-decoration: none;
 display: inline-block;
 text-align: center;
+font-weight: 600;
 cursor: pointer;
 line-height: 1;
+outline: none;
 width: 100%;
 ${disabled ? disabledStyle : ''}
 &:disabled {

@@ -16,6 +16,7 @@ text-decoration: underline;
 display: inline-block;
 cursor: pointer;
 line-height: 1;
+outline: none;
 padding: 0;
 margin: 0;
 border: 0;

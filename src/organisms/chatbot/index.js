@@ -6,31 +6,30 @@ import React from 'react';
 import themeDefault from '../../theme';
 
 // STYLES
-const Styled__COMPONENT__ = styled.p`
+const StyledChatbot = styled.p`
 color: ${({ theme }) => theme.color.primary};
 `;
 
-// THEME DEFAULT
-Styled__COMPONENT__.defaultProps = {
+StyledChatbot.defaultProps = {
   theme: themeDefault,
 };
 
 // COMPONENT
-const __COMPONENT__ = props => (
-  <Styled__COMPONENT__ {...props} />
+const Chatbot = props => (
+  <StyledChatbot {...props} />
 );
 
 // DOCUMENTATION
-__COMPONENT__.propTypes = {
+Chatbot.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
   theme: objectOf(objectOf(string)).isRequired,
 };
 
-__COMPONENT__.defaultProps = {
+Chatbot.defaultProps = {
   children: 'default',
 };
 
 // EXPORT
-export default __COMPONENT__;
+export default Chatbot;

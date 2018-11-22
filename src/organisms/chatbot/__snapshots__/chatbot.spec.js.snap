@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a divider 1`] = `
-<Divider>
-  <styled.hr
+exports[`should render a chatbot 1`] = `
+<Chatbot>
+  <styled.p
     theme={
       Object {
         "color": Object {
@@ -39,9 +39,11 @@ exports[`should render a divider 1`] = `
       }
     }
   >
-    <hr
-      className="sc-bdVaJa eLrOJG"
-    />
-  </styled.hr>
-</Divider>
+    <p
+      className="sc-bdVaJa vSNlF"
+    >
+      default
+    </p>
+  </styled.p>
+</Chatbot>
 `;

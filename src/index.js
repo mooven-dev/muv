@@ -9,6 +9,7 @@
 import styled, { ThemeProvider, injectGlobal, ServerStyleSheet } from 'styled-components';
 
 // ATOMS
+import Fab from './atoms/fab';
 import Divider from './atoms/divider';
 import Arrow from './atoms/arrow';
 import Container from './atoms/container';
@@ -26,6 +27,7 @@ import Fieldset from './molecules/fieldset';
 import Modal from './molecules/modal';
 
 // ORGANISMS
+import Chatbot from './organisms/chatbot';
 
 // TEMPLATES
 
@@ -47,6 +49,8 @@ export {
   ThemeProvider,
   injectGlobal,
   // COMPONENTS
+  Fab,
+  Chatbot,
   Divider,
   Arrow,
   Select,

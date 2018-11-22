@@ -1,15 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a row 1`] = `
-<Row
-  align="stretch"
-  grow={1}
-  justify="flex-start"
+exports[`should render a fab 1`] = `
+<Fab
+  onClick={[Function]}
 >
-  <Styled(Container)
-    align="stretch"
-    grow={1}
-    justify="flex-start"
+  <Styled(Button)
+    onClick={[Function]}
     theme={
       Object {
         "color": Object {
@@ -46,17 +42,13 @@ exports[`should render a row 1`] = `
       }
     }
   >
-    <Container
-      align="stretch"
-      className="sc-bwzfXH jBHyaV"
-      full={false}
-      grow={1}
-      height="auto"
-      justify="flex-start"
-      maxHeight="auto"
-      maxWidth="auto"
-      minHeight="auto"
-      minWidth="auto"
+    <Button
+      className="sc-htpNat lkXhbD"
+      disabled={false}
+      href={null}
+      onClick={[Function]}
+      outline={false}
+      secondary={false}
       theme={
         Object {
           "color": Object {
@@ -92,19 +84,14 @@ exports[`should render a row 1`] = `
           },
         }
       }
-      width="auto"
     >
-      <styled.div
-        align="stretch"
-        className="sc-bwzfXH jBHyaV"
-        full={false}
-        grow={1}
-        height="auto"
-        justify="flex-start"
-        maxHeight="auto"
-        maxWidth="auto"
-        minHeight="auto"
-        minWidth="auto"
+      <styled.button
+        className="sc-htpNat lkXhbD"
+        disabled={false}
+        href={null}
+        onClick={[Function]}
+        outline={false}
+        secondary={false}
         theme={
           Object {
             "color": Object {
@@ -140,17 +127,17 @@ exports[`should render a row 1`] = `
             },
           }
         }
-        width="auto"
       >
-        <div
-          className="sc-bwzfXH jBHyaV sc-bdVaJa eGlEDl"
-          height="auto"
-          width="auto"
+        <button
+          className="sc-htpNat lkXhbD sc-bdVaJa dsGtYH"
+          disabled={false}
+          href={null}
+          onClick={[Function]}
         >
-          row
-        </div>
-      </styled.div>
-    </Container>
-  </Styled(Container)>
-</Row>
+          FAB
+        </button>
+      </styled.button>
+    </Button>
+  </Styled(Button)>
+</Fab>
 `;

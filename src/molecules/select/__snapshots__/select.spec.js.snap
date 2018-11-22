@@ -46,6 +46,7 @@ exports[`should render a select 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -85,6 +86,7 @@ exports[`should render a select 1`] = `
             },
             "shape": Object {
               "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
               "padding": ".75rem .875rem",
               "radius": ".25rem",
@@ -125,6 +127,7 @@ exports[`should render a select 1`] = `
               },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
                 "radius": ".25rem",
@@ -167,6 +170,7 @@ exports[`should render a select 1`] = `
                 },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
                   "radius": ".25rem",
@@ -237,6 +241,7 @@ exports[`should render a select 1`] = `
             },
             "shape": Object {
               "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
               "padding": ".75rem .875rem",
               "radius": ".25rem",
@@ -280,6 +285,7 @@ exports[`should render a select 1`] = `
                 },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
                   "radius": ".25rem",
@@ -320,6 +326,7 @@ exports[`should render a select 1`] = `
                   },
                   "shape": Object {
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
                     "padding": ".75rem .875rem",
                     "radius": ".25rem",
@@ -362,6 +369,7 @@ exports[`should render a select 1`] = `
                     },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "padding": ".75rem .875rem",
                       "radius": ".25rem",
@@ -411,6 +419,7 @@ exports[`should render a select 1`] = `
                 },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
                   "radius": ".25rem",
@@ -452,6 +461,7 @@ exports[`should render a select 1`] = `
                   },
                   "shape": Object {
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
                     "padding": ".75rem .875rem",
                     "radius": ".25rem",
@@ -495,6 +505,7 @@ exports[`should render a select 1`] = `
                     },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "padding": ".75rem .875rem",
                       "radius": ".25rem",
@@ -545,6 +556,7 @@ exports[`should render a select 1`] = `
                 },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
                   "radius": ".25rem",
@@ -586,6 +598,7 @@ exports[`should render a select 1`] = `
                   },
                   "shape": Object {
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
                     "padding": ".75rem .875rem",
                     "radius": ".25rem",
@@ -629,6 +642,7 @@ exports[`should render a select 1`] = `
                     },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "padding": ".75rem .875rem",
                       "radius": ".25rem",
@@ -677,6 +691,7 @@ exports[`should render a select 1`] = `
                 },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
                   "radius": ".25rem",
@@ -714,6 +729,7 @@ exports[`should render a select 1`] = `
                   },
                   "shape": Object {
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
                     "padding": ".75rem .875rem",
                     "radius": ".25rem",
@@ -752,6 +768,7 @@ exports[`should render a select 1`] = `
                     },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "padding": ".75rem .875rem",
                       "radius": ".25rem",
@@ -794,6 +811,7 @@ exports[`should render a select 1`] = `
                       },
                       "shape": Object {
                         "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "padding": ".75rem .875rem",
                         "radius": ".25rem",
@@ -837,6 +855,7 @@ exports[`should render a select 1`] = `
                         },
                         "shape": Object {
                           "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                           "margin": ".25rem .125rem",
                           "padding": ".75rem .875rem",
                           "radius": ".25rem",

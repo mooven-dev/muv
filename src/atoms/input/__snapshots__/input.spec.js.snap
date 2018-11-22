@@ -35,6 +35,7 @@ exports[`should change its style if disabled 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -96,6 +97,7 @@ exports[`should change its style if required 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -156,6 +158,7 @@ exports[`should change its style on error 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -215,6 +218,7 @@ exports[`should change its style on success 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -274,6 +278,7 @@ exports[`should render a input 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",

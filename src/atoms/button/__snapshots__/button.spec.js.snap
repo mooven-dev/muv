@@ -37,6 +37,7 @@ exports[`should change its style on outline 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -50,7 +51,7 @@ exports[`should change its style on outline 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH hTfrRA"
+      className="sc-bwzfXH blkxcW"
       disabled={false}
       href="#"
       onClick={null}
@@ -100,6 +101,7 @@ exports[`should change its style on success 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -113,7 +115,7 @@ exports[`should change its style on success 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH eccYqQ"
+      className="sc-bwzfXH HESaR"
       disabled={false}
       href="#"
       onClick={null}
@@ -162,6 +164,7 @@ exports[`should change its style on warn 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -176,7 +179,7 @@ exports[`should change its style on warn 1`] = `
     warn={true}
   >
     <a
-      className="sc-bwzfXH Ztfpc"
+      className="sc-bwzfXH cMzsnn"
       disabled={false}
       href="#"
       onClick={null}
@@ -224,6 +227,7 @@ exports[`should render a anchor 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -237,7 +241,7 @@ exports[`should render a anchor 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH gxSygZ"
+      className="sc-bwzfXH kXqkwc"
       disabled={false}
       href="#"
       onClick={null}
@@ -285,6 +289,7 @@ exports[`should render a button 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".25rem",
@@ -298,7 +303,7 @@ exports[`should render a button 1`] = `
     }
   >
     <button
-      className="sc-bdVaJa jVevDA"
+      className="sc-bdVaJa dsGtYH"
       disabled={false}
       href={null}
       onClick={[Function]}
