@@ -9,8 +9,11 @@ import themeDefault from '../../theme';
 // STYLES
 const StyledInput = styled.input`
 ${props => inputStyle(props)}
-
 `;
+
+StyledInput.defaultProps = {
+  theme: themeDefault,
+};
 
 // COMPONENT
 const Input = ({ error, ...props }) => (
@@ -20,7 +23,7 @@ const Input = ({ error, ...props }) => (
 // DOCUMENTATION
 Input.propTypes = {
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   /** equals to type html atribute */
   type: string,
   /** prop to disables input */
@@ -35,7 +38,6 @@ Input.propTypes = {
 
 Input.defaultProps = {
   placeholder: 'placeholder',
-  theme: themeDefault,
   disabled: false,
   success: false,
   error: false,

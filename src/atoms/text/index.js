@@ -11,15 +11,16 @@ const setColor = ({ theme, primary, secondary, warn, success }) => {
   if (primary) return theme.color.primary;
   if (success) return theme.color.success;
   if (warn) return theme.color.warn;
-  return theme.text.color;
+  return theme.font.color;
 };
 
-const commonStyles = ({ transform, strong, align, theme, label, ...rest }) => (`
+const commonStyles = ({ transform, strong, align, theme, label, spacing, ...rest }) => (`
 font-weight: ${(strong || label ? 'bold' : 'inherit')};
+letter-spacing: ${spacing || theme.font.spacing};
 color: ${setColor({ theme, ...rest })};
+font-family: ${theme.font.family};
 margin: ${theme.shape.margin};
 text-transform: ${transform};
-font-family: sans-serif;
 text-align: ${align};
 line-height: 1;
 `);
@@ -29,40 +30,72 @@ font-size: ${({ label, small }) => (label || small ? '.875rem' : '1rem')};
 ${props => commonStyles(props)}
 `;
 
+P.defaultProps = {
+  theme: themeDefault,
+};
+
 export const Span = styled.span`
 font-size: ${({ label, small }) => (label || small ? '.875rem' : '1rem')};
 ${props => commonStyles(props)}
 `;
 
+Span.defaultProps = {
+  theme: themeDefault,
+};
+
 export const H1 = styled.h1`
 ${props => commonStyles(props)}
-font-size: 2.5rem;
+font-size: 4rem;
 `;
 
+H1.defaultProps = {
+  theme: themeDefault,
+};
+
 export const H2 = styled.h2`
+${props => commonStyles(props)}
+font-size: 2rem;
+`;
+
+H2.defaultProps = {
+  theme: themeDefault,
+};
+
+export const H3 = styled.h3`
 ${props => commonStyles(props)}
 font-size: 1.5rem;
 `;
 
-export const H3 = styled.h3`
+H3.defaultProps = {
+  theme: themeDefault,
+};
+
+export const H4 = styled.h4`
 ${props => commonStyles(props)}
 font-size: 1.25rem;
 `;
 
-export const H4 = styled.h4`
+H4.defaultProps = {
+  theme: themeDefault,
+};
+
+export const H5 = styled.h5`
 ${props => commonStyles(props)}
 font-size: 1rem;
 `;
 
-export const H5 = styled.h5`
-${props => commonStyles(props)}
-font-size: .9375rem;
-`;
+H5.defaultProps = {
+  theme: themeDefault,
+};
 
 export const H6 = styled.h6`
 ${props => commonStyles(props)}
 font-size: .875rem;
 `;
+
+H6.defaultProps = {
+  theme: themeDefault,
+};
 
 // COMPONENT
 const Text = ({ type, strong, ...props }) => {
@@ -89,7 +122,7 @@ const Text = ({ type, strong, ...props }) => {
 // DOCUMENTATION
 Text.propTypes = {
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   /** accepts only text as children */
   children: string,
   /** sets text-transform value */
@@ -107,7 +140,6 @@ Text.propTypes = {
 Text.defaultProps = {
   transform: 'none',
   children: 'default',
-  theme: themeDefault,
   strong: false,
   label: false,
   align: 'left',

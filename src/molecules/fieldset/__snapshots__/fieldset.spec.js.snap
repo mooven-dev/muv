@@ -5,63 +5,37 @@ exports[`should render a fieldset 1`] = `
   disabled={false}
   label="label"
   success={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   warn={false}
 >
   <styled.fieldset
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -76,36 +50,6 @@ exports[`should render a fieldset 1`] = `
         align="left"
         label={true}
         strong={false}
-        theme={
-          Object {
-            "color": Object {
-              "black": "#484848",
-              "error": "#dd3333",
-              "gray": "#f0f0f0",
-              "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0082c8",
-              "secondary": "#00baf2",
-              "success": "#33bb33",
-              "warn": "#dd3333",
-              "white": "#fefefe",
-            },
-            "shape": Object {
-              "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "margin": ".25rem .125rem",
-              "padding": ".875rem 1rem",
-              "radius": ".25rem",
-              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-              "size": "1rem",
-            },
-            "text": Object {
-              "color": "#484848",
-              "size": "1rem",
-            },
-            "transition": Object {
-              "time": ".3s ease",
-            },
-          }
-        }
         transform="capitalize"
         type=""
       >
@@ -116,27 +60,31 @@ exports[`should render a fieldset 1`] = `
           theme={
             Object {
               "color": Object {
-                "black": "#484848",
+                "black": "#222222",
+                "darkgray": "#515151",
                 "error": "#dd3333",
-                "gray": "#f0f0f0",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0082c8",
-                "secondary": "#00baf2",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
                 "white": "#fefefe",
               },
+              "font": Object {
+                "color": "#222222",
+                "family": "system-ui, sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
-                "padding": ".875rem 1rem",
+                "padding": ".75rem .875rem",
                 "radius": ".25rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                "size": "1rem",
-              },
-              "text": Object {
-                "color": "#484848",
-                "size": "1rem",
+                "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
@@ -146,7 +94,7 @@ exports[`should render a fieldset 1`] = `
           transform="capitalize"
         >
           <p
-            className="sc-bwzfXH exLwDr"
+            className="sc-bwzfXH gRNdOs"
             label={true}
             transform="capitalize"
           >
@@ -159,36 +107,6 @@ exports[`should render a fieldset 1`] = `
         error={false}
         placeholder="placeholder"
         success={false}
-        theme={
-          Object {
-            "color": Object {
-              "black": "#484848",
-              "error": "#dd3333",
-              "gray": "#f0f0f0",
-              "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0082c8",
-              "secondary": "#00baf2",
-              "success": "#33bb33",
-              "warn": "#dd3333",
-              "white": "#fefefe",
-            },
-            "shape": Object {
-              "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "margin": ".25rem .125rem",
-              "padding": ".875rem 1rem",
-              "radius": ".25rem",
-              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-              "size": "1rem",
-            },
-            "text": Object {
-              "color": "#484848",
-              "size": "1rem",
-            },
-            "transition": Object {
-              "time": ".3s ease",
-            },
-          }
-        }
         type="text"
         warn={false}
       >
@@ -199,27 +117,31 @@ exports[`should render a fieldset 1`] = `
           theme={
             Object {
               "color": Object {
-                "black": "#484848",
+                "black": "#222222",
+                "darkgray": "#515151",
                 "error": "#dd3333",
-                "gray": "#f0f0f0",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0082c8",
-                "secondary": "#00baf2",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
                 "white": "#fefefe",
               },
+              "font": Object {
+                "color": "#222222",
+                "family": "system-ui, sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
-                "padding": ".875rem 1rem",
+                "padding": ".75rem .875rem",
                 "radius": ".25rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                "size": "1rem",
-              },
-              "text": Object {
-                "color": "#484848",
-                "size": "1rem",
+                "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
@@ -230,7 +152,7 @@ exports[`should render a fieldset 1`] = `
           warn={false}
         >
           <input
-            className="sc-bdVaJa jyVtbm"
+            className="sc-bdVaJa bYXmrN"
             disabled={false}
             placeholder="placeholder"
             type="text"
@@ -242,36 +164,6 @@ exports[`should render a fieldset 1`] = `
         label={false}
         small={true}
         strong={false}
-        theme={
-          Object {
-            "color": Object {
-              "black": "#484848",
-              "error": "#dd3333",
-              "gray": "#f0f0f0",
-              "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0082c8",
-              "secondary": "#00baf2",
-              "success": "#33bb33",
-              "warn": "#dd3333",
-              "white": "#fefefe",
-            },
-            "shape": Object {
-              "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "margin": ".25rem .125rem",
-              "padding": ".875rem 1rem",
-              "radius": ".25rem",
-              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-              "size": "1rem",
-            },
-            "text": Object {
-              "color": "#484848",
-              "size": "1rem",
-            },
-            "transition": Object {
-              "time": ".3s ease",
-            },
-          }
-        }
         transform="none"
         type=""
       >
@@ -283,27 +175,31 @@ exports[`should render a fieldset 1`] = `
           theme={
             Object {
               "color": Object {
-                "black": "#484848",
+                "black": "#222222",
+                "darkgray": "#515151",
                 "error": "#dd3333",
-                "gray": "#f0f0f0",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0082c8",
-                "secondary": "#00baf2",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
                 "white": "#fefefe",
               },
+              "font": Object {
+                "color": "#222222",
+                "family": "system-ui, sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
-                "padding": ".875rem 1rem",
+                "padding": ".75rem .875rem",
                 "radius": ".25rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                "size": "1rem",
-              },
-              "text": Object {
-                "color": "#484848",
-                "size": "1rem",
+                "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
@@ -313,7 +209,7 @@ exports[`should render a fieldset 1`] = `
           transform="none"
         >
           <p
-            className="sc-bwzfXH kijpyH"
+            className="sc-bwzfXH BWwZO"
             label={false}
             transform="none"
           >

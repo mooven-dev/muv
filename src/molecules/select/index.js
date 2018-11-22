@@ -30,6 +30,10 @@ left: 0;
 top: 0;
 `;
 
+StyledSelect.defaultProps = {
+  theme: themeDefault,
+};
+
 const Item = styled(Text)`
 transition: ${({ theme }) => theme.transition.time};
 padding: ${({ theme }) => theme.shape.padding};
@@ -59,6 +63,10 @@ display: inline-block;
 position: relative;
 width: 100%;
 `;
+
+Wrap.defaultProps = {
+  theme: themeDefault,
+};
 
 // COMPONENT
 class Select extends Component {
@@ -124,7 +132,7 @@ Select.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   render: shape({
     title: arrayOf(string),
     data: arrayOf(any),
@@ -136,7 +144,6 @@ Select.defaultProps = {
   onCancel: () => console.log('cancel'), // eslint-disable-line
   placeholder: 'Selecione...',
   children: 'default',
-  theme: themeDefault,
   render: {
     data: [{ char: 'a' }, { char: 'b' }],
     title: ['a', 'b'],

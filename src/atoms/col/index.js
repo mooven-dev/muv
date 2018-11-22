@@ -11,6 +11,9 @@ const StyledCol = styled(Row)`
 flex-direction: column;
 `;
 
+StyledCol.defaultProps = {
+  theme: themeDefault,
+};
 
 // COMPONENT
 const Col = ({ children, ...props }) => (
@@ -22,7 +25,7 @@ Col.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   /** sets flex-grow using a "inline style" logic */
   grow: number,
   /** sets justify-content using a "inline style" logic */
@@ -33,7 +36,6 @@ Col.propTypes = {
 
 Col.defaultProps = {
   justify: 'flex-start',
-  theme: themeDefault,
   align: 'flex-start',
   children: 'col',
   grow: 1,

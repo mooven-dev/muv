@@ -17,6 +17,10 @@ background: ${({ theme }) => theme.color.white};
 padding: ${({ theme }) => theme.shape.size};
 `;
 
+StyledModal.defaultProps = {
+  theme: themeDefault,
+};
+
 // COMPONENT
 class Modal extends PureComponent {
   constructor(props) {
@@ -58,7 +62,7 @@ Modal.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   /** hide the button component */
   noButton: bool,
   /** you can use this prop to control the component from outside */
@@ -67,7 +71,6 @@ Modal.propTypes = {
 
 Modal.defaultProps = {
   children: 'content',
-  theme: themeDefault,
   noButton: false,
   visible: false,
 };

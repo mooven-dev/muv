@@ -23,6 +23,10 @@ flex-direction: column;
 margin: 0 auto;
 `;
 
+StyledContainer.defaultProps = {
+  theme: themeDefault,
+};
+
 // COMPONENT
 const Container = props => (
   <StyledContainer {...props} />
@@ -33,7 +37,7 @@ Container.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   /** sets max-height using a "inline style" logic */
   maxHeight: string,
   /** sets min-height using a "inline style" logic */
@@ -52,7 +56,6 @@ Container.propTypes = {
 
 Container.defaultProps = {
   children: 'container',
-  theme: themeDefault,
   maxHeight: 'auto',
   minHeight: 'auto',
   maxWidth: 'auto',

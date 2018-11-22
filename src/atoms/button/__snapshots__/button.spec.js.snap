@@ -7,36 +7,6 @@ exports[`should change its style on outline 1`] = `
   onClick={null}
   outline={true}
   secondary={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
 >
   <styled.a
     disabled={false}
@@ -47,27 +17,31 @@ exports[`should change its style on outline 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -76,7 +50,7 @@ exports[`should change its style on outline 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH jCIPow"
+      className="sc-bwzfXH hTfrRA"
       disabled={false}
       href="#"
       onClick={null}
@@ -95,36 +69,6 @@ exports[`should change its style on success 1`] = `
   outline={false}
   secondary={false}
   success={true}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
 >
   <styled.a
     disabled={false}
@@ -136,27 +80,31 @@ exports[`should change its style on success 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -165,7 +113,7 @@ exports[`should change its style on success 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH eCQXRx"
+      className="sc-bwzfXH eccYqQ"
       disabled={false}
       href="#"
       onClick={null}
@@ -183,36 +131,6 @@ exports[`should change its style on warn 1`] = `
   onClick={null}
   outline={false}
   secondary={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   warn={true}
 >
   <styled.a
@@ -224,27 +142,31 @@ exports[`should change its style on warn 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -254,7 +176,7 @@ exports[`should change its style on warn 1`] = `
     warn={true}
   >
     <a
-      className="sc-bwzfXH kZfngM"
+      className="sc-bwzfXH Ztfpc"
       disabled={false}
       href="#"
       onClick={null}
@@ -272,36 +194,6 @@ exports[`should render a anchor 1`] = `
   onClick={null}
   outline={false}
   secondary={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
 >
   <styled.a
     disabled={false}
@@ -312,27 +204,31 @@ exports[`should render a anchor 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -341,7 +237,7 @@ exports[`should render a anchor 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH jHbLIW"
+      className="sc-bwzfXH gxSygZ"
       disabled={false}
       href="#"
       onClick={null}
@@ -359,36 +255,6 @@ exports[`should render a button 1`] = `
   onClick={[Function]}
   outline={false}
   secondary={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
 >
   <styled.button
     disabled={false}
@@ -399,27 +265,31 @@ exports[`should render a button 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -428,7 +298,7 @@ exports[`should render a button 1`] = `
     }
   >
     <button
-      className="sc-bdVaJa lcElGm"
+      className="sc-bdVaJa jVevDA"
       disabled={false}
       href={null}
       onClick={[Function]}

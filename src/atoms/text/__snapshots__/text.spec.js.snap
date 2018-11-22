@@ -5,36 +5,6 @@ exports[`should change its content concerning the type 1`] = `
   align="left"
   label={false}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type="h1"
 >
@@ -45,27 +15,31 @@ exports[`should change its content concerning the type 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -75,7 +49,7 @@ exports[`should change its content concerning the type 1`] = `
     transform="none"
   >
     <h1
-      className="sc-htpNat ioWKrK"
+      className="sc-htpNat csaFHq"
       label={false}
       transform="none"
     >
@@ -90,36 +64,6 @@ exports[`should change its content concerning the type 2`] = `
   align="left"
   label={false}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type="h2"
 >
@@ -130,27 +74,31 @@ exports[`should change its content concerning the type 2`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -160,7 +108,7 @@ exports[`should change its content concerning the type 2`] = `
     transform="none"
   >
     <h2
-      className="sc-bxivhb Bjdhb"
+      className="sc-bxivhb dPTepZ"
       label={false}
       transform="none"
     >
@@ -175,36 +123,6 @@ exports[`should change its content concerning the type 3`] = `
   align="left"
   label={false}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type="h3"
 >
@@ -215,27 +133,31 @@ exports[`should change its content concerning the type 3`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -245,7 +167,7 @@ exports[`should change its content concerning the type 3`] = `
     transform="none"
   >
     <h3
-      className="sc-ifAKCX jcUeAt"
+      className="sc-ifAKCX krzpGU"
       label={false}
       transform="none"
     >
@@ -260,36 +182,6 @@ exports[`should change its content concerning the type 4`] = `
   align="left"
   label={false}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type="h4"
 >
@@ -300,27 +192,31 @@ exports[`should change its content concerning the type 4`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -330,7 +226,7 @@ exports[`should change its content concerning the type 4`] = `
     transform="none"
   >
     <h4
-      className="sc-EHOje iwTRAn"
+      className="sc-EHOje dwYSdL"
       label={false}
       transform="none"
     >
@@ -345,36 +241,6 @@ exports[`should change its content concerning the type 5`] = `
   align="left"
   label={false}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type="h5"
 >
@@ -385,27 +251,31 @@ exports[`should change its content concerning the type 5`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -415,7 +285,7 @@ exports[`should change its content concerning the type 5`] = `
     transform="none"
   >
     <h5
-      className="sc-bZQynM geSjRL"
+      className="sc-bZQynM eqyBZg"
       label={false}
       transform="none"
     >
@@ -430,36 +300,6 @@ exports[`should change its content concerning the type 6`] = `
   align="left"
   label={false}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type="h6"
 >
@@ -470,27 +310,31 @@ exports[`should change its content concerning the type 6`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -500,7 +344,7 @@ exports[`should change its content concerning the type 6`] = `
     transform="none"
   >
     <h6
-      className="sc-gzVnrw otBkM"
+      className="sc-gzVnrw kfQfpq"
       label={false}
       transform="none"
     >
@@ -515,36 +359,6 @@ exports[`should change its style if strong 1`] = `
   align="left"
   label={false}
   strong={true}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type=""
 >
@@ -555,27 +369,31 @@ exports[`should change its style if strong 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -585,7 +403,7 @@ exports[`should change its style if strong 1`] = `
     transform="none"
   >
     <p
-      className="sc-bdVaJa gbaNEY"
+      className="sc-bdVaJa ddRozo"
       label={false}
       transform="none"
     >
@@ -601,36 +419,6 @@ exports[`should change its style on primary 1`] = `
   label={false}
   primary={true}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type=""
 >
@@ -642,27 +430,31 @@ exports[`should change its style on primary 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -672,7 +464,7 @@ exports[`should change its style on primary 1`] = `
     transform="none"
   >
     <p
-      className="sc-bdVaJa dpLaSA"
+      className="sc-bdVaJa ihNRPH"
       label={false}
       transform="none"
     >
@@ -688,36 +480,6 @@ exports[`should change its style on secondary 1`] = `
   label={false}
   secondary={true}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type=""
 >
@@ -729,27 +491,31 @@ exports[`should change its style on secondary 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -759,7 +525,7 @@ exports[`should change its style on secondary 1`] = `
     transform="none"
   >
     <p
-      className="sc-bdVaJa cEmXqb"
+      className="sc-bdVaJa jCYAUZ"
       label={false}
       transform="none"
     >
@@ -775,36 +541,6 @@ exports[`should change its style on success 1`] = `
   label={false}
   strong={false}
   success={true}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type=""
 >
@@ -816,27 +552,31 @@ exports[`should change its style on success 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -846,7 +586,7 @@ exports[`should change its style on success 1`] = `
     transform="none"
   >
     <p
-      className="sc-bdVaJa iWuuOf"
+      className="sc-bdVaJa cXiDyJ"
       label={false}
       transform="none"
     >
@@ -861,36 +601,6 @@ exports[`should change its style on warn 1`] = `
   align="left"
   label={false}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type=""
   warn={true}
@@ -902,27 +612,31 @@ exports[`should change its style on warn 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -933,7 +647,7 @@ exports[`should change its style on warn 1`] = `
     warn={true}
   >
     <p
-      className="sc-bdVaJa dQjvHT"
+      className="sc-bdVaJa eTwzHN"
       label={false}
       transform="none"
     >
@@ -948,36 +662,6 @@ exports[`should render a text 1`] = `
   align="left"
   label={false}
   strong={false}
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
   transform="none"
   type=""
 >
@@ -988,27 +672,31 @@ exports[`should render a text 1`] = `
     theme={
       Object {
         "color": Object {
-          "black": "#484848",
+          "black": "#222222",
+          "darkgray": "#515151",
           "error": "#dd3333",
-          "gray": "#f0f0f0",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0082c8",
-          "secondary": "#00baf2",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
           "white": "#fefefe",
         },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
-          "padding": ".875rem 1rem",
+          "padding": ".75rem .875rem",
           "radius": ".25rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "1rem",
-        },
-        "text": Object {
-          "color": "#484848",
-          "size": "1rem",
+          "size": "16px",
         },
         "transition": Object {
           "time": ".3s ease",
@@ -1018,7 +706,7 @@ exports[`should render a text 1`] = `
     transform="none"
   >
     <p
-      className="sc-bdVaJa eaIhdW"
+      className="sc-bdVaJa utCNp"
       label={false}
       transform="none"
     >

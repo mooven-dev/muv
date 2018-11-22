@@ -32,9 +32,17 @@ const StyledA = styled.a`
 ${props => commomStyles(props)}
 `;
 
+StyledA.defaultProps = {
+  theme: themeDefault,
+};
+
 const StyledButton = styled.button`
 ${props => commomStyles(props)}
 `;
+
+StyledButton.defaultProps = {
+  theme: themeDefault,
+};
 
 // COMPONENT
 const Link = (props) => {
@@ -57,12 +65,11 @@ Link.propTypes = {
   /** disables the element actions and changes its styles */
   disabled: bool,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
 };
 
 Link.defaultProps = {
   children: 'default',
-  theme: themeDefault,
   disabled: false,
   onClick: null,
   strong: false,

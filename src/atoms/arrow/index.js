@@ -14,6 +14,7 @@ display: inline-block;
 `;
 
 StyledArrow.defaultProps = {
+  theme: themeDefault,
   type: 'span',
 };
 
@@ -27,12 +28,11 @@ Arrow.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   up: bool,
 };
 
 Arrow.defaultProps = {
-  theme: themeDefault,
   children: '◄',
   up: false,
 };

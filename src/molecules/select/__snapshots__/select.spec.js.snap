@@ -21,38 +21,43 @@ exports[`should render a select 1`] = `
       ],
     }
   }
-  theme={
-    Object {
-      "color": Object {
-        "black": "#484848",
-        "error": "#dd3333",
-        "gray": "#f0f0f0",
-        "overlay": "rgba(0, 0, 0, .15)",
-        "primary": "#0082c8",
-        "secondary": "#00baf2",
-        "success": "#33bb33",
-        "warn": "#dd3333",
-        "white": "#fefefe",
-      },
-      "shape": Object {
-        "border": ".125rem solid rgba(0, 0, 0, .15)",
-        "margin": ".25rem .125rem",
-        "padding": ".875rem 1rem",
-        "radius": ".25rem",
-        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-        "size": "1rem",
-      },
-      "text": Object {
-        "color": "#484848",
-        "size": "1rem",
-      },
-      "transition": Object {
-        "time": ".3s ease",
-      },
-    }
-  }
 >
-  <styled.div>
+  <styled.div
+    theme={
+      Object {
+        "color": Object {
+          "black": "#222222",
+          "darkgray": "#515151",
+          "error": "#dd3333",
+          "gray": "#a9abae",
+          "lightgray": "#e5e5e5",
+          "overlay": "rgba(0, 0, 0, .15)",
+          "primary": "#0081c8",
+          "secondary": "#00245f",
+          "success": "#33bb33",
+          "warn": "#dd3333",
+          "white": "#fefefe",
+        },
+        "font": Object {
+          "color": "#222222",
+          "family": "system-ui, sans-serif",
+          "size": "16px",
+          "spacing": 0,
+        },
+        "shape": Object {
+          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "margin": ".25rem .125rem",
+          "padding": ".75rem .875rem",
+          "radius": ".25rem",
+          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+          "size": "16px",
+        },
+        "transition": Object {
+          "time": ".3s ease",
+        },
+      }
+    }
+  >
     <div
       className="sc-gqjmRU bDPTKv"
     >
@@ -60,27 +65,31 @@ exports[`should render a select 1`] = `
         theme={
           Object {
             "color": Object {
-              "black": "#484848",
+              "black": "#222222",
+              "darkgray": "#515151",
               "error": "#dd3333",
-              "gray": "#f0f0f0",
+              "gray": "#a9abae",
+              "lightgray": "#e5e5e5",
               "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0082c8",
-              "secondary": "#00baf2",
+              "primary": "#0081c8",
+              "secondary": "#00245f",
               "success": "#33bb33",
               "warn": "#dd3333",
               "white": "#fefefe",
             },
+            "font": Object {
+              "color": "#222222",
+              "family": "system-ui, sans-serif",
+              "size": "16px",
+              "spacing": 0,
+            },
             "shape": Object {
               "border": ".125rem solid rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
-              "padding": ".875rem 1rem",
+              "padding": ".75rem .875rem",
               "radius": ".25rem",
               "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-              "size": "1rem",
-            },
-            "text": Object {
-              "color": "#484848",
-              "size": "1rem",
+              "size": "16px",
             },
             "transition": Object {
               "time": ".3s ease",
@@ -90,33 +99,37 @@ exports[`should render a select 1`] = `
       >
         <Text
           align="left"
-          className="sc-iwsKbI faxcHL"
+          className="sc-iwsKbI eUFIcZ"
           label={false}
           strong={false}
           theme={
             Object {
               "color": Object {
-                "black": "#484848",
+                "black": "#222222",
+                "darkgray": "#515151",
                 "error": "#dd3333",
-                "gray": "#f0f0f0",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0082c8",
-                "secondary": "#00baf2",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
                 "white": "#fefefe",
               },
+              "font": Object {
+                "color": "#222222",
+                "family": "system-ui, sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
-                "padding": ".875rem 1rem",
+                "padding": ".75rem .875rem",
                 "radius": ".25rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                "size": "1rem",
-              },
-              "text": Object {
-                "color": "#484848",
-                "size": "1rem",
+                "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
@@ -128,33 +141,37 @@ exports[`should render a select 1`] = `
         >
           <styled.p
             align="left"
-            className="sc-iwsKbI faxcHL"
+            className="sc-iwsKbI eUFIcZ"
             label={false}
             strong={false}
             theme={
               Object {
                 "color": Object {
-                  "black": "#484848",
+                  "black": "#222222",
+                  "darkgray": "#515151",
                   "error": "#dd3333",
-                  "gray": "#f0f0f0",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0082c8",
-                  "secondary": "#00baf2",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
                   "success": "#33bb33",
                   "warn": "#dd3333",
                   "white": "#fefefe",
                 },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "system-ui, sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
-                  "padding": ".875rem 1rem",
+                  "padding": ".75rem .875rem",
                   "radius": ".25rem",
                   "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "1rem",
-                },
-                "text": Object {
-                  "color": "#484848",
-                  "size": "1rem",
+                  "size": "16px",
                 },
                 "transition": Object {
                   "time": ".3s ease",
@@ -164,7 +181,7 @@ exports[`should render a select 1`] = `
             transform="none"
           >
             <p
-              className="sc-iwsKbI faxcHL sc-bdVaJa eaIhdW"
+              className="sc-iwsKbI eUFIcZ sc-bdVaJa utCNp"
               label={false}
               transform="none"
             >
@@ -200,27 +217,31 @@ exports[`should render a select 1`] = `
         theme={
           Object {
             "color": Object {
-              "black": "#484848",
+              "black": "#222222",
+              "darkgray": "#515151",
               "error": "#dd3333",
-              "gray": "#f0f0f0",
+              "gray": "#a9abae",
+              "lightgray": "#e5e5e5",
               "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0082c8",
-              "secondary": "#00baf2",
+              "primary": "#0081c8",
+              "secondary": "#00245f",
               "success": "#33bb33",
               "warn": "#dd3333",
               "white": "#fefefe",
             },
+            "font": Object {
+              "color": "#222222",
+              "family": "system-ui, sans-serif",
+              "size": "16px",
+              "spacing": 0,
+            },
             "shape": Object {
               "border": ".125rem solid rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
-              "padding": ".875rem 1rem",
+              "padding": ".75rem .875rem",
               "radius": ".25rem",
               "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-              "size": "1rem",
-            },
-            "text": Object {
-              "color": "#484848",
-              "size": "1rem",
+              "size": "16px",
             },
             "transition": Object {
               "time": ".3s ease",
@@ -229,7 +250,7 @@ exports[`should render a select 1`] = `
         }
       >
         <button
-          className="sc-dnqmqq dbHBuH"
+          className="sc-dnqmqq jgpFmF"
           onBlur={[Function]}
           onClick={[Function]}
           placeholder="Selecione..."
@@ -239,27 +260,31 @@ exports[`should render a select 1`] = `
             theme={
               Object {
                 "color": Object {
-                  "black": "#484848",
+                  "black": "#222222",
+                  "darkgray": "#515151",
                   "error": "#dd3333",
-                  "gray": "#f0f0f0",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0082c8",
-                  "secondary": "#00baf2",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
                   "success": "#33bb33",
                   "warn": "#dd3333",
                   "white": "#fefefe",
                 },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "system-ui, sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
-                  "padding": ".875rem 1rem",
+                  "padding": ".75rem .875rem",
                   "radius": ".25rem",
                   "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "1rem",
-                },
-                "text": Object {
-                  "color": "#484848",
-                  "size": "1rem",
+                  "size": "16px",
                 },
                 "transition": Object {
                   "time": ".3s ease",
@@ -269,33 +294,37 @@ exports[`should render a select 1`] = `
           >
             <Text
               align="left"
-              className="sc-iwsKbI faxcHL"
+              className="sc-iwsKbI eUFIcZ"
               label={false}
               strong={false}
               theme={
                 Object {
                   "color": Object {
-                    "black": "#484848",
+                    "black": "#222222",
+                    "darkgray": "#515151",
                     "error": "#dd3333",
-                    "gray": "#f0f0f0",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
                     "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0082c8",
-                    "secondary": "#00baf2",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
                     "success": "#33bb33",
                     "warn": "#dd3333",
                     "white": "#fefefe",
                   },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "system-ui, sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
                   "shape": Object {
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
-                    "padding": ".875rem 1rem",
+                    "padding": ".75rem .875rem",
                     "radius": ".25rem",
                     "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                    "size": "1rem",
-                  },
-                  "text": Object {
-                    "color": "#484848",
-                    "size": "1rem",
+                    "size": "16px",
                   },
                   "transition": Object {
                     "time": ".3s ease",
@@ -307,33 +336,37 @@ exports[`should render a select 1`] = `
             >
               <styled.p
                 align="left"
-                className="sc-iwsKbI faxcHL"
+                className="sc-iwsKbI eUFIcZ"
                 label={false}
                 strong={false}
                 theme={
                   Object {
                     "color": Object {
-                      "black": "#484848",
+                      "black": "#222222",
+                      "darkgray": "#515151",
                       "error": "#dd3333",
-                      "gray": "#f0f0f0",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0082c8",
-                      "secondary": "#00baf2",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
                       "white": "#fefefe",
                     },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "system-ui, sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
-                      "padding": ".875rem 1rem",
+                      "padding": ".75rem .875rem",
                       "radius": ".25rem",
                       "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                      "size": "1rem",
-                    },
-                    "text": Object {
-                      "color": "#484848",
-                      "size": "1rem",
+                      "size": "16px",
                     },
                     "transition": Object {
                       "time": ".3s ease",
@@ -343,7 +376,7 @@ exports[`should render a select 1`] = `
                 transform="none"
               >
                 <p
-                  className="sc-iwsKbI faxcHL sc-bdVaJa eaIhdW"
+                  className="sc-iwsKbI eUFIcZ sc-bdVaJa utCNp"
                   label={false}
                   transform="none"
                 >
@@ -358,27 +391,31 @@ exports[`should render a select 1`] = `
             theme={
               Object {
                 "color": Object {
-                  "black": "#484848",
+                  "black": "#222222",
+                  "darkgray": "#515151",
                   "error": "#dd3333",
-                  "gray": "#f0f0f0",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0082c8",
-                  "secondary": "#00baf2",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
                   "success": "#33bb33",
                   "warn": "#dd3333",
                   "white": "#fefefe",
                 },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "system-ui, sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
-                  "padding": ".875rem 1rem",
+                  "padding": ".75rem .875rem",
                   "radius": ".25rem",
                   "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "1rem",
-                },
-                "text": Object {
-                  "color": "#484848",
-                  "size": "1rem",
+                  "size": "16px",
                 },
                 "transition": Object {
                   "time": ".3s ease",
@@ -388,34 +425,38 @@ exports[`should render a select 1`] = `
           >
             <Text
               align="left"
-              className="sc-iwsKbI faxcHL"
+              className="sc-iwsKbI eUFIcZ"
               label={false}
               onClick={[Function]}
               strong={false}
               theme={
                 Object {
                   "color": Object {
-                    "black": "#484848",
+                    "black": "#222222",
+                    "darkgray": "#515151",
                     "error": "#dd3333",
-                    "gray": "#f0f0f0",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
                     "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0082c8",
-                    "secondary": "#00baf2",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
                     "success": "#33bb33",
                     "warn": "#dd3333",
                     "white": "#fefefe",
                   },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "system-ui, sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
                   "shape": Object {
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
-                    "padding": ".875rem 1rem",
+                    "padding": ".75rem .875rem",
                     "radius": ".25rem",
                     "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                    "size": "1rem",
-                  },
-                  "text": Object {
-                    "color": "#484848",
-                    "size": "1rem",
+                    "size": "16px",
                   },
                   "transition": Object {
                     "time": ".3s ease",
@@ -427,34 +468,38 @@ exports[`should render a select 1`] = `
             >
               <styled.p
                 align="left"
-                className="sc-iwsKbI faxcHL"
+                className="sc-iwsKbI eUFIcZ"
                 label={false}
                 onClick={[Function]}
                 strong={false}
                 theme={
                   Object {
                     "color": Object {
-                      "black": "#484848",
+                      "black": "#222222",
+                      "darkgray": "#515151",
                       "error": "#dd3333",
-                      "gray": "#f0f0f0",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0082c8",
-                      "secondary": "#00baf2",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
                       "white": "#fefefe",
                     },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "system-ui, sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
-                      "padding": ".875rem 1rem",
+                      "padding": ".75rem .875rem",
                       "radius": ".25rem",
                       "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                      "size": "1rem",
-                    },
-                    "text": Object {
-                      "color": "#484848",
-                      "size": "1rem",
+                      "size": "16px",
                     },
                     "transition": Object {
                       "time": ".3s ease",
@@ -464,7 +509,7 @@ exports[`should render a select 1`] = `
                 transform="none"
               >
                 <p
-                  className="sc-iwsKbI faxcHL sc-bdVaJa eaIhdW"
+                  className="sc-iwsKbI eUFIcZ sc-bdVaJa utCNp"
                   label={false}
                   onClick={[Function]}
                   transform="none"
@@ -480,27 +525,31 @@ exports[`should render a select 1`] = `
             theme={
               Object {
                 "color": Object {
-                  "black": "#484848",
+                  "black": "#222222",
+                  "darkgray": "#515151",
                   "error": "#dd3333",
-                  "gray": "#f0f0f0",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0082c8",
-                  "secondary": "#00baf2",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
                   "success": "#33bb33",
                   "warn": "#dd3333",
                   "white": "#fefefe",
                 },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "system-ui, sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
-                  "padding": ".875rem 1rem",
+                  "padding": ".75rem .875rem",
                   "radius": ".25rem",
                   "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "1rem",
-                },
-                "text": Object {
-                  "color": "#484848",
-                  "size": "1rem",
+                  "size": "16px",
                 },
                 "transition": Object {
                   "time": ".3s ease",
@@ -510,34 +559,38 @@ exports[`should render a select 1`] = `
           >
             <Text
               align="left"
-              className="sc-iwsKbI faxcHL"
+              className="sc-iwsKbI eUFIcZ"
               label={false}
               onClick={[Function]}
               strong={false}
               theme={
                 Object {
                   "color": Object {
-                    "black": "#484848",
+                    "black": "#222222",
+                    "darkgray": "#515151",
                     "error": "#dd3333",
-                    "gray": "#f0f0f0",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
                     "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0082c8",
-                    "secondary": "#00baf2",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
                     "success": "#33bb33",
                     "warn": "#dd3333",
                     "white": "#fefefe",
                   },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "system-ui, sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
                   "shape": Object {
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
-                    "padding": ".875rem 1rem",
+                    "padding": ".75rem .875rem",
                     "radius": ".25rem",
                     "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                    "size": "1rem",
-                  },
-                  "text": Object {
-                    "color": "#484848",
-                    "size": "1rem",
+                    "size": "16px",
                   },
                   "transition": Object {
                     "time": ".3s ease",
@@ -549,34 +602,38 @@ exports[`should render a select 1`] = `
             >
               <styled.p
                 align="left"
-                className="sc-iwsKbI faxcHL"
+                className="sc-iwsKbI eUFIcZ"
                 label={false}
                 onClick={[Function]}
                 strong={false}
                 theme={
                   Object {
                     "color": Object {
-                      "black": "#484848",
+                      "black": "#222222",
+                      "darkgray": "#515151",
                       "error": "#dd3333",
-                      "gray": "#f0f0f0",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0082c8",
-                      "secondary": "#00baf2",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
                       "white": "#fefefe",
                     },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "system-ui, sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
-                      "padding": ".875rem 1rem",
+                      "padding": ".75rem .875rem",
                       "radius": ".25rem",
                       "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                      "size": "1rem",
-                    },
-                    "text": Object {
-                      "color": "#484848",
-                      "size": "1rem",
+                      "size": "16px",
                     },
                     "transition": Object {
                       "time": ".3s ease",
@@ -586,7 +643,7 @@ exports[`should render a select 1`] = `
                 transform="none"
               >
                 <p
-                  className="sc-iwsKbI faxcHL sc-bdVaJa eaIhdW"
+                  className="sc-iwsKbI eUFIcZ sc-bdVaJa utCNp"
                   label={false}
                   onClick={[Function]}
                   transform="none"
@@ -600,27 +657,31 @@ exports[`should render a select 1`] = `
             theme={
               Object {
                 "color": Object {
-                  "black": "#484848",
+                  "black": "#222222",
+                  "darkgray": "#515151",
                   "error": "#dd3333",
-                  "gray": "#f0f0f0",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0082c8",
-                  "secondary": "#00baf2",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
                   "success": "#33bb33",
                   "warn": "#dd3333",
                   "white": "#fefefe",
                 },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "system-ui, sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
-                  "padding": ".875rem 1rem",
+                  "padding": ".75rem .875rem",
                   "radius": ".25rem",
                   "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "1rem",
-                },
-                "text": Object {
-                  "color": "#484848",
-                  "size": "1rem",
+                  "size": "16px",
                 },
                 "transition": Object {
                   "time": ".3s ease",
@@ -629,31 +690,35 @@ exports[`should render a select 1`] = `
             }
           >
             <Arrow
-              className="sc-gZMcBi jEkrVi"
+              className="sc-gZMcBi bNtIrL"
               theme={
                 Object {
                   "color": Object {
-                    "black": "#484848",
+                    "black": "#222222",
+                    "darkgray": "#515151",
                     "error": "#dd3333",
-                    "gray": "#f0f0f0",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
                     "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0082c8",
-                    "secondary": "#00baf2",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
                     "success": "#33bb33",
                     "warn": "#dd3333",
                     "white": "#fefefe",
                   },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "system-ui, sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
                   "shape": Object {
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
-                    "padding": ".875rem 1rem",
+                    "padding": ".75rem .875rem",
                     "radius": ".25rem",
                     "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                    "size": "1rem",
-                  },
-                  "text": Object {
-                    "color": "#484848",
-                    "size": "1rem",
+                    "size": "16px",
                   },
                   "transition": Object {
                     "time": ".3s ease",
@@ -663,31 +728,35 @@ exports[`should render a select 1`] = `
               up={false}
             >
               <Styled(Text)
-                className="sc-gZMcBi jEkrVi"
+                className="sc-gZMcBi bNtIrL"
                 theme={
                   Object {
                     "color": Object {
-                      "black": "#484848",
+                      "black": "#222222",
+                      "darkgray": "#515151",
                       "error": "#dd3333",
-                      "gray": "#f0f0f0",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0082c8",
-                      "secondary": "#00baf2",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
                       "white": "#fefefe",
                     },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "system-ui, sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
-                      "padding": ".875rem 1rem",
+                      "padding": ".75rem .875rem",
                       "radius": ".25rem",
                       "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                      "size": "1rem",
-                    },
-                    "text": Object {
-                      "color": "#484848",
-                      "size": "1rem",
+                      "size": "16px",
                     },
                     "transition": Object {
                       "time": ".3s ease",
@@ -699,33 +768,37 @@ exports[`should render a select 1`] = `
               >
                 <Text
                   align="left"
-                  className="sc-gZMcBi jEkrVi sc-htoDjs hEAdvI"
+                  className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI"
                   label={false}
                   strong={false}
                   theme={
                     Object {
                       "color": Object {
-                        "black": "#484848",
+                        "black": "#222222",
+                        "darkgray": "#515151",
                         "error": "#dd3333",
-                        "gray": "#f0f0f0",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
                         "overlay": "rgba(0, 0, 0, .15)",
-                        "primary": "#0082c8",
-                        "secondary": "#00baf2",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
                         "success": "#33bb33",
                         "warn": "#dd3333",
                         "white": "#fefefe",
                       },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "system-ui, sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
                       "shape": Object {
                         "border": ".125rem solid rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
-                        "padding": ".875rem 1rem",
+                        "padding": ".75rem .875rem",
                         "radius": ".25rem",
                         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                        "size": "1rem",
-                      },
-                      "text": Object {
-                        "color": "#484848",
-                        "size": "1rem",
+                        "size": "16px",
                       },
                       "transition": Object {
                         "time": ".3s ease",
@@ -738,33 +811,37 @@ exports[`should render a select 1`] = `
                 >
                   <styled.span
                     align="left"
-                    className="sc-gZMcBi jEkrVi sc-htoDjs hEAdvI"
+                    className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI"
                     label={false}
                     strong={false}
                     theme={
                       Object {
                         "color": Object {
-                          "black": "#484848",
+                          "black": "#222222",
+                          "darkgray": "#515151",
                           "error": "#dd3333",
-                          "gray": "#f0f0f0",
+                          "gray": "#a9abae",
+                          "lightgray": "#e5e5e5",
                           "overlay": "rgba(0, 0, 0, .15)",
-                          "primary": "#0082c8",
-                          "secondary": "#00baf2",
+                          "primary": "#0081c8",
+                          "secondary": "#00245f",
                           "success": "#33bb33",
                           "warn": "#dd3333",
                           "white": "#fefefe",
                         },
+                        "font": Object {
+                          "color": "#222222",
+                          "family": "system-ui, sans-serif",
+                          "size": "16px",
+                          "spacing": 0,
+                        },
                         "shape": Object {
                           "border": ".125rem solid rgba(0, 0, 0, .15)",
                           "margin": ".25rem .125rem",
-                          "padding": ".875rem 1rem",
+                          "padding": ".75rem .875rem",
                           "radius": ".25rem",
                           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                          "size": "1rem",
-                        },
-                        "text": Object {
-                          "color": "#484848",
-                          "size": "1rem",
+                          "size": "16px",
                         },
                         "transition": Object {
                           "time": ".3s ease",
@@ -775,7 +852,7 @@ exports[`should render a select 1`] = `
                     up={false}
                   >
                     <span
-                      className="sc-gZMcBi jEkrVi sc-htoDjs hEAdvI sc-bwzfXH daCHbB"
+                      className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI sc-bwzfXH fCnCPt"
                       label={false}
                       transform="none"
                     >

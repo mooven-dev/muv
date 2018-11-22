@@ -48,9 +48,17 @@ const StyledButton = styled.button`
 ${props => commonStyles(props)}
 `;
 
+StyledButton.defaultProps = {
+  theme: themeDefault,
+};
+
 const StyledA = styled.a`
 ${props => commonStyles(props)}
 `;
+
+StyledA.defaultProps = {
+  theme: themeDefault,
+};
 
 // COMPONENT
 const Button = (props) => {
@@ -65,7 +73,7 @@ Button.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   /** accepts only functions (if passed, will render a button tag) */
   onClick: func,
   /** accepts only string paths (if passed, will render a anchor tag) */
@@ -80,7 +88,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
   children: 'default',
-  theme: themeDefault,
   secondary: false,
   disabled: false,
   outline: false,

@@ -14,6 +14,10 @@ border: none;
 padding: 0;
 `;
 
+StyledFieldset.defaultProps = {
+  theme: themeDefault,
+};
+
 // COMPONENT
 const Fieldset = (props) => {
   const { onChange, placeholder, type, children, label, warn, success, disabled, ...rest } = props;
@@ -41,7 +45,7 @@ Fieldset.propTypes = {
   /** pass a label prop to set the text of your label */
   label: string,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
   /** set the input to disable state */
   disabled: bool,
   /** set the input and feedback text to success state */
@@ -51,7 +55,6 @@ Fieldset.propTypes = {
 };
 
 Fieldset.defaultProps = {
-  theme: themeDefault,
   disabled: false,
   success: false,
   label: 'label',
