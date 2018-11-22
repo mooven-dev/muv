@@ -15,7 +15,7 @@
     "test:update": "jest -u",
     "test:cover": "jest --coverage",
     "now-build": "docz build",
-    "add": "git add .",
+    "add": "git add build src/release.json",
     "deploy": "now && now alias"
   },
   "dependencies": {
@@ -75,7 +75,8 @@
     "run": [
       "lint",
       "test",
-      "build"
+      "build",
+      "add"
     ],
     "silent": true
   },
