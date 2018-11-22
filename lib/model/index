@@ -20,7 +20,7 @@ __COMPONENT__.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
   /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)),
+  theme: objectOf(objectOf(string)).isRequired,
 };
 
 __COMPONENT__.defaultProps = {

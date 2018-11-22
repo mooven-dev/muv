@@ -29,6 +29,17 @@ import Modal from './molecules/modal';
 
 // TEMPLATES
 
+
+// GLOBALS
+injectGlobal`
+  body {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    color: #222;
+  }
+`;
+
 // EXPORTS
 export default styled;
 export {

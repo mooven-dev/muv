@@ -1,6 +1,6 @@
 {
   "name": "muv",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "mooven component lib",
   "main": "dist/muv.min.js",
   "bin": {
@@ -42,6 +42,7 @@
     "jest": "^23.6.0",
     "lodash": "^4.17.11",
     "lodash-webpack-plugin": "^0.11.5",
+    "next-page-transitions": "^1.0.0-alpha.4",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
