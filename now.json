@@ -2,6 +2,8 @@
   "public": true,
   "alias": "muv",
   "name": "muv",
-  "type": "npm",
-  "version": 1
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
 }

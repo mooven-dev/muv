@@ -2,7 +2,7 @@
   "name": "muv",
   "version": "0.1.0",
   "description": "mooven component lib",
-  "main": "dist/muv.min.js",
+  "main": "build/muv.min.js",
   "bin": {
     "muv": "bin/muv.js"
   },
@@ -14,7 +14,6 @@
     "test": "jest",
     "test:update": "jest -u",
     "test:cover": "jest --coverage",
-    "now-start": "serve docz",
     "now-build": "docz build",
     "deploy": "now && now alias"
   },
@@ -45,9 +44,9 @@
     "next-page-transitions": "^1.0.0-alpha.4",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
+    "react": "^16.6.3",
     "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.5.2",
+    "react-dom": "^16.6.3",
     "serve": "^10.0.2",
     "styled-components": "^3.4.10",
     "uglifyjs-webpack-plugin": "^2.0.1",
