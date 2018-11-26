@@ -9,6 +9,7 @@
 import styled, { ThemeProvider, injectGlobal, ServerStyleSheet } from 'styled-components';
 
 // ATOMS
+import Icon from './atoms/icon';
 import Fab from './atoms/fab';
 import Divider from './atoms/divider';
 import Arrow from './atoms/arrow';
@@ -22,6 +23,7 @@ import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
+import ChatMessage from './molecules/chatMessage';
 import Select from './molecules/select';
 import Fieldset from './molecules/fieldset';
 import Modal from './molecules/modal';
@@ -39,6 +41,10 @@ injectGlobal`
     padding: 0px;
     margin: 0px;
     color: #222;
+    * {
+      box-sizing: border-box;
+      font-family: 'Ubuntu', sans-serif;
+    }
   }
 `;
 
@@ -49,6 +55,8 @@ export {
   ThemeProvider,
   injectGlobal,
   // COMPONENTS
+  ChatMessage,
+  Icon,
   Fab,
   Chatbot,
   Divider,

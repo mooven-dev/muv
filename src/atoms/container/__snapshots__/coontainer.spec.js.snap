@@ -4,19 +4,22 @@ exports[`should render a Container 1`] = `
 <Container
   full={false}
   height="auto"
+  margin="0"
   maxHeight="auto"
   maxWidth="auto"
   minHeight="auto"
   minWidth="auto"
-  width="auto"
+  padding="0"
 >
   <styled.div
     full={false}
     height="auto"
+    margin="0"
     maxHeight="auto"
     maxWidth="auto"
     minHeight="auto"
     minWidth="auto"
+    padding="0"
     theme={
       Object {
         "color": Object {
@@ -34,7 +37,7 @@ exports[`should render a Container 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -52,12 +55,10 @@ exports[`should render a Container 1`] = `
         },
       }
     }
-    width="auto"
   >
     <div
-      className="sc-bdVaJa eGlEDl"
+      className="sc-bdVaJa gqdBl"
       height="auto"
-      width="auto"
     >
       container
     </div>

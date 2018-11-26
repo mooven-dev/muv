@@ -1,28 +1,20 @@
 // IMPORTS
-import { bool, objectOf, string } from 'prop-types';
+import { bool, string } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
 import themeDefault from '../../theme';
-
-// STYLES
-const setColor = ({ theme, primary, secondary, warn, success }) => {
-  if (secondary) return theme.color.secondary;
-  if (primary) return theme.color.primary;
-  if (success) return theme.color.success;
-  if (warn) return theme.color.warn;
-  return theme.font.color;
-};
+import { setColor } from '../../utils';
 
 const commonStyles = ({ transform, strong, align, theme, label, spacing, ...rest }) => (`
 font-weight: ${(strong || label ? 'bold' : 'inherit')};
 letter-spacing: ${spacing || theme.font.spacing};
 color: ${setColor({ theme, ...rest })};
 font-family: ${theme.font.family};
-margin: ${theme.shape.margin};
 text-transform: ${transform};
 text-align: ${align};
 line-height: 1;
+margin: 0;
 `);
 
 export const P = styled.p`
@@ -98,10 +90,11 @@ H6.defaultProps = {
 };
 
 // COMPONENT
-const Text = ({ type, strong, ...props }) => {
+const Text = ({ type, ...props }) => {
+  const { strong } = props;
   switch (type) {
     case 'span':
-      return <Span strong={strong} {...props} />;
+      return <Span {...props} />;
     case 'h1':
       return <H1 strong={!strong} {...props} />;
     case 'h2':
@@ -115,20 +108,20 @@ const Text = ({ type, strong, ...props }) => {
     case 'h6':
       return <H6 strong={!strong} {...props} />;
     default:
-      return <P strong={strong} {...props} />;
+      return <P {...props} />;
   }
 };
 
 // DOCUMENTATION
 Text.propTypes = {
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
   /** accepts only text as children */
   children: string,
   /** sets text-transform value */
   transform: string,
   /** sets font-weight as bold */
   strong: bool,
+  /** sets font-size to 80% */
+  small: bool,
   /** sets font-weight and size to matchs label style */
   label: bool,
   /** sets the text-align */
@@ -141,6 +134,7 @@ Text.defaultProps = {
   transform: 'none',
   children: 'default',
   strong: false,
+  small: false,
   label: false,
   align: 'left',
   type: '',

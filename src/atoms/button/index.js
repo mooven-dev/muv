@@ -1,10 +1,11 @@
 // IMPORTS
-import { node, objectOf, string, func, bool } from 'prop-types';
+import { node, string, func, bool } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
 import { setColor, disabledStyle } from '../../utils';
 import themeDefault from '../../theme';
+import Text from '../text';
 
 // STYLES
 const setBackground = ({ theme, ...rest }) => setColor({ theme, ...rest }, theme.color.primary);
@@ -19,16 +20,16 @@ const setBordColor = ({ outline, theme, ...rest }) => {
   return null;
 };
 
-const commonStyles = ({ disabled, theme, ...rest }) => (`
+const commonStyles = ({ inset, disabled, theme, ...rest }) => (`
 border: ${theme.shape.border}; /* keep this line first */
+box-shadow: ${inset ? 'none' : theme.shape.shadow};
 border-color: ${setBordColor({ theme, ...rest })};
 background: ${setBackground({ theme, ...rest })};
 color: ${setTextColor({ theme, ...rest })};
 border-radius: ${theme.shape.radius};
 transition: ${theme.transition.time};
-box-shadow: ${theme.shape.shadow};
 padding: ${theme.shape.padding};
-margin: ${theme.shape.margin};
+box-sizing: border-box;
 text-decoration: none;
 display: inline-block;
 text-align: center;
@@ -37,13 +38,15 @@ cursor: pointer;
 line-height: 1;
 outline: none;
 width: 100%;
+margin: 0;
 ${disabled ? disabledStyle : ''}
 &:disabled {
   ${disabledStyle}
-}
-&:hover, &:focus {
+};
+&:hover {
   box-shadow: none;
-}
+  filter: brightness(1.25);
+};
 `);
 
 const StyledButton = styled.button`
@@ -64,18 +67,21 @@ StyledA.defaultProps = {
 
 // COMPONENT
 const Button = (props) => {
-  const { href, onClick } = props;
-  if (onClick) return <StyledButton {...props} />;
-  if (href) return <StyledA {...props} />;
-  return null;
+  const { href, onClick, children } = props;
+  const returnContent = content => (
+    (typeof content === 'string')
+      ? <Text align="center" white>{content}</Text>
+      : content
+  );
+  if (onClick) return <StyledButton {...props}>{returnContent(children)}</StyledButton>;
+  if (href) return <StyledA {...props}>{returnContent(children)}</StyledA>;
+  return <Text error align="center">missing prop onClick or href</Text>;
 };
 
 // DOCUMENTATION
 Button.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
   /** accepts only functions (if passed, will render a button tag) */
   onClick: func,
   /** accepts only string paths (if passed, will render a anchor tag) */
@@ -86,6 +92,8 @@ Button.propTypes = {
   disabled: bool,
   /** sets background to transparent and adds a border */
   outline: bool,
+  /** removes box-shadow */
+  inset: bool,
 };
 
 Button.defaultProps = {
@@ -94,6 +102,7 @@ Button.defaultProps = {
   disabled: false,
   outline: false,
   onClick: null,
+  inset: false,
   href: null,
 };
 

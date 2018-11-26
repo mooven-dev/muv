@@ -1,5 +1,5 @@
 // IMPORTS
-import { node, objectOf, string, number } from 'prop-types';
+import { node, string, number } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -14,8 +14,6 @@ flex-grow: ${({ grow }) => grow};
 flex-direction: row;
 flex-shrink: 1;
 display: flex;
-flex-basis: 0;
-margin: 0;
 `;
 
 StyledRow.defaultProps = {
@@ -31,8 +29,6 @@ const Row = ({ children, ...props }) => (
 Row.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
   /** sets flex-grow using a "inline style" logic */
   grow: number,
   /** sets justify-content using a "inline style" logic */
@@ -42,7 +38,7 @@ Row.propTypes = {
 };
 
 Row.defaultProps = {
-  justify: 'flex-start',
+  justify: 'stretch',
   align: 'stretch',
   children: 'row',
   grow: 1,

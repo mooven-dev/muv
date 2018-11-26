@@ -20,7 +20,7 @@ exports[`should render a divider 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },

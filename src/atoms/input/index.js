@@ -1,5 +1,5 @@
 // IMPORTS
-import { objectOf, bool, string } from 'prop-types';
+import { bool, string } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -22,8 +22,6 @@ const Input = ({ error, ...props }) => (
 
 // DOCUMENTATION
 Input.propTypes = {
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
   /** equals to type html atribute */
   type: string,
   /** prop to disables input */

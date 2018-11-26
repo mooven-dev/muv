@@ -29,7 +29,7 @@ exports[`should change its style if disabled 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -51,7 +51,7 @@ exports[`should change its style if disabled 1`] = `
     warn={false}
   >
     <input
-      className="sc-bdVaJa bYXmrN"
+      className="sc-bdVaJa iEJAqI"
       disabled={true}
       placeholder="placeholder"
       type="text"
@@ -91,7 +91,7 @@ exports[`should change its style if required 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -113,7 +113,7 @@ exports[`should change its style if required 1`] = `
     warn={false}
   >
     <input
-      className="sc-bdVaJa bYXmrN"
+      className="sc-bdVaJa iEJAqI"
       disabled={false}
       placeholder="placeholder"
       required={true}
@@ -152,7 +152,7 @@ exports[`should change its style on error 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -174,7 +174,7 @@ exports[`should change its style on error 1`] = `
     warn={true}
   >
     <input
-      className="sc-bdVaJa ggggVk"
+      className="sc-bdVaJa borbUD"
       disabled={false}
       placeholder="placeholder"
       type="text"
@@ -212,7 +212,7 @@ exports[`should change its style on success 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -234,7 +234,7 @@ exports[`should change its style on success 1`] = `
     warn={false}
   >
     <input
-      className="sc-bdVaJa caUFFI"
+      className="sc-bdVaJa huOWaE"
       disabled={false}
       placeholder="placeholder"
       type="text"
@@ -272,7 +272,7 @@ exports[`should render a input 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -294,7 +294,7 @@ exports[`should render a input 1`] = `
     warn={false}
   >
     <input
-      className="sc-bdVaJa bYXmrN"
+      className="sc-bdVaJa iEJAqI"
       disabled={false}
       placeholder="placeholder"
       type="text"

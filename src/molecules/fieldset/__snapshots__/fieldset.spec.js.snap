@@ -25,7 +25,7 @@ exports[`should render a fieldset 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -50,6 +50,7 @@ exports[`should render a fieldset 1`] = `
       <Text
         align="left"
         label={true}
+        small={false}
         strong={false}
         transform="capitalize"
         type=""
@@ -57,6 +58,7 @@ exports[`should render a fieldset 1`] = `
         <styled.p
           align="left"
           label={true}
+          small={false}
           strong={false}
           theme={
             Object {
@@ -75,7 +77,7 @@ exports[`should render a fieldset 1`] = `
               },
               "font": Object {
                 "color": "#222222",
-                "family": "system-ui, sans-serif",
+                "family": "\\"Ubuntu\\", sans-serif",
                 "size": "16px",
                 "spacing": 0,
               },
@@ -96,7 +98,7 @@ exports[`should render a fieldset 1`] = `
           transform="capitalize"
         >
           <p
-            className="sc-bwzfXH gRNdOs"
+            className="sc-bwzfXH foUVvz"
             label={true}
             transform="capitalize"
           >
@@ -133,7 +135,7 @@ exports[`should render a fieldset 1`] = `
               },
               "font": Object {
                 "color": "#222222",
-                "family": "system-ui, sans-serif",
+                "family": "\\"Ubuntu\\", sans-serif",
                 "size": "16px",
                 "spacing": 0,
               },
@@ -155,7 +157,7 @@ exports[`should render a fieldset 1`] = `
           warn={false}
         >
           <input
-            className="sc-bdVaJa bYXmrN"
+            className="sc-bdVaJa iEJAqI"
             disabled={false}
             placeholder="placeholder"
             type="text"
@@ -192,7 +194,7 @@ exports[`should render a fieldset 1`] = `
               },
               "font": Object {
                 "color": "#222222",
-                "family": "system-ui, sans-serif",
+                "family": "\\"Ubuntu\\", sans-serif",
                 "size": "16px",
                 "spacing": 0,
               },
@@ -213,7 +215,7 @@ exports[`should render a fieldset 1`] = `
           transform="none"
         >
           <p
-            className="sc-bwzfXH BWwZO"
+            className="sc-bwzfXH dQPAAd"
             label={false}
             transform="none"
           >

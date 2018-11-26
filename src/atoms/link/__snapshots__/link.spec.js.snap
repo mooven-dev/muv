@@ -4,6 +4,7 @@ exports[`should change its style on secondary 1`] = `
 <Link
   disabled={false}
   href="#"
+  noLine={false}
   onClick={null}
   secondary={true}
   strong={false}
@@ -11,6 +12,7 @@ exports[`should change its style on secondary 1`] = `
   <styled.a
     disabled={false}
     href="#"
+    noLine={false}
     onClick={null}
     secondary={true}
     strong={false}
@@ -31,7 +33,7 @@ exports[`should change its style on secondary 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -51,7 +53,7 @@ exports[`should change its style on secondary 1`] = `
     }
   >
     <a
-      className="sc-bdVaJa cdqEFd"
+      className="sc-bdVaJa jGYEHc"
       disabled={false}
       href="#"
       onClick={null}
@@ -66,6 +68,7 @@ exports[`should change its style on success 1`] = `
 <Link
   disabled={false}
   href="#"
+  noLine={false}
   onClick={null}
   strong={false}
   success={true}
@@ -73,6 +76,7 @@ exports[`should change its style on success 1`] = `
   <styled.a
     disabled={false}
     href="#"
+    noLine={false}
     onClick={null}
     strong={false}
     success={true}
@@ -93,7 +97,7 @@ exports[`should change its style on success 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -113,7 +117,7 @@ exports[`should change its style on success 1`] = `
     }
   >
     <a
-      className="sc-bdVaJa kfLebo"
+      className="sc-bdVaJa cALpdh"
       disabled={false}
       href="#"
       onClick={null}
@@ -128,6 +132,7 @@ exports[`should change its style on warn 1`] = `
 <Link
   disabled={false}
   href="#"
+  noLine={false}
   onClick={null}
   strong={false}
   warn={true}
@@ -135,6 +140,7 @@ exports[`should change its style on warn 1`] = `
   <styled.a
     disabled={false}
     href="#"
+    noLine={false}
     onClick={null}
     strong={false}
     theme={
@@ -154,7 +160,7 @@ exports[`should change its style on warn 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -175,7 +181,7 @@ exports[`should change its style on warn 1`] = `
     warn={true}
   >
     <a
-      className="sc-bdVaJa jsKXMZ"
+      className="sc-bdVaJa hCHyHr"
       disabled={false}
       href="#"
       onClick={null}
@@ -190,12 +196,14 @@ exports[`should render a anchor 1`] = `
 <Link
   disabled={false}
   href="#"
+  noLine={false}
   onClick={null}
   strong={false}
 >
   <styled.a
     disabled={false}
     href="#"
+    noLine={false}
     onClick={null}
     strong={false}
     theme={
@@ -215,7 +223,7 @@ exports[`should render a anchor 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -235,7 +243,7 @@ exports[`should render a anchor 1`] = `
     }
   >
     <a
-      className="sc-bdVaJa grNSnH"
+      className="sc-bdVaJa lhHpOn"
       disabled={false}
       href="#"
       onClick={null}
@@ -250,12 +258,14 @@ exports[`should render a button 1`] = `
 <Link
   disabled={false}
   href={null}
+  noLine={false}
   onClick={[Function]}
   strong={false}
 >
   <styled.button
     disabled={false}
     href={null}
+    noLine={false}
     onClick={[Function]}
     strong={false}
     theme={
@@ -275,7 +285,7 @@ exports[`should render a button 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -295,7 +305,7 @@ exports[`should render a button 1`] = `
     }
   >
     <button
-      className="sc-bwzfXH kOmhFv"
+      className="sc-bwzfXH mRfpw"
       disabled={false}
       href={null}
       onClick={[Function]}

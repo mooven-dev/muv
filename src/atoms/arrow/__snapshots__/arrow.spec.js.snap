@@ -22,7 +22,7 @@ exports[`should render a arrow 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -47,6 +47,7 @@ exports[`should render a arrow 1`] = `
       align="left"
       className="sc-htoDjs hEAdvI"
       label={false}
+      small={false}
       strong={false}
       theme={
         Object {
@@ -65,7 +66,7 @@ exports[`should render a arrow 1`] = `
           },
           "font": Object {
             "color": "#222222",
-            "family": "system-ui, sans-serif",
+            "family": "\\"Ubuntu\\", sans-serif",
             "size": "16px",
             "spacing": 0,
           },
@@ -91,6 +92,7 @@ exports[`should render a arrow 1`] = `
         align="left"
         className="sc-htoDjs hEAdvI"
         label={false}
+        small={false}
         strong={false}
         theme={
           Object {
@@ -109,7 +111,7 @@ exports[`should render a arrow 1`] = `
             },
             "font": Object {
               "color": "#222222",
-              "family": "system-ui, sans-serif",
+              "family": "\\"Ubuntu\\", sans-serif",
               "size": "16px",
               "spacing": 0,
             },
@@ -131,7 +133,7 @@ exports[`should render a arrow 1`] = `
         up={false}
       >
         <span
-          className="sc-htoDjs hEAdvI sc-bwzfXH fCnCPt"
+          className="sc-htoDjs hEAdvI sc-bwzfXH ihaFJe"
           label={false}
           transform="none"
         >

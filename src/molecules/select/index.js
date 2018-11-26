@@ -1,5 +1,5 @@
 // IMPORTS
-import { node, objectOf, string, shape, arrayOf, any, func } from 'prop-types';
+import { node, string, shape, arrayOf, any, func } from 'prop-types';
 import styled from 'styled-components';
 import React, { Component } from 'react';
 
@@ -131,8 +131,7 @@ Select.propTypes = {
   placeholder: string,
   /** accepts only valid react nodes as children */
   children: node,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
+  /** description */
   render: shape({
     title: arrayOf(string),
     data: arrayOf(any),

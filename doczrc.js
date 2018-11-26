@@ -5,7 +5,9 @@ export default {
   title: 'MUV',
   port: '8000',
   dest: '/dist',
+  indexHtml: 'index.html',
   description: 'This is my awesome documentation',
+  showPlaygroundEditor: true,
   themeConfig: {
     colors: {
       background: theme.color.white,
@@ -19,10 +21,19 @@ export default {
       border: theme.color.lightgray,
       text: theme.font.color,
     },
-  },
-  styles: {
-    body: {
-      fontSize: theme.shape.size,
+    styles: {
+      body: {
+        fontSize: theme.font.size,
+        fontFamily: theme.font.family,
+      },
+      h1: {
+        fontSize: '3rem',
+        fontFamily: theme.font.family,
+      },
+      h2: {
+        fontSize: '1.5rem',
+        fontFamily: theme.font.family,
+      },
     },
   },
 };

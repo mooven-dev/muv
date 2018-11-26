@@ -2,12 +2,12 @@
 
 exports[`should render a col 1`] = `
 <Col
-  align="flex-start"
+  align="strech"
   grow={1}
   justify="flex-start"
 >
   <Styled(Row)
-    align="flex-start"
+    align="strech"
     grow={1}
     justify="flex-start"
     theme={
@@ -27,7 +27,7 @@ exports[`should render a col 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -47,7 +47,7 @@ exports[`should render a col 1`] = `
     }
   >
     <Row
-      align="flex-start"
+      align="strech"
       className="sc-htpNat cPqbHx"
       grow={1}
       justify="flex-start"
@@ -68,7 +68,7 @@ exports[`should render a col 1`] = `
           },
           "font": Object {
             "color": "#222222",
-            "family": "system-ui, sans-serif",
+            "family": "\\"Ubuntu\\", sans-serif",
             "size": "16px",
             "spacing": 0,
           },
@@ -88,7 +88,7 @@ exports[`should render a col 1`] = `
       }
     >
       <Styled(Container)
-        align="flex-start"
+        align="strech"
         className="sc-htpNat cPqbHx"
         grow={1}
         justify="flex-start"
@@ -109,7 +109,7 @@ exports[`should render a col 1`] = `
             },
             "font": Object {
               "color": "#222222",
-              "family": "system-ui, sans-serif",
+              "family": "\\"Ubuntu\\", sans-serif",
               "size": "16px",
               "spacing": 0,
             },
@@ -129,16 +129,18 @@ exports[`should render a col 1`] = `
         }
       >
         <Container
-          align="flex-start"
-          className="sc-htpNat cPqbHx sc-bwzfXH kHNFvR"
+          align="strech"
+          className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
           full={false}
           grow={1}
           height="auto"
           justify="flex-start"
+          margin="0"
           maxHeight="auto"
           maxWidth="auto"
           minHeight="auto"
           minWidth="auto"
+          padding="0"
           theme={
             Object {
               "color": Object {
@@ -156,7 +158,7 @@ exports[`should render a col 1`] = `
               },
               "font": Object {
                 "color": "#222222",
-                "family": "system-ui, sans-serif",
+                "family": "\\"Ubuntu\\", sans-serif",
                 "size": "16px",
                 "spacing": 0,
               },
@@ -174,19 +176,20 @@ exports[`should render a col 1`] = `
               },
             }
           }
-          width="auto"
         >
           <styled.div
-            align="flex-start"
-            className="sc-htpNat cPqbHx sc-bwzfXH kHNFvR"
+            align="strech"
+            className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
             full={false}
             grow={1}
             height="auto"
             justify="flex-start"
+            margin="0"
             maxHeight="auto"
             maxWidth="auto"
             minHeight="auto"
             minWidth="auto"
+            padding="0"
             theme={
               Object {
                 "color": Object {
@@ -204,7 +207,7 @@ exports[`should render a col 1`] = `
                 },
                 "font": Object {
                   "color": "#222222",
-                  "family": "system-ui, sans-serif",
+                  "family": "\\"Ubuntu\\", sans-serif",
                   "size": "16px",
                   "spacing": 0,
                 },
@@ -222,12 +225,10 @@ exports[`should render a col 1`] = `
                 },
               }
             }
-            width="auto"
           >
             <div
-              className="sc-htpNat cPqbHx sc-bwzfXH kHNFvR sc-bdVaJa eGlEDl"
+              className="sc-htpNat cPqbHx sc-bwzfXH iksuOx sc-bdVaJa gqdBl"
               height="auto"
-              width="auto"
             >
               col
             </div>

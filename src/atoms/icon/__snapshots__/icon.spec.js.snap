@@ -1,15 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a row 1`] = `
-<Row
-  align="stretch"
-  grow={1}
-  justify="stretch"
+exports[`should render a icon 1`] = `
+<Icon
+  color="inherit"
+  fontSize="1rem"
+  ios={false}
+  name="inherit"
 >
-  <Styled(Container)
-    align="stretch"
-    grow={1}
-    justify="stretch"
+  <Styled(Ionicon)
+    color="inherit"
+    fontSize="1rem"
+    icon="md-inherit"
     theme={
       Object {
         "color": Object {
@@ -46,19 +47,15 @@ exports[`should render a row 1`] = `
       }
     }
   >
-    <Container
-      align="stretch"
-      className="sc-bwzfXH kazehP"
-      full={false}
-      grow={1}
-      height="auto"
-      justify="stretch"
-      margin="0"
-      maxHeight="auto"
-      maxWidth="auto"
-      minHeight="auto"
-      minWidth="auto"
-      padding="0"
+    <Ionicon
+      beat={false}
+      className="sc-bdVaJa hoAZYJ"
+      color="inherit"
+      fontSize="1rem"
+      icon="md-inherit"
+      rotate={false}
+      shake={false}
+      style={Object {}}
       theme={
         Object {
           "color": Object {
@@ -95,63 +92,32 @@ exports[`should render a row 1`] = `
         }
       }
     >
-      <styled.div
-        align="stretch"
-        className="sc-bwzfXH kazehP"
-        full={false}
-        grow={1}
-        height="auto"
-        justify="stretch"
-        margin="0"
-        maxHeight="auto"
-        maxWidth="auto"
-        minHeight="auto"
-        minWidth="auto"
-        padding="0"
-        theme={
-          Object {
-            "color": Object {
-              "black": "#222222",
-              "darkgray": "#515151",
-              "error": "#dd3333",
-              "gray": "#a9abae",
-              "lightgray": "#e5e5e5",
-              "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0081c8",
-              "secondary": "#00245f",
-              "success": "#33bb33",
-              "warn": "#dd3333",
-              "white": "#fefefe",
-            },
-            "font": Object {
-              "color": "#222222",
-              "family": "\\"Ubuntu\\", sans-serif",
-              "size": "16px",
-              "spacing": 0,
-            },
-            "shape": Object {
-              "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-              "margin": ".25rem .125rem",
-              "padding": ".75rem .875rem",
-              "radius": ".25rem",
-              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-              "size": "16px",
-            },
-            "transition": Object {
-              "time": ".3s ease",
-            },
-          }
-        }
+      <styled.svg
+        beat={0}
+        className="sc-bdVaJa hoAZYJ"
+        fill="inherit"
+        height="1rem"
+        rotate={0}
+        shake={0}
+        style={Object {}}
+        viewBox="0 0 1024 1024"
+        width="1rem"
       >
-        <div
-          className="sc-bwzfXH kazehP sc-bdVaJa gqdBl"
-          height="auto"
+        <svg
+          className="sc-bdVaJa hoAZYJ sc-bdVaJa fUuvxv"
+          fill="inherit"
+          height="1rem"
+          rotate={0}
+          style={Object {}}
+          viewBox="0 0 1024 1024"
+          width="1rem"
         >
-          row
-        </div>
-      </styled.div>
-    </Container>
-  </Styled(Container)>
-</Row>
+          <path
+            d=""
+          />
+        </svg>
+      </styled.svg>
+    </Ionicon>
+  </Styled(Ionicon)>
+</Icon>
 `;

@@ -1,5 +1,5 @@
 // IMPORTS
-import { node, objectOf, string, func, bool } from 'prop-types';
+import { node, string, func, bool } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -9,10 +9,11 @@ import themeDefault from '../../theme';
 // STYLES
 const setTextColor = ({ theme, ...rest }) => setColor({ theme, ...rest }, theme.color.primary);
 
-const commomStyles = ({ disabled, theme, strong, ...rest }) => (`
-color: ${setTextColor({ theme, ...rest })};
+const commomStyles = ({ disabled, theme, strong, noLine, ...rest }) => (`
+text-decoration: ${noLine ? 'none' : 'underline'};
 font-weight: ${(strong ? 'bold' : 'inherit')};
-text-decoration: underline;
+color: ${setTextColor({ theme, ...rest })};
+background: transparent;
 display: inline-block;
 cursor: pointer;
 line-height: 1;
@@ -65,8 +66,9 @@ Link.propTypes = {
   strong: bool,
   /** disables the element actions and changes its styles */
   disabled: bool,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
+  /** removes the underline */
+  noLine: bool,
+
 };
 
 Link.defaultProps = {
@@ -74,6 +76,7 @@ Link.defaultProps = {
   disabled: false,
   onClick: null,
   strong: false,
+  noLine: false,
   href: null,
 };
 

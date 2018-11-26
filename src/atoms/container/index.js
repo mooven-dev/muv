@@ -1,15 +1,15 @@
 // IMPORTS
-import { node, objectOf, string, bool } from 'prop-types';
+import { node, string, bool } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
 import themeDefault from '../../theme';
 import { setColor } from '../../utils';
-
 // STYLES
 const StyledContainer = styled.div`
+padding: ${({ theme, content, padding }) => (content ? theme.shape.padding : padding)};
+flex-basis: ${({ content, padding }) => ((content || padding) ? 'auto' : 0)};
 border: ${({ theme, bordered }) => (bordered ? theme.shape.border : 'none')};
-padding: ${({ theme, content }) => (content ? theme.shape.padding : 0)};
 display: ${({ flex, full }) => (full || flex ? 'flex' : 'block')};
 height: ${({ height, full }) => (full ? '100vh' : height)};
 width: ${({ width, full }) => (full ? '100%' : width)};
@@ -19,8 +19,9 @@ max-height: ${({ maxHeight }) => maxHeight};
 min-height: ${({ minHeight }) => minHeight};
 max-width: ${({ maxWidth }) => maxWidth};
 min-width: ${({ minWidth }) => minWidth};
+margin: ${({ margin }) => margin};
 flex-direction: column;
-margin: 0 auto;
+align-items: stretch;
 `;
 
 StyledContainer.defaultProps = {
@@ -36,8 +37,6 @@ const Container = props => (
 Container.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
   /** sets max-height using a "inline style" logic */
   maxHeight: string,
   /** sets min-height using a "inline style" logic */
@@ -48,10 +47,12 @@ Container.propTypes = {
   minWidth: string,
   /** sets height using a "inline style" logic */
   height: string,
-  /** sets width using a "inline style" logic */
-  width: string,
   /** sets display to flex, width to 100% and height to 100vh */
   full: bool,
+  /** sets padding using a "inline style" logic */
+  padding: string,
+  /** sets margin using a "inline style" logic */
+  margin: string,
 };
 
 Container.defaultProps = {
@@ -61,7 +62,8 @@ Container.defaultProps = {
   maxWidth: 'auto',
   minWidth: 'auto',
   height: 'auto',
-  width: 'auto',
+  padding: '0',
+  margin: '0',
   full: false,
 };
 

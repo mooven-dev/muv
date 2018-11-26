@@ -1,5 +1,5 @@
 // IMPORTS
-import { objectOf, string, bool } from 'prop-types';
+import { string, bool } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -44,8 +44,6 @@ Fieldset.propTypes = {
   children: string,
   /** pass a label prop to set the text of your label */
   label: string,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
   /** set the input to disable state */
   disabled: bool,
   /** set the input and feedback text to success state */

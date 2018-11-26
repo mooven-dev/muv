@@ -1,5 +1,5 @@
 // IMPORTS
-import { node, objectOf, string, func } from 'prop-types';
+import { node, func } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -37,8 +37,6 @@ Fab.propTypes = {
   onClick: func,
   /** accepts only valid react nodes as children */
   children: node,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
 };
 
 Fab.defaultProps = {

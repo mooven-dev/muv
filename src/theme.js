@@ -28,7 +28,7 @@ const shape = {
 
 const font = {
   // JUST ONE SET
-  family: 'system-ui, sans-serif',
+  family: '"Ubuntu", sans-serif',
   color: color.black,
   // PROPORTIONAL TO LAYOUT FORMS
   size: shape.size,

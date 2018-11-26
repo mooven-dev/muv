@@ -1,5 +1,5 @@
 // IMPORTS
-import { node, objectOf, string, bool } from 'prop-types';
+import { node, bool } from 'prop-types';
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
@@ -61,8 +61,6 @@ class Modal extends PureComponent {
 Modal.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
   /** hide the button component */
   noButton: bool,
   /** you can use this prop to control the component from outside */

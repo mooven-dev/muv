@@ -1,0 +1,979 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a chatMessage 1`] = `
+<ChatMessage
+  botAvatar="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+  botName="T-800"
+  user={false}
+  userAvatar="http://www.robots-and-dragons.de/sites/default/files/styles/artikel_-_bild__ber_artikel/public/field/image/preview/terminator-linda-hamilton.jpg?itok=J4P32hm8"
+  userName="Sarah"
+>
+  <Container
+    full={false}
+    height="auto"
+    margin="0"
+    maxHeight="auto"
+    maxWidth="auto"
+    minHeight="auto"
+    minWidth="auto"
+    padding="0"
+  >
+    <styled.div
+      full={false}
+      height="auto"
+      margin="0"
+      maxHeight="auto"
+      maxWidth="auto"
+      minHeight="auto"
+      minWidth="auto"
+      padding="0"
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".25rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
+    >
+      <div
+        className="sc-bdVaJa gqdBl"
+        height="auto"
+      >
+        <Styled(Row)
+          align="flex-end"
+          user={false}
+        >
+          <Row
+            align="flex-end"
+            className="sc-gZMcBi hztSvw"
+            grow={1}
+            justify="stretch"
+            user={false}
+          >
+            <Styled(Container)
+              align="flex-end"
+              className="sc-gZMcBi hztSvw"
+              grow={1}
+              justify="stretch"
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#222222",
+                    "darkgray": "#515151",
+                    "error": "#dd3333",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "\\"Ubuntu\\", sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".75rem .875rem",
+                    "radius": ".25rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "16px",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              user={false}
+            >
+              <Container
+                align="flex-end"
+                className="sc-gZMcBi hztSvw sc-dnqmqq JAaJu"
+                full={false}
+                grow={1}
+                height="auto"
+                justify="stretch"
+                margin="0"
+                maxHeight="auto"
+                maxWidth="auto"
+                minHeight="auto"
+                minWidth="auto"
+                padding="0"
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".25rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+                user={false}
+              >
+                <styled.div
+                  align="flex-end"
+                  className="sc-gZMcBi hztSvw sc-dnqmqq JAaJu"
+                  full={false}
+                  grow={1}
+                  height="auto"
+                  justify="stretch"
+                  margin="0"
+                  maxHeight="auto"
+                  maxWidth="auto"
+                  minHeight="auto"
+                  minWidth="auto"
+                  padding="0"
+                  theme={
+                    Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".25rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    }
+                  }
+                  user={false}
+                >
+                  <div
+                    className="sc-gZMcBi hztSvw sc-dnqmqq JAaJu sc-bdVaJa gqdBl"
+                    height="auto"
+                  >
+                    <Styled(Col)
+                      bordered={true}
+                      grow={0}
+                      margin=".5rem"
+                      src="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+                    >
+                      <Col
+                        align="strech"
+                        bordered={true}
+                        className="sc-fjdhpX cXCPlB"
+                        grow={0}
+                        justify="flex-start"
+                        margin=".5rem"
+                        src="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+                      >
+                        <Styled(Row)
+                          align="strech"
+                          bordered={true}
+                          className="sc-fjdhpX cXCPlB"
+                          grow={0}
+                          justify="flex-start"
+                          margin=".5rem"
+                          src="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+                          theme={
+                            Object {
+                              "color": Object {
+                                "black": "#222222",
+                                "darkgray": "#515151",
+                                "error": "#dd3333",
+                                "gray": "#a9abae",
+                                "lightgray": "#e5e5e5",
+                                "overlay": "rgba(0, 0, 0, .15)",
+                                "primary": "#0081c8",
+                                "secondary": "#00245f",
+                                "success": "#33bb33",
+                                "warn": "#dd3333",
+                                "white": "#fefefe",
+                              },
+                              "font": Object {
+                                "color": "#222222",
+                                "family": "\\"Ubuntu\\", sans-serif",
+                                "size": "16px",
+                                "spacing": 0,
+                              },
+                              "shape": Object {
+                                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                "margin": ".25rem .125rem",
+                                "padding": ".75rem .875rem",
+                                "radius": ".25rem",
+                                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                "size": "16px",
+                              },
+                              "transition": Object {
+                                "time": ".3s ease",
+                              },
+                            }
+                          }
+                        >
+                          <Row
+                            align="strech"
+                            bordered={true}
+                            className="sc-fjdhpX cXCPlB sc-iwsKbI kYsEkp"
+                            grow={0}
+                            justify="flex-start"
+                            margin=".5rem"
+                            src="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+                            theme={
+                              Object {
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkgray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightgray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#0081c8",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".25rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              }
+                            }
+                          >
+                            <Styled(Container)
+                              align="strech"
+                              bordered={true}
+                              className="sc-fjdhpX cXCPlB sc-iwsKbI kYsEkp"
+                              grow={0}
+                              justify="flex-start"
+                              margin=".5rem"
+                              src="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+                              theme={
+                                Object {
+                                  "color": Object {
+                                    "black": "#222222",
+                                    "darkgray": "#515151",
+                                    "error": "#dd3333",
+                                    "gray": "#a9abae",
+                                    "lightgray": "#e5e5e5",
+                                    "overlay": "rgba(0, 0, 0, .15)",
+                                    "primary": "#0081c8",
+                                    "secondary": "#00245f",
+                                    "success": "#33bb33",
+                                    "warn": "#dd3333",
+                                    "white": "#fefefe",
+                                  },
+                                  "font": Object {
+                                    "color": "#222222",
+                                    "family": "\\"Ubuntu\\", sans-serif",
+                                    "size": "16px",
+                                    "spacing": 0,
+                                  },
+                                  "shape": Object {
+                                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                    "margin": ".25rem .125rem",
+                                    "padding": ".75rem .875rem",
+                                    "radius": ".25rem",
+                                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                    "size": "16px",
+                                  },
+                                  "transition": Object {
+                                    "time": ".3s ease",
+                                  },
+                                }
+                              }
+                            >
+                              <Container
+                                align="strech"
+                                bordered={true}
+                                className="sc-fjdhpX cXCPlB sc-iwsKbI kYsEkp sc-dnqmqq kvOPxc"
+                                full={false}
+                                grow={0}
+                                height="auto"
+                                justify="flex-start"
+                                margin=".5rem"
+                                maxHeight="auto"
+                                maxWidth="auto"
+                                minHeight="auto"
+                                minWidth="auto"
+                                padding="0"
+                                src="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+                                theme={
+                                  Object {
+                                    "color": Object {
+                                      "black": "#222222",
+                                      "darkgray": "#515151",
+                                      "error": "#dd3333",
+                                      "gray": "#a9abae",
+                                      "lightgray": "#e5e5e5",
+                                      "overlay": "rgba(0, 0, 0, .15)",
+                                      "primary": "#0081c8",
+                                      "secondary": "#00245f",
+                                      "success": "#33bb33",
+                                      "warn": "#dd3333",
+                                      "white": "#fefefe",
+                                    },
+                                    "font": Object {
+                                      "color": "#222222",
+                                      "family": "\\"Ubuntu\\", sans-serif",
+                                      "size": "16px",
+                                      "spacing": 0,
+                                    },
+                                    "shape": Object {
+                                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                      "margin": ".25rem .125rem",
+                                      "padding": ".75rem .875rem",
+                                      "radius": ".25rem",
+                                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                      "size": "16px",
+                                    },
+                                    "transition": Object {
+                                      "time": ".3s ease",
+                                    },
+                                  }
+                                }
+                              >
+                                <styled.div
+                                  align="strech"
+                                  bordered={true}
+                                  className="sc-fjdhpX cXCPlB sc-iwsKbI kYsEkp sc-dnqmqq kvOPxc"
+                                  full={false}
+                                  grow={0}
+                                  height="auto"
+                                  justify="flex-start"
+                                  margin=".5rem"
+                                  maxHeight="auto"
+                                  maxWidth="auto"
+                                  minHeight="auto"
+                                  minWidth="auto"
+                                  padding="0"
+                                  src="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+                                  theme={
+                                    Object {
+                                      "color": Object {
+                                        "black": "#222222",
+                                        "darkgray": "#515151",
+                                        "error": "#dd3333",
+                                        "gray": "#a9abae",
+                                        "lightgray": "#e5e5e5",
+                                        "overlay": "rgba(0, 0, 0, .15)",
+                                        "primary": "#0081c8",
+                                        "secondary": "#00245f",
+                                        "success": "#33bb33",
+                                        "warn": "#dd3333",
+                                        "white": "#fefefe",
+                                      },
+                                      "font": Object {
+                                        "color": "#222222",
+                                        "family": "\\"Ubuntu\\", sans-serif",
+                                        "size": "16px",
+                                        "spacing": 0,
+                                      },
+                                      "shape": Object {
+                                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                        "margin": ".25rem .125rem",
+                                        "padding": ".75rem .875rem",
+                                        "radius": ".25rem",
+                                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                        "size": "16px",
+                                      },
+                                      "transition": Object {
+                                        "time": ".3s ease",
+                                      },
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="sc-fjdhpX cXCPlB sc-iwsKbI kYsEkp sc-dnqmqq kvOPxc sc-bdVaJa jHWLrn"
+                                    height="auto"
+                                    src="https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138"
+                                  >
+                                    col
+                                  </div>
+                                </styled.div>
+                              </Container>
+                            </Styled(Container)>
+                          </Row>
+                        </Styled(Row)>
+                      </Col>
+                    </Styled(Col)>
+                    <Styled(Col)
+                      bordered={true}
+                      content={true}
+                      grow={0.8333333333333334}
+                      lightgray={true}
+                      margin=".5rem"
+                      primary={false}
+                      user={false}
+                    >
+                      <Col
+                        align="strech"
+                        bordered={true}
+                        className="sc-gqjmRU cDIvlP"
+                        content={true}
+                        grow={0.8333333333333334}
+                        justify="flex-start"
+                        lightgray={true}
+                        margin=".5rem"
+                        primary={false}
+                        user={false}
+                      >
+                        <Styled(Row)
+                          align="strech"
+                          bordered={true}
+                          className="sc-gqjmRU cDIvlP"
+                          content={true}
+                          grow={0.8333333333333334}
+                          justify="flex-start"
+                          lightgray={true}
+                          margin=".5rem"
+                          primary={false}
+                          theme={
+                            Object {
+                              "color": Object {
+                                "black": "#222222",
+                                "darkgray": "#515151",
+                                "error": "#dd3333",
+                                "gray": "#a9abae",
+                                "lightgray": "#e5e5e5",
+                                "overlay": "rgba(0, 0, 0, .15)",
+                                "primary": "#0081c8",
+                                "secondary": "#00245f",
+                                "success": "#33bb33",
+                                "warn": "#dd3333",
+                                "white": "#fefefe",
+                              },
+                              "font": Object {
+                                "color": "#222222",
+                                "family": "\\"Ubuntu\\", sans-serif",
+                                "size": "16px",
+                                "spacing": 0,
+                              },
+                              "shape": Object {
+                                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                "margin": ".25rem .125rem",
+                                "padding": ".75rem .875rem",
+                                "radius": ".25rem",
+                                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                "size": "16px",
+                              },
+                              "transition": Object {
+                                "time": ".3s ease",
+                              },
+                            }
+                          }
+                          user={false}
+                        >
+                          <Row
+                            align="strech"
+                            bordered={true}
+                            className="sc-gqjmRU cDIvlP sc-iwsKbI kYsEkp"
+                            content={true}
+                            grow={0.8333333333333334}
+                            justify="flex-start"
+                            lightgray={true}
+                            margin=".5rem"
+                            primary={false}
+                            theme={
+                              Object {
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkgray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightgray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#0081c8",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".25rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              }
+                            }
+                            user={false}
+                          >
+                            <Styled(Container)
+                              align="strech"
+                              bordered={true}
+                              className="sc-gqjmRU cDIvlP sc-iwsKbI kYsEkp"
+                              content={true}
+                              grow={0.8333333333333334}
+                              justify="flex-start"
+                              lightgray={true}
+                              margin=".5rem"
+                              primary={false}
+                              theme={
+                                Object {
+                                  "color": Object {
+                                    "black": "#222222",
+                                    "darkgray": "#515151",
+                                    "error": "#dd3333",
+                                    "gray": "#a9abae",
+                                    "lightgray": "#e5e5e5",
+                                    "overlay": "rgba(0, 0, 0, .15)",
+                                    "primary": "#0081c8",
+                                    "secondary": "#00245f",
+                                    "success": "#33bb33",
+                                    "warn": "#dd3333",
+                                    "white": "#fefefe",
+                                  },
+                                  "font": Object {
+                                    "color": "#222222",
+                                    "family": "\\"Ubuntu\\", sans-serif",
+                                    "size": "16px",
+                                    "spacing": 0,
+                                  },
+                                  "shape": Object {
+                                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                    "margin": ".25rem .125rem",
+                                    "padding": ".75rem .875rem",
+                                    "radius": ".25rem",
+                                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                    "size": "16px",
+                                  },
+                                  "transition": Object {
+                                    "time": ".3s ease",
+                                  },
+                                }
+                              }
+                              user={false}
+                            >
+                              <Container
+                                align="strech"
+                                bordered={true}
+                                className="sc-gqjmRU cDIvlP sc-iwsKbI kYsEkp sc-dnqmqq BCjrT"
+                                content={true}
+                                full={false}
+                                grow={0.8333333333333334}
+                                height="auto"
+                                justify="flex-start"
+                                lightgray={true}
+                                margin=".5rem"
+                                maxHeight="auto"
+                                maxWidth="auto"
+                                minHeight="auto"
+                                minWidth="auto"
+                                padding="0"
+                                primary={false}
+                                theme={
+                                  Object {
+                                    "color": Object {
+                                      "black": "#222222",
+                                      "darkgray": "#515151",
+                                      "error": "#dd3333",
+                                      "gray": "#a9abae",
+                                      "lightgray": "#e5e5e5",
+                                      "overlay": "rgba(0, 0, 0, .15)",
+                                      "primary": "#0081c8",
+                                      "secondary": "#00245f",
+                                      "success": "#33bb33",
+                                      "warn": "#dd3333",
+                                      "white": "#fefefe",
+                                    },
+                                    "font": Object {
+                                      "color": "#222222",
+                                      "family": "\\"Ubuntu\\", sans-serif",
+                                      "size": "16px",
+                                      "spacing": 0,
+                                    },
+                                    "shape": Object {
+                                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                      "margin": ".25rem .125rem",
+                                      "padding": ".75rem .875rem",
+                                      "radius": ".25rem",
+                                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                      "size": "16px",
+                                    },
+                                    "transition": Object {
+                                      "time": ".3s ease",
+                                    },
+                                  }
+                                }
+                                user={false}
+                              >
+                                <styled.div
+                                  align="strech"
+                                  bordered={true}
+                                  className="sc-gqjmRU cDIvlP sc-iwsKbI kYsEkp sc-dnqmqq BCjrT"
+                                  content={true}
+                                  full={false}
+                                  grow={0.8333333333333334}
+                                  height="auto"
+                                  justify="flex-start"
+                                  lightgray={true}
+                                  margin=".5rem"
+                                  maxHeight="auto"
+                                  maxWidth="auto"
+                                  minHeight="auto"
+                                  minWidth="auto"
+                                  padding="0"
+                                  primary={false}
+                                  theme={
+                                    Object {
+                                      "color": Object {
+                                        "black": "#222222",
+                                        "darkgray": "#515151",
+                                        "error": "#dd3333",
+                                        "gray": "#a9abae",
+                                        "lightgray": "#e5e5e5",
+                                        "overlay": "rgba(0, 0, 0, .15)",
+                                        "primary": "#0081c8",
+                                        "secondary": "#00245f",
+                                        "success": "#33bb33",
+                                        "warn": "#dd3333",
+                                        "white": "#fefefe",
+                                      },
+                                      "font": Object {
+                                        "color": "#222222",
+                                        "family": "\\"Ubuntu\\", sans-serif",
+                                        "size": "16px",
+                                        "spacing": 0,
+                                      },
+                                      "shape": Object {
+                                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                        "margin": ".25rem .125rem",
+                                        "padding": ".75rem .875rem",
+                                        "radius": ".25rem",
+                                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                        "size": "16px",
+                                      },
+                                      "transition": Object {
+                                        "time": ".3s ease",
+                                      },
+                                    }
+                                  }
+                                  user={false}
+                                >
+                                  <div
+                                    className="sc-gqjmRU cDIvlP sc-iwsKbI kYsEkp sc-dnqmqq BCjrT sc-bdVaJa SRaMF"
+                                    content={true}
+                                    height="auto"
+                                  >
+                                    <Styled(Text)
+                                      label={true}
+                                      white={false}
+                                    >
+                                      <Text
+                                        align="left"
+                                        className="sc-jTzLTM iIPJt"
+                                        label={true}
+                                        small={false}
+                                        strong={false}
+                                        transform="none"
+                                        type=""
+                                        white={false}
+                                      >
+                                        <styled.p
+                                          align="left"
+                                          className="sc-jTzLTM iIPJt"
+                                          label={true}
+                                          small={false}
+                                          strong={false}
+                                          theme={
+                                            Object {
+                                              "color": Object {
+                                                "black": "#222222",
+                                                "darkgray": "#515151",
+                                                "error": "#dd3333",
+                                                "gray": "#a9abae",
+                                                "lightgray": "#e5e5e5",
+                                                "overlay": "rgba(0, 0, 0, .15)",
+                                                "primary": "#0081c8",
+                                                "secondary": "#00245f",
+                                                "success": "#33bb33",
+                                                "warn": "#dd3333",
+                                                "white": "#fefefe",
+                                              },
+                                              "font": Object {
+                                                "color": "#222222",
+                                                "family": "\\"Ubuntu\\", sans-serif",
+                                                "size": "16px",
+                                                "spacing": 0,
+                                              },
+                                              "shape": Object {
+                                                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                                "margin": ".25rem .125rem",
+                                                "padding": ".75rem .875rem",
+                                                "radius": ".25rem",
+                                                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                                "size": "16px",
+                                              },
+                                              "transition": Object {
+                                                "time": ".3s ease",
+                                              },
+                                            }
+                                          }
+                                          transform="none"
+                                          white={false}
+                                        >
+                                          <p
+                                            className="sc-jTzLTM iIPJt sc-bwzfXH hntUfd"
+                                            label={true}
+                                            transform="none"
+                                          >
+                                            T-800
+                                          </p>
+                                        </styled.p>
+                                      </Text>
+                                    </Styled(Text)>
+                                    <Text
+                                      align="left"
+                                      label={false}
+                                      small={true}
+                                      strong={false}
+                                      transform="none"
+                                      type=""
+                                      white={false}
+                                    >
+                                      <styled.p
+                                        align="left"
+                                        label={false}
+                                        small={true}
+                                        strong={false}
+                                        theme={
+                                          Object {
+                                            "color": Object {
+                                              "black": "#222222",
+                                              "darkgray": "#515151",
+                                              "error": "#dd3333",
+                                              "gray": "#a9abae",
+                                              "lightgray": "#e5e5e5",
+                                              "overlay": "rgba(0, 0, 0, .15)",
+                                              "primary": "#0081c8",
+                                              "secondary": "#00245f",
+                                              "success": "#33bb33",
+                                              "warn": "#dd3333",
+                                              "white": "#fefefe",
+                                            },
+                                            "font": Object {
+                                              "color": "#222222",
+                                              "family": "\\"Ubuntu\\", sans-serif",
+                                              "size": "16px",
+                                              "spacing": 0,
+                                            },
+                                            "shape": Object {
+                                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                              "margin": ".25rem .125rem",
+                                              "padding": ".75rem .875rem",
+                                              "radius": ".25rem",
+                                              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                              "size": "16px",
+                                            },
+                                            "transition": Object {
+                                              "time": ".3s ease",
+                                            },
+                                          }
+                                        }
+                                        transform="none"
+                                        white={false}
+                                      >
+                                        <p
+                                          className="sc-bwzfXH dQPAAd"
+                                          label={false}
+                                          transform="none"
+                                        >
+                                          Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis! Leite de capivaris, leite de mula manquis sem cabeça. Quem manda na minha terra sou euzis! Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.
+                                        </p>
+                                      </styled.p>
+                                    </Text>
+                                    <Styled(Text)
+                                      white={false}
+                                    >
+                                      <Text
+                                        align="left"
+                                        className="sc-VigVT gBnAOu"
+                                        label={false}
+                                        small={false}
+                                        strong={false}
+                                        transform="none"
+                                        type=""
+                                        white={false}
+                                      >
+                                        <styled.p
+                                          align="left"
+                                          className="sc-VigVT gBnAOu"
+                                          label={false}
+                                          small={false}
+                                          strong={false}
+                                          theme={
+                                            Object {
+                                              "color": Object {
+                                                "black": "#222222",
+                                                "darkgray": "#515151",
+                                                "error": "#dd3333",
+                                                "gray": "#a9abae",
+                                                "lightgray": "#e5e5e5",
+                                                "overlay": "rgba(0, 0, 0, .15)",
+                                                "primary": "#0081c8",
+                                                "secondary": "#00245f",
+                                                "success": "#33bb33",
+                                                "warn": "#dd3333",
+                                                "white": "#fefefe",
+                                              },
+                                              "font": Object {
+                                                "color": "#222222",
+                                                "family": "\\"Ubuntu\\", sans-serif",
+                                                "size": "16px",
+                                                "spacing": 0,
+                                              },
+                                              "shape": Object {
+                                                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                                "margin": ".25rem .125rem",
+                                                "padding": ".75rem .875rem",
+                                                "radius": ".25rem",
+                                                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                                "size": "16px",
+                                              },
+                                              "transition": Object {
+                                                "time": ".3s ease",
+                                              },
+                                            }
+                                          }
+                                          transform="none"
+                                          white={false}
+                                        >
+                                          <p
+                                            className="sc-VigVT gBnAOu sc-bwzfXH ihaFJe"
+                                            label={false}
+                                            transform="none"
+                                          >
+                                            0:00
+                                          </p>
+                                        </styled.p>
+                                      </Text>
+                                    </Styled(Text)>
+                                  </div>
+                                </styled.div>
+                              </Container>
+                            </Styled(Container)>
+                          </Row>
+                        </Styled(Row)>
+                      </Col>
+                    </Styled(Col)>
+                  </div>
+                </styled.div>
+              </Container>
+            </Styled(Container)>
+          </Row>
+        </Styled(Row)>
+      </div>
+    </styled.div>
+  </Container>
+</ChatMessage>
+`;

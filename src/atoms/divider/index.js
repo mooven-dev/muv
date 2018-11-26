@@ -1,5 +1,5 @@
 // IMPORTS
-import { objectOf, string } from 'prop-types';
+// import { objectOf, string } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -24,10 +24,7 @@ const Divider = props => (
 );
 
 // DOCUMENTATION
-Divider.propTypes = {
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
-};
+Divider.propTypes = {};
 
 Divider.defaultProps = {};
 

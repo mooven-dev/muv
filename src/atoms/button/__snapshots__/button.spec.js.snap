@@ -4,6 +4,7 @@ exports[`should change its style on outline 1`] = `
 <Button
   disabled={false}
   href="#"
+  inset={false}
   onClick={null}
   outline={true}
   secondary={false}
@@ -11,6 +12,7 @@ exports[`should change its style on outline 1`] = `
   <styled.a
     disabled={false}
     href="#"
+    inset={false}
     onClick={null}
     outline={true}
     secondary={false}
@@ -31,7 +33,7 @@ exports[`should change its style on outline 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -51,12 +53,72 @@ exports[`should change its style on outline 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH blkxcW"
+      className="sc-dnqmqq bpFBvp"
       disabled={false}
       href="#"
       onClick={null}
     >
-      default
+      <Text
+        align="center"
+        label={false}
+        small={false}
+        strong={false}
+        transform="none"
+        type=""
+        white={true}
+      >
+        <styled.p
+          align="center"
+          label={false}
+          small={false}
+          strong={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            }
+          }
+          transform="none"
+          white={true}
+        >
+          <p
+            className="sc-bdVaJa kOSZjX"
+            label={false}
+            transform="none"
+          >
+            default
+          </p>
+        </styled.p>
+      </Text>
     </a>
   </styled.a>
 </Button>
@@ -66,6 +128,7 @@ exports[`should change its style on success 1`] = `
 <Button
   disabled={false}
   href="#"
+  inset={false}
   onClick={null}
   outline={false}
   secondary={false}
@@ -74,6 +137,7 @@ exports[`should change its style on success 1`] = `
   <styled.a
     disabled={false}
     href="#"
+    inset={false}
     onClick={null}
     outline={false}
     secondary={false}
@@ -95,7 +159,7 @@ exports[`should change its style on success 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -115,12 +179,72 @@ exports[`should change its style on success 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH HESaR"
+      className="sc-dnqmqq cFcTJd"
       disabled={false}
       href="#"
       onClick={null}
     >
-      default
+      <Text
+        align="center"
+        label={false}
+        small={false}
+        strong={false}
+        transform="none"
+        type=""
+        white={true}
+      >
+        <styled.p
+          align="center"
+          label={false}
+          small={false}
+          strong={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            }
+          }
+          transform="none"
+          white={true}
+        >
+          <p
+            className="sc-bdVaJa kOSZjX"
+            label={false}
+            transform="none"
+          >
+            default
+          </p>
+        </styled.p>
+      </Text>
     </a>
   </styled.a>
 </Button>
@@ -130,6 +254,7 @@ exports[`should change its style on warn 1`] = `
 <Button
   disabled={false}
   href="#"
+  inset={false}
   onClick={null}
   outline={false}
   secondary={false}
@@ -138,6 +263,7 @@ exports[`should change its style on warn 1`] = `
   <styled.a
     disabled={false}
     href="#"
+    inset={false}
     onClick={null}
     outline={false}
     secondary={false}
@@ -158,7 +284,7 @@ exports[`should change its style on warn 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -179,12 +305,72 @@ exports[`should change its style on warn 1`] = `
     warn={true}
   >
     <a
-      className="sc-bwzfXH cMzsnn"
+      className="sc-dnqmqq jgeLbc"
       disabled={false}
       href="#"
       onClick={null}
     >
-      default
+      <Text
+        align="center"
+        label={false}
+        small={false}
+        strong={false}
+        transform="none"
+        type=""
+        white={true}
+      >
+        <styled.p
+          align="center"
+          label={false}
+          small={false}
+          strong={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            }
+          }
+          transform="none"
+          white={true}
+        >
+          <p
+            className="sc-bdVaJa kOSZjX"
+            label={false}
+            transform="none"
+          >
+            default
+          </p>
+        </styled.p>
+      </Text>
     </a>
   </styled.a>
 </Button>
@@ -194,6 +380,7 @@ exports[`should render a anchor 1`] = `
 <Button
   disabled={false}
   href="#"
+  inset={false}
   onClick={null}
   outline={false}
   secondary={false}
@@ -201,6 +388,7 @@ exports[`should render a anchor 1`] = `
   <styled.a
     disabled={false}
     href="#"
+    inset={false}
     onClick={null}
     outline={false}
     secondary={false}
@@ -221,7 +409,7 @@ exports[`should render a anchor 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -241,12 +429,72 @@ exports[`should render a anchor 1`] = `
     }
   >
     <a
-      className="sc-bwzfXH kXqkwc"
+      className="sc-dnqmqq kQxpwh"
       disabled={false}
       href="#"
       onClick={null}
     >
-      default
+      <Text
+        align="center"
+        label={false}
+        small={false}
+        strong={false}
+        transform="none"
+        type=""
+        white={true}
+      >
+        <styled.p
+          align="center"
+          label={false}
+          small={false}
+          strong={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            }
+          }
+          transform="none"
+          white={true}
+        >
+          <p
+            className="sc-bdVaJa kOSZjX"
+            label={false}
+            transform="none"
+          >
+            default
+          </p>
+        </styled.p>
+      </Text>
     </a>
   </styled.a>
 </Button>
@@ -256,6 +504,7 @@ exports[`should render a button 1`] = `
 <Button
   disabled={false}
   href={null}
+  inset={false}
   onClick={[Function]}
   outline={false}
   secondary={false}
@@ -263,6 +512,7 @@ exports[`should render a button 1`] = `
   <styled.button
     disabled={false}
     href={null}
+    inset={false}
     onClick={[Function]}
     outline={false}
     secondary={false}
@@ -283,7 +533,7 @@ exports[`should render a button 1`] = `
         },
         "font": Object {
           "color": "#222222",
-          "family": "system-ui, sans-serif",
+          "family": "\\"Ubuntu\\", sans-serif",
           "size": "16px",
           "spacing": 0,
         },
@@ -303,12 +553,72 @@ exports[`should render a button 1`] = `
     }
   >
     <button
-      className="sc-bdVaJa dsGtYH"
+      className="sc-htoDjs iAuNOT"
       disabled={false}
       href={null}
       onClick={[Function]}
     >
-      default
+      <Text
+        align="center"
+        label={false}
+        small={false}
+        strong={false}
+        transform="none"
+        type=""
+        white={true}
+      >
+        <styled.p
+          align="center"
+          label={false}
+          small={false}
+          strong={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".25rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            }
+          }
+          transform="none"
+          white={true}
+        >
+          <p
+            className="sc-bdVaJa kOSZjX"
+            label={false}
+            transform="none"
+          >
+            default
+          </p>
+        </styled.p>
+      </Text>
     </button>
   </styled.button>
 </Button>

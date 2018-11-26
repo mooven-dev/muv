@@ -1,5 +1,5 @@
 // IMPORTS
-import { node, objectOf, string, bool } from 'prop-types';
+import { node, bool } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
@@ -38,8 +38,6 @@ Overlay.propTypes = {
   children: node,
   /** defines if the component is visible or not, useful to be controlled from parent */
   visible: bool,
-  /** receive theme props from Theme Provider or default */
-  theme: objectOf(objectOf(string)).isRequired,
 };
 
 Overlay.defaultProps = {
