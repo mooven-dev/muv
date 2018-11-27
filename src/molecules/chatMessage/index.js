@@ -4,6 +4,7 @@ import htmlParser from 'react-html-parser';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { botAvatarImg, userAvatarImg } from '../../utils';
 import Container from '../../atoms/container';
 import Loader from '../../atoms/loader';
 import themeDefault from '../../theme';
@@ -83,7 +84,7 @@ class ChatMessage extends Component {
   }
 
   render() {
-    const { user, userAvatar, userName, botAvatar, botName } = this.props;
+    const { user, userAvatar, userName, botAvatar, botName, time } = this.props;
     const { content } = this.state;
     return (
       <Container>
@@ -92,7 +93,7 @@ class ChatMessage extends Component {
           <Balloon user={user} primary={user} lightgray={!user} grow={5 / 6} margin=".5rem" bordered hasContent>
             <Name white={user} isLabel>{(user ? userName : botName)}</Name>
             {content}
-            <Hour white={user}>0:00</Hour>
+            <Hour white={user}>{time}</Hour>
           </Balloon>
         </MessageRow>
       </Container>
@@ -107,21 +108,26 @@ ChatMessage.propTypes = {
   user: bool,
   /** its the content of the chat message */
   children: node,
-  /** a url of the user avatar img */
+  /** path to the image of the user avatar */
   userAvatar: string,
+  /** the name displayed close to the user avatar */
   userName: string,
-  /** a url of the bot avatar img */
+  /** path to the image of the bot avatar */
   botAvatar: string,
+  /** the name displayed close to the bot avatar */
   botName: string,
+  /** the timestamp of the message */
+  time: string,
 };
 
 ChatMessage.defaultProps = {
-  userAvatar: 'http://www.robots-and-dragons.de/sites/default/files/styles/artikel_-_bild__ber_artikel/public/field/image/preview/terminator-linda-hamilton.jpg?itok=J4P32hm8',
-  botAvatar: 'https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138',
-  children: 'Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis! Leite de capivaris, leite de mula manquis sem cabeça. Quem manda na minha terra sou euzis! Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.',
+  children: 'Come with me if you want to live!',
+  userAvatar: userAvatarImg,
+  botAvatar: botAvatarImg,
   userName: 'Sarah',
   botName: 'T-800',
   user: false,
+  time: '',
 };
 
 // EXPORT

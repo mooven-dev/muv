@@ -18,6 +18,7 @@ position: fixed;
 height: 3.5rem;
 display: flex;
 width: 3.5rem;
+z-index: 999;
 padding: 0;
 `;
 

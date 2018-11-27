@@ -2,8 +2,10 @@
 import { node, number, string } from 'prop-types';
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import moment from 'moment';
 import Axios from 'axios';
 
+import { botAvatarImg, userAvatarImg } from '../../utils';
 import ChatMessage from '../../molecules/chatMessage';
 import Container from '../../atoms/container';
 import Button from '../../atoms/button';
@@ -101,6 +103,8 @@ class Chatbot extends Component {
       this.updateChat(data);
       Axios.post(endPoint, JSON.stringify(data))
         .then((res) => {
+          const botMessage = res.data;
+          botMessage.time = moment().format('HH:MM');
           this.updateChat(res.data);
         })
         .catch(err => console.log('error', err)); // eslint-disable-line
@@ -153,11 +157,13 @@ class Chatbot extends Component {
       const { messages } = this.state;
       const lastMessage = (messages.length && messages[messages.length - 1]);
       const { context } = lastMessage;
+      const time = moment().format('HH:MM');
       // SETUP
       const data = {
         workspace_id: workSpace,
         automatic,
         context,
+        time,
         input: {
           text,
         },
@@ -207,7 +213,7 @@ class Chatbot extends Component {
 
   render() {
     const { open, messages, isLoad, disabled, newMessages } = this.state;
-    const { children, botName, ...messageProps } = this.props;
+    const { children, botName, botTitle, userName, ...messageProps } = this.props;
     return (
       <>
         {/* BOT BUTTON */}
@@ -221,7 +227,7 @@ class Chatbot extends Component {
         <ChatBox flex open={(isLoad && open)}>
           {/* HEADER */}
           <Header secondary grow={0} hasContent bordered justify="space-between">
-            <Text white strong>{botName}</Text>
+            <Text white strong>{botTitle}</Text>
             <Link white noLine onClick={this.toogleChat}>
               <Icon color="white" name="close" />
             </Link>
@@ -230,12 +236,15 @@ class Chatbot extends Component {
           <Body open={open}>
             <div ref={this.scrollRef}>
               {
-                messages.map(({ output, input, automatic }, index) => (
+                messages.map(({ output, input, automatic, time }, index) => (
                   (!automatic) ? (
                     <ChatMessage
+                      botName={botName}
+                      userName={userName}
                       user={output === undefined}
                       key={`message-${index}`}
                       {...messageProps}
+                      time={time}
                     >
                       {output ? output.text[0] : input.text}
                     </ChatMessage>
@@ -275,9 +284,17 @@ Chatbot.propTypes = {
   endPoint: string,
   /** the dialog workspace_id */
   workSpace: string,
+  /** the name displayed close to the user avatar */
+  userName: string,
+  /** path to the image of the user avatar */
+  userAvatar: string,
   /** the name displayed on the box screen header */
+  botTitle: string,
+  /** the name displayed close to the bot avatar */
   botName: string,
-  /** sets the user inactivity threshold */
+  /** path to the image of the bot avatar */
+  botAvatar: string,
+  /** sets the user inactivity threshold (in miliseconds) */
   timeOut: number,
   /** the icon, component, or image rendered inside the bot button */
   children: node,
@@ -286,8 +303,12 @@ Chatbot.propTypes = {
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
   endPoint: conversation_api,
-  botName: 'Mooven ChatBot',
+  botTitle: 'Mooven ChatBot',
+  userAvatar: userAvatarImg,
+  botAvatar: botAvatarImg,
   workSpace: workspace_id,
+  userName: 'Sarah',
+  botName: 'T-800',
   timeOut: 60000,
 };
 
