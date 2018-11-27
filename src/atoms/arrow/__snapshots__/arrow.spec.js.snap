@@ -28,7 +28,7 @@ exports[`should render a arrow 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".5rem",
@@ -87,7 +87,7 @@ display: inline-block;
               },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
                 "radius": ".5rem",
@@ -134,7 +134,7 @@ display: inline-block;
           },
           "shape": Object {
             "border": ".125rem solid rgba(0, 0, 0, .15)",
-            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "padding": ".75rem .875rem",
             "radius": ".5rem",
@@ -178,7 +178,7 @@ display: inline-block;
             },
             "shape": Object {
               "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+              "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
               "padding": ".75rem .875rem",
               "radius": ".5rem",
@@ -223,7 +223,7 @@ display: inline-block;
               },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
                 "radius": ".5rem",
@@ -283,7 +283,7 @@ font-size: ",
                     },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
-                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "padding": ".75rem .875rem",
                       "radius": ".5rem",
@@ -331,7 +331,7 @@ font-size: ",
                 },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
-                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
                   "radius": ".5rem",

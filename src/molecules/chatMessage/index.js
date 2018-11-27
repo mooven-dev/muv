@@ -69,7 +69,7 @@ class ChatMessage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      content: <Loader />,
+      content: <Loader white />,
     };
     this.renderChildren = () => {
       const { children, user } = this.props;

@@ -10,7 +10,7 @@ const StyledOverlay = styled.aside`
 pointer-events: ${({ visible }) => (visible ? 'auto' : 'none')};
 transition: ${({ theme }) => theme.transition.time};
 background: ${({ theme }) => theme.color.overlay};
-z-index: ${({ visible }) => (visible ? 999 : 0)};
+z-index: ${({ visible }) => (visible ? 9999 : 0)};
 opacity: ${({ visible }) => (visible ? 1 : 0)};
 justify-content: center;
 align-items: center;

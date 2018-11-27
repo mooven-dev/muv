@@ -24,6 +24,7 @@ import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
+import LoadScreen from './molecules/loadScreen';
 import ChatMessage from './molecules/chatMessage';
 import Select from './molecules/select';
 import Fieldset from './molecules/fieldset';
@@ -60,6 +61,7 @@ export {
   ServerStyleSheet,
   ThemeProvider,
   // COMPONENTS
+  LoadScreen,
   Loader,
   ChatMessage,
   Icon,

@@ -2,7 +2,7 @@
 
 exports[`should render a loader 1`] = `
 <Loader>
-  <styled.p
+  <styled.aside
     theme={
       Object {
         "color": Object {
@@ -26,7 +26,7 @@ exports[`should render a loader 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".5rem",
@@ -47,12 +47,60 @@ exports[`should render a loader 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "vSNlF",
+            "lastClassName": "fagnpy",
             "rules": Array [
               "
-color: ",
+display: inline-block;
+padding: .5rem .25rem;
+position: relative;
+margin: .5rem 1.5rem;
+width: 0;
+span {
+  background-color: ",
               [Function],
               ";
+  box-shadow: 0 .1rem .1rem 0 ",
+              [Function],
+              ";
+  animation: bounce 1s ease infinite;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(.1px);
+  height: .5rem;
+  width: .5rem;
+  content: '';
+  bottom: 0;
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {
+      box-shadow: 0 .5rem .5rem 0 ",
+              [Function],
+              ";
+      bottom: .5rem;
+    }
+    50% {
+      bottom: 0;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+  &:nth-child(1) {
+    left: -1rem;
+    animation-delay: .1s;
+  }
+  &:nth-child(2) {
+    animation-delay: .2s;
+    right: 0;
+    left: 0;
+  }
+  &:nth-child(3) {
+    animation-delay: .3s;
+    right: -1rem;
+  }
+}
 ",
             ],
           },
@@ -79,7 +127,7 @@ color: ",
               },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
                 "radius": ".5rem",
@@ -91,10 +139,10 @@ color: ",
               },
             },
           },
-          "displayName": "styled.p",
+          "displayName": "styled.aside",
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
-          "target": "p",
+          "target": "aside",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -124,7 +172,7 @@ color: ",
           },
           "shape": Object {
             "border": ".125rem solid rgba(0, 0, 0, .15)",
-            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "padding": ".75rem .875rem",
             "radius": ".5rem",
@@ -137,12 +185,14 @@ color: ",
         }
       }
     >
-      <p
-        className="sc-bdVaJa vSNlF"
+      <aside
+        className="sc-bdVaJa fagnpy"
       >
-        ...
-      </p>
+        <span />
+        <span />
+        <span />
+      </aside>
     </StyledComponent>
-  </styled.p>
+  </styled.aside>
 </Loader>
 `;

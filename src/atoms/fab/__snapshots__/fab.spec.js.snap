@@ -29,7 +29,7 @@ exports[`should render a fab 1`] = `
         },
         "shape": Object {
           "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+          "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
           "radius": ".5rem",
@@ -50,7 +50,7 @@ exports[`should render a fab 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-iwsKbI",
             "isStatic": false,
-            "lastClassName": "gsbsDV",
+            "lastClassName": "hXoGhU",
             "rules": Array [
               "
 box-shadow: ",
@@ -96,7 +96,7 @@ padding: 0;
               },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
                 "radius": ".5rem",
@@ -143,7 +143,7 @@ padding: 0;
           },
           "shape": Object {
             "border": ".125rem solid rgba(0, 0, 0, .15)",
-            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "padding": ".75rem .875rem",
             "radius": ".5rem",
@@ -157,7 +157,7 @@ padding: 0;
       }
     >
       <Button
-        className="sc-iwsKbI gsbsDV"
+        className="sc-iwsKbI hXoGhU"
         disabled={false}
         href={null}
         inset={false}
@@ -187,7 +187,7 @@ padding: 0;
             },
             "shape": Object {
               "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+              "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
               "padding": ".75rem .875rem",
               "radius": ".5rem",
@@ -201,7 +201,7 @@ padding: 0;
         }
       >
         <styled.button
-          className="sc-iwsKbI gsbsDV"
+          className="sc-iwsKbI hXoGhU"
           disabled={false}
           href={null}
           inset={false}
@@ -231,7 +231,7 @@ padding: 0;
               },
               "shape": Object {
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
                 "radius": ".5rem",
@@ -245,7 +245,7 @@ padding: 0;
           }
         >
           <StyledComponent
-            className="sc-iwsKbI gsbsDV"
+            className="sc-iwsKbI hXoGhU"
             disabled={false}
             forwardedClass={
               Object {
@@ -286,7 +286,7 @@ padding: 0;
                     },
                     "shape": Object {
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
-                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "padding": ".75rem .875rem",
                       "radius": ".5rem",
@@ -336,7 +336,7 @@ padding: 0;
                 },
                 "shape": Object {
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
-                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
                   "radius": ".5rem",
@@ -350,7 +350,7 @@ padding: 0;
             }
           >
             <button
-              className="sc-iwsKbI gsbsDV sc-htoDjs hTeMnD"
+              className="sc-iwsKbI hXoGhU sc-htoDjs hTeMnD"
               disabled={false}
               href={null}
               onClick={[Function]}
@@ -392,7 +392,7 @@ padding: 0;
                       },
                       "shape": Object {
                         "border": ".125rem solid rgba(0, 0, 0, .15)",
-                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "padding": ".75rem .875rem",
                         "radius": ".5rem",
@@ -451,7 +451,7 @@ font-size: ",
                             },
                             "shape": Object {
                               "border": ".125rem solid rgba(0, 0, 0, .15)",
-                              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                              "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                               "margin": ".25rem .125rem",
                               "padding": ".75rem .875rem",
                               "radius": ".5rem",
@@ -499,7 +499,7 @@ font-size: ",
                         },
                         "shape": Object {
                           "border": ".125rem solid rgba(0, 0, 0, .15)",
-                          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                          "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                           "margin": ".25rem .125rem",
                           "padding": ".75rem .875rem",
                           "radius": ".5rem",
