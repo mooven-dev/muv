@@ -2,6 +2,13 @@ import React from 'react';
 
 import Link from '.';
 
+it('should render nothing', () => {
+  const wrapper = mount(
+    <Link />,
+  );
+  expect(wrapper).toMatchSnapshot();
+});
+
 it('should render a button', () => {
   const wrapper = mount(
     <Link onClick={() => true} />,

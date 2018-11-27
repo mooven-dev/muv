@@ -1,6 +1,7 @@
 # general
 node_modules
 yarn.lock
+coverage
 *.idea
 *.log
 .env
