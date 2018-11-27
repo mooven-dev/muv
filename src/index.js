@@ -9,6 +9,8 @@
 import styled, { ThemeProvider, createGlobalStyle, ServerStyleSheet } from 'styled-components';
 
 // ATOMS
+import Badge from './atoms/badge';
+import Counter from './atoms/counter';
 import Loader from './atoms/loader';
 import Icon from './atoms/icon';
 import Fab from './atoms/fab';
@@ -61,6 +63,8 @@ export {
   ServerStyleSheet,
   ThemeProvider,
   // COMPONENTS
+  Badge,
+  Counter,
   LoadScreen,
   Loader,
   ChatMessage,

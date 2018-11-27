@@ -1,13 +1,14 @@
 // IMPORTS
+import { node, number } from 'prop-types';
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { node } from 'prop-types';
 import Axios from 'axios';
 
 import ChatMessage from '../../molecules/chatMessage';
 import Container from '../../atoms/container';
 import Button from '../../atoms/button';
 import themeDefault from '../../theme';
+import Badge from '../../atoms/badge';
 import Input from '../../atoms/input';
 import Link from '../../atoms/link';
 import Text from '../../atoms/text';
@@ -26,12 +27,12 @@ box-shadow: ${({ theme, open }) => (open ? theme.shape.float : 0)};
 pointer-events: ${({ open }) => (open ? 'auto' : 'none')};
 transition: ${({ theme }) => theme.transition.time};
 opacity: ${({ open }) => (open ? 1 : 0)};
-transform-origin: bottom;
+transform-origin: bottom right;
 overflow: hidden;
 position: fixed;
 z-index: 999;
-bottom: 5rem;
-right: 5rem;
+bottom: 4.5rem;
+right: 4.5rem;
 `;
 
 ChatBox.defaultProps = {
@@ -91,20 +92,8 @@ class Chatbot extends Component {
       if (message.output === undefined) disabled = true;
       this.setState({ messages: newMessages, text: '', isLoad: true, disabled });
     };
-    // SEND MESSAGES
-    this.sendMessage = (text = 'ola') => {
-      this.setState({ disabled: true });
-      const { messages } = this.state;
-      const lastMessage = (messages.length && messages[messages.length - 1]);
-      const { context } = lastMessage;
-      // SETUP
-      const data = {
-        workspace_id,
-        context,
-        input: {
-          text,
-        },
-      };
+    // SEND MESSAGE
+    this.messageRequest = (data) => {
       this.updateChat(data);
       Axios.post(conversation, JSON.stringify(data))
         .then((res) => {
@@ -112,22 +101,73 @@ class Chatbot extends Component {
         })
         .catch(err => console.log('error', err)); // eslint-disable-line
     };
+    // eslint-disable-next-line
+    this.close = () => this.setState({ open: false, willClose: '', newMessages: 2 });
+    this.prepareToClose = () => {
+      // eslint-disable-next-line
+      this.setState({ secondWarn: '', willClose: setTimeout(this.close, this.props.timeOut) });
+    };
+    this.startSecondWarn = (data) => {
+      const sendSecondWarn = () => {
+        const newData = data;
+        newData.input.text = 'second-warn';
+        this.messageRequest(newData);
+        this.prepareToClose();
+      };
+      // eslint-disable-next-line
+      this.setState({ firstWarn: '', secondWarn: setTimeout(sendSecondWarn, this.props.timeOut) });
+    };
+    this.startFirstWarn = (data) => {
+      const sendFirstWarn = () => {
+        const newData = data;
+        newData.input.text = 'first-warn';
+        newData.automatic = true;
+        this.messageRequest(newData);
+        this.startSecondWarn(newData);
+      };
+      // eslint-disable-next-line
+      this.setState({ firstWarn: setTimeout(sendFirstWarn, this.props.timeOut) });
+    };
+    // SEND MESSAGES
+    this.sendMessage = (message) => {
+      // eslint-disable-next-line
+      this.setState({ disabled: true, firstWarn: '', secondWarn: '', willClose: '' });
+      // DEFAULT MESSAGE
+      const automatic = (message === undefined);
+      const text = (message || 'ola');
+      // GET CONTEXT
+      const { messages } = this.state;
+      const lastMessage = (messages.length && messages[messages.length - 1]);
+      const { context } = lastMessage;
+      // SETUP
+      const data = {
+        workspace_id,
+        automatic,
+        context,
+        input: {
+          text,
+        },
+      };
+      this.startFirstWarn(data);
+      this.messageRequest(data);
+    };
     // OPENS AND CLOSES CHAT WINDOW
-    this.toogleChat = () => this.setState(({ open }) => ({ open: !open }));
+    this.toogleChat = () => this.setState(({ open }) => ({ open: !open, newMessages: 0 }));
     // LOOKS FOR NEW MESSAGES AND SCROLL CHAT WINDOW
-    this.scrollOnNewMessage = (newState, oldState) => {
-      const newMessages = newState.messages;
-      const oldMessages = oldState.messages;
-      if (newMessages.length > oldMessages.length) {
-        const box = this.scrollRef.current;
-        if (box) box.scrollIntoView({ behavior: 'smooth', block: 'end' });
-      }
+    this.scrollOnNewMessage = () => {
+      const box = this.scrollRef.current;
+      if (box) box.scrollIntoView({ behavior: 'smooth', block: 'end' });
     };
     // SEND USER MESSAGES TO BOT AND HANDLES HIS RESPONSE
     this.submitMessage = (e) => {
       if (e) e.preventDefault();
       const { text } = this.state;
       this.sendMessage(text);
+    };
+    this.setNotification = () => {
+      const { open } = this.state;
+      if (open) this.setState({ newMessages: 0 });
+      else this.setState(({ newMessages }) => ({ newMessages: newMessages + 1 }));
     };
   }
 
@@ -136,15 +176,25 @@ class Chatbot extends Component {
   }
 
   componentDidUpdate(prevPros, prevState) {
-    this.scrollOnNewMessage(this.state, prevState);
+    const newMessages = this.state.messages;
+    const oldMessages = prevState.messages;
+    if (newMessages.length > oldMessages.length) {
+      this.scrollOnNewMessage();
+      this.setNotification();
+    }
   }
 
   render() {
-    const { open, messages, isLoad, disabled } = this.state;
+    const { open, messages, isLoad, disabled, newMessages } = this.state;
     const { children, ...messageProps } = this.props;
     return (
       <>
-        <Fab onClick={this.toogleChat}>{children}</Fab>
+        <Fab onClick={this.toogleChat}>
+          <span>
+            <Badge>{Math.floor(newMessages / 2)}</Badge>
+            {children}
+          </span>
+        </Fab>
         <ChatBox flex open={(isLoad && open)}>
           {/* HEADER */}
           <Header secondary grow={0} hasContent bordered justify="space-between">
@@ -157,8 +207,8 @@ class Chatbot extends Component {
           <Body open={open}>
             <div ref={this.scrollRef}>
               {
-                messages.map(({ output, input }, index) => (
-                  index ? (
+                messages.map(({ output, input, automatic }, index) => (
+                  (!automatic) ? (
                     <ChatMessage
                       user={output === undefined}
                       key={`message-${index}`}
@@ -198,12 +248,14 @@ class Chatbot extends Component {
 
 // DOCUMENTATION
 Chatbot.propTypes = {
+  timeOut: number,
   /** accepts only valid react nodes as children */
   children: node,
 };
 
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
+  timeOut: 60000,
 };
 
 // EXPORT
