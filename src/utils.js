@@ -49,6 +49,7 @@ padding: ${theme.shape.padding};
 font-size: ${theme.shape.size};
 border: ${theme.shape.border};
 color: ${theme.font.color};
+box-sizing: border-box;
 display: inline-block;
 position: relative;
 cursor: pointer;

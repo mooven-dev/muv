@@ -19,7 +19,7 @@ const shape = {
   shadow: `0 .25rem .25rem 0 ${color.overlay}`,
   float: `0 .5rem .5rem 0 ${color.overlay}`,
   border: `.125rem solid ${color.overlay}`,
-  radius: '.25rem',
+  radius: '.5rem',
   size: '16px',
   // SPACE
   margin: '.25rem .125rem',

@@ -17,7 +17,7 @@ import Col from '../col';
 
 A Row is a simple component that organizes the content horizontaly.
 <div>
-  <Row bordered content>
+  <Row bordered hasContent>
     <Text/>
     <Text primary/>
     <Text secondary/>
@@ -28,18 +28,18 @@ Combine with Col and Container components to build complex layouts.
 
 <div>
   <Row bordered>
-    <Col bordered content/>
-    <Col bordered content/>
-    <Col bordered content/>
+    <Col bordered hasContent/>
+    <Col bordered hasContent/>
+    <Col bordered hasContent/>
   </Row>
 </div>
 <br />
 <div>
   <Container bordered maxWidth="50%">
-    <Row bordered content/>
+    <Row bordered hasContent/>
     <Row bordered>
-      <Col bordered content/>
-      <Col bordered content/>
+      <Col bordered hasContent/>
+      <Col bordered hasContent/>
     </Row>
   </Container>
 </div>
@@ -52,10 +52,10 @@ Combine with Col and Container components to build complex layouts.
 
 <Playground>
   <Container bordered maxWidth="50%">
-    <Row bordered content/>
+    <Row bordered hasContent/>
     <Row bordered>
-      <Col bordered content/>
-      <Col bordered content/>
+      <Col bordered hasContent/>
+      <Col bordered hasContent/>
     </Row>
   </Container>
 </Playground>
@@ -65,31 +65,31 @@ Combine with Col and Container components to build complex layouts.
 Use this props to change how the blank space between children elements is distributed horizontally.
 
 <Playground>
-  <Row bordered content>
+  <Row bordered hasContent>
     <Text/>
     <Text primary/>
     <Text secondary/>
   </Row>
   <br />
-  <Row bordered content justify="center">
+  <Row bordered hasContent justify="center">
     <Text>center</Text>
     <Text primary>center</Text>
     <Text secondary>center</Text>
   </Row>
   <br />
-  <Row bordered content justify="flex-end">
+  <Row bordered hasContent justify="flex-end">
     <Text>flex-end</Text>
     <Text primary>flex-end</Text>
     <Text secondary>flex-end</Text>
   </Row>
   <br />
-  <Row bordered content justify="space-around">
+  <Row bordered hasContent justify="space-around">
     <Text>space-around</Text>
     <Text primary>space-around</Text>
     <Text secondary>space-around</Text>
   </Row>
   <br />
-  <Row bordered content justify="space-between">
+  <Row bordered hasContent justify="space-between">
     <Text>space-between</Text>
     <Text primary>space-between</Text>
     <Text secondary>space-between</Text>
@@ -102,7 +102,7 @@ Use this props to change how the blank space between children elements is distri
 
 <Playground>
   <Container flex minHeight="100px">
-    <Row bordered content>
+    <Row bordered hasContent>
       <Text/>
       <Text primary/>
       <Text secondary/>
@@ -110,7 +110,7 @@ Use this props to change how the blank space between children elements is distri
   </Container>
   <br />
   <Container flex minHeight="100px">
-    <Row bordered content align="center">
+    <Row bordered hasContent align="center">
       <Text>center</Text>
       <Text primary>center</Text>
       <Text secondary>center</Text>
@@ -118,7 +118,7 @@ Use this props to change how the blank space between children elements is distri
   </Container>
   <br />
   <Container flex minHeight="100px">
-    <Row bordered content align="flex-end">
+    <Row bordered hasContent align="flex-end">
       <Text>flex-end</Text>
       <Text primary>flex-end</Text>
       <Text secondary>flex-end</Text>
@@ -138,9 +138,9 @@ The suggestion is to pass this props as a fraction, for example (element/parent)
 
 <Playground>
   <Container bordered flex minHeight="500px">
-    <Row bordered grow={2/5} content>2/5</Row>
-    <Row bordered grow={1/5} content>1/5</Row>
-    <Row bordered grow={2/5} content>2/5</Row>
+    <Row bordered grow={2/5} hasContent>2/5</Row>
+    <Row bordered grow={1/5} hasContent>1/5</Row>
+    <Row bordered grow={2/5} hasContent>2/5</Row>
   </Container>
 </Playground>
 
@@ -155,8 +155,8 @@ Row is a component part of the grid system of this library. Detailed info about 
 
 **bordered prop is just for debug use;*
 
-**content prop is to set a internal padding from theme, useful right?*
+**hasContent prop is to set a internal padding from theme, useful right?*
 
 <div>
-  <Row bordered content/>
+  <Row bordered hasContent/>
 </div>

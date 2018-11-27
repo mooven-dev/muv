@@ -42,7 +42,7 @@ exports[`should change its style on secondary 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -52,14 +52,119 @@ exports[`should change its style on secondary 1`] = `
       }
     }
   >
-    <a
-      className="sc-bdVaJa jGYEHc"
+    <StyledComponent
       disabled={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "jGYEHc",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       href="#"
+      noLine={false}
       onClick={null}
+      secondary={true}
+      strong={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
     >
-      default
-    </a>
+      <a
+        className="sc-bdVaJa jGYEHc"
+        disabled={false}
+        href="#"
+        onClick={null}
+      >
+        default
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -106,7 +211,7 @@ exports[`should change its style on success 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -116,14 +221,119 @@ exports[`should change its style on success 1`] = `
       }
     }
   >
-    <a
-      className="sc-bdVaJa cALpdh"
+    <StyledComponent
       disabled={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "cALpdh",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       href="#"
+      noLine={false}
       onClick={null}
+      strong={false}
+      success={true}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
     >
-      default
-    </a>
+      <a
+        className="sc-bdVaJa cALpdh"
+        disabled={false}
+        href="#"
+        onClick={null}
+      >
+        default
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -169,7 +379,7 @@ exports[`should change its style on warn 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -180,14 +390,119 @@ exports[`should change its style on warn 1`] = `
     }
     warn={true}
   >
-    <a
-      className="sc-bdVaJa hCHyHr"
+    <StyledComponent
       disabled={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "hCHyHr",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       href="#"
+      noLine={false}
       onClick={null}
+      strong={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
+      warn={true}
     >
-      default
-    </a>
+      <a
+        className="sc-bdVaJa hCHyHr"
+        disabled={false}
+        href="#"
+        onClick={null}
+      >
+        default
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -232,7 +547,7 @@ exports[`should render a anchor 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -242,14 +557,118 @@ exports[`should render a anchor 1`] = `
       }
     }
   >
-    <a
-      className="sc-bdVaJa lhHpOn"
+    <StyledComponent
       disabled={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "lhHpOn",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       href="#"
+      noLine={false}
       onClick={null}
+      strong={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
     >
-      default
-    </a>
+      <a
+        className="sc-bdVaJa lhHpOn"
+        disabled={false}
+        href="#"
+        onClick={null}
+      >
+        default
+      </a>
+    </StyledComponent>
   </styled.a>
 </Link>
 `;
@@ -294,7 +713,7 @@ exports[`should render a button 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -304,14 +723,118 @@ exports[`should render a button 1`] = `
       }
     }
   >
-    <button
-      className="sc-bwzfXH mRfpw"
+    <StyledComponent
       disabled={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "mRfpw",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.button",
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       href={null}
+      noLine={false}
       onClick={[Function]}
+      strong={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
     >
-      default
-    </button>
+      <button
+        className="sc-bwzfXH mRfpw"
+        disabled={false}
+        href={null}
+        onClick={[Function]}
+      >
+        default
+      </button>
+    </StyledComponent>
   </styled.button>
 </Link>
 `;

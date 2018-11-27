@@ -6,8 +6,8 @@ import React from 'react';
 import themeDefault from '../../theme';
 import { setColor } from '../../utils';
 
-const commonStyles = ({ transform, strong, align, theme, label, spacing, ...rest }) => (`
-font-weight: ${(strong || label ? 'bold' : 'inherit')};
+const commonStyles = ({ transform, strong, align, theme, isLabel, spacing, ...rest }) => (`
+font-weight: ${(strong || isLabel ? 'bold' : 'inherit')};
 letter-spacing: ${spacing || theme.font.spacing};
 color: ${setColor({ theme, ...rest })};
 font-family: ${theme.font.family};
@@ -18,7 +18,7 @@ margin: 0;
 `);
 
 export const P = styled.p`
-font-size: ${({ label, small }) => (label || small ? '.875rem' : '1rem')};
+font-size: ${({ isLabel, small }) => (isLabel || small ? '.875rem' : '1rem')};
 ${props => commonStyles(props)}
 `;
 
@@ -27,7 +27,7 @@ P.defaultProps = {
 };
 
 export const Span = styled.span`
-font-size: ${({ label, small }) => (label || small ? '.875rem' : '1rem')};
+font-size: ${({ isLabel, small }) => (isLabel || small ? '.875rem' : '1rem')};
 ${props => commonStyles(props)}
 `;
 
@@ -122,8 +122,8 @@ Text.propTypes = {
   strong: bool,
   /** sets font-size to 80% */
   small: bool,
-  /** sets font-weight and size to matchs label style */
-  label: bool,
+  /** sets font-weight and size to matchs isLabel style */
+  isLabel: bool,
   /** sets the text-align */
   align: string,
   /** sets the heading hierarch */
@@ -135,7 +135,7 @@ Text.defaultProps = {
   children: 'default',
   strong: false,
   small: false,
-  label: false,
+  isLabel: false,
   align: 'left',
   type: '',
 };

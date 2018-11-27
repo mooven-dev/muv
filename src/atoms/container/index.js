@@ -7,8 +7,8 @@ import themeDefault from '../../theme';
 import { setColor } from '../../utils';
 // STYLES
 const StyledContainer = styled.div`
-padding: ${({ theme, content, padding }) => (content ? theme.shape.padding : padding)};
-flex-basis: ${({ content, padding }) => ((content || padding) ? 'auto' : 0)};
+padding: ${({ theme, hasContent, padding }) => (hasContent ? theme.shape.padding : padding)};
+flex-basis: ${({ hasContent, padding }) => ((hasContent || padding) ? 'auto' : 0)};
 border: ${({ theme, bordered }) => (bordered ? theme.shape.border : 'none')};
 display: ${({ flex, full }) => (full || flex ? 'flex' : 'block')};
 height: ${({ height, full }) => (full ? '100vh' : height)};

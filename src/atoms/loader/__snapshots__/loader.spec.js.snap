@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a divider 1`] = `
-<Divider>
-  <styled.hr
+exports[`should render a loader 1`] = `
+<Loader>
+  <styled.p
     theme={
       Object {
         "color": Object {
@@ -47,18 +47,12 @@ exports[`should render a divider 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "eLrOJG",
+            "lastClassName": "vSNlF",
             "rules": Array [
               "
-border: ",
+color: ",
               [Function],
               ";
-margin: ",
-              [Function],
-              ";
-border-right: 0;
-border-left: 0;
-border-top: 0;
 ",
             ],
           },
@@ -97,10 +91,10 @@ border-top: 0;
               },
             },
           },
-          "displayName": "styled.hr",
+          "displayName": "styled.p",
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
-          "target": "hr",
+          "target": "p",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -143,10 +137,12 @@ border-top: 0;
         }
       }
     >
-      <hr
-        className="sc-bdVaJa eLrOJG"
-      />
+      <p
+        className="sc-bdVaJa vSNlF"
+      >
+        ...
+      </p>
     </StyledComponent>
-  </styled.hr>
-</Divider>
+  </styled.p>
+</Loader>
 `;

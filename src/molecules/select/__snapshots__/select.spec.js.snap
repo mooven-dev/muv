@@ -49,7 +49,7 @@ exports[`should render a select 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -59,52 +59,108 @@ exports[`should render a select 1`] = `
       }
     }
   >
-    <div
-      className="sc-gqjmRU bDPTKv"
-    >
-      <Styled(Text)
-        theme={
-          Object {
-            "color": Object {
-              "black": "#222222",
-              "darkgray": "#515151",
-              "error": "#dd3333",
-              "gray": "#a9abae",
-              "lightgray": "#e5e5e5",
-              "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0081c8",
-              "secondary": "#00245f",
-              "success": "#33bb33",
-              "warn": "#dd3333",
-              "white": "#fefefe",
+    <StyledComponent
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gqjmRU",
+            "isStatic": true,
+            "lastClassName": "bDPTKv",
+            "rules": Array [
+              "
+display: inline-block;
+position: relative;
+width: 100%;
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
             },
-            "font": Object {
-              "color": "#222222",
-              "family": "\\"Ubuntu\\", sans-serif",
-              "size": "16px",
-              "spacing": 0,
-            },
-            "shape": Object {
-              "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-              "margin": ".25rem .125rem",
-              "padding": ".75rem .875rem",
-              "radius": ".25rem",
-              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-              "size": "16px",
-            },
-            "transition": Object {
-              "time": ".3s ease",
-            },
-          }
+          },
+          "displayName": "styled.div",
+          "render": [Function],
+          "styledComponentId": "sc-gqjmRU",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
         }
+      }
+      forwardedRef={null}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
+    >
+      <div
+        className="sc-gqjmRU bDPTKv"
       >
-        <Text
-          align="left"
-          className="sc-iwsKbI eUFIcZ"
-          label={false}
-          small={false}
-          strong={false}
+        <Styled(Text)
           theme={
             Object {
               "color": Object {
@@ -131,7 +187,7 @@ exports[`should render a select 1`] = `
                 "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
-                "radius": ".25rem",
+                "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                 "size": "16px",
               },
@@ -140,130 +196,79 @@ exports[`should render a select 1`] = `
               },
             }
           }
-          transform="none"
-          type=""
         >
-          <styled.p
-            align="left"
-            className="sc-iwsKbI eUFIcZ"
-            label={false}
-            small={false}
-            strong={false}
-            theme={
+          <StyledComponent
+            forwardedClass={
               Object {
-                "color": Object {
-                  "black": "#222222",
-                  "darkgray": "#515151",
-                  "error": "#dd3333",
-                  "gray": "#a9abae",
-                  "lightgray": "#e5e5e5",
-                  "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0081c8",
-                  "secondary": "#00245f",
-                  "success": "#33bb33",
-                  "warn": "#dd3333",
-                  "white": "#fefefe",
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-iwsKbI",
+                  "isStatic": false,
+                  "lastClassName": "eUFIcZ",
+                  "rules": Array [
+                    "
+transition: ",
+                    [Function],
+                    ";
+padding: ",
+                    [Function],
+                    ";
+margin: 0;
+&:hover {
+  background: ",
+                    [Function],
+                    ";
+}
+",
+                  ],
                 },
-                "font": Object {
-                  "color": "#222222",
-                  "family": "\\"Ubuntu\\", sans-serif",
-                  "size": "16px",
-                  "spacing": 0,
+                "defaultProps": Object {
+                  "theme": Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  },
                 },
-                "shape": Object {
-                  "border": ".125rem solid rgba(0, 0, 0, .15)",
-                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                  "margin": ".25rem .125rem",
-                  "padding": ".75rem .875rem",
-                  "radius": ".25rem",
-                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "16px",
-                },
-                "transition": Object {
-                  "time": ".3s ease",
-                },
+                "displayName": "Styled(Text)",
+                "render": [Function],
+                "styledComponentId": "sc-iwsKbI",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
               }
             }
-            transform="none"
-          >
-            <p
-              className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
-              label={false}
-              transform="none"
-            >
-              Selecione...
-            </p>
-          </styled.p>
-        </Text>
-      </Styled(Text)>
-      <styled.button
-        length={2}
-        onBlur={[Function]}
-        onCancel={[Function]}
-        onClick={[Function]}
-        onConfirm={[Function]}
-        placeholder="Selecione..."
-        render={
-          Object {
-            "data": Array [
-              Object {
-                "char": "a",
-              },
-              Object {
-                "char": "b",
-              },
-            ],
-            "title": Array [
-              "a",
-              "b",
-            ],
-          }
-        }
-        selected={false}
-        theme={
-          Object {
-            "color": Object {
-              "black": "#222222",
-              "darkgray": "#515151",
-              "error": "#dd3333",
-              "gray": "#a9abae",
-              "lightgray": "#e5e5e5",
-              "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0081c8",
-              "secondary": "#00245f",
-              "success": "#33bb33",
-              "warn": "#dd3333",
-              "white": "#fefefe",
-            },
-            "font": Object {
-              "color": "#222222",
-              "family": "\\"Ubuntu\\", sans-serif",
-              "size": "16px",
-              "spacing": 0,
-            },
-            "shape": Object {
-              "border": ".125rem solid rgba(0, 0, 0, .15)",
-              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-              "margin": ".25rem .125rem",
-              "padding": ".75rem .875rem",
-              "radius": ".25rem",
-              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-              "size": "16px",
-            },
-            "transition": Object {
-              "time": ".3s ease",
-            },
-          }
-        }
-      >
-        <button
-          className="sc-dnqmqq dvaBIX"
-          onBlur={[Function]}
-          onClick={[Function]}
-          placeholder="Selecione..."
-          selected={false}
-        >
-          <Styled(Text)
+            forwardedRef={null}
             theme={
               Object {
                 "color": Object {
@@ -290,7 +295,7 @@ exports[`should render a select 1`] = `
                   "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
-                  "radius": ".25rem",
+                  "radius": ".5rem",
                   "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                   "size": "16px",
                 },
@@ -303,7 +308,7 @@ exports[`should render a select 1`] = `
             <Text
               align="left"
               className="sc-iwsKbI eUFIcZ"
-              label={false}
+              isLabel={false}
               small={false}
               strong={false}
               theme={
@@ -332,7 +337,7 @@ exports[`should render a select 1`] = `
                     "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
                     "padding": ".75rem .875rem",
-                    "radius": ".25rem",
+                    "radius": ".5rem",
                     "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                     "size": "16px",
                   },
@@ -347,7 +352,7 @@ exports[`should render a select 1`] = `
               <styled.p
                 align="left"
                 className="sc-iwsKbI eUFIcZ"
-                label={false}
+                isLabel={false}
                 small={false}
                 strong={false}
                 theme={
@@ -376,7 +381,7 @@ exports[`should render a select 1`] = `
                       "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "padding": ".75rem .875rem",
-                      "radius": ".25rem",
+                      "radius": ".5rem",
                       "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                       "size": "16px",
                     },
@@ -387,414 +392,74 @@ exports[`should render a select 1`] = `
                 }
                 transform="none"
               >
-                <p
-                  className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
-                  label={false}
-                  transform="none"
-                >
-                  Selecione...
-                </p>
-              </styled.p>
-            </Text>
-          </Styled(Text)>
-          <Styled(Text)
-            key="a"
-            onClick={[Function]}
-            theme={
-              Object {
-                "color": Object {
-                  "black": "#222222",
-                  "darkgray": "#515151",
-                  "error": "#dd3333",
-                  "gray": "#a9abae",
-                  "lightgray": "#e5e5e5",
-                  "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0081c8",
-                  "secondary": "#00245f",
-                  "success": "#33bb33",
-                  "warn": "#dd3333",
-                  "white": "#fefefe",
-                },
-                "font": Object {
-                  "color": "#222222",
-                  "family": "\\"Ubuntu\\", sans-serif",
-                  "size": "16px",
-                  "spacing": 0,
-                },
-                "shape": Object {
-                  "border": ".125rem solid rgba(0, 0, 0, .15)",
-                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                  "margin": ".25rem .125rem",
-                  "padding": ".75rem .875rem",
-                  "radius": ".25rem",
-                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "16px",
-                },
-                "transition": Object {
-                  "time": ".3s ease",
-                },
-              }
-            }
-          >
-            <Text
-              align="left"
-              className="sc-iwsKbI eUFIcZ"
-              label={false}
-              onClick={[Function]}
-              small={false}
-              strong={false}
-              theme={
-                Object {
-                  "color": Object {
-                    "black": "#222222",
-                    "darkgray": "#515151",
-                    "error": "#dd3333",
-                    "gray": "#a9abae",
-                    "lightgray": "#e5e5e5",
-                    "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0081c8",
-                    "secondary": "#00245f",
-                    "success": "#33bb33",
-                    "warn": "#dd3333",
-                    "white": "#fefefe",
-                  },
-                  "font": Object {
-                    "color": "#222222",
-                    "family": "\\"Ubuntu\\", sans-serif",
-                    "size": "16px",
-                    "spacing": 0,
-                  },
-                  "shape": Object {
-                    "border": ".125rem solid rgba(0, 0, 0, .15)",
-                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                    "margin": ".25rem .125rem",
-                    "padding": ".75rem .875rem",
-                    "radius": ".25rem",
-                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                    "size": "16px",
-                  },
-                  "transition": Object {
-                    "time": ".3s ease",
-                  },
-                }
-              }
-              transform="none"
-              type=""
-            >
-              <styled.p
-                align="left"
-                className="sc-iwsKbI eUFIcZ"
-                label={false}
-                onClick={[Function]}
-                small={false}
-                strong={false}
-                theme={
-                  Object {
-                    "color": Object {
-                      "black": "#222222",
-                      "darkgray": "#515151",
-                      "error": "#dd3333",
-                      "gray": "#a9abae",
-                      "lightgray": "#e5e5e5",
-                      "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
-                      "secondary": "#00245f",
-                      "success": "#33bb33",
-                      "warn": "#dd3333",
-                      "white": "#fefefe",
-                    },
-                    "font": Object {
-                      "color": "#222222",
-                      "family": "\\"Ubuntu\\", sans-serif",
-                      "size": "16px",
-                      "spacing": 0,
-                    },
-                    "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
-                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                      "margin": ".25rem .125rem",
-                      "padding": ".75rem .875rem",
-                      "radius": ".25rem",
-                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                      "size": "16px",
-                    },
-                    "transition": Object {
-                      "time": ".3s ease",
-                    },
-                  }
-                }
-                transform="none"
-              >
-                <p
-                  className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
-                  label={false}
-                  onClick={[Function]}
-                  transform="none"
-                >
-                  a
-                </p>
-              </styled.p>
-            </Text>
-          </Styled(Text)>
-          <Styled(Text)
-            key="b"
-            onClick={[Function]}
-            theme={
-              Object {
-                "color": Object {
-                  "black": "#222222",
-                  "darkgray": "#515151",
-                  "error": "#dd3333",
-                  "gray": "#a9abae",
-                  "lightgray": "#e5e5e5",
-                  "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0081c8",
-                  "secondary": "#00245f",
-                  "success": "#33bb33",
-                  "warn": "#dd3333",
-                  "white": "#fefefe",
-                },
-                "font": Object {
-                  "color": "#222222",
-                  "family": "\\"Ubuntu\\", sans-serif",
-                  "size": "16px",
-                  "spacing": 0,
-                },
-                "shape": Object {
-                  "border": ".125rem solid rgba(0, 0, 0, .15)",
-                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                  "margin": ".25rem .125rem",
-                  "padding": ".75rem .875rem",
-                  "radius": ".25rem",
-                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "16px",
-                },
-                "transition": Object {
-                  "time": ".3s ease",
-                },
-              }
-            }
-          >
-            <Text
-              align="left"
-              className="sc-iwsKbI eUFIcZ"
-              label={false}
-              onClick={[Function]}
-              small={false}
-              strong={false}
-              theme={
-                Object {
-                  "color": Object {
-                    "black": "#222222",
-                    "darkgray": "#515151",
-                    "error": "#dd3333",
-                    "gray": "#a9abae",
-                    "lightgray": "#e5e5e5",
-                    "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0081c8",
-                    "secondary": "#00245f",
-                    "success": "#33bb33",
-                    "warn": "#dd3333",
-                    "white": "#fefefe",
-                  },
-                  "font": Object {
-                    "color": "#222222",
-                    "family": "\\"Ubuntu\\", sans-serif",
-                    "size": "16px",
-                    "spacing": 0,
-                  },
-                  "shape": Object {
-                    "border": ".125rem solid rgba(0, 0, 0, .15)",
-                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                    "margin": ".25rem .125rem",
-                    "padding": ".75rem .875rem",
-                    "radius": ".25rem",
-                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                    "size": "16px",
-                  },
-                  "transition": Object {
-                    "time": ".3s ease",
-                  },
-                }
-              }
-              transform="none"
-              type=""
-            >
-              <styled.p
-                align="left"
-                className="sc-iwsKbI eUFIcZ"
-                label={false}
-                onClick={[Function]}
-                small={false}
-                strong={false}
-                theme={
-                  Object {
-                    "color": Object {
-                      "black": "#222222",
-                      "darkgray": "#515151",
-                      "error": "#dd3333",
-                      "gray": "#a9abae",
-                      "lightgray": "#e5e5e5",
-                      "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
-                      "secondary": "#00245f",
-                      "success": "#33bb33",
-                      "warn": "#dd3333",
-                      "white": "#fefefe",
-                    },
-                    "font": Object {
-                      "color": "#222222",
-                      "family": "\\"Ubuntu\\", sans-serif",
-                      "size": "16px",
-                      "spacing": 0,
-                    },
-                    "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
-                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                      "margin": ".25rem .125rem",
-                      "padding": ".75rem .875rem",
-                      "radius": ".25rem",
-                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                      "size": "16px",
-                    },
-                    "transition": Object {
-                      "time": ".3s ease",
-                    },
-                  }
-                }
-                transform="none"
-              >
-                <p
-                  className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
-                  label={false}
-                  onClick={[Function]}
-                  transform="none"
-                >
-                  b
-                </p>
-              </styled.p>
-            </Text>
-          </Styled(Text)>
-          <Styled(Arrow)
-            theme={
-              Object {
-                "color": Object {
-                  "black": "#222222",
-                  "darkgray": "#515151",
-                  "error": "#dd3333",
-                  "gray": "#a9abae",
-                  "lightgray": "#e5e5e5",
-                  "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0081c8",
-                  "secondary": "#00245f",
-                  "success": "#33bb33",
-                  "warn": "#dd3333",
-                  "white": "#fefefe",
-                },
-                "font": Object {
-                  "color": "#222222",
-                  "family": "\\"Ubuntu\\", sans-serif",
-                  "size": "16px",
-                  "spacing": 0,
-                },
-                "shape": Object {
-                  "border": ".125rem solid rgba(0, 0, 0, .15)",
-                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                  "margin": ".25rem .125rem",
-                  "padding": ".75rem .875rem",
-                  "radius": ".25rem",
-                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                  "size": "16px",
-                },
-                "transition": Object {
-                  "time": ".3s ease",
-                },
-              }
-            }
-          >
-            <Arrow
-              className="sc-gZMcBi bNtIrL"
-              theme={
-                Object {
-                  "color": Object {
-                    "black": "#222222",
-                    "darkgray": "#515151",
-                    "error": "#dd3333",
-                    "gray": "#a9abae",
-                    "lightgray": "#e5e5e5",
-                    "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0081c8",
-                    "secondary": "#00245f",
-                    "success": "#33bb33",
-                    "warn": "#dd3333",
-                    "white": "#fefefe",
-                  },
-                  "font": Object {
-                    "color": "#222222",
-                    "family": "\\"Ubuntu\\", sans-serif",
-                    "size": "16px",
-                    "spacing": 0,
-                  },
-                  "shape": Object {
-                    "border": ".125rem solid rgba(0, 0, 0, .15)",
-                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                    "margin": ".25rem .125rem",
-                    "padding": ".75rem .875rem",
-                    "radius": ".25rem",
-                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                    "size": "16px",
-                  },
-                  "transition": Object {
-                    "time": ".3s ease",
-                  },
-                }
-              }
-              up={false}
-            >
-              <Styled(Text)
-                className="sc-gZMcBi bNtIrL"
-                theme={
-                  Object {
-                    "color": Object {
-                      "black": "#222222",
-                      "darkgray": "#515151",
-                      "error": "#dd3333",
-                      "gray": "#a9abae",
-                      "lightgray": "#e5e5e5",
-                      "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
-                      "secondary": "#00245f",
-                      "success": "#33bb33",
-                      "warn": "#dd3333",
-                      "white": "#fefefe",
-                    },
-                    "font": Object {
-                      "color": "#222222",
-                      "family": "\\"Ubuntu\\", sans-serif",
-                      "size": "16px",
-                      "spacing": 0,
-                    },
-                    "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
-                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
-                      "margin": ".25rem .125rem",
-                      "padding": ".75rem .875rem",
-                      "radius": ".25rem",
-                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                      "size": "16px",
-                    },
-                    "transition": Object {
-                      "time": ".3s ease",
-                    },
-                  }
-                }
-                type="span"
-                up={false}
-              >
-                <Text
+                <StyledComponent
                   align="left"
-                  className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI"
-                  label={false}
+                  className="sc-iwsKbI eUFIcZ"
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bdVaJa",
+                        "isStatic": false,
+                        "lastClassName": "epDkoj",
+                        "rules": Array [
+                          "
+font-size: ",
+                          [Function],
+                          ";
+",
+                          [Function],
+                          "
+",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "theme": Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        },
+                      },
+                      "displayName": "styled.p",
+                      "render": [Function],
+                      "styledComponentId": "sc-bdVaJa",
+                      "target": "p",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  isLabel={false}
                   small={false}
                   strong={false}
                   theme={
@@ -823,7 +488,7 @@ exports[`should render a select 1`] = `
                         "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "padding": ".75rem .875rem",
-                        "radius": ".25rem",
+                        "radius": ".5rem",
                         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                         "size": "16px",
                       },
@@ -833,13 +498,375 @@ exports[`should render a select 1`] = `
                     }
                   }
                   transform="none"
-                  type="span"
-                  up={false}
                 >
-                  <styled.span
+                  <p
+                    className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
+                    transform="none"
+                  >
+                    Selecione...
+                  </p>
+                </StyledComponent>
+              </styled.p>
+            </Text>
+          </StyledComponent>
+        </Styled(Text)>
+        <styled.button
+          length={2}
+          onBlur={[Function]}
+          onCancel={[Function]}
+          onClick={[Function]}
+          onConfirm={[Function]}
+          placeholder="Selecione..."
+          render={
+            Object {
+              "data": Array [
+                Object {
+                  "char": "a",
+                },
+                Object {
+                  "char": "b",
+                },
+              ],
+              "title": Array [
+                "a",
+                "b",
+              ],
+            }
+          }
+          selected={false}
+          theme={
+            Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            }
+          }
+        >
+          <StyledComponent
+            forwardedClass={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-dnqmqq",
+                  "isStatic": false,
+                  "lastClassName": "dphkXG",
+                  "rules": Array [
+                    "
+",
+                    [Function],
+                    "
+border-color: ",
+                    [Function],
+                    ";
+transition: ",
+                    [Function],
+                    ";
+background: ",
+                    [Function],
+                    ";
+height: ",
+                    [Function],
+                    "rem;
+position: absolute;
+overflow: hidden;
+z-index: 999;
+padding: 0;
+left: 0;
+top: 0;
+",
+                  ],
+                },
+                "defaultProps": Object {
+                  "theme": Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  },
+                },
+                "displayName": "styled.button",
+                "render": [Function],
+                "styledComponentId": "sc-dnqmqq",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            length={2}
+            onBlur={[Function]}
+            onCancel={[Function]}
+            onClick={[Function]}
+            onConfirm={[Function]}
+            placeholder="Selecione..."
+            render={
+              Object {
+                "data": Array [
+                  Object {
+                    "char": "a",
+                  },
+                  Object {
+                    "char": "b",
+                  },
+                ],
+                "title": Array [
+                  "a",
+                  "b",
+                ],
+              }
+            }
+            selected={false}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#222222",
+                  "darkgray": "#515151",
+                  "error": "#dd3333",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "\\"Ubuntu\\", sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".75rem .875rem",
+                  "radius": ".5rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "16px",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
+          >
+            <button
+              className="sc-dnqmqq dphkXG"
+              onBlur={[Function]}
+              onCancel={[Function]}
+              onClick={[Function]}
+              onConfirm={[Function]}
+              placeholder="Selecione..."
+              selected={false}
+            >
+              <Styled(Text)
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+              >
+                <StyledComponent
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-iwsKbI",
+                        "isStatic": false,
+                        "lastClassName": "eUFIcZ",
+                        "rules": Array [
+                          "
+transition: ",
+                          [Function],
+                          ";
+padding: ",
+                          [Function],
+                          ";
+margin: 0;
+&:hover {
+  background: ",
+                          [Function],
+                          ";
+}
+",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "theme": Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        },
+                      },
+                      "displayName": "Styled(Text)",
+                      "render": [Function],
+                      "styledComponentId": "sc-iwsKbI",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    }
+                  }
+                >
+                  <Text
                     align="left"
-                    className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI"
-                    label={false}
+                    className="sc-iwsKbI eUFIcZ"
+                    isLabel={false}
                     small={false}
                     strong={false}
                     theme={
@@ -868,7 +895,7 @@ exports[`should render a select 1`] = `
                           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                           "margin": ".25rem .125rem",
                           "padding": ".75rem .875rem",
-                          "radius": ".25rem",
+                          "radius": ".5rem",
                           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                           "size": "16px",
                         },
@@ -878,23 +905,1426 @@ exports[`should render a select 1`] = `
                       }
                     }
                     transform="none"
-                    up={false}
+                    type=""
                   >
-                    <span
-                      className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI sc-bwzfXH ihaFJe"
-                      label={false}
+                    <styled.p
+                      align="left"
+                      className="sc-iwsKbI eUFIcZ"
+                      isLabel={false}
+                      small={false}
+                      strong={false}
+                      theme={
+                        Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        }
+                      }
                       transform="none"
                     >
-                      ◄
-                    </span>
-                  </styled.span>
-                </Text>
+                      <StyledComponent
+                        align="left"
+                        className="sc-iwsKbI eUFIcZ"
+                        forwardedClass={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "epDkoj",
+                              "rules": Array [
+                                "
+font-size: ",
+                                [Function],
+                                ";
+",
+                                [Function],
+                                "
+",
+                              ],
+                            },
+                            "defaultProps": Object {
+                              "theme": Object {
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkgray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightgray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#0081c8",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".5rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              },
+                            },
+                            "displayName": "styled.p",
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "p",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        isLabel={false}
+                        small={false}
+                        strong={false}
+                        theme={
+                          Object {
+                            "color": Object {
+                              "black": "#222222",
+                              "darkgray": "#515151",
+                              "error": "#dd3333",
+                              "gray": "#a9abae",
+                              "lightgray": "#e5e5e5",
+                              "overlay": "rgba(0, 0, 0, .15)",
+                              "primary": "#0081c8",
+                              "secondary": "#00245f",
+                              "success": "#33bb33",
+                              "warn": "#dd3333",
+                              "white": "#fefefe",
+                            },
+                            "font": Object {
+                              "color": "#222222",
+                              "family": "\\"Ubuntu\\", sans-serif",
+                              "size": "16px",
+                              "spacing": 0,
+                            },
+                            "shape": Object {
+                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                              "margin": ".25rem .125rem",
+                              "padding": ".75rem .875rem",
+                              "radius": ".5rem",
+                              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                              "size": "16px",
+                            },
+                            "transition": Object {
+                              "time": ".3s ease",
+                            },
+                          }
+                        }
+                        transform="none"
+                      >
+                        <p
+                          className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
+                          transform="none"
+                        >
+                          Selecione...
+                        </p>
+                      </StyledComponent>
+                    </styled.p>
+                  </Text>
+                </StyledComponent>
               </Styled(Text)>
-            </Arrow>
-          </Styled(Arrow)>
-        </button>
-      </styled.button>
-    </div>
+              <Styled(Text)
+                key="a"
+                onClick={[Function]}
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+              >
+                <StyledComponent
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-iwsKbI",
+                        "isStatic": false,
+                        "lastClassName": "eUFIcZ",
+                        "rules": Array [
+                          "
+transition: ",
+                          [Function],
+                          ";
+padding: ",
+                          [Function],
+                          ";
+margin: 0;
+&:hover {
+  background: ",
+                          [Function],
+                          ";
+}
+",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "theme": Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        },
+                      },
+                      "displayName": "Styled(Text)",
+                      "render": [Function],
+                      "styledComponentId": "sc-iwsKbI",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[Function]}
+                  theme={
+                    Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    }
+                  }
+                >
+                  <Text
+                    align="left"
+                    className="sc-iwsKbI eUFIcZ"
+                    isLabel={false}
+                    onClick={[Function]}
+                    small={false}
+                    strong={false}
+                    theme={
+                      Object {
+                        "color": Object {
+                          "black": "#222222",
+                          "darkgray": "#515151",
+                          "error": "#dd3333",
+                          "gray": "#a9abae",
+                          "lightgray": "#e5e5e5",
+                          "overlay": "rgba(0, 0, 0, .15)",
+                          "primary": "#0081c8",
+                          "secondary": "#00245f",
+                          "success": "#33bb33",
+                          "warn": "#dd3333",
+                          "white": "#fefefe",
+                        },
+                        "font": Object {
+                          "color": "#222222",
+                          "family": "\\"Ubuntu\\", sans-serif",
+                          "size": "16px",
+                          "spacing": 0,
+                        },
+                        "shape": Object {
+                          "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                          "margin": ".25rem .125rem",
+                          "padding": ".75rem .875rem",
+                          "radius": ".5rem",
+                          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                          "size": "16px",
+                        },
+                        "transition": Object {
+                          "time": ".3s ease",
+                        },
+                      }
+                    }
+                    transform="none"
+                    type=""
+                  >
+                    <styled.p
+                      align="left"
+                      className="sc-iwsKbI eUFIcZ"
+                      isLabel={false}
+                      onClick={[Function]}
+                      small={false}
+                      strong={false}
+                      theme={
+                        Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        }
+                      }
+                      transform="none"
+                    >
+                      <StyledComponent
+                        align="left"
+                        className="sc-iwsKbI eUFIcZ"
+                        forwardedClass={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "epDkoj",
+                              "rules": Array [
+                                "
+font-size: ",
+                                [Function],
+                                ";
+",
+                                [Function],
+                                "
+",
+                              ],
+                            },
+                            "defaultProps": Object {
+                              "theme": Object {
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkgray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightgray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#0081c8",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".5rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              },
+                            },
+                            "displayName": "styled.p",
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "p",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        isLabel={false}
+                        onClick={[Function]}
+                        small={false}
+                        strong={false}
+                        theme={
+                          Object {
+                            "color": Object {
+                              "black": "#222222",
+                              "darkgray": "#515151",
+                              "error": "#dd3333",
+                              "gray": "#a9abae",
+                              "lightgray": "#e5e5e5",
+                              "overlay": "rgba(0, 0, 0, .15)",
+                              "primary": "#0081c8",
+                              "secondary": "#00245f",
+                              "success": "#33bb33",
+                              "warn": "#dd3333",
+                              "white": "#fefefe",
+                            },
+                            "font": Object {
+                              "color": "#222222",
+                              "family": "\\"Ubuntu\\", sans-serif",
+                              "size": "16px",
+                              "spacing": 0,
+                            },
+                            "shape": Object {
+                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                              "margin": ".25rem .125rem",
+                              "padding": ".75rem .875rem",
+                              "radius": ".5rem",
+                              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                              "size": "16px",
+                            },
+                            "transition": Object {
+                              "time": ".3s ease",
+                            },
+                          }
+                        }
+                        transform="none"
+                      >
+                        <p
+                          className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
+                          onClick={[Function]}
+                          transform="none"
+                        >
+                          a
+                        </p>
+                      </StyledComponent>
+                    </styled.p>
+                  </Text>
+                </StyledComponent>
+              </Styled(Text)>
+              <Styled(Text)
+                key="b"
+                onClick={[Function]}
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+              >
+                <StyledComponent
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-iwsKbI",
+                        "isStatic": false,
+                        "lastClassName": "eUFIcZ",
+                        "rules": Array [
+                          "
+transition: ",
+                          [Function],
+                          ";
+padding: ",
+                          [Function],
+                          ";
+margin: 0;
+&:hover {
+  background: ",
+                          [Function],
+                          ";
+}
+",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "theme": Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        },
+                      },
+                      "displayName": "Styled(Text)",
+                      "render": [Function],
+                      "styledComponentId": "sc-iwsKbI",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[Function]}
+                  theme={
+                    Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    }
+                  }
+                >
+                  <Text
+                    align="left"
+                    className="sc-iwsKbI eUFIcZ"
+                    isLabel={false}
+                    onClick={[Function]}
+                    small={false}
+                    strong={false}
+                    theme={
+                      Object {
+                        "color": Object {
+                          "black": "#222222",
+                          "darkgray": "#515151",
+                          "error": "#dd3333",
+                          "gray": "#a9abae",
+                          "lightgray": "#e5e5e5",
+                          "overlay": "rgba(0, 0, 0, .15)",
+                          "primary": "#0081c8",
+                          "secondary": "#00245f",
+                          "success": "#33bb33",
+                          "warn": "#dd3333",
+                          "white": "#fefefe",
+                        },
+                        "font": Object {
+                          "color": "#222222",
+                          "family": "\\"Ubuntu\\", sans-serif",
+                          "size": "16px",
+                          "spacing": 0,
+                        },
+                        "shape": Object {
+                          "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                          "margin": ".25rem .125rem",
+                          "padding": ".75rem .875rem",
+                          "radius": ".5rem",
+                          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                          "size": "16px",
+                        },
+                        "transition": Object {
+                          "time": ".3s ease",
+                        },
+                      }
+                    }
+                    transform="none"
+                    type=""
+                  >
+                    <styled.p
+                      align="left"
+                      className="sc-iwsKbI eUFIcZ"
+                      isLabel={false}
+                      onClick={[Function]}
+                      small={false}
+                      strong={false}
+                      theme={
+                        Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        }
+                      }
+                      transform="none"
+                    >
+                      <StyledComponent
+                        align="left"
+                        className="sc-iwsKbI eUFIcZ"
+                        forwardedClass={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "epDkoj",
+                              "rules": Array [
+                                "
+font-size: ",
+                                [Function],
+                                ";
+",
+                                [Function],
+                                "
+",
+                              ],
+                            },
+                            "defaultProps": Object {
+                              "theme": Object {
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkgray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightgray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#0081c8",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".5rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              },
+                            },
+                            "displayName": "styled.p",
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "p",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        isLabel={false}
+                        onClick={[Function]}
+                        small={false}
+                        strong={false}
+                        theme={
+                          Object {
+                            "color": Object {
+                              "black": "#222222",
+                              "darkgray": "#515151",
+                              "error": "#dd3333",
+                              "gray": "#a9abae",
+                              "lightgray": "#e5e5e5",
+                              "overlay": "rgba(0, 0, 0, .15)",
+                              "primary": "#0081c8",
+                              "secondary": "#00245f",
+                              "success": "#33bb33",
+                              "warn": "#dd3333",
+                              "white": "#fefefe",
+                            },
+                            "font": Object {
+                              "color": "#222222",
+                              "family": "\\"Ubuntu\\", sans-serif",
+                              "size": "16px",
+                              "spacing": 0,
+                            },
+                            "shape": Object {
+                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                              "margin": ".25rem .125rem",
+                              "padding": ".75rem .875rem",
+                              "radius": ".5rem",
+                              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                              "size": "16px",
+                            },
+                            "transition": Object {
+                              "time": ".3s ease",
+                            },
+                          }
+                        }
+                        transform="none"
+                      >
+                        <p
+                          className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
+                          onClick={[Function]}
+                          transform="none"
+                        >
+                          b
+                        </p>
+                      </StyledComponent>
+                    </styled.p>
+                  </Text>
+                </StyledComponent>
+              </Styled(Text)>
+              <Styled(Arrow)
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+              >
+                <StyledComponent
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-gZMcBi",
+                        "isStatic": false,
+                        "lastClassName": "bNtIrL",
+                        "rules": Array [
+                          "
+right: ",
+                          [Function],
+                          ";
+top: ",
+                          [Function],
+                          ";
+position: absolute;
+margin: 0;
+",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "theme": Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        },
+                      },
+                      "displayName": "Styled(Arrow)",
+                      "render": [Function],
+                      "styledComponentId": "sc-gZMcBi",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    }
+                  }
+                >
+                  <Arrow
+                    className="sc-gZMcBi bNtIrL"
+                    theme={
+                      Object {
+                        "color": Object {
+                          "black": "#222222",
+                          "darkgray": "#515151",
+                          "error": "#dd3333",
+                          "gray": "#a9abae",
+                          "lightgray": "#e5e5e5",
+                          "overlay": "rgba(0, 0, 0, .15)",
+                          "primary": "#0081c8",
+                          "secondary": "#00245f",
+                          "success": "#33bb33",
+                          "warn": "#dd3333",
+                          "white": "#fefefe",
+                        },
+                        "font": Object {
+                          "color": "#222222",
+                          "family": "\\"Ubuntu\\", sans-serif",
+                          "size": "16px",
+                          "spacing": 0,
+                        },
+                        "shape": Object {
+                          "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                          "margin": ".25rem .125rem",
+                          "padding": ".75rem .875rem",
+                          "radius": ".5rem",
+                          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                          "size": "16px",
+                        },
+                        "transition": Object {
+                          "time": ".3s ease",
+                        },
+                      }
+                    }
+                    up={false}
+                  >
+                    <Styled(Text)
+                      className="sc-gZMcBi bNtIrL"
+                      theme={
+                        Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        }
+                      }
+                      type="span"
+                      up={false}
+                    >
+                      <StyledComponent
+                        className="sc-gZMcBi bNtIrL"
+                        forwardedClass={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htoDjs",
+                              "isStatic": false,
+                              "lastClassName": "hEAdvI",
+                              "rules": Array [
+                                "
+transform: rotate(",
+                                [Function],
+                                ");
+transition: ",
+                                [Function],
+                                ";
+display: inline-block;
+",
+                              ],
+                            },
+                            "defaultProps": Object {
+                              "theme": Object {
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkgray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightgray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#0081c8",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".5rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              },
+                              "type": "span",
+                            },
+                            "displayName": "Styled(Text)",
+                            "render": [Function],
+                            "styledComponentId": "sc-htoDjs",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        theme={
+                          Object {
+                            "color": Object {
+                              "black": "#222222",
+                              "darkgray": "#515151",
+                              "error": "#dd3333",
+                              "gray": "#a9abae",
+                              "lightgray": "#e5e5e5",
+                              "overlay": "rgba(0, 0, 0, .15)",
+                              "primary": "#0081c8",
+                              "secondary": "#00245f",
+                              "success": "#33bb33",
+                              "warn": "#dd3333",
+                              "white": "#fefefe",
+                            },
+                            "font": Object {
+                              "color": "#222222",
+                              "family": "\\"Ubuntu\\", sans-serif",
+                              "size": "16px",
+                              "spacing": 0,
+                            },
+                            "shape": Object {
+                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                              "margin": ".25rem .125rem",
+                              "padding": ".75rem .875rem",
+                              "radius": ".5rem",
+                              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                              "size": "16px",
+                            },
+                            "transition": Object {
+                              "time": ".3s ease",
+                            },
+                          }
+                        }
+                        type="span"
+                        up={false}
+                      >
+                        <Text
+                          align="left"
+                          className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI"
+                          isLabel={false}
+                          small={false}
+                          strong={false}
+                          theme={
+                            Object {
+                              "color": Object {
+                                "black": "#222222",
+                                "darkgray": "#515151",
+                                "error": "#dd3333",
+                                "gray": "#a9abae",
+                                "lightgray": "#e5e5e5",
+                                "overlay": "rgba(0, 0, 0, .15)",
+                                "primary": "#0081c8",
+                                "secondary": "#00245f",
+                                "success": "#33bb33",
+                                "warn": "#dd3333",
+                                "white": "#fefefe",
+                              },
+                              "font": Object {
+                                "color": "#222222",
+                                "family": "\\"Ubuntu\\", sans-serif",
+                                "size": "16px",
+                                "spacing": 0,
+                              },
+                              "shape": Object {
+                                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                "margin": ".25rem .125rem",
+                                "padding": ".75rem .875rem",
+                                "radius": ".5rem",
+                                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                "size": "16px",
+                              },
+                              "transition": Object {
+                                "time": ".3s ease",
+                              },
+                            }
+                          }
+                          transform="none"
+                          type="span"
+                          up={false}
+                        >
+                          <styled.span
+                            align="left"
+                            className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI"
+                            isLabel={false}
+                            small={false}
+                            strong={false}
+                            theme={
+                              Object {
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkgray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightgray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#0081c8",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".5rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              }
+                            }
+                            transform="none"
+                            up={false}
+                          >
+                            <StyledComponent
+                              align="left"
+                              className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI"
+                              forwardedClass={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "ihaFJe",
+                                    "rules": Array [
+                                      "
+font-size: ",
+                                      [Function],
+                                      ";
+",
+                                      [Function],
+                                      "
+",
+                                    ],
+                                  },
+                                  "defaultProps": Object {
+                                    "theme": Object {
+                                      "color": Object {
+                                        "black": "#222222",
+                                        "darkgray": "#515151",
+                                        "error": "#dd3333",
+                                        "gray": "#a9abae",
+                                        "lightgray": "#e5e5e5",
+                                        "overlay": "rgba(0, 0, 0, .15)",
+                                        "primary": "#0081c8",
+                                        "secondary": "#00245f",
+                                        "success": "#33bb33",
+                                        "warn": "#dd3333",
+                                        "white": "#fefefe",
+                                      },
+                                      "font": Object {
+                                        "color": "#222222",
+                                        "family": "\\"Ubuntu\\", sans-serif",
+                                        "size": "16px",
+                                        "spacing": 0,
+                                      },
+                                      "shape": Object {
+                                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                        "margin": ".25rem .125rem",
+                                        "padding": ".75rem .875rem",
+                                        "radius": ".5rem",
+                                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                        "size": "16px",
+                                      },
+                                      "transition": Object {
+                                        "time": ".3s ease",
+                                      },
+                                    },
+                                  },
+                                  "displayName": "styled.span",
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "span",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              isLabel={false}
+                              small={false}
+                              strong={false}
+                              theme={
+                                Object {
+                                  "color": Object {
+                                    "black": "#222222",
+                                    "darkgray": "#515151",
+                                    "error": "#dd3333",
+                                    "gray": "#a9abae",
+                                    "lightgray": "#e5e5e5",
+                                    "overlay": "rgba(0, 0, 0, .15)",
+                                    "primary": "#0081c8",
+                                    "secondary": "#00245f",
+                                    "success": "#33bb33",
+                                    "warn": "#dd3333",
+                                    "white": "#fefefe",
+                                  },
+                                  "font": Object {
+                                    "color": "#222222",
+                                    "family": "\\"Ubuntu\\", sans-serif",
+                                    "size": "16px",
+                                    "spacing": 0,
+                                  },
+                                  "shape": Object {
+                                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                                    "margin": ".25rem .125rem",
+                                    "padding": ".75rem .875rem",
+                                    "radius": ".5rem",
+                                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                    "size": "16px",
+                                  },
+                                  "transition": Object {
+                                    "time": ".3s ease",
+                                  },
+                                }
+                              }
+                              transform="none"
+                              up={false}
+                            >
+                              <span
+                                className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI sc-bwzfXH ihaFJe"
+                                transform="none"
+                              >
+                                ◄
+                              </span>
+                            </StyledComponent>
+                          </styled.span>
+                        </Text>
+                      </StyledComponent>
+                    </Styled(Text)>
+                  </Arrow>
+                </StyledComponent>
+              </Styled(Arrow)>
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </div>
+    </StyledComponent>
   </styled.div>
 </Select>
 `;

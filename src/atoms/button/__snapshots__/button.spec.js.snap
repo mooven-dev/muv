@@ -42,7 +42,7 @@ exports[`should change its style on outline 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -52,28 +52,26 @@ exports[`should change its style on outline 1`] = `
       }
     }
   >
-    <a
-      className="sc-dnqmqq bpFBvp"
+    <StyledComponent
       disabled={false}
-      href="#"
-      onClick={null}
-    >
-      <Text
-        align="center"
-        label={false}
-        small={false}
-        strong={false}
-        transform="none"
-        type=""
-        white={true}
-      >
-        <styled.p
-          align="center"
-          label={false}
-          small={false}
-          strong={false}
-          theme={
-            Object {
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-dnqmqq",
+            "isStatic": false,
+            "lastClassName": "kDZDPd",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -98,28 +96,242 @@ exports[`should change its style on outline 1`] = `
                 "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
-                "radius": ".25rem",
+                "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                 "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
               },
-            }
-          }
+            },
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-dnqmqq",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      href="#"
+      inset={false}
+      onClick={null}
+      outline={true}
+      secondary={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
+    >
+      <a
+        className="sc-dnqmqq kDZDPd"
+        disabled={false}
+        href="#"
+        onClick={null}
+      >
+        <Text
+          align="center"
+          isLabel={false}
+          small={false}
+          strong={false}
           transform="none"
+          type=""
           white={true}
         >
-          <p
-            className="sc-bdVaJa kOSZjX"
-            label={false}
+          <styled.p
+            align="center"
+            isLabel={false}
+            small={false}
+            strong={false}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#222222",
+                  "darkgray": "#515151",
+                  "error": "#dd3333",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "\\"Ubuntu\\", sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".75rem .875rem",
+                  "radius": ".5rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "16px",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
             transform="none"
+            white={true}
           >
-            default
-          </p>
-        </styled.p>
-      </Text>
-    </a>
+            <StyledComponent
+              align="center"
+              forwardedClass={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "kOSZjX",
+                    "rules": Array [
+                      "
+font-size: ",
+                      [Function],
+                      ";
+",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "theme": Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    },
+                  },
+                  "displayName": "styled.p",
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "p",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isLabel={false}
+              small={false}
+              strong={false}
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#222222",
+                    "darkgray": "#515151",
+                    "error": "#dd3333",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "\\"Ubuntu\\", sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".75rem .875rem",
+                    "radius": ".5rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "16px",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              transform="none"
+              white={true}
+            >
+              <p
+                className="sc-bdVaJa kOSZjX"
+                transform="none"
+              >
+                default
+              </p>
+            </StyledComponent>
+          </styled.p>
+        </Text>
+      </a>
+    </StyledComponent>
   </styled.a>
 </Button>
 `;
@@ -168,7 +380,7 @@ exports[`should change its style on success 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -178,28 +390,26 @@ exports[`should change its style on success 1`] = `
       }
     }
   >
-    <a
-      className="sc-dnqmqq cFcTJd"
+    <StyledComponent
       disabled={false}
-      href="#"
-      onClick={null}
-    >
-      <Text
-        align="center"
-        label={false}
-        small={false}
-        strong={false}
-        transform="none"
-        type=""
-        white={true}
-      >
-        <styled.p
-          align="center"
-          label={false}
-          small={false}
-          strong={false}
-          theme={
-            Object {
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-dnqmqq",
+            "isStatic": false,
+            "lastClassName": "biwuyN",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -224,28 +434,243 @@ exports[`should change its style on success 1`] = `
                 "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
-                "radius": ".25rem",
+                "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                 "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
               },
-            }
-          }
+            },
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-dnqmqq",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      href="#"
+      inset={false}
+      onClick={null}
+      outline={false}
+      secondary={false}
+      success={true}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
+    >
+      <a
+        className="sc-dnqmqq biwuyN"
+        disabled={false}
+        href="#"
+        onClick={null}
+      >
+        <Text
+          align="center"
+          isLabel={false}
+          small={false}
+          strong={false}
           transform="none"
+          type=""
           white={true}
         >
-          <p
-            className="sc-bdVaJa kOSZjX"
-            label={false}
+          <styled.p
+            align="center"
+            isLabel={false}
+            small={false}
+            strong={false}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#222222",
+                  "darkgray": "#515151",
+                  "error": "#dd3333",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "\\"Ubuntu\\", sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".75rem .875rem",
+                  "radius": ".5rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "16px",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
             transform="none"
+            white={true}
           >
-            default
-          </p>
-        </styled.p>
-      </Text>
-    </a>
+            <StyledComponent
+              align="center"
+              forwardedClass={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "kOSZjX",
+                    "rules": Array [
+                      "
+font-size: ",
+                      [Function],
+                      ";
+",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "theme": Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    },
+                  },
+                  "displayName": "styled.p",
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "p",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isLabel={false}
+              small={false}
+              strong={false}
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#222222",
+                    "darkgray": "#515151",
+                    "error": "#dd3333",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "\\"Ubuntu\\", sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".75rem .875rem",
+                    "radius": ".5rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "16px",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              transform="none"
+              white={true}
+            >
+              <p
+                className="sc-bdVaJa kOSZjX"
+                transform="none"
+              >
+                default
+              </p>
+            </StyledComponent>
+          </styled.p>
+        </Text>
+      </a>
+    </StyledComponent>
   </styled.a>
 </Button>
 `;
@@ -293,7 +718,7 @@ exports[`should change its style on warn 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -304,28 +729,26 @@ exports[`should change its style on warn 1`] = `
     }
     warn={true}
   >
-    <a
-      className="sc-dnqmqq jgeLbc"
+    <StyledComponent
       disabled={false}
-      href="#"
-      onClick={null}
-    >
-      <Text
-        align="center"
-        label={false}
-        small={false}
-        strong={false}
-        transform="none"
-        type=""
-        white={true}
-      >
-        <styled.p
-          align="center"
-          label={false}
-          small={false}
-          strong={false}
-          theme={
-            Object {
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-dnqmqq",
+            "isStatic": false,
+            "lastClassName": "hhHwZc",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -350,28 +773,243 @@ exports[`should change its style on warn 1`] = `
                 "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
-                "radius": ".25rem",
+                "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                 "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
               },
-            }
-          }
+            },
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-dnqmqq",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      href="#"
+      inset={false}
+      onClick={null}
+      outline={false}
+      secondary={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
+      warn={true}
+    >
+      <a
+        className="sc-dnqmqq hhHwZc"
+        disabled={false}
+        href="#"
+        onClick={null}
+      >
+        <Text
+          align="center"
+          isLabel={false}
+          small={false}
+          strong={false}
           transform="none"
+          type=""
           white={true}
         >
-          <p
-            className="sc-bdVaJa kOSZjX"
-            label={false}
+          <styled.p
+            align="center"
+            isLabel={false}
+            small={false}
+            strong={false}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#222222",
+                  "darkgray": "#515151",
+                  "error": "#dd3333",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "\\"Ubuntu\\", sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".75rem .875rem",
+                  "radius": ".5rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "16px",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
             transform="none"
+            white={true}
           >
-            default
-          </p>
-        </styled.p>
-      </Text>
-    </a>
+            <StyledComponent
+              align="center"
+              forwardedClass={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "kOSZjX",
+                    "rules": Array [
+                      "
+font-size: ",
+                      [Function],
+                      ";
+",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "theme": Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    },
+                  },
+                  "displayName": "styled.p",
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "p",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isLabel={false}
+              small={false}
+              strong={false}
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#222222",
+                    "darkgray": "#515151",
+                    "error": "#dd3333",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "\\"Ubuntu\\", sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".75rem .875rem",
+                    "radius": ".5rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "16px",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              transform="none"
+              white={true}
+            >
+              <p
+                className="sc-bdVaJa kOSZjX"
+                transform="none"
+              >
+                default
+              </p>
+            </StyledComponent>
+          </styled.p>
+        </Text>
+      </a>
+    </StyledComponent>
   </styled.a>
 </Button>
 `;
@@ -418,7 +1056,7 @@ exports[`should render a anchor 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -428,28 +1066,26 @@ exports[`should render a anchor 1`] = `
       }
     }
   >
-    <a
-      className="sc-dnqmqq kQxpwh"
+    <StyledComponent
       disabled={false}
-      href="#"
-      onClick={null}
-    >
-      <Text
-        align="center"
-        label={false}
-        small={false}
-        strong={false}
-        transform="none"
-        type=""
-        white={true}
-      >
-        <styled.p
-          align="center"
-          label={false}
-          small={false}
-          strong={false}
-          theme={
-            Object {
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-dnqmqq",
+            "isStatic": false,
+            "lastClassName": "eimDpD",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -474,28 +1110,242 @@ exports[`should render a anchor 1`] = `
                 "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
-                "radius": ".25rem",
+                "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                 "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
               },
-            }
-          }
+            },
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-dnqmqq",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      href="#"
+      inset={false}
+      onClick={null}
+      outline={false}
+      secondary={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
+    >
+      <a
+        className="sc-dnqmqq eimDpD"
+        disabled={false}
+        href="#"
+        onClick={null}
+      >
+        <Text
+          align="center"
+          isLabel={false}
+          small={false}
+          strong={false}
           transform="none"
+          type=""
           white={true}
         >
-          <p
-            className="sc-bdVaJa kOSZjX"
-            label={false}
+          <styled.p
+            align="center"
+            isLabel={false}
+            small={false}
+            strong={false}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#222222",
+                  "darkgray": "#515151",
+                  "error": "#dd3333",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "\\"Ubuntu\\", sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".75rem .875rem",
+                  "radius": ".5rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "16px",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
             transform="none"
+            white={true}
           >
-            default
-          </p>
-        </styled.p>
-      </Text>
-    </a>
+            <StyledComponent
+              align="center"
+              forwardedClass={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "kOSZjX",
+                    "rules": Array [
+                      "
+font-size: ",
+                      [Function],
+                      ";
+",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "theme": Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    },
+                  },
+                  "displayName": "styled.p",
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "p",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isLabel={false}
+              small={false}
+              strong={false}
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#222222",
+                    "darkgray": "#515151",
+                    "error": "#dd3333",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "\\"Ubuntu\\", sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".75rem .875rem",
+                    "radius": ".5rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "16px",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              transform="none"
+              white={true}
+            >
+              <p
+                className="sc-bdVaJa kOSZjX"
+                transform="none"
+              >
+                default
+              </p>
+            </StyledComponent>
+          </styled.p>
+        </Text>
+      </a>
+    </StyledComponent>
   </styled.a>
 </Button>
 `;
@@ -542,7 +1392,7 @@ exports[`should render a button 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -552,28 +1402,26 @@ exports[`should render a button 1`] = `
       }
     }
   >
-    <button
-      className="sc-htoDjs iAuNOT"
+    <StyledComponent
       disabled={false}
-      href={null}
-      onClick={[Function]}
-    >
-      <Text
-        align="center"
-        label={false}
-        small={false}
-        strong={false}
-        transform="none"
-        type=""
-        white={true}
-      >
-        <styled.p
-          align="center"
-          label={false}
-          small={false}
-          strong={false}
-          theme={
-            Object {
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htoDjs",
+            "isStatic": false,
+            "lastClassName": "hTeMnD",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -598,28 +1446,242 @@ exports[`should render a button 1`] = `
                 "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
-                "radius": ".25rem",
+                "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                 "size": "16px",
               },
               "transition": Object {
                 "time": ".3s ease",
               },
-            }
-          }
+            },
+          },
+          "displayName": "styled.button",
+          "render": [Function],
+          "styledComponentId": "sc-htoDjs",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      href={null}
+      inset={false}
+      onClick={[Function]}
+      outline={false}
+      secondary={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
+    >
+      <button
+        className="sc-htoDjs hTeMnD"
+        disabled={false}
+        href={null}
+        onClick={[Function]}
+      >
+        <Text
+          align="center"
+          isLabel={false}
+          small={false}
+          strong={false}
           transform="none"
+          type=""
           white={true}
         >
-          <p
-            className="sc-bdVaJa kOSZjX"
-            label={false}
+          <styled.p
+            align="center"
+            isLabel={false}
+            small={false}
+            strong={false}
+            theme={
+              Object {
+                "color": Object {
+                  "black": "#222222",
+                  "darkgray": "#515151",
+                  "error": "#dd3333",
+                  "gray": "#a9abae",
+                  "lightgray": "#e5e5e5",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#0081c8",
+                  "secondary": "#00245f",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "\\"Ubuntu\\", sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
+                "shape": Object {
+                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "padding": ".75rem .875rem",
+                  "radius": ".5rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "16px",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              }
+            }
             transform="none"
+            white={true}
           >
-            default
-          </p>
-        </styled.p>
-      </Text>
-    </button>
+            <StyledComponent
+              align="center"
+              forwardedClass={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "kOSZjX",
+                    "rules": Array [
+                      "
+font-size: ",
+                      [Function],
+                      ";
+",
+                      [Function],
+                      "
+",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "theme": Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    },
+                  },
+                  "displayName": "styled.p",
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "p",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isLabel={false}
+              small={false}
+              strong={false}
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#222222",
+                    "darkgray": "#515151",
+                    "error": "#dd3333",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "\\"Ubuntu\\", sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".75rem .875rem",
+                    "radius": ".5rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "16px",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              transform="none"
+              white={true}
+            >
+              <p
+                className="sc-bdVaJa kOSZjX"
+                transform="none"
+              >
+                default
+              </p>
+            </StyledComponent>
+          </styled.p>
+        </Text>
+      </button>
+    </StyledComponent>
   </styled.button>
 </Button>
 `;

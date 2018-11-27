@@ -37,7 +37,7 @@ exports[`should render a icon 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -47,15 +47,70 @@ exports[`should render a icon 1`] = `
       }
     }
   >
-    <Ionicon
-      beat={false}
-      className="sc-bdVaJa hoAZYJ"
+    <StyledComponent
       color="inherit"
       fontSize="1rem"
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "hoAZYJ",
+            "rules": Array [
+              "
+transform: scale(1.25);
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "Styled(Ionicon)",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       icon="md-inherit"
-      rotate={false}
-      shake={false}
-      style={Object {}}
       theme={
         Object {
           "color": Object {
@@ -82,7 +137,7 @@ exports[`should render a icon 1`] = `
             "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "padding": ".75rem .875rem",
-            "radius": ".25rem",
+            "radius": ".5rem",
             "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
             "size": "16px",
           },
@@ -92,32 +147,78 @@ exports[`should render a icon 1`] = `
         }
       }
     >
-      <styled.svg
-        beat={0}
+      <Ionicon
+        beat={false}
         className="sc-bdVaJa hoAZYJ"
-        fill="inherit"
-        height="1rem"
-        rotate={0}
-        shake={0}
+        color="inherit"
+        fontSize="1rem"
+        icon="md-inherit"
+        rotate={false}
+        shake={false}
         style={Object {}}
-        viewBox="0 0 1024 1024"
-        width="1rem"
+        theme={
+          Object {
+            "color": Object {
+              "black": "#222222",
+              "darkgray": "#515151",
+              "error": "#dd3333",
+              "gray": "#a9abae",
+              "lightgray": "#e5e5e5",
+              "overlay": "rgba(0, 0, 0, .15)",
+              "primary": "#0081c8",
+              "secondary": "#00245f",
+              "success": "#33bb33",
+              "warn": "#dd3333",
+              "white": "#fefefe",
+            },
+            "font": Object {
+              "color": "#222222",
+              "family": "\\"Ubuntu\\", sans-serif",
+              "size": "16px",
+              "spacing": 0,
+            },
+            "shape": Object {
+              "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+              "margin": ".25rem .125rem",
+              "padding": ".75rem .875rem",
+              "radius": ".5rem",
+              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+              "size": "16px",
+            },
+            "transition": Object {
+              "time": ".3s ease",
+            },
+          }
+        }
       >
-        <svg
-          className="sc-bdVaJa hoAZYJ sc-bdVaJa fUuvxv"
+        <styled.svg
+          beat={0}
+          className="sc-bdVaJa hoAZYJ"
           fill="inherit"
           height="1rem"
           rotate={0}
+          shake={0}
           style={Object {}}
           viewBox="0 0 1024 1024"
           width="1rem"
         >
-          <path
-            d=""
-          />
-        </svg>
-      </styled.svg>
-    </Ionicon>
+          <svg
+            className="sc-bdVaJa hoAZYJ sc-bdVaJa fUuvxv"
+            fill="inherit"
+            height="1rem"
+            rotate={0}
+            style={Object {}}
+            viewBox="0 0 1024 1024"
+            width="1rem"
+          >
+            <path
+              d=""
+            />
+          </svg>
+        </styled.svg>
+      </Ionicon>
+    </StyledComponent>
   </Styled(Ionicon)>
 </Icon>
 `;

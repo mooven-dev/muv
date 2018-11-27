@@ -6,29 +6,29 @@ import React from 'react';
 import themeDefault from '../../theme';
 
 // STYLES
-const Styled__COMPONENT__ = styled.p`
+const StyledLoader = styled.p`
 color: ${({ theme }) => theme.color.primary};
 `;
 
 // THEME DEFAULT
-Styled__COMPONENT__.defaultProps = {
+StyledLoader.defaultProps = {
   theme: themeDefault,
 };
 
 // COMPONENT
-const __COMPONENT__ = props => (
-  <Styled__COMPONENT__ {...props} />
+const Loader = props => (
+  <StyledLoader {...props} />
 );
 
 // DOCUMENTATION
-__COMPONENT__.propTypes = {
+Loader.propTypes = {
   /** accepts only valid react nodes as children */
   children: node,
 };
 
-__COMPONENT__.defaultProps = {
-  children: 'default',
+Loader.defaultProps = {
+  children: '...',
 };
 
 // EXPORT
-export default __COMPONENT__;
+export default Loader;

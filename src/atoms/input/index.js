@@ -1,7 +1,7 @@
 // IMPORTS
+import React, { PureComponent as Component } from 'react';
 import { bool, string } from 'prop-types';
 import styled from 'styled-components';
-import React from 'react';
 
 import { inputStyle } from '../../utils';
 import themeDefault from '../../theme';
@@ -9,6 +9,9 @@ import themeDefault from '../../theme';
 // STYLES
 const StyledInput = styled.input`
 ${props => inputStyle(props)}
+&:disabled {
+  background-color: ${({ theme }) => theme.color.lightgray};
+}
 `;
 
 StyledInput.defaultProps = {
@@ -16,9 +19,35 @@ StyledInput.defaultProps = {
 };
 
 // COMPONENT
-const Input = ({ error, ...props }) => (
-  <StyledInput warn={error} {...props} />
-);
+class Input extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.inputRef = React.createRef();
+    this.autoFocus = () => this.inputRef && this.inputRef.current.focus();
+    this.focusOnEnable = (prevProps) => {
+      const actualDisabled = this.props.disabled;
+      const prevDisabled = prevProps.disabled;
+      if (actualDisabled === false && prevDisabled === true) this.autoFocus();
+    };
+  }
+
+  componentDidUpdate(prevProps) {
+    this.focusOnEnable(prevProps);
+  }
+
+  render() {
+    const { error, disabledPlaceholder, disabled, placeholder } = this.props;
+    return (
+      <StyledInput
+        warn={error}
+        {...this.props}
+        ref={this.inputRef}
+        placeholder={disabled ? disabledPlaceholder : placeholder}
+      />
+    );
+  }
+}
 
 // DOCUMENTATION
 Input.propTypes = {
@@ -26,6 +55,8 @@ Input.propTypes = {
   type: string,
   /** prop to disables input */
   disabled: bool,
+  /** changes the placeholder when disabled */
+  disabledPlaceholder: string,
   /** prop to visualy show if input has error */
   error: bool,
   /** prop to visualy show if input is correctly filled */
@@ -35,6 +66,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  disabledPlaceholder: 'disabled',
   placeholder: 'placeholder',
   disabled: false,
   success: false,

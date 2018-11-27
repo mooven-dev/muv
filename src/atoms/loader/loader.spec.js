@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Chatbot from '.';
+import Loader from '.';
 
-it('should render a chatbot', () => {
+it('should render a loader', () => {
   const wrapper = mount(
-    <Chatbot />,
+    <Loader />,
   );
   expect(wrapper).toMatchSnapshot();
 });

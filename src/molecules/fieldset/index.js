@@ -25,7 +25,7 @@ const Fieldset = (props) => {
   const inputProps = { onChange, placeholder, type, ...stateProps };
   return (
     <StyledFieldset {...rest}>
-      <Text label transform="capitalize">
+      <Text isLabel transform="capitalize">
         {`${label}:`}
       </Text>
       <Input {...inputProps} />

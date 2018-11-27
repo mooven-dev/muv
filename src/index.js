@@ -6,9 +6,10 @@
  */
 
 // EXTERNAL LIBS
-import styled, { ThemeProvider, injectGlobal, ServerStyleSheet } from 'styled-components';
+import styled, { ThemeProvider, createGlobalStyle, ServerStyleSheet } from 'styled-components';
 
 // ATOMS
+import Loader from './atoms/loader';
 import Icon from './atoms/icon';
 import Fab from './atoms/fab';
 import Divider from './atoms/divider';
@@ -35,7 +36,7 @@ import Chatbot from './organisms/chatbot';
 
 
 // GLOBALS
-injectGlobal`
+createGlobalStyle`
   body {
     font-size: 16px;
     padding: 0px;
@@ -45,16 +46,21 @@ injectGlobal`
       box-sizing: border-box;
       font-family: 'Ubuntu', sans-serif;
     }
+    a {
+      color: ${({ theme }) => theme.color.primary}
+    }
   }
 `;
 
 // EXPORTS
 export default styled;
 export {
+  createGlobalStyle as injectGlobal,
+  createGlobalStyle,
   ServerStyleSheet,
   ThemeProvider,
-  injectGlobal,
   // COMPONENTS
+  Loader,
   ChatMessage,
   Icon,
   Fab,

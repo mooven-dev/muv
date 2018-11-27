@@ -36,7 +36,7 @@ exports[`should render a col 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -46,9 +46,68 @@ exports[`should render a col 1`] = `
       }
     }
   >
-    <Row
+    <StyledComponent
       align="strech"
-      className="sc-htpNat cPqbHx"
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "cPqbHx",
+            "rules": Array [
+              "
+flex-direction: column;
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "Styled(Row)",
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        }
+      }
+      forwardedRef={null}
       grow={1}
       justify="flex-start"
       theme={
@@ -77,7 +136,7 @@ exports[`should render a col 1`] = `
             "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "padding": ".75rem .875rem",
-            "radius": ".25rem",
+            "radius": ".5rem",
             "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
             "size": "16px",
           },
@@ -87,7 +146,7 @@ exports[`should render a col 1`] = `
         }
       }
     >
-      <Styled(Container)
+      <Row
         align="strech"
         className="sc-htpNat cPqbHx"
         grow={1}
@@ -118,7 +177,7 @@ exports[`should render a col 1`] = `
               "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
               "padding": ".75rem .875rem",
-              "radius": ".25rem",
+              "radius": ".5rem",
               "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
               "size": "16px",
             },
@@ -128,19 +187,11 @@ exports[`should render a col 1`] = `
           }
         }
       >
-        <Container
+        <Styled(Container)
           align="strech"
-          className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
-          full={false}
+          className="sc-htpNat cPqbHx"
           grow={1}
-          height="auto"
           justify="flex-start"
-          margin="0"
-          maxHeight="auto"
-          maxWidth="auto"
-          minHeight="auto"
-          minWidth="auto"
-          padding="0"
           theme={
             Object {
               "color": Object {
@@ -167,7 +218,7 @@ exports[`should render a col 1`] = `
                 "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "padding": ".75rem .875rem",
-                "radius": ".25rem",
+                "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                 "size": "16px",
               },
@@ -177,19 +228,82 @@ exports[`should render a col 1`] = `
             }
           }
         >
-          <styled.div
+          <StyledComponent
             align="strech"
-            className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
-            full={false}
+            className="sc-htpNat cPqbHx"
+            forwardedClass={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "iksuOx",
+                  "rules": Array [
+                    "
+justify-content: ",
+                    [Function],
+                    ";
+align-items: ",
+                    [Function],
+                    ";
+flex-grow: ",
+                    [Function],
+                    ";
+flex-direction: row;
+flex-shrink: 1;
+display: flex;
+",
+                  ],
+                },
+                "defaultProps": Object {
+                  "theme": Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  },
+                },
+                "displayName": "Styled(Container)",
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             grow={1}
-            height="auto"
             justify="flex-start"
-            margin="0"
-            maxHeight="auto"
-            maxWidth="auto"
-            minHeight="auto"
-            minWidth="auto"
-            padding="0"
             theme={
               Object {
                 "color": Object {
@@ -216,7 +330,7 @@ exports[`should render a col 1`] = `
                   "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "padding": ".75rem .875rem",
-                  "radius": ".25rem",
+                  "radius": ".5rem",
                   "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
                   "size": "16px",
                 },
@@ -226,16 +340,265 @@ exports[`should render a col 1`] = `
               }
             }
           >
-            <div
-              className="sc-htpNat cPqbHx sc-bwzfXH iksuOx sc-bdVaJa gqdBl"
+            <Container
+              align="strech"
+              className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
+              full={false}
+              grow={1}
               height="auto"
+              justify="flex-start"
+              margin="0"
+              maxHeight="auto"
+              maxWidth="auto"
+              minHeight="auto"
+              minWidth="auto"
+              padding="0"
+              theme={
+                Object {
+                  "color": Object {
+                    "black": "#222222",
+                    "darkgray": "#515151",
+                    "error": "#dd3333",
+                    "gray": "#a9abae",
+                    "lightgray": "#e5e5e5",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#0081c8",
+                    "secondary": "#00245f",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "\\"Ubuntu\\", sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
+                  "shape": Object {
+                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "padding": ".75rem .875rem",
+                    "radius": ".5rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "16px",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
             >
-              col
-            </div>
-          </styled.div>
-        </Container>
-      </Styled(Container)>
-    </Row>
+              <styled.div
+                align="strech"
+                className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
+                full={false}
+                grow={1}
+                height="auto"
+                justify="flex-start"
+                margin="0"
+                maxHeight="auto"
+                maxWidth="auto"
+                minHeight="auto"
+                minWidth="auto"
+                padding="0"
+                theme={
+                  Object {
+                    "color": Object {
+                      "black": "#222222",
+                      "darkgray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightgray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#0081c8",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+              >
+                <StyledComponent
+                  align="strech"
+                  className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bdVaJa",
+                        "isStatic": false,
+                        "lastClassName": "bofdhh",
+                        "rules": Array [
+                          "
+padding: ",
+                          [Function],
+                          ";
+flex-basis: ",
+                          [Function],
+                          ";
+border: ",
+                          [Function],
+                          ";
+display: ",
+                          [Function],
+                          ";
+height: ",
+                          [Function],
+                          ";
+width: ",
+                          [Function],
+                          ";
+background: ",
+                          [Function],
+                          ";
+border-radius: ",
+                          [Function],
+                          ";
+max-height: ",
+                          [Function],
+                          ";
+min-height: ",
+                          [Function],
+                          ";
+max-width: ",
+                          [Function],
+                          ";
+min-width: ",
+                          [Function],
+                          ";
+margin: ",
+                          [Function],
+                          ";
+flex-direction: column;
+align-items: stretch;
+",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "theme": Object {
+                          "color": Object {
+                            "black": "#222222",
+                            "darkgray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightgray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#0081c8",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        },
+                      },
+                      "displayName": "styled.div",
+                      "render": [Function],
+                      "styledComponentId": "sc-bdVaJa",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  full={false}
+                  grow={1}
+                  height="auto"
+                  justify="flex-start"
+                  margin="0"
+                  maxHeight="auto"
+                  maxWidth="auto"
+                  minHeight="auto"
+                  minWidth="auto"
+                  padding="0"
+                  theme={
+                    Object {
+                      "color": Object {
+                        "black": "#222222",
+                        "darkgray": "#515151",
+                        "error": "#dd3333",
+                        "gray": "#a9abae",
+                        "lightgray": "#e5e5e5",
+                        "overlay": "rgba(0, 0, 0, .15)",
+                        "primary": "#0081c8",
+                        "secondary": "#00245f",
+                        "success": "#33bb33",
+                        "warn": "#dd3333",
+                        "white": "#fefefe",
+                      },
+                      "font": Object {
+                        "color": "#222222",
+                        "family": "\\"Ubuntu\\", sans-serif",
+                        "size": "16px",
+                        "spacing": 0,
+                      },
+                      "shape": Object {
+                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                        "margin": ".25rem .125rem",
+                        "padding": ".75rem .875rem",
+                        "radius": ".5rem",
+                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                        "size": "16px",
+                      },
+                      "transition": Object {
+                        "time": ".3s ease",
+                      },
+                    }
+                  }
+                >
+                  <div
+                    className="sc-htpNat cPqbHx sc-bwzfXH iksuOx sc-bdVaJa bofdhh"
+                    height="auto"
+                  >
+                    col
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </Container>
+          </StyledComponent>
+        </Styled(Container)>
+      </Row>
+    </StyledComponent>
   </Styled(Row)>
 </Col>
 `;

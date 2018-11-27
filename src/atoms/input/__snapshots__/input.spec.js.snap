@@ -3,6 +3,7 @@
 exports[`should change its style if disabled 1`] = `
 <Input
   disabled={true}
+  disabledPlaceholder="disabled"
   error={false}
   placeholder="placeholder"
   success={false}
@@ -10,7 +11,9 @@ exports[`should change its style if disabled 1`] = `
 >
   <styled.input
     disabled={true}
-    placeholder="placeholder"
+    disabledPlaceholder="disabled"
+    error={false}
+    placeholder="disabled"
     success={false}
     theme={
       Object {
@@ -38,7 +41,7 @@ exports[`should change its style if disabled 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -50,12 +53,132 @@ exports[`should change its style if disabled 1`] = `
     type="text"
     warn={false}
   >
-    <input
-      className="sc-bdVaJa iEJAqI"
+    <StyledComponent
       disabled={true}
-      placeholder="placeholder"
+      disabledPlaceholder="disabled"
+      error={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "cRlcBP",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+&:disabled {
+  background-color: ",
+              [Function],
+              ";
+}
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.input",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": <input
+            class="sc-bdVaJa cRlcBP"
+            disabled=""
+            placeholder="disabled"
+            type="text"
+          />,
+        }
+      }
+      placeholder="disabled"
+      success={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
       type="text"
-    />
+      warn={false}
+    >
+      <input
+        className="sc-bdVaJa cRlcBP"
+        disabled={true}
+        placeholder="disabled"
+        type="text"
+      />
+    </StyledComponent>
   </styled.input>
 </Input>
 `;
@@ -63,6 +186,7 @@ exports[`should change its style if disabled 1`] = `
 exports[`should change its style if required 1`] = `
 <Input
   disabled={false}
+  disabledPlaceholder="disabled"
   error={false}
   placeholder="placeholder"
   required={true}
@@ -71,6 +195,8 @@ exports[`should change its style if required 1`] = `
 >
   <styled.input
     disabled={false}
+    disabledPlaceholder="disabled"
+    error={false}
     placeholder="placeholder"
     required={true}
     success={false}
@@ -100,7 +226,7 @@ exports[`should change its style if required 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -112,13 +238,134 @@ exports[`should change its style if required 1`] = `
     type="text"
     warn={false}
   >
-    <input
-      className="sc-bdVaJa iEJAqI"
+    <StyledComponent
       disabled={false}
+      disabledPlaceholder="disabled"
+      error={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "cRlcBP",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+&:disabled {
+  background-color: ",
+              [Function],
+              ";
+}
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.input",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": <input
+            class="sc-bdVaJa cRlcBP"
+            placeholder="placeholder"
+            required=""
+            type="text"
+          />,
+        }
+      }
       placeholder="placeholder"
       required={true}
+      success={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
       type="text"
-    />
+      warn={false}
+    >
+      <input
+        className="sc-bdVaJa cRlcBP"
+        disabled={false}
+        placeholder="placeholder"
+        required={true}
+        type="text"
+      />
+    </StyledComponent>
   </styled.input>
 </Input>
 `;
@@ -126,6 +373,7 @@ exports[`should change its style if required 1`] = `
 exports[`should change its style on error 1`] = `
 <Input
   disabled={false}
+  disabledPlaceholder="disabled"
   error={true}
   placeholder="placeholder"
   success={false}
@@ -133,6 +381,8 @@ exports[`should change its style on error 1`] = `
 >
   <styled.input
     disabled={false}
+    disabledPlaceholder="disabled"
+    error={true}
     placeholder="placeholder"
     success={false}
     theme={
@@ -161,7 +411,7 @@ exports[`should change its style on error 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -173,12 +423,131 @@ exports[`should change its style on error 1`] = `
     type="text"
     warn={true}
   >
-    <input
-      className="sc-bdVaJa borbUD"
+    <StyledComponent
       disabled={false}
+      disabledPlaceholder="disabled"
+      error={true}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "cNVlkk",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+&:disabled {
+  background-color: ",
+              [Function],
+              ";
+}
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.input",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": <input
+            class="sc-bdVaJa cNVlkk"
+            placeholder="placeholder"
+            type="text"
+          />,
+        }
+      }
       placeholder="placeholder"
+      success={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
       type="text"
-    />
+      warn={true}
+    >
+      <input
+        className="sc-bdVaJa cNVlkk"
+        disabled={false}
+        placeholder="placeholder"
+        type="text"
+      />
+    </StyledComponent>
   </styled.input>
 </Input>
 `;
@@ -186,6 +555,7 @@ exports[`should change its style on error 1`] = `
 exports[`should change its style on success 1`] = `
 <Input
   disabled={false}
+  disabledPlaceholder="disabled"
   error={false}
   placeholder="placeholder"
   success={true}
@@ -193,6 +563,8 @@ exports[`should change its style on success 1`] = `
 >
   <styled.input
     disabled={false}
+    disabledPlaceholder="disabled"
+    error={false}
     placeholder="placeholder"
     success={true}
     theme={
@@ -221,7 +593,7 @@ exports[`should change its style on success 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -233,12 +605,131 @@ exports[`should change its style on success 1`] = `
     type="text"
     warn={false}
   >
-    <input
-      className="sc-bdVaJa huOWaE"
+    <StyledComponent
       disabled={false}
+      disabledPlaceholder="disabled"
+      error={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "yPebb",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+&:disabled {
+  background-color: ",
+              [Function],
+              ";
+}
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.input",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": <input
+            class="sc-bdVaJa yPebb"
+            placeholder="placeholder"
+            type="text"
+          />,
+        }
+      }
       placeholder="placeholder"
+      success={true}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
       type="text"
-    />
+      warn={false}
+    >
+      <input
+        className="sc-bdVaJa yPebb"
+        disabled={false}
+        placeholder="placeholder"
+        type="text"
+      />
+    </StyledComponent>
   </styled.input>
 </Input>
 `;
@@ -246,6 +737,7 @@ exports[`should change its style on success 1`] = `
 exports[`should render a input 1`] = `
 <Input
   disabled={false}
+  disabledPlaceholder="disabled"
   error={false}
   placeholder="placeholder"
   success={false}
@@ -253,6 +745,8 @@ exports[`should render a input 1`] = `
 >
   <styled.input
     disabled={false}
+    disabledPlaceholder="disabled"
+    error={false}
     placeholder="placeholder"
     success={false}
     theme={
@@ -281,7 +775,7 @@ exports[`should render a input 1`] = `
           "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "padding": ".75rem .875rem",
-          "radius": ".25rem",
+          "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
           "size": "16px",
         },
@@ -293,12 +787,131 @@ exports[`should render a input 1`] = `
     type="text"
     warn={false}
   >
-    <input
-      className="sc-bdVaJa iEJAqI"
+    <StyledComponent
       disabled={false}
+      disabledPlaceholder="disabled"
+      error={false}
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "cRlcBP",
+            "rules": Array [
+              "
+",
+              [Function],
+              "
+&:disabled {
+  background-color: ",
+              [Function],
+              ";
+}
+",
+            ],
+          },
+          "defaultProps": Object {
+            "theme": Object {
+              "color": Object {
+                "black": "#222222",
+                "darkgray": "#515151",
+                "error": "#dd3333",
+                "gray": "#a9abae",
+                "lightgray": "#e5e5e5",
+                "overlay": "rgba(0, 0, 0, .15)",
+                "primary": "#0081c8",
+                "secondary": "#00245f",
+                "success": "#33bb33",
+                "warn": "#dd3333",
+                "white": "#fefefe",
+              },
+              "font": Object {
+                "color": "#222222",
+                "family": "\\"Ubuntu\\", sans-serif",
+                "size": "16px",
+                "spacing": 0,
+              },
+              "shape": Object {
+                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+                "margin": ".25rem .125rem",
+                "padding": ".75rem .875rem",
+                "radius": ".5rem",
+                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                "size": "16px",
+              },
+              "transition": Object {
+                "time": ".3s ease",
+              },
+            },
+          },
+          "displayName": "styled.input",
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "input",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": <input
+            class="sc-bdVaJa cRlcBP"
+            placeholder="placeholder"
+            type="text"
+          />,
+        }
+      }
       placeholder="placeholder"
+      success={false}
+      theme={
+        Object {
+          "color": Object {
+            "black": "#222222",
+            "darkgray": "#515151",
+            "error": "#dd3333",
+            "gray": "#a9abae",
+            "lightgray": "#e5e5e5",
+            "overlay": "rgba(0, 0, 0, .15)",
+            "primary": "#0081c8",
+            "secondary": "#00245f",
+            "success": "#33bb33",
+            "warn": "#dd3333",
+            "white": "#fefefe",
+          },
+          "font": Object {
+            "color": "#222222",
+            "family": "\\"Ubuntu\\", sans-serif",
+            "size": "16px",
+            "spacing": 0,
+          },
+          "shape": Object {
+            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "float": "0 .5rem .5rem 0 rgba(0, 0, 0, .15)",
+            "margin": ".25rem .125rem",
+            "padding": ".75rem .875rem",
+            "radius": ".5rem",
+            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+            "size": "16px",
+          },
+          "transition": Object {
+            "time": ".3s ease",
+          },
+        }
+      }
       type="text"
-    />
+      warn={false}
+    >
+      <input
+        className="sc-bdVaJa cRlcBP"
+        disabled={false}
+        placeholder="placeholder"
+        type="text"
+      />
+    </StyledComponent>
   </styled.input>
 </Input>
 `;
