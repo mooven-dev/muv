@@ -2,9 +2,71 @@
 
 exports[`should render a loader 1`] = `
 <Loader>
-  <styled.aside
+  <styled.span
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -47,7 +109,7 @@ exports[`should render a loader 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "fagnpy",
+            "lastClassName": "gSDhbA",
             "rules": Array [
               "
 display: inline-block;
@@ -62,7 +124,11 @@ span {
   box-shadow: 0 .1rem .1rem 0 ",
               [Function],
               ";
-  animation: bounce 1s ease infinite;
+  ",
+              [Function],
+              ";
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
   border-radius: 50%;
   position: absolute;
   filter: blur(.1px);
@@ -70,23 +136,6 @@ span {
   width: .5rem;
   content: '';
   bottom: 0;
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {
-      box-shadow: 0 .5rem .5rem 0 ",
-              [Function],
-              ";
-      bottom: .5rem;
-    }
-    50% {
-      bottom: 0;
-    }
-    to {
-      bottom: 0;
-    }
-  }
   &:nth-child(1) {
     left: -1rem;
     animation-delay: .1s;
@@ -106,6 +155,68 @@ span {
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -139,10 +250,10 @@ span {
               },
             },
           },
-          "displayName": "styled.aside",
+          "displayName": "styled.span",
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
-          "target": "aside",
+          "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -151,6 +262,68 @@ span {
       forwardedRef={null}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -185,14 +358,14 @@ span {
         }
       }
     >
-      <aside
-        className="sc-bdVaJa fagnpy"
+      <span
+        className="sc-bdVaJa gSDhbA"
       >
         <span />
         <span />
         <span />
-      </aside>
+      </span>
     </StyledComponent>
-  </styled.aside>
+  </styled.span>
 </Loader>
 `;

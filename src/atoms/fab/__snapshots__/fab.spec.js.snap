@@ -8,6 +8,68 @@ exports[`should render a fab 1`] = `
     onClick={[Function]}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -50,7 +112,7 @@ exports[`should render a fab 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-iwsKbI",
             "isStatic": false,
-            "lastClassName": "hXoGhU",
+            "lastClassName": "jBVzzf",
             "rules": Array [
               "
 box-shadow: ",
@@ -69,12 +131,75 @@ position: fixed;
 height: 3.5rem;
 display: flex;
 width: 3.5rem;
+z-index: 999;
 padding: 0;
 ",
             ],
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -122,6 +247,68 @@ padding: 0;
       onClick={[Function]}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -157,7 +344,7 @@ padding: 0;
       }
     >
       <Button
-        className="sc-iwsKbI hXoGhU"
+        className="sc-iwsKbI jBVzzf"
         disabled={false}
         href={null}
         inset={false}
@@ -166,6 +353,68 @@ padding: 0;
         secondary={false}
         theme={
           Object {
+            "animation": Object {
+              "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+              "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+              "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+              "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+              "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+            },
             "color": Object {
               "black": "#222222",
               "darkgray": "#515151",
@@ -201,7 +450,7 @@ padding: 0;
         }
       >
         <styled.button
-          className="sc-iwsKbI hXoGhU"
+          className="sc-iwsKbI jBVzzf"
           disabled={false}
           href={null}
           inset={false}
@@ -210,6 +459,68 @@ padding: 0;
           secondary={false}
           theme={
             Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -245,7 +556,7 @@ padding: 0;
           }
         >
           <StyledComponent
-            className="sc-iwsKbI hXoGhU"
+            className="sc-iwsKbI jBVzzf"
             disabled={false}
             forwardedClass={
               Object {
@@ -265,6 +576,68 @@ padding: 0;
                 },
                 "defaultProps": Object {
                   "theme": Object {
+                    "animation": Object {
+                      "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                      "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                      "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                      "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                      "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+                    },
                     "color": Object {
                       "black": "#222222",
                       "darkgray": "#515151",
@@ -315,6 +688,68 @@ padding: 0;
             secondary={false}
             theme={
               Object {
+                "animation": Object {
+                  "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                  "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                  "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                  "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                  "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+                },
                 "color": Object {
                   "black": "#222222",
                   "darkgray": "#515151",
@@ -350,7 +785,7 @@ padding: 0;
             }
           >
             <button
-              className="sc-iwsKbI hXoGhU sc-htoDjs hTeMnD"
+              className="sc-iwsKbI jBVzzf sc-htoDjs hTeMnD"
               disabled={false}
               href={null}
               onClick={[Function]}
@@ -371,6 +806,68 @@ padding: 0;
                   strong={false}
                   theme={
                     Object {
+                      "animation": Object {
+                        "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                        "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                        "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                        "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                        "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+                      },
                       "color": Object {
                         "black": "#222222",
                         "darkgray": "#515151",
@@ -430,6 +927,68 @@ font-size: ",
                         },
                         "defaultProps": Object {
                           "theme": Object {
+                            "animation": Object {
+                              "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                              "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                              "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                              "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                              "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+                            },
                             "color": Object {
                               "black": "#222222",
                               "darkgray": "#515151",
@@ -478,6 +1037,68 @@ font-size: ",
                     strong={false}
                     theme={
                       Object {
+                        "animation": Object {
+                          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+                        },
                         "color": Object {
                           "black": "#222222",
                           "darkgray": "#515151",

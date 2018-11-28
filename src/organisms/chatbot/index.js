@@ -1,192 +1,29 @@
 // IMPORTS
 import { node, number, string } from 'prop-types';
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import moment from 'moment';
-import Axios from 'axios';
 
 import { botAvatarImg, userAvatarImg } from '../../utils';
-import ChatMessage from '../../molecules/chatMessage';
-import Container from '../../atoms/container';
-import Button from '../../atoms/button';
-import themeDefault from '../../theme';
-import Badge from '../../atoms/badge';
-import Input from '../../atoms/input';
-import Link from '../../atoms/link';
-import Text from '../../atoms/text';
 import Icon from '../../atoms/icon';
-import Row from '../../atoms/row';
-import Fab from '../../atoms/fab';
-import Col from '../../atoms/col';
 import config from '../../env';
+import Bot from './context';
+
+// COMPONENTS
+import ChatBox from './components/chatBox';
+import BotFab from './components/botFab';
+
 
 const { conversation_api, workspace_id } = config;
-
-// STYLES
-const ChatBox = styled(Container)`
-transform: scale3d(${({ open }) => (open ? '1, 1, 1' : '.5, .5, 1')});
-box-shadow: ${({ theme, open }) => (open ? theme.shape.float : 0)};
-pointer-events: ${({ open }) => (open ? 'auto' : 'none')};
-transition: ${({ theme }) => theme.transition.time};
-opacity: ${({ open }) => (open ? 1 : 0)};
-transform-origin: bottom right;
-overflow: hidden;
-position: fixed;
-z-index: 999;
-bottom: 4.5rem;
-right: 4.5rem;
-`;
-
-ChatBox.defaultProps = {
-  theme: themeDefault,
-  bordered: true,
-  width: '320px',
-};
-
-const Body = styled(Container)`
-overflow-x: hidden;
-overflow-y: auto;
-height: 450px;
-`;
-
-Body.defaultProps = {
-  hasContent: true,
-  white: true,
-};
-
-const Header = styled(Row)`
-border-radius: 0;
-`;
-
-const StyledButton = styled(Button)`
-border-radius: 0;
-height: 100%;
-`;
-
-const StyledInput = styled(Input)`
-border-width: 2px 0 0 0;
-box-sizing: border-box;
-border-radius: 0;
-&:focus{
-  border-color: ${({ theme }) => theme.color.overlay};
-}
-`;
-
-StyledInput.defaultProps = {
-  theme: themeDefault,
-};
 
 // COMPONENT
 class Chatbot extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      messages: [],
-      open: true,
-    };
 
-    // REF TO SCROLL CHAT WINDOW ON NEW MESSAGE
-    this.scrollRef = React.createRef();
-
-    // UPDATE CHAT SCREEEN
-    this.updateChat = (message) => {
-      const { messages } = this.state;
-      const newMessages = messages.concat([message]);
-      let disabled = false;
-      if (message.output === undefined) disabled = true;
-      this.setState({ messages: newMessages, text: '', isLoad: true, disabled });
-    };
-
-    // SEND MESSAGE
-    this.messageRequest = (data) => {
-      const { endPoint } = this.props;
-      this.updateChat(data);
-      Axios.post(endPoint, JSON.stringify(data))
-        .then((res) => {
-          const botMessage = res.data;
-          botMessage.time = moment().format('HH:MM');
-          this.updateChat(res.data);
-        })
-        .catch(err => console.log('error', err)); // eslint-disable-line
-    };
-
-    // CLOSE BOT
-    // eslint-disable-next-line
-    this.close = () => this.setState({ open: false, willClose: '', newMessages: 2 });
-
-    // PREPARE AUTOMATIC CLOSE
-    this.prepareToClose = () => {
-      // eslint-disable-next-line
-      this.setState({ secondWarn: '', willClose: setTimeout(this.close, this.props.timeOut) });
-    };
-
-    // WARN TO INACTIVE USER (SECOND TRY)
-    this.startSecondWarn = (data) => {
-      const sendSecondWarn = () => {
-        const newData = data;
-        newData.input.text = 'second-warn';
-        this.messageRequest(newData);
-        this.prepareToClose();
-      };
-      // eslint-disable-next-line
-      this.setState({ firstWarn: '', secondWarn: setTimeout(sendSecondWarn, this.props.timeOut) });
-    };
-
-    // WARN TO INACTIVE USER (FIRST TRY)
-    this.startFirstWarn = (data) => {
-      const sendFirstWarn = () => {
-        const newData = data;
-        newData.input.text = 'first-warn';
-        newData.automatic = true;
-        this.messageRequest(newData);
-        this.startSecondWarn(newData);
-      };
-      // eslint-disable-next-line
-      this.setState({ firstWarn: setTimeout(sendFirstWarn, this.props.timeOut) });
-    };
-
-    // SEND USER MESSAGES TO BOT
-    this.sendMessage = (message) => {
-      // eslint-disable-next-line
-      this.setState({ disabled: true, firstWarn: '', secondWarn: '', willClose: '' });
-      // DEFAULT MESSAGE
-      const automatic = (message === undefined);
-      const text = (message || 'ola');
-      // GET CONTEXT
-      const { workSpace } = this.props;
-      const { messages } = this.state;
-      const lastMessage = (messages.length && messages[messages.length - 1]);
-      const { context } = lastMessage;
-      const time = moment().format('HH:MM');
-      // SETUP
-      const data = {
-        workspace_id: workSpace,
-        automatic,
-        context,
-        time,
-        input: {
-          text,
-        },
-      };
-      this.startFirstWarn(data);
-      this.messageRequest(data);
-    };
-
-    // OPENS AND CLOSES CHAT WINDOW (USUALLY ON UI)
+    // OPEN/CLOSES CHAT
     this.toogleChat = () => this.setState(({ open }) => ({ open: !open, newMessages: 0 }));
 
-    // LOOKS FOR NEW MESSAGES AND SCROLL CHAT WINDOW
-    this.scrollOnNewMessage = () => {
-      const box = this.scrollRef.current;
-      if (box) box.scrollIntoView({ behavior: 'smooth', block: 'end' });
-    };
-
-    // SEND USER MESSAGES TO BOT AND HANDLES HIS RESPONSE
-    this.submitMessage = (e) => {
-      if (e) e.preventDefault();
-      const { text } = this.state;
-      this.sendMessage(text);
-    };
+    // CLOSE BOT
+    this.closeBot = () => this.setState({ open: false, newMessages: 1 });
 
     // UPDATES NEW MESSAGES BADGE
     this.setNotification = () => {
@@ -194,11 +31,23 @@ class Chatbot extends Component {
       if (open) this.setState({ newMessages: 0 });
       else this.setState(({ newMessages }) => ({ newMessages: newMessages + 1 }));
     };
-  }
 
-  componentDidMount() {
-    // START CONVERSATION
-    this.sendMessage();
+    // UPDATE THE CONVERSATION
+    this.updateMessages = (messages, isLoad) => this.setState({ messages, isLoad });
+
+    // STATE
+    this.state = {
+      open: true,
+      messages: [],
+      updateMessages: this.updateMessages,
+      workSpace: this.props.workSpace,
+      endPoint: this.props.endPoint,
+      timeOut: this.props.timeOut,
+      toogleChat: this.toogleChat,
+      changeName: this.changeName,
+      resetWarns: this.resetWarns,
+      closeBot: this.closeBot,
+    };
   }
 
   componentDidUpdate(prevPros, prevState) {
@@ -206,74 +55,19 @@ class Chatbot extends Component {
     const newMessages = this.state.messages;
     const oldMessages = prevState.messages;
     if (newMessages.length > oldMessages.length) {
-      this.scrollOnNewMessage();
       this.setNotification();
     }
   }
 
   render() {
-    const { open, messages, isLoad, disabled, newMessages } = this.state;
-    const { children, botName, botTitle, userName, ...messageProps } = this.props;
+    const { children, ...rest } = this.props;
     return (
-      <>
+      <Bot.Provider value={this.state}>
         {/* BOT BUTTON */}
-        <Fab onClick={this.toogleChat}>
-          <span>
-            <Badge>{Math.floor(newMessages / 2)}</Badge>
-            {children}
-          </span>
-        </Fab>
+        <BotFab>{children}</BotFab>
         {/* BOT WINDOW */}
-        <ChatBox flex open={(isLoad && open)}>
-          {/* HEADER */}
-          <Header secondary grow={0} hasContent bordered justify="space-between">
-            <Text white strong>{botTitle}</Text>
-            <Link white noLine onClick={this.toogleChat}>
-              <Icon color="white" name="close" />
-            </Link>
-          </Header>
-          {/* BODY (MESSAGES GOES HERE) */}
-          <Body open={open}>
-            <div ref={this.scrollRef}>
-              {
-                messages.map(({ output, input, automatic, time }, index) => (
-                  (!automatic) ? (
-                    <ChatMessage
-                      botName={botName}
-                      userName={userName}
-                      user={output === undefined}
-                      key={`message-${index}`}
-                      {...messageProps}
-                      time={time}
-                    >
-                      {output ? output.text[0] : input.text}
-                    </ChatMessage>
-                  ) : null
-                ))
-              }
-            </div>
-          </Body>
-          {/* FOOTER */}
-          <form>
-            <Row grow={0} padding="0">
-              <Col padding="0">
-                <StyledInput
-                  disabled={disabled}
-                  disabledPlaceholder="Aguarde..."
-                  placeholder="Digite sua mensagem..."
-                  onChange={e => this.setState({ text: e.target.value })}
-                  value={this.state.text}
-                />
-              </Col>
-              <Col padding="0" grow={0}>
-                <StyledButton secondary inset onClick={this.submitMessage}>
-                  <Icon name="paper-plane" color="white" />
-                </StyledButton>
-              </Col>
-            </Row>
-          </form>
-        </ChatBox>
-      </>
+        <ChatBox {...rest} />
+      </Bot.Provider>
     );
   }
 }
@@ -309,7 +103,7 @@ Chatbot.defaultProps = {
   workSpace: workspace_id,
   userName: 'Sarah',
   botName: 'T-800',
-  timeOut: 60000,
+  timeOut: 50000,
 };
 
 // EXPORT

@@ -1,3 +1,5 @@
+import animation from './animations';
+
 const color = {
   // THEME COLORS
   secondary: '#00245f',
@@ -41,6 +43,7 @@ const transition = {
 };
 
 export default {
+  animation: animation(transition.time),
   transition,
   shape,
   color,

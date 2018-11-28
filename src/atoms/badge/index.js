@@ -7,17 +7,9 @@ import themeDefault from '../../theme';
 
 // STYLES
 const StyledBadge = styled.span`
-@keyframes popIn {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 background-color: ${({ theme }) => theme.color.error};
-animation: popIn ${({ theme }) => theme.transition.time};
 color: ${({ theme }) => theme.color.white};
+${({ theme }) => theme.animation.popIn};
 justify-content: center;
 align-items: center;
 border-radius: 50%;

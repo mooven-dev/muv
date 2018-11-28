@@ -16,6 +16,68 @@ exports[`should change its content concerning the type 1`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -72,6 +134,68 @@ font-size: 4rem;
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -120,6 +244,68 @@ font-size: 4rem;
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -182,6 +368,68 @@ exports[`should change its content concerning the type 2`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -238,6 +486,68 @@ font-size: 2rem;
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -286,6 +596,68 @@ font-size: 2rem;
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -348,6 +720,68 @@ exports[`should change its content concerning the type 3`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -404,6 +838,68 @@ font-size: 1.5rem;
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -452,6 +948,68 @@ font-size: 1.5rem;
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -514,6 +1072,68 @@ exports[`should change its content concerning the type 4`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -570,6 +1190,68 @@ font-size: 1.25rem;
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -618,6 +1300,68 @@ font-size: 1.25rem;
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -680,6 +1424,68 @@ exports[`should change its content concerning the type 5`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -736,6 +1542,68 @@ font-size: 1rem;
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -784,6 +1652,68 @@ font-size: 1rem;
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -846,6 +1776,68 @@ exports[`should change its content concerning the type 6`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -902,6 +1894,68 @@ font-size: .875rem;
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -950,6 +2004,68 @@ font-size: .875rem;
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -1012,6 +2128,68 @@ exports[`should change its style if strong 1`] = `
     strong={true}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -1070,6 +2248,68 @@ font-size: ",
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -1118,6 +2358,68 @@ font-size: ",
       strong={true}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -1182,6 +2484,68 @@ exports[`should change its style on primary 1`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -1240,6 +2604,68 @@ font-size: ",
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -1289,6 +2715,68 @@ font-size: ",
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -1353,6 +2841,68 @@ exports[`should change its style on secondary 1`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -1411,6 +2961,68 @@ font-size: ",
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -1460,6 +3072,68 @@ font-size: ",
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -1524,6 +3198,68 @@ exports[`should change its style on success 1`] = `
     success={true}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -1582,6 +3318,68 @@ font-size: ",
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -1631,6 +3429,68 @@ font-size: ",
       success={true}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -1694,6 +3554,68 @@ exports[`should change its style on warn 1`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -1753,6 +3675,68 @@ font-size: ",
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -1801,6 +3785,68 @@ font-size: ",
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",
@@ -1864,6 +3910,68 @@ exports[`should render a text 1`] = `
     strong={false}
     theme={
       Object {
+        "animation": Object {
+          "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+          "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+          "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+          "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+          "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+        },
         "color": Object {
           "black": "#222222",
           "darkgray": "#515151",
@@ -1922,6 +4030,68 @@ font-size: ",
           },
           "defaultProps": Object {
             "theme": Object {
+              "animation": Object {
+                "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+                "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+                "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+                "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+                "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+              },
               "color": Object {
                 "black": "#222222",
                 "darkgray": "#515151",
@@ -1970,6 +4140,68 @@ font-size: ",
       strong={false}
       theme={
         Object {
+          "animation": Object {
+            "bounce": "
+  @keyframes bounce {
+    from {
+      bottom: 0;
+    }
+    25% {bottom: .5rem;}
+    to {
+      bottom: 0
+    }
+  }
+  animation: bounce .3s ease
+",
+            "fadeIn": "
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeIn .3s ease
+",
+            "fadeOut": "
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    
+    to {
+      opacity: 0;
+    }
+  }
+  animation: fadeOut .3s ease
+",
+            "popIn": "
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+  }
+  animation: popIn .3s ease
+",
+            "popOut": "
+  @keyframes popOut {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+  }
+  animation: popOut .3s ease
+",
+          },
           "color": Object {
             "black": "#222222",
             "darkgray": "#515151",

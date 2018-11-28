@@ -1,25 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a Container 1`] = `
-<Container
-  full={false}
-  height="auto"
-  margin="0"
-  maxHeight="auto"
-  maxWidth="auto"
-  minHeight="auto"
-  minWidth="auto"
-  padding="0"
->
-  <styled.div
-    full={false}
-    height="auto"
-    margin="0"
-    maxHeight="auto"
-    maxWidth="auto"
-    minHeight="auto"
-    minWidth="auto"
-    padding="0"
+exports[`should render a counter 1`] = `
+<Counter>
+  <styled.p
     theme={
       Object {
         "animation": Object {
@@ -126,50 +109,12 @@ exports[`should render a Container 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "bofdhh",
+            "lastClassName": "vSNlF",
             "rules": Array [
               "
-padding: ",
+color: ",
               [Function],
               ";
-flex-basis: ",
-              [Function],
-              ";
-border: ",
-              [Function],
-              ";
-display: ",
-              [Function],
-              ";
-height: ",
-              [Function],
-              ";
-width: ",
-              [Function],
-              ";
-background: ",
-              [Function],
-              ";
-border-radius: ",
-              [Function],
-              ";
-max-height: ",
-              [Function],
-              ";
-min-height: ",
-              [Function],
-              ";
-max-width: ",
-              [Function],
-              ";
-min-width: ",
-              [Function],
-              ";
-margin: ",
-              [Function],
-              ";
-flex-direction: column;
-align-items: stretch;
 ",
             ],
           },
@@ -270,24 +215,16 @@ align-items: stretch;
               },
             },
           },
-          "displayName": "styled.div",
+          "displayName": "styled.p",
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
-          "target": "div",
+          "target": "p",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
       }
       forwardedRef={null}
-      full={false}
-      height="auto"
-      margin="0"
-      maxHeight="auto"
-      maxWidth="auto"
-      minHeight="auto"
-      minWidth="auto"
-      padding="0"
       theme={
         Object {
           "animation": Object {
@@ -386,13 +323,12 @@ align-items: stretch;
         }
       }
     >
-      <div
-        className="sc-bdVaJa bofdhh"
-        height="auto"
+      <p
+        className="sc-bdVaJa vSNlF"
       >
-        container
-      </div>
+        default
+      </p>
     </StyledComponent>
-  </styled.div>
-</Container>
+  </styled.p>
+</Counter>
 `;

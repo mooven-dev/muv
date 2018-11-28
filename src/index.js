@@ -8,6 +8,8 @@
 // EXTERNAL LIBS
 import styled, { ThemeProvider, createGlobalStyle, ServerStyleSheet } from 'styled-components';
 
+import themeDefault from './theme';
+
 // ATOMS
 import Badge from './atoms/badge';
 import Counter from './atoms/counter';
@@ -27,7 +29,6 @@ import Text from './atoms/text';
 
 // MOLECULES
 import LoadScreen from './molecules/loadScreen';
-import ChatMessage from './molecules/chatMessage';
 import Select from './molecules/select';
 import Fieldset from './molecules/fieldset';
 import Modal from './molecules/modal';
@@ -62,12 +63,12 @@ export {
   createGlobalStyle,
   ServerStyleSheet,
   ThemeProvider,
+  themeDefault,
   // COMPONENTS
   Badge,
   Counter,
   LoadScreen,
   Loader,
-  ChatMessage,
   Icon,
   Fab,
   Chatbot,
