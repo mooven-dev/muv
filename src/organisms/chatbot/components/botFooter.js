@@ -31,18 +31,31 @@ StyledInput.defaultProps = {
 };
 
 class BotFooter extends Component {
+  static Instance() {}; // eslint-disable-line
+
+  /**
+   * @type {BotFooter}
+   */
+
+  static send(text) {
+    console.log('user says', text);
+    BotFooter.Instance.sendMessage(text, true);
+  }
+
   constructor(props) {
     super(props);
     this.state = {};
-
+    BotFooter.Instance = this;
     // UPDATE CHAT SCREEEN
     this.updateChat = (message) => {
-      const { messages } = this.context;
+      // SETUP
+      const { messages, disableInput } = this.context;
       const newMessages = messages.concat([message]);
-      let disabled = false;
-      if (message.output === undefined) disabled = true;
-      this.setState({ text: '', disabled });
-      this.context.updateMessages(newMessages, true);
+      // UPDATES
+      this.setState({ text: '' }, () => {
+        this.context.updateMessages(newMessages, true);
+        disableInput(true);
+      });
     };
 
     // SEND MESSAGE
@@ -53,9 +66,9 @@ class BotFooter extends Component {
       Axios.post(endPoint, JSON.stringify(data))
         .then((res) => {
           const botMessage = res.data;
-          botMessage.time = moment().format('HH:MM');
+          botMessage.time = moment().format('H:mm');
           // OUTPUT || BOT
-          this.updateChat(res.data);
+          this.updateChat(botMessage);
         })
         .catch(err => console.log('error', err)); // eslint-disable-line
     };
@@ -67,7 +80,7 @@ class BotFooter extends Component {
         if (firstWarn) clearTimeout(firstWarn);
         if (secondWarn) clearTimeout(secondWarn);
         if (willClose) clearTimeout(willClose);
-        return { disabled: true, firstWarn: '', secondWarn: '', willClose: '' };
+        return { firstWarn: '', secondWarn: '', willClose: '' };
       });
     };
 
@@ -90,7 +103,6 @@ class BotFooter extends Component {
         await this.messageRequest(newData);
         this.prepareToClose();
       };
-      // eslint-disable-next-line
       this.setState({ firstWarn: '', secondWarn: setTimeout(sendSecondWarn, this.context.timeOut) });
     };
 
@@ -99,27 +111,25 @@ class BotFooter extends Component {
       const sendFirstWarn = async () => {
         const newData = data;
         newData.input.text = 'first-warn';
-        // newData.automatic = true;
         await this.messageRequest(newData);
         this.startSecondWarn(newData);
       };
-      // eslint-disable-next-line
       this.setState({ firstWarn: setTimeout(sendFirstWarn, this.context.timeOut) });
     };
 
     // SEND USER MESSAGES TO BOT
-    this.sendMessage = async (message) => {
-      // eslint-disable-next-line
+    this.sendMessage = async (message, isBot) => {
       await this.resetWarns();
       // DEFAULT MESSAGE
-      const isUser = (message !== undefined);
+      const isUser = (message && !isBot);
       const text = (message || 'ola');
       // GET CONTEXT
       const { messages, workSpace } = this.context;
       const lastMessage = (messages.length && messages[messages.length - 1]);
       const { context } = lastMessage;
-      const time = moment().format('HH:MM');
-      // SETUP
+      if (context) context._nextWidget = ''; // eslint-disable-line
+      const time = moment().format('H:mm');
+      // SETUP MESSAGE DATA
       const data = {
         workspace_id: workSpace,
         context,
@@ -149,8 +159,8 @@ class BotFooter extends Component {
   }
 
   render() {
-    const { text, disabled } = this.state;
-    const { open } = this.context;
+    const { text } = this.state;
+    const { open, disabled } = this.context;
     return (
       <form>
         <Row grow={0} padding="0">

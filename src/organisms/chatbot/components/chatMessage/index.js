@@ -10,10 +10,12 @@ import Container from '../../../../atoms/container';
 import Loader from '../../../../atoms/loader';
 import themeDefault from '../../../../theme';
 import Text from '../../../../atoms/text';
+import Icon from '../../../../atoms/icon';
 import Row from '../../../../atoms/row';
 import Col from '../../../../atoms/col';
 import BotContext from '../../context';
 import Options from './widgetOptions';
+import BotFooter from '../botFooter';
 import constants from './constants';
 
 // UNIQUE COMPONENTS
@@ -103,12 +105,20 @@ class ChatMessage extends Component {
       return children;
     };
 
+    //
+    this.widgetClick = (value) => {
+      const { disableInput } = this.context;
+      BotFooter.send(value);
+      disableInput(false);
+    };
+
     // RENDER THE WIDGETS AFTER THE MESSAGE TEXT (IF ANY)
     this.renderWidget = () => {
       // SETUP
-      const { context } = this.props;
-      const { _nextWidget } = context;
+      const { _nextWidget, ...rest } = this.props.context;
+      const { disableInput } = this.context;
       const {
+        WIDGET_THUMBS_UP_DOWN,
         WIDGET_OPTIONS_UNLOCK,
         WIDGET_OPTIONS,
         WIDGET_YES_NO,
@@ -117,27 +127,36 @@ class ChatMessage extends Component {
       switch (_nextWidget) {
         case WIDGET_OPTIONS_UNLOCK:
           return (
-            <Options onClick={value => value}>
-              {context[WIDGET_OPTIONS_UNLOCK]}
+            <Options onClick={this.widgetClick}>
+              {rest[WIDGET_OPTIONS_UNLOCK]}
             </Options>
           );
         case WIDGET_OPTIONS:
           return (
-            <Options onClick={value => value}>
-              {context[WIDGET_OPTIONS]}
+            <Options onClick={this.widgetClick}>
+              {rest[WIDGET_OPTIONS]}
             </Options>
           );
         case WIDGET_YES_NO:
           return (
-            <Options onClick={value => value}>
+            <Options onClick={this.widgetClick}>
               {[
                 { label: 'Sim', value: 'sim' },
                 { label: 'Não', value: 'nao' },
               ]}
             </Options>
           );
+        case WIDGET_THUMBS_UP_DOWN:
+          return (
+            <Options onClick={this.widgetClick}>
+              {[
+                { label: <Icon color="white" name='thumbs-down' />, value: 'thumbs-down' },
+                { label: <Icon color="white" name='thumbs-up' />, value: 'thumbs-up' },
+              ]}
+            </Options>
+          );
         default:
-          return null;
+          return disableInput(false);
       }
     };
 
@@ -150,9 +169,10 @@ class ChatMessage extends Component {
         const content = (
           <>
             {this.parseText()}
-            {this.renderWidget()}
+            {!user && this.renderWidget()}
           </>
         );
+
         this.setState({ content }, this.updateHeight);
       };
       // EXECUTION

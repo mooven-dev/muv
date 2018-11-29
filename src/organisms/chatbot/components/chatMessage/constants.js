@@ -1,6 +1,7 @@
 
 export default {
   WIDGET_OPTIONS_UNLOCK: '_getUnLockOpts',
+  WIDGET_THUMBS_UP_DOWN: '_getThumbs',
   WIDGET_OPTIONS: '_getFreeOpts',
   WIDGET_BREAK_L: '_breakLines',
   WIDGET_BUILD: '_getBuildYour',

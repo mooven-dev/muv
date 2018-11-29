@@ -33,13 +33,19 @@ class Chatbot extends Component {
     };
 
     // UPDATE THE CONVERSATION
-    this.updateMessages = (messages, isLoad) => this.setState({ messages, isLoad });
+    this.updateMessages = (messages, isLoad) => {
+      this.setState({ messages, isLoad });
+    };
+
+    // CHANGES THE INPUT DISABLE VALUE
+    this.disableInput = (disabled) => {
+      this.setState({ disabled });
+    };
 
     // STATE
     this.state = {
-      open: true,
-      messages: [],
       updateMessages: this.updateMessages,
+      disableInput: this.disableInput,
       workSpace: this.props.workSpace,
       endPoint: this.props.endPoint,
       timeOut: this.props.timeOut,
@@ -47,6 +53,8 @@ class Chatbot extends Component {
       changeName: this.changeName,
       resetWarns: this.resetWarns,
       closeBot: this.closeBot,
+      messages: [],
+      open: true,
     };
   }
 
