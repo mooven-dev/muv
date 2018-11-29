@@ -8,17 +8,17 @@ const config = {
     listWorkspaces: 'https://hyundai-watson.now.sh/api/list-workspaces',
     // conversation: 'http://localhost:4001',
     // listWorkspaces: 'http://localhost:4002',
-    workspace_id: '60b42e0e-a820-4e6a-8075-c28a40766072',
+    workspace_id: 'bee3a755-2708-4185-8958-08bd8f1dcbef',
   },
   test: {
     conversation_api: 'https://hyundai-watson.now.sh/api/conversation',
     listWorkspaces: 'https://hyundai-watson.now.sh/api/list-workspaces',
-    workspace_id: '60b42e0e-a820-4e6a-8075-c28a40766072',
+    workspace_id: 'bee3a755-2708-4185-8958-08bd8f1dcbef',
   },
   production: {
     conversation_api: 'https://hyundai-watson.now.sh/api/conversation',
     listWorkspaces: 'https://hyundai-watson.now.sh/api/list-workspaces',
-    workspace_id: '60b42e0e-a820-4e6a-8075-c28a40766072',
+    workspace_id: 'bee3a755-2708-4185-8958-08bd8f1dcbef',
   },
 };
 

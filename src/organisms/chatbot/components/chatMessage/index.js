@@ -5,15 +5,16 @@ import { node, bool, string, objectOf, any } from 'prop-types';
 import htmlParser from 'react-html-parser';
 import styled from 'styled-components';
 
-import { botAvatarImg, userAvatarImg } from '../../../utils';
-import Container from '../../../atoms/container';
-import Loader from '../../../atoms/loader';
-import themeDefault from '../../../theme';
-import Text from '../../../atoms/text';
-import Row from '../../../atoms/row';
-import Col from '../../../atoms/col';
-
-import BotContext from '../context';
+import { botAvatarImg, userAvatarImg } from '../../../../utils';
+import Container from '../../../../atoms/container';
+import Loader from '../../../../atoms/loader';
+import themeDefault from '../../../../theme';
+import Text from '../../../../atoms/text';
+import Row from '../../../../atoms/row';
+import Col from '../../../../atoms/col';
+import BotContext from '../../context';
+import Options from './widgetOptions';
+import constants from './constants';
 
 // UNIQUE COMPONENTS
 const MessageRow = styled(Row)`
@@ -86,31 +87,57 @@ class ChatMessage extends Component {
       height: 0,
     };
 
-    // SET A REF TO THE CONTENT
+    // SET A REF TO THE CONTENT (TO GET DOM INFO)
     this.contentRef = React.createRef();
 
-    // UPDATES THE HEIGHT OF THE CONTENT
+    // UPDATES THE HEIGHT OF THE CONTENT (FOR ANIMATION PURPOSES)
     this.updateHeight = () => {
       const { height } = this.contentRef.current.getBoundingClientRect();
       this.setState({ height });
     };
 
-    // PARSE STRING TO HTML
+    // PARSE STRINGS TO HTML (IF IT HAVE)
     this.parseText = () => {
       const { children, user } = this.props;
       if (typeof children === 'string') return <Text small white={user}>{htmlParser(children)}</Text>;
       return children;
     };
 
-    // RENDER THE WIDGETS
+    // RENDER THE WIDGETS AFTER THE MESSAGE TEXT (IF ANY)
     this.renderWidget = () => {
-      const { context: { _nextWidget } } = this.props;
-      // console.log('_nextWidget', _nextWidget);
+      // SETUP
+      const { context } = this.props;
+      const { _nextWidget } = context;
+      const {
+        WIDGET_OPTIONS_UNLOCK,
+        WIDGET_OPTIONS,
+        WIDGET_YES_NO,
+      } = constants;
+      // RETURN RIGHT WIDGET
       switch (_nextWidget) {
-        // case '_getText':
-        //   return this.parseText();
+        case WIDGET_OPTIONS_UNLOCK:
+          return (
+            <Options onClick={value => value}>
+              {context[WIDGET_OPTIONS_UNLOCK]}
+            </Options>
+          );
+        case WIDGET_OPTIONS:
+          return (
+            <Options onClick={value => value}>
+              {context[WIDGET_OPTIONS]}
+            </Options>
+          );
+        case WIDGET_YES_NO:
+          return (
+            <Options onClick={value => value}>
+              {[
+                { label: 'Sim', value: 'sim' },
+                { label: 'Não', value: 'nao' },
+              ]}
+            </Options>
+          );
         default:
-          return this.parseText();
+          return null;
       }
     };
 
@@ -118,8 +145,15 @@ class ChatMessage extends Component {
     this.lazyRender = () => {
       // SETUP
       const { user } = this.props;
+      // FUNCTION
       const renderContent = () => {
-        this.setState({ content: this.renderWidget() }, this.updateHeight);
+        const content = (
+          <>
+            {this.parseText()}
+            {this.renderWidget()}
+          </>
+        );
+        this.setState({ content }, this.updateHeight);
       };
       // EXECUTION
       setTimeout(renderContent, (user ? 300 : 600));
@@ -127,6 +161,7 @@ class ChatMessage extends Component {
   }
 
   componentDidMount() {
+    // DO MESSAGE ANIMATIONS
     this.lazyRender();
   }
 
@@ -136,17 +171,27 @@ class ChatMessage extends Component {
     return (
       <Container>
         <MessageRow align="flex-end" user={user}>
+          {/* USER OR BOT AVATAR IMAGE */}
           <Avatar bordered grow={0} src={(user ? userAvatar : botAvatar)} />
+
+          {/* MESSAGE BOX */}
           <Balloon user={user} primary={user} lightgray={!user} grow={5 / 6} margin=".5rem" bordered hasContent>
+
+            {/* USER OR BOT NAME */}
             <Name white={user} isLabel>{(user ? userName : botName)}</Name>
+
+            {/* SHOW MESSAGE CONTENT (COULD INCLUDES WIDGET) */}
             <Content contentHeight={height}>
               <div ref={this.contentRef}>
                 {content}
               </div>
             </Content>
+
+            {/* SHOW THE MESSAGE TIMESTAMP OR LOADER */}
             <Hour white={user}>
               {content ? <span>{ time }</span> : <Loader white />}
             </Hour>
+
           </Balloon>
         </MessageRow>
       </Container>

@@ -97,7 +97,7 @@ Chatbot.propTypes = {
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
   endPoint: conversation_api,
-  botTitle: 'Mooven ChatBot',
+  botTitle: 'Skynet ChatBot',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,
   workSpace: workspace_id,
