@@ -10,8 +10,10 @@ import Container from '../container';
 const StyledRow = styled(Container)`
 justify-content: ${({ justify }) => justify};
 align-items: ${({ align }) => align};
+margin: ${({ margin }) => margin};
 flex-grow: ${({ grow }) => grow};
 flex-direction: row;
+max-width: unset;
 flex-shrink: 1;
 display: flex;
 `;
@@ -35,12 +37,15 @@ Row.propTypes = {
   justify: string,
   /** sets align-items using a "inline style" logic */
   align: string,
+  /** sets margin using a "inline style" logic */
+  margin: string,
 };
 
 Row.defaultProps = {
   justify: 'stretch',
   align: 'stretch',
   children: 'row',
+  margin: '0',
   grow: 1,
 };
 

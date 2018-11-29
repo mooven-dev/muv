@@ -11,10 +11,6 @@ import BotFooter from './botFooter';
 import BotContext from '../context';
 import ChatArea from './chatArea';
 
-const Header = styled(Row)`
-border-radius: 0;
-`;
-
 
 const StyledChatBox = styled(Container)`
 ${({ open, theme }) => (open ? theme.animation.popIn : theme.animation.popOut)};
@@ -48,12 +44,12 @@ class ChatBox extends Component {
     return (
       <StyledChatBox flex open={(isLoad && open)}>
         {/* HEADER */}
-        <Header secondary grow={0} hasContent bordered justify="space-between">
+        <Row noRadius secondary grow={0} hasContent bordered justify="space-between">
           <Text white strong>{botTitle}</Text>
           <Link white noLine onClick={toogleChat}>
             <Icon color="white" name="close" />
           </Link>
-        </Header>
+        </Row>
         {/* BODY (MESSAGES GOES HERE) */}
         <ChatArea {...rest} />
         {/* FOOTER */}

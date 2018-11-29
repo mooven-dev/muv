@@ -8,16 +8,16 @@ import { setColor } from '../../utils';
 // STYLES
 const StyledContainer = styled.div`
 padding: ${({ theme, hasContent, padding }) => (hasContent ? theme.shape.padding : padding)};
-flex-basis: ${({ hasContent, padding }) => ((hasContent || padding) ? 'auto' : 0)};
+flex-basis: ${({ hasContent, padding }) => ((hasContent || padding !== '0') ? 'auto' : 0)};
+border-radius: ${({ theme, noRadius }) => (noRadius ? 0 : theme.shape.radius)};
+max-width: ${({ fluid, theme }) => (fluid ? '100%' : theme.shape.maxWidth)};
 border: ${({ theme, bordered }) => (bordered ? theme.shape.border : 'none')};
 display: ${({ flex, full }) => (full || flex ? 'flex' : 'block')};
 height: ${({ height, full }) => (full ? '100vh' : height)};
 width: ${({ width, full }) => (full ? '100%' : width)};
 background: ${props => setColor(props, 'transparent')};
-border-radius: ${({ theme }) => theme.shape.radius};
-max-height: ${({ maxHeight }) => maxHeight};
 min-height: ${({ minHeight }) => minHeight};
-max-width: ${({ maxWidth }) => maxWidth};
+max-height: ${({ maxHeight }) => maxHeight};
 min-width: ${({ minWidth }) => minWidth};
 margin: ${({ margin }) => margin};
 flex-direction: column;
@@ -41,8 +41,8 @@ Container.propTypes = {
   maxHeight: string,
   /** sets min-height using a "inline style" logic */
   minHeight: string,
-  /** sets max-width using a "inline style" logic */
-  maxWidth: string,
+  /** makes the container to has 100% width */
+  fluid: bool,
   /** sets min-width using a "inline style" logic */
   minWidth: string,
   /** sets height using a "inline style" logic */
@@ -53,17 +53,20 @@ Container.propTypes = {
   padding: string,
   /** sets margin using a "inline style" logic */
   margin: string,
+  /** removes border radius */
+  noRadius: bool,
 };
 
 Container.defaultProps = {
   children: 'container',
   maxHeight: 'auto',
   minHeight: 'auto',
-  maxWidth: 'auto',
   minWidth: 'auto',
+  margin: '0 auto',
+  noRadius: false,
   height: 'auto',
   padding: '0',
-  margin: '0',
+  fluid: false,
   full: false,
 };
 

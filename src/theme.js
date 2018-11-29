@@ -1,19 +1,23 @@
 import animation from './animations';
 
+/**
+ * THE ORDER OF THIS COLORS SETS THE COLOR HIERARCH
+ * DO NOT CHANGE THIS
+ */
 const color = {
   // THEME COLORS
-  secondary: '#00245f',
-  primary: '#0081c8',
-  success: '#33bb33',
   error: '#dd3333',
   warn: '#dd3333',
+  success: '#33bb33',
+  secondary: '#00245f',
+  primary: '#0081c8',
   // GREYSCALE
   white: '#fefefe',
-  lightgray: '#e5e5e5',
-  gray: '#a9abae',
-  darkgray: '#515151',
-  black: '#222222',
   overlay: 'rgba(0, 0, 0, .15)',
+  lightGray: '#e5e5e5',
+  gray: '#a9abae',
+  darkGray: '#515151',
+  black: '#222222',
 };
 
 const shape = {
@@ -26,6 +30,7 @@ const shape = {
   // SPACE
   margin: '.25rem .125rem',
   padding: '.75rem .875rem',
+  maxWidth: '1280px', // container size
 };
 
 const font = {

@@ -38,7 +38,6 @@ class BotFooter extends Component {
    */
 
   static send(text) {
-    console.log('user says', text);
     BotFooter.Instance.sendMessage(text, true);
   }
 

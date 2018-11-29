@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Container from '.';
+import Header from '.';
 
-it('should render a view', () => {
+it('should render a header', () => {
   const wrapper = mount(
-    <Container />,
+    <Header />,
   );
   expect(wrapper).toMatchSnapshot();
 });

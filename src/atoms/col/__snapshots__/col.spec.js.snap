@@ -76,10 +76,10 @@ exports[`should render a col 1`] = `
         },
         "color": Object {
           "black": "#222222",
-          "darkgray": "#515151",
+          "darkGray": "#515151",
           "error": "#dd3333",
           "gray": "#a9abae",
-          "lightgray": "#e5e5e5",
+          "lightGray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0081c8",
           "secondary": "#00245f",
@@ -97,6 +97,7 @@ exports[`should render a col 1`] = `
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
+          "maxWidth": "1280px",
           "padding": ".75rem .875rem",
           "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -190,10 +191,10 @@ flex-direction: column;
               },
               "color": Object {
                 "black": "#222222",
-                "darkgray": "#515151",
+                "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
-                "lightgray": "#e5e5e5",
+                "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
                 "primary": "#0081c8",
                 "secondary": "#00245f",
@@ -211,6 +212,7 @@ flex-direction: column;
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
+                "maxWidth": "1280px",
                 "padding": ".75rem .875rem",
                 "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -300,10 +302,10 @@ flex-direction: column;
           },
           "color": Object {
             "black": "#222222",
-            "darkgray": "#515151",
+            "darkGray": "#515151",
             "error": "#dd3333",
             "gray": "#a9abae",
-            "lightgray": "#e5e5e5",
+            "lightGray": "#e5e5e5",
             "overlay": "rgba(0, 0, 0, .15)",
             "primary": "#0081c8",
             "secondary": "#00245f",
@@ -321,6 +323,7 @@ flex-direction: column;
             "border": ".125rem solid rgba(0, 0, 0, .15)",
             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
+            "maxWidth": "1280px",
             "padding": ".75rem .875rem",
             "radius": ".5rem",
             "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -337,6 +340,7 @@ flex-direction: column;
         className="sc-htpNat cPqbHx"
         grow={1}
         justify="flex-start"
+        margin="0"
         theme={
           Object {
             "animation": Object {
@@ -403,10 +407,10 @@ flex-direction: column;
             },
             "color": Object {
               "black": "#222222",
-              "darkgray": "#515151",
+              "darkGray": "#515151",
               "error": "#dd3333",
               "gray": "#a9abae",
-              "lightgray": "#e5e5e5",
+              "lightGray": "#e5e5e5",
               "overlay": "rgba(0, 0, 0, .15)",
               "primary": "#0081c8",
               "secondary": "#00245f",
@@ -424,6 +428,7 @@ flex-direction: column;
               "border": ".125rem solid rgba(0, 0, 0, .15)",
               "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
+              "maxWidth": "1280px",
               "padding": ".75rem .875rem",
               "radius": ".5rem",
               "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -440,6 +445,7 @@ flex-direction: column;
           className="sc-htpNat cPqbHx"
           grow={1}
           justify="flex-start"
+          margin="0"
           theme={
             Object {
               "animation": Object {
@@ -506,10 +512,10 @@ flex-direction: column;
               },
               "color": Object {
                 "black": "#222222",
-                "darkgray": "#515151",
+                "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
-                "lightgray": "#e5e5e5",
+                "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
                 "primary": "#0081c8",
                 "secondary": "#00245f",
@@ -527,6 +533,7 @@ flex-direction: column;
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
+                "maxWidth": "1280px",
                 "padding": ".75rem .875rem",
                 "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -548,7 +555,7 @@ flex-direction: column;
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bwzfXH",
                   "isStatic": false,
-                  "lastClassName": "iksuOx",
+                  "lastClassName": "gxWPbe",
                   "rules": Array [
                     "
 justify-content: ",
@@ -557,10 +564,14 @@ justify-content: ",
 align-items: ",
                     [Function],
                     ";
+margin: ",
+                    [Function],
+                    ";
 flex-grow: ",
                     [Function],
                     ";
 flex-direction: row;
+max-width: unset;
 flex-shrink: 1;
 display: flex;
 ",
@@ -632,10 +643,10 @@ display: flex;
                     },
                     "color": Object {
                       "black": "#222222",
-                      "darkgray": "#515151",
+                      "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
-                      "lightgray": "#e5e5e5",
+                      "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
                       "primary": "#0081c8",
                       "secondary": "#00245f",
@@ -653,6 +664,7 @@ display: flex;
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
+                      "maxWidth": "1280px",
                       "padding": ".75rem .875rem",
                       "radius": ".5rem",
                       "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -676,6 +688,7 @@ display: flex;
             forwardedRef={null}
             grow={1}
             justify="flex-start"
+            margin="0"
             theme={
               Object {
                 "animation": Object {
@@ -742,10 +755,10 @@ display: flex;
                 },
                 "color": Object {
                   "black": "#222222",
-                  "darkgray": "#515151",
+                  "darkGray": "#515151",
                   "error": "#dd3333",
                   "gray": "#a9abae",
-                  "lightgray": "#e5e5e5",
+                  "lightGray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
                   "primary": "#0081c8",
                   "secondary": "#00245f",
@@ -763,6 +776,7 @@ display: flex;
                   "border": ".125rem solid rgba(0, 0, 0, .15)",
                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
+                  "maxWidth": "1280px",
                   "padding": ".75rem .875rem",
                   "radius": ".5rem",
                   "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -776,16 +790,17 @@ display: flex;
           >
             <Container
               align="strech"
-              className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
+              className="sc-htpNat cPqbHx sc-bwzfXH gxWPbe"
+              fluid={false}
               full={false}
               grow={1}
               height="auto"
               justify="flex-start"
               margin="0"
               maxHeight="auto"
-              maxWidth="auto"
               minHeight="auto"
               minWidth="auto"
+              noRadius={false}
               padding="0"
               theme={
                 Object {
@@ -853,10 +868,10 @@ display: flex;
                   },
                   "color": Object {
                     "black": "#222222",
-                    "darkgray": "#515151",
+                    "darkGray": "#515151",
                     "error": "#dd3333",
                     "gray": "#a9abae",
-                    "lightgray": "#e5e5e5",
+                    "lightGray": "#e5e5e5",
                     "overlay": "rgba(0, 0, 0, .15)",
                     "primary": "#0081c8",
                     "secondary": "#00245f",
@@ -874,6 +889,7 @@ display: flex;
                     "border": ".125rem solid rgba(0, 0, 0, .15)",
                     "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
+                    "maxWidth": "1280px",
                     "padding": ".75rem .875rem",
                     "radius": ".5rem",
                     "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -887,16 +903,17 @@ display: flex;
             >
               <styled.div
                 align="strech"
-                className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
+                className="sc-htpNat cPqbHx sc-bwzfXH gxWPbe"
+                fluid={false}
                 full={false}
                 grow={1}
                 height="auto"
                 justify="flex-start"
                 margin="0"
                 maxHeight="auto"
-                maxWidth="auto"
                 minHeight="auto"
                 minWidth="auto"
+                noRadius={false}
                 padding="0"
                 theme={
                   Object {
@@ -964,10 +981,10 @@ display: flex;
                     },
                     "color": Object {
                       "black": "#222222",
-                      "darkgray": "#515151",
+                      "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
-                      "lightgray": "#e5e5e5",
+                      "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
                       "primary": "#0081c8",
                       "secondary": "#00245f",
@@ -985,6 +1002,7 @@ display: flex;
                       "border": ".125rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
+                      "maxWidth": "1280px",
                       "padding": ".75rem .875rem",
                       "radius": ".5rem",
                       "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -998,7 +1016,8 @@ display: flex;
               >
                 <StyledComponent
                   align="strech"
-                  className="sc-htpNat cPqbHx sc-bwzfXH iksuOx"
+                  className="sc-htpNat cPqbHx sc-bwzfXH gxWPbe"
+                  fluid={false}
                   forwardedClass={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
@@ -1006,13 +1025,19 @@ display: flex;
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bdVaJa",
                         "isStatic": false,
-                        "lastClassName": "bofdhh",
+                        "lastClassName": "eozBeU",
                         "rules": Array [
                           "
 padding: ",
                           [Function],
                           ";
 flex-basis: ",
+                          [Function],
+                          ";
+border-radius: ",
+                          [Function],
+                          ";
+max-width: ",
                           [Function],
                           ";
 border: ",
@@ -1030,16 +1055,10 @@ width: ",
 background: ",
                           [Function],
                           ";
-border-radius: ",
-                          [Function],
-                          ";
-max-height: ",
-                          [Function],
-                          ";
 min-height: ",
                           [Function],
                           ";
-max-width: ",
+max-height: ",
                           [Function],
                           ";
 min-width: ",
@@ -1119,10 +1138,10 @@ align-items: stretch;
                           },
                           "color": Object {
                             "black": "#222222",
-                            "darkgray": "#515151",
+                            "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
-                            "lightgray": "#e5e5e5",
+                            "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
                             "primary": "#0081c8",
                             "secondary": "#00245f",
@@ -1140,6 +1159,7 @@ align-items: stretch;
                             "border": ".125rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
+                            "maxWidth": "1280px",
                             "padding": ".75rem .875rem",
                             "radius": ".5rem",
                             "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -1166,9 +1186,9 @@ align-items: stretch;
                   justify="flex-start"
                   margin="0"
                   maxHeight="auto"
-                  maxWidth="auto"
                   minHeight="auto"
                   minWidth="auto"
+                  noRadius={false}
                   padding="0"
                   theme={
                     Object {
@@ -1236,10 +1256,10 @@ align-items: stretch;
                       },
                       "color": Object {
                         "black": "#222222",
-                        "darkgray": "#515151",
+                        "darkGray": "#515151",
                         "error": "#dd3333",
                         "gray": "#a9abae",
-                        "lightgray": "#e5e5e5",
+                        "lightGray": "#e5e5e5",
                         "overlay": "rgba(0, 0, 0, .15)",
                         "primary": "#0081c8",
                         "secondary": "#00245f",
@@ -1257,6 +1277,7 @@ align-items: stretch;
                         "border": ".125rem solid rgba(0, 0, 0, .15)",
                         "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
+                        "maxWidth": "1280px",
                         "padding": ".75rem .875rem",
                         "radius": ".5rem",
                         "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -1269,7 +1290,7 @@ align-items: stretch;
                   }
                 >
                   <div
-                    className="sc-htpNat cPqbHx sc-bwzfXH iksuOx sc-bdVaJa bofdhh"
+                    className="sc-htpNat cPqbHx sc-bwzfXH gxWPbe sc-bdVaJa eozBeU"
                     height="auto"
                   >
                     col

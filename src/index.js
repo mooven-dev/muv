@@ -7,8 +7,7 @@
 
 // EXTERNAL LIBS
 import styled, { ThemeProvider, createGlobalStyle, ServerStyleSheet } from 'styled-components';
-
-import themeDefault from './theme';
+import { createTheme } from './utils';
 
 // ATOMS
 import Badge from './atoms/badge';
@@ -28,6 +27,8 @@ import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
+import Footer from './molecules/footer';
+import Header from './molecules/header';
 import LoadScreen from './molecules/loadScreen';
 import Select from './molecules/select';
 import Fieldset from './molecules/fieldset';
@@ -37,10 +38,11 @@ import Modal from './molecules/modal';
 import Chatbot from './organisms/chatbot';
 
 // TEMPLATES
+import Page from './templates/page';
 
 
 // GLOBALS
-createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   body {
     font-size: 16px;
     padding: 0px;
@@ -59,12 +61,15 @@ createGlobalStyle`
 // EXPORTS
 export default styled;
 export {
-  createGlobalStyle as injectGlobal,
   createGlobalStyle,
   ServerStyleSheet,
   ThemeProvider,
-  themeDefault,
+  GlobalStyle,
+  createTheme,
   // COMPONENTS
+  Footer,
+  Header,
+  Page,
   Badge,
   Counter,
   LoadScreen,

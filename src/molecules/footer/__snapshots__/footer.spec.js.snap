@@ -1,10 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a overlay 1`] = `
-<Overlay
-  visible={false}
->
-  <styled.aside
+exports[`should render a footer 1`] = `
+<Footer>
+  <styled.footer
     theme={
       Object {
         "animation": Object {
@@ -103,7 +101,6 @@ exports[`should render a overlay 1`] = `
         },
       }
     }
-    visible={false}
   >
     <StyledComponent
       forwardedClass={
@@ -113,33 +110,12 @@ exports[`should render a overlay 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "ihgAJq",
+            "lastClassName": "vSNlF",
             "rules": Array [
               "
-pointer-events: ",
+color: ",
               [Function],
               ";
-transition: ",
-              [Function],
-              ";
-background: ",
-              [Function],
-              ";
-z-index: ",
-              [Function],
-              ";
-opacity: ",
-              [Function],
-              ";
-justify-content: center;
-align-items: center;
-position: fixed;
-padding: 1rem;
-display: flex;
-bottom: 0;
-right: 0;
-left: 0;
-top: 0;
 ",
             ],
           },
@@ -241,10 +217,10 @@ top: 0;
               },
             },
           },
-          "displayName": "styled.aside",
+          "displayName": "styled.footer",
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
-          "target": "aside",
+          "target": "footer",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -349,12 +325,13 @@ top: 0;
           },
         }
       }
-      visible={false}
     >
-      <aside
-        className="sc-bdVaJa ihgAJq"
-      />
+      <footer
+        className="sc-bdVaJa vSNlF"
+      >
+        footer
+      </footer>
     </StyledComponent>
-  </styled.aside>
-</Overlay>
+  </styled.footer>
+</Footer>
 `;

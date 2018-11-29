@@ -150,8 +150,8 @@ class ChatMessage extends Component {
           return (
             <Options onClick={this.widgetClick}>
               {[
-                { label: <Icon color="white" name='thumbs-down' />, value: 'thumbs-down' },
-                { label: <Icon color="white" name='thumbs-up' />, value: 'thumbs-up' },
+                { label: <Icon color="white" name="thumbs-down" />, value: 'thumbs-down' },
+                { label: <Icon color="white" name="thumbs-up" />, value: 'thumbs-up' },
               ]}
             </Options>
           );
@@ -192,10 +192,10 @@ class ChatMessage extends Component {
       <Container>
         <MessageRow align="flex-end" user={user}>
           {/* USER OR BOT AVATAR IMAGE */}
-          <Avatar bordered grow={0} src={(user ? userAvatar : botAvatar)} />
+          <Avatar bordered padding="1px" grow={0} src={(user ? userAvatar : botAvatar)} />
 
           {/* MESSAGE BOX */}
-          <Balloon user={user} primary={user} lightgray={!user} grow={5 / 6} margin=".5rem" bordered hasContent>
+          <Balloon user={user} primary={user} lightGray={!user} grow={5 / 6} margin=".5rem" bordered hasContent>
 
             {/* USER OR BOT NAME */}
             <Name white={user} isLabel>{(user ? userName : botName)}</Name>

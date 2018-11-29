@@ -1,45 +1,43 @@
 // IMPORTS
+import _ from 'lodash';
+import defaultTheme from './theme';
 
-// STYLE
+// THEME CREATOR METHOD (MERGES CUSTOM THEME WITH DEFAULT)
+export const createTheme = customTheme => _.merge(defaultTheme, customTheme);
 
+// COMMOM STYLES FOR DISABLED ELEMENTS
 export const disabledStyle = `
 filter: grayscale(100%);
 pointer-events: none;
 cursor: not-allowed;
 `;
 
-// set color using theme color props [primary, secondary, warn, success]
-export const setColor = ({
-  theme,
-  primary,
-  secondary,
-  warn,
-  error,
-  success,
-  outline,
-  white,
-  black,
-  gray,
-  lightgray,
-  darkgray,
-  overlay,
-}, defaultColor = theme.font.color) => {
-  // the order matters, has a hierarchy
-  if (outline || white) return theme.color.white;
-  if (error) return theme.color.error;
-  if (warn) return theme.color.warn;
-  if (success) return theme.color.success;
-  if (primary) return theme.color.primary;
-  if (secondary) return theme.color.secondary;
-  if (black) return theme.color.black;
-  if (lightgray) return theme.color.lightgray;
-  if (darkgray) return theme.color.darkgray;
-  if (gray) return theme.color.gray;
-  if (overlay) return theme.color.overlay;
-  // defaults
+// LIST ALL COLOR FROM THE THEME
+const themeColors = Object.keys(defaultTheme.color);
+
+// FILTER COLOR PROPS FROM PROPS
+export const getColorProps = (props) => {
+  const propsList = Object.keys(props);
+  const colorProps = {};
+  const rest = {};
+  // eslint-disable-next-line
+  propsList.map(key => {
+    if (themeColors.indexOf(key) === -1) rest[key] = props[key];
+    else colorProps[key] = props[key];
+  });
+  return { colorProps, ...rest };
+};
+
+// RETURNS THE FIRST COLOR FOUND ON THEME BASED ON THE PROPS RECEIVED
+export const setColor = (props, defaultColor = props.theme.font.color) => {
+  const { colorProps, theme } = getColorProps(props);
+  const choosedColors = themeColors.filter(color => colorProps[color]);
+  const firstColor = theme.color[choosedColors[0]];
+  if (firstColor) return firstColor;
   return defaultColor;
 };
 
+// COMMOM STYLES FOR INPUTS
 export const inputStyle = ({ theme, ...props }) => (`
 border-color: ${setColor({ theme, ...props }, theme.color.overlay)};
 border-radius: ${theme.shape.radius};

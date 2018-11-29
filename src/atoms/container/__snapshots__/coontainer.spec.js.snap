@@ -2,23 +2,25 @@
 
 exports[`should render a Container 1`] = `
 <Container
+  fluid={false}
   full={false}
   height="auto"
-  margin="0"
+  margin="0 auto"
   maxHeight="auto"
-  maxWidth="auto"
   minHeight="auto"
   minWidth="auto"
+  noRadius={false}
   padding="0"
 >
   <styled.div
+    fluid={false}
     full={false}
     height="auto"
-    margin="0"
+    margin="0 auto"
     maxHeight="auto"
-    maxWidth="auto"
     minHeight="auto"
     minWidth="auto"
+    noRadius={false}
     padding="0"
     theme={
       Object {
@@ -86,10 +88,10 @@ exports[`should render a Container 1`] = `
         },
         "color": Object {
           "black": "#222222",
-          "darkgray": "#515151",
+          "darkGray": "#515151",
           "error": "#dd3333",
           "gray": "#a9abae",
-          "lightgray": "#e5e5e5",
+          "lightGray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
           "primary": "#0081c8",
           "secondary": "#00245f",
@@ -107,6 +109,7 @@ exports[`should render a Container 1`] = `
           "border": ".125rem solid rgba(0, 0, 0, .15)",
           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
+          "maxWidth": "1280px",
           "padding": ".75rem .875rem",
           "radius": ".5rem",
           "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -119,6 +122,7 @@ exports[`should render a Container 1`] = `
     }
   >
     <StyledComponent
+      fluid={false}
       forwardedClass={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -126,13 +130,19 @@ exports[`should render a Container 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "bofdhh",
+            "lastClassName": "krAIiX",
             "rules": Array [
               "
 padding: ",
               [Function],
               ";
 flex-basis: ",
+              [Function],
+              ";
+border-radius: ",
+              [Function],
+              ";
+max-width: ",
               [Function],
               ";
 border: ",
@@ -150,16 +160,10 @@ width: ",
 background: ",
               [Function],
               ";
-border-radius: ",
-              [Function],
-              ";
-max-height: ",
-              [Function],
-              ";
 min-height: ",
               [Function],
               ";
-max-width: ",
+max-height: ",
               [Function],
               ";
 min-width: ",
@@ -239,10 +243,10 @@ align-items: stretch;
               },
               "color": Object {
                 "black": "#222222",
-                "darkgray": "#515151",
+                "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
-                "lightgray": "#e5e5e5",
+                "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
                 "primary": "#0081c8",
                 "secondary": "#00245f",
@@ -260,6 +264,7 @@ align-items: stretch;
                 "border": ".125rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
+                "maxWidth": "1280px",
                 "padding": ".75rem .875rem",
                 "radius": ".5rem",
                 "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -282,11 +287,11 @@ align-items: stretch;
       forwardedRef={null}
       full={false}
       height="auto"
-      margin="0"
+      margin="0 auto"
       maxHeight="auto"
-      maxWidth="auto"
       minHeight="auto"
       minWidth="auto"
+      noRadius={false}
       padding="0"
       theme={
         Object {
@@ -354,10 +359,10 @@ align-items: stretch;
           },
           "color": Object {
             "black": "#222222",
-            "darkgray": "#515151",
+            "darkGray": "#515151",
             "error": "#dd3333",
             "gray": "#a9abae",
-            "lightgray": "#e5e5e5",
+            "lightGray": "#e5e5e5",
             "overlay": "rgba(0, 0, 0, .15)",
             "primary": "#0081c8",
             "secondary": "#00245f",
@@ -375,6 +380,7 @@ align-items: stretch;
             "border": ".125rem solid rgba(0, 0, 0, .15)",
             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
+            "maxWidth": "1280px",
             "padding": ".75rem .875rem",
             "radius": ".5rem",
             "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
@@ -387,7 +393,7 @@ align-items: stretch;
       }
     >
       <div
-        className="sc-bdVaJa bofdhh"
+        className="sc-bdVaJa krAIiX"
         height="auto"
       >
         container
