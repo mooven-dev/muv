@@ -10,8 +10,9 @@
     "build": "webpack --progress",
     "lint": "eslint --fix src",
     "now-build": "docz build",
-    "test": "jest",
-    "deploy": "now && now alias"
+    "add": "git add build src/release.json",
+    "deploy": "now && now alias",
+    "create": "node lib/index.js"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
@@ -72,9 +73,7 @@
   },
   "pre-commit": {
     "run": [
-      "lint",
-      "build",
-      "add"
+
     ],
     "silent": true
   },

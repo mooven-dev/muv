@@ -3,21 +3,20 @@ import { node } from 'prop-types';
 import React from 'react';
 
 import Container from '../../atoms/container';
+import Row from '../../atoms/row';
 import Header from '../../molecules/header';
 import Footer from '../../molecules/footer';
-import { getColorProps } from '../../utils';
 
 // COMPONENT
-const Page = ({ fluid, textProps, header, ...props }) => {
-  const { colorProps, ...rest } = getColorProps(props);
-  const templateProps = { fluid, textProps, ...colorProps };
+const Page = ({ fluid, textProps, header, headerProps, body, footer, footerProps, full, ...rest }) => {
+  const templateProps = { fluid, textProps };
   const contentProps = { fluid, ...rest };
   return (
-    <>
-      {header({ ...templateProps })}
-      <Container {...contentProps} />
-      <Footer {...templateProps} />
-    </>
+    <Container flex full={full}>
+      {header({ ...templateProps, ...headerProps })}
+      {body({ ...contentProps })}
+      {footer({ ...templateProps, ...footerProps })}
+    </Container>
   );
 };
 
@@ -30,6 +29,8 @@ Page.propTypes = {
 Page.defaultProps = {
   children: 'default',
   header: props => <Header {...props} />,
+  body: props => <Row hasContent {...props} />,
+  footer: props => <Footer {...props} />,
 };
 
 // EXPORT
