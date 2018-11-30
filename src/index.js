@@ -27,6 +27,7 @@ import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
+import Body from './molecules/body';
 import Footer from './molecules/footer';
 import Header from './molecules/header';
 import LoadScreen from './molecules/loadScreen';
@@ -67,6 +68,7 @@ export {
   GlobalStyle,
   createTheme,
   // COMPONENTS
+  Body,
   Footer,
   Header,
   Page,

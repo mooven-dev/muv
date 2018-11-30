@@ -1,37 +1,32 @@
 // IMPORTS
 import { node } from 'prop-types';
 import React from 'react';
-import moment from 'moment';
 
 import Container from '../../atoms/container';
 import Text from '../../atoms/text';
 import Row from '../../atoms/row';
+import Col from '../../atoms/col';
 
 // COMPONENT
-const Footer = ({ title, textProps, fluid, children, ...rest }) => (
+const Body = ({ title, textProps, fluid, ...rest }) => (
   <Container fluid noRadius lightGray {...rest}>
     <Container fluid={fluid}>
-      {children && <Row>{children}</Row>}
-      <Row justify="space-around" hasContent>
-        <Text {...textProps} isLabel>
-          {title}
-          &nbsp;&copy;&nbsp;
-          {moment().format('YYYY')}
-        </Text>
+      <Row justify="space-between" hasContent>
+        <Col grow={8} align="center"><Text {...textProps} type="h3">{title}</Text></Col>
       </Row>
     </Container>
   </Container>
 );
 
 // DOCUMENTATION
-Footer.propTypes = {
+Body.propTypes = {
   /** accepts only valid react nodes as children */
   title: node,
 };
 
-Footer.defaultProps = {
-  title: 'props.title',
+Body.defaultProps = {
+  title: 'body',
 };
 
 // EXPORT
-export default Footer;
+export default Body;

@@ -14,12 +14,12 @@ max-width: ${({ fluid, theme }) => (fluid ? '100%' : theme.shape.maxWidth)};
 border: ${({ theme, bordered }) => (bordered ? theme.shape.border : 'none')};
 display: ${({ flex, full }) => (full || flex ? 'flex' : 'block')};
 height: ${({ height, full }) => (full ? '100vh' : height)};
-width: ${({ width, full }) => (full ? '100%' : width)};
 background: ${props => setColor(props, 'transparent')};
 min-height: ${({ minHeight }) => minHeight};
 max-height: ${({ maxHeight }) => maxHeight};
 min-width: ${({ minWidth }) => minWidth};
 margin: ${({ margin }) => margin};
+width: ${({ width }) => width};
 flex-direction: column;
 align-items: stretch;
 `;
@@ -53,6 +53,7 @@ Container.propTypes = {
   padding: string,
   /** sets margin using a "inline style" logic */
   margin: string,
+  width: string,
   /** removes border radius */
   noRadius: bool,
 };
@@ -65,6 +66,7 @@ Container.defaultProps = {
   margin: '0 auto',
   noRadius: false,
   height: 'auto',
+  width: '100%',
   padding: '0',
   fluid: false,
   full: false,
