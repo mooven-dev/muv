@@ -27,6 +27,7 @@ import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
+import Menu from '../src/molecules/menu';
 import Body from './molecules/body';
 import Footer from './molecules/footer';
 import Header from './molecules/header';
@@ -68,6 +69,7 @@ export {
   GlobalStyle,
   createTheme,
   // COMPONENTS
+  Menu,
   Body,
   Footer,
   Header,

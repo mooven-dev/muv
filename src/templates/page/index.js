@@ -8,7 +8,7 @@ import Header from '../../molecules/header';
 import Footer from '../../molecules/footer';
 
 // COMPONENT
-const Page = ({ fluid, textProps, header, headerProps, body, footer, footerProps, full, ...rest }) => {
+const Page = ({ fluid, textProps, header, headerProps, body, footer, footerProps, full, button, ...rest }) => {
   const templateProps = { fluid, textProps };
   const contentProps = { fluid, ...rest };
   return (
@@ -28,9 +28,9 @@ Page.propTypes = {
 
 Page.defaultProps = {
   children: 'default',
-  header: props => <Header {...props} />,
-  body: props => <Row hasContent {...props} />,
-  footer: props => <Footer {...props} />,
+    header: props => <Header {...props} />,
+    body: props => <Row hasContent {...props} />,
+    footer: props => <Footer {...props} />,
 };
 
 // EXPORT

@@ -7,13 +7,15 @@ import Container from '../../atoms/container';
 import Text from '../../atoms/text';
 import Row from '../../atoms/row';
 import Col from '../../atoms/col';
+import Menu from '../../molecules/menu';
 
 // COMPONENT
-const Header = ({ title, textProps, fluid, ...rest }) => (
+const Header = ({ title, textProps, fluid, children, button, ...rest }) => (
   <Container fluid noRadius lightGray {...rest}>
     <Container fluid={fluid}>
+      {children && <Row>{children}</Row> }
       <Row justify="space-between" hasContent>
-        <Col><Text {...textProps} type="h3">|||</Text></Col>
+        <Col><Menu /></Col>
         <Col grow={8} align="center"><Text {...textProps} type="h3">{title}</Text></Col>
         <Col><span /></Col>
       </Row>
