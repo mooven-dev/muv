@@ -3,19 +3,14 @@
   "version": "0.1.0",
   "description": "mooven component lib",
   "main": "build/muv.min.js",
-  "bin": {
-    "muv": "bin/muv.js"
-  },
   "scripts": {
+    "dev": "npm start",
     "start": "docz dev",
-    "build": "webpack --progress",
-    "dev": "npm link && npm start",
-    "lint": "eslint --fix src",
-    "test": "jest",
-    "test:update": "jest -u",
-    "test:cover": "jest --coverage",
-    "now-build": "docz build",
     "add": "git add build src/release.json",
+    "build": "webpack --progress",
+    "lint": "eslint --fix src",
+    "now-build": "docz build",
+    "test": "jest",
     "deploy": "now && now alias"
   },
   "dependencies": {
