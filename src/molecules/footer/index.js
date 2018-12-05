@@ -11,7 +11,7 @@ import Row from '../../atoms/row';
 const Footer = ({ title, textProps, fluid, children, ...rest }) => (
   <Container fluid noRadius lightGray {...rest}>
     <Container fluid={fluid}>
-      {children && <Row>{children}</Row>}
+      {children && <Row hasContent>{children}</Row>}
       <Row justify="space-around" hasContent>
         <Text {...textProps} isLabel>
           {title}

@@ -1,9 +1,26 @@
 // IMPORTS
 import _ from 'lodash';
+
+import animation from './animations';
 import defaultTheme from './theme';
 
 // THEME CREATOR METHOD (MERGES CUSTOM THEME WITH DEFAULT)
-export const createTheme = customTheme => _.merge(defaultTheme, customTheme);
+export const animator = ({ time = defaultTheme.transition.time, name, from, to, middle = '' }) => (`
+  @keyframes ${name} {
+    from {
+      ${from}
+    }
+    ${middle}
+    to {
+      ${to}
+    }
+  }
+  animation: ${name} ${time}
+`);
+
+export const createTheme = customTheme => _.merge(
+  defaultTheme, customTheme, { animation: animation(animator) },
+);
 
 // COMMOM STYLES FOR DISABLED ELEMENTS
 export const disabledStyle = `

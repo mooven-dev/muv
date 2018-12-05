@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Divider from '.';
+import MenuButton from '.';
 
-it('should render a divider', () => {
+it('should render a menuButton', () => {
   const wrapper = mount(
-    <Divider />,
+    <MenuButton />,
   );
   expect(wrapper).toMatchSnapshot();
 });

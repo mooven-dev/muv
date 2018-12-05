@@ -51,7 +51,7 @@ font-size: .75rem;
 opacity: .7;
 `;
 
-const Avatar = styled(Col)`
+const Avatar = styled.div`
 background-color: ${({ theme }) => theme.color.overlay};
 background-image: url(${({ src }) => src});
 background-position: center;

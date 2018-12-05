@@ -47,11 +47,10 @@ StyledButton.defaultProps = {
 };
 
 // COMPONENT
-const Link = (props) => {
-  const { href, onClick } = props;
-  if (href) return <StyledA {...props} />;
-  if (onClick) return <StyledButton {...props} />;
-  return null;
+const Link = ({ href, onClick, ...props}) => {
+  if (onClick) return <StyledButton onClick={onClick} {...props} />;
+  if (href) return <StyledA href={href} {...props} />;
+  return <StyledA href='#' {...props} />;
 };
 
 // DOCUMENTATION

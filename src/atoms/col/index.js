@@ -9,6 +9,7 @@ import Row from '../row';
 // STYLES
 const StyledCol = styled(Row)`
 flex-direction: column;
+flex-basis: 0;
 `;
 
 StyledCol.defaultProps = {

@@ -66,15 +66,14 @@ StyledA.defaultProps = {
 };
 
 // COMPONENT
-const Button = (props) => {
-  const { href, onClick, children } = props;
+const Button = ({ href, onClick, children, ...props}) => {
   const returnContent = content => (
     (typeof content === 'string')
       ? <Text align="center" white>{content}</Text>
       : content
   );
-  if (onClick) return <StyledButton {...props}>{returnContent(children)}</StyledButton>;
-  if (href) return <StyledA {...props}>{returnContent(children)}</StyledA>;
+  if (onClick) return <StyledButton onClick={onClick} {...props}>{returnContent(children)}</StyledButton>;
+  if (href) return <StyledA href={href} {...props}>{returnContent(children)}</StyledA>;
   return <Text error align="center">missing prop onClick or href</Text>;
 };
 

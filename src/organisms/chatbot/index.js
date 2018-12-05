@@ -1,5 +1,5 @@
 // IMPORTS
-import { node, number, string } from 'prop-types';
+import { node, number, string, bool } from 'prop-types';
 import React, { Component } from 'react';
 
 import { botAvatarImg, userAvatarImg } from '../../utils';
@@ -23,13 +23,16 @@ class Chatbot extends Component {
     this.toogleChat = () => this.setState(({ open }) => ({ open: !open, newMessages: 0 }));
 
     // CLOSE BOT
-    this.closeBot = () => this.setState({ open: false, newMessages: 1 });
+    this.closeBot = () => {
+      this.setState(({ newMessages, open }) => ({
+        open: false, newMessages: (open ? newMessages + 1 : newMessages),
+      }));
+    };
 
     // UPDATES NEW MESSAGES BADGE
     this.setNotification = () => {
       const { open } = this.state;
-      if (open) this.setState({ newMessages: 0 });
-      else this.setState(({ newMessages }) => ({ newMessages: newMessages + 1 }));
+      if (!open) this.setState(({ newMessages }) => ({ newMessages: newMessages + 1 }));
     };
 
     // UPDATE THE CONVERSATION
@@ -53,16 +56,17 @@ class Chatbot extends Component {
       changeName: this.changeName,
       resetWarns: this.resetWarns,
       closeBot: this.closeBot,
+      open: this.props.open,
+      newMessages: 0,
       messages: [],
-      open: true,
     };
   }
 
   componentDidUpdate(prevPros, prevState) {
     // LOOKS FOR NEW MESSAGES
-    const newMessages = this.state.messages;
     const oldMessages = prevState.messages;
-    if (newMessages.length > oldMessages.length) {
+    const { messages } = this.state;
+    if (messages.length > oldMessages.length) {
       this.setNotification();
     }
   }
@@ -100,6 +104,8 @@ Chatbot.propTypes = {
   timeOut: number,
   /** the icon, component, or image rendered inside the bot button */
   children: node,
+  /** sets if the bot starts opened */
+  open: bool,
 };
 
 Chatbot.defaultProps = {
@@ -112,6 +118,7 @@ Chatbot.defaultProps = {
   userName: 'Sarah',
   botName: 'T-800',
   timeOut: 50000,
+  open: false,
 };
 
 // EXPORT

@@ -1,14 +1,25 @@
 // IMPORTS
-import styled from 'styled-components';
-import { node } from 'prop-types';
+import { arrayOf, shape, string, func } from 'prop-types';
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
+import Container from '../../atoms/container';
 import themeDefault from '../../theme';
-import Button from '../../atoms/button';
+import MenuButton from '../menuButton';
+import Link from '../../atoms/link';
 
 // STYLES
-const StyledMenu = styled.p`
-color: ${({ theme }) => theme.color.primary};
+const StyledMenu = styled.nav`
+all: unset;
+pointer-events: ${({ open }) => (open ? 'auto' : 'none')};
+transition: ${({ theme }) => theme.transition.time};
+background: ${({ theme }) => theme.color.lightGray};
+box-shadow: ${({ theme }) => theme.shape.float};
+z-index: ${({ open }) => (open ? 99 : 0)};
+opacity: ${({ open }) => (open ? 1 : 0)};
+top: calc(100% + 1rem);
+position: absolute;
+left: 0;
 `;
 
 // THEME DEFAULT
@@ -20,28 +31,43 @@ StyledMenu.defaultProps = {
 class Menu extends Component {
   constructor(props) {
     super(props);
-
-    //OPEN MENU
-    this.handleMenu = () => {
-      console.log('zzzz');
+    this.state = {};
+    this.toogleMenu = () => {
+      this.setState(({ open }) => ({ open: !open }));
     };
   }
 
   render() {
+    const { links, menuButton } = this.props;
+    const { open } = this.state;
     return (
-      <Button onClick={this.handleMenu} />
-    )
+      <Container>
+        {menuButton({ open, onClick: this.toogleMenu })}
+        <StyledMenu open={open}>
+          <Container hasContent minWidth='320px'>
+            {links.map(({ title, path }, index) => (
+              <Link key={`menu-link-${title}}-${index}`} href={path}>{title}</Link>
+            ))}
+          </Container>
+        </StyledMenu>
+      </Container>
+    );
   }
 }
 
 // DOCUMENTATION
 Menu.propTypes = {
-  /** accepts only valid react nodes as children */
-  children: node,
+  /** a list of links to be rendered on the menu */
+  links: arrayOf(shape({ title: string, path: string })),
+  /** a component to overwright the default menu button */
+  menuButton: func,
 };
 
 Menu.defaultProps = {
-  children: 'default',
+  menuButton: props => <MenuButton {...props} />,
+  links: [
+    { title: 'Home', path: '/' },
+  ],
 };
 
 // EXPORT

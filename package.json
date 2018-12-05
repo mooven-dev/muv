@@ -10,7 +10,6 @@
     "build": "webpack --progress",
     "lint": "eslint --fix src",
     "now-build": "docz build",
-    "add": "git add build src/release.json",
     "deploy": "now && now alias",
     "create": "node lib/index.js"
   },
@@ -72,9 +71,7 @@
     }
   },
   "pre-commit": {
-    "run": [
-
-    ],
+    "run": [],
     "silent": true
   },
   "repository": {
