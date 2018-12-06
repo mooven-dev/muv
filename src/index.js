@@ -7,6 +7,7 @@
 
 // EXTERNAL LIBS
 import styled, { ThemeProvider, createGlobalStyle, ServerStyleSheet } from 'styled-components';
+import { version } from '../package.json';
 import { createTheme } from './utils';
 
 // ATOMS
@@ -45,6 +46,8 @@ import Page from './templates/page';
 
 
 // GLOBALS
+// eslint-disable-next-line
+if (process.env.NODE_ENV === 'development') console.log('muv @', version);
 const GlobalStyle = createGlobalStyle`
   body {
     font-size: 16px;
