@@ -66,7 +66,7 @@ StyledA.defaultProps = {
 };
 
 // COMPONENT
-const Button = ({ href, onClick, children, ...props}) => {
+const Button = ({ href, onClick, children, ...props }) => {
   const returnContent = content => (
     (typeof content === 'string')
       ? <Text align="center" white>{content}</Text>

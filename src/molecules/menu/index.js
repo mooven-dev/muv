@@ -38,15 +38,17 @@ class Menu extends Component {
   }
 
   render() {
-    const { links, menuButton } = this.props;
+    const { links, menuButton, router } = this.props;
     const { open } = this.state;
     return (
       <Container>
         {menuButton({ open, onClick: this.toogleMenu })}
         <StyledMenu open={open}>
-          <Container hasContent minWidth='320px'>
+          <Container hasContent minWidth="320px">
             {links.map(({ title, path }, index) => (
-              <Link key={`menu-link-${title}}-${index}`} href={path}>{title}</Link>
+              router
+                ? <Link key={`menu-link-${title}}-${index}`} onClick={() => router.push(path)}>{title}</Link>
+                : <Link key={`menu-link-${title}}-${index}`} href={path}>{title}</Link>
             ))}
           </Container>
         </StyledMenu>

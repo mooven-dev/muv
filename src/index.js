@@ -28,8 +28,8 @@ import Button from './atoms/button';
 import Text from './atoms/text';
 
 // MOLECULES
-import MenuButton from '../src/molecules/menuButton';
-import Menu from '../src/molecules/menu';
+import MenuButton from './molecules/menuButton';
+import Menu from './molecules/menu';
 import Body from './molecules/body';
 import Footer from './molecules/footer';
 import Header from './molecules/header';
