@@ -1,4 +1,6 @@
 
+import animation from './animations';
+
 /**
  * THE ORDER OF THIS COLORS SETS THE COLOR HIERARCH
  * DO NOT CHANGE THIS
@@ -47,6 +49,7 @@ const transition = {
 };
 
 export default {
+  animation,
   transition,
   shape,
   color,
