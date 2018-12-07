@@ -3,7 +3,6 @@ import { node, func } from 'prop-types';
 import React from 'react';
 
 import Container from '../../atoms/container';
-import Row from '../../atoms/row';
 import Header from '../../molecules/header';
 import Footer from '../../molecules/footer';
 
@@ -34,7 +33,7 @@ Page.propTypes = {
 Page.defaultProps = {
   children: 'props.children',
   header: props => <Header {...props} />,
-  body: props => <Row hasContent {...props} />,
+  body: props => <Container hasContent {...props} />,
   footer: props => <Footer {...props} />,
 };
 
