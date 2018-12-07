@@ -47,8 +47,8 @@ Header.propTypes = {
 
 Header.defaultProps = {
   left: props => <Menu {...props} />,
+  right: props => <span />,
   title: 'props.title',
-  right: props => null,
   children: null,
   fluid: false,
   dark: false,
