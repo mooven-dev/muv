@@ -9,6 +9,11 @@ import MenuButton from '../menuButton';
 import Link from '../../atoms/link';
 
 // STYLES
+const StyledLink = styled(Link)`
+padding: .5rem;
+width: 100%;
+`;
+
 const StyledMenu = styled.nav`
 all: unset;
 pointer-events: ${({ open }) => (open ? 'auto' : 'none')};
@@ -47,8 +52,8 @@ class Menu extends Component {
           <Container hasContent minWidth="320px">
             {links.map(({ title, path }, index) => (
               router
-                ? <Link key={`menu-link-${title}}-${index}`} onClick={() => router.push(path)}>{title}</Link>
-                : <Link key={`menu-link-${title}}-${index}`} href={path}>{title}</Link>
+                ? <StyledLink key={`menu-link-${title}}-${index}`} onClick={() => router.push(path)}>{title}</StyledLink>
+                : <StyledLink key={`menu-link-${title}}-${index}`} href={path}>{title}</StyledLink>
             ))}
           </Container>
         </StyledMenu>
