@@ -116,7 +116,7 @@ class ChatMessage extends Component {
     this.renderWidget = () => {
       // SETUP
       const { _nextWidget, ...rest } = this.props.context;
-      const { disableInput } = this.context;
+      const { disableInput, bot: { widgets } } = this.context;
       const {
         WIDGET_THUMBS_UP_DOWN,
         WIDGET_OPTIONS_UNLOCK,
@@ -126,35 +126,43 @@ class ChatMessage extends Component {
       // RETURN RIGHT WIDGET
       switch (_nextWidget) {
         case WIDGET_OPTIONS_UNLOCK:
-          return (
-            <Options onClick={this.widgetClick}>
-              {rest[WIDGET_OPTIONS_UNLOCK]}
-            </Options>
-          );
+          if (widgets[WIDGET_OPTIONS_UNLOCK]) {
+            return (
+              <Options onClick={this.widgetClick}>
+                {rest[WIDGET_OPTIONS_UNLOCK]}
+              </Options>
+            );
+          }
         case WIDGET_OPTIONS:
-          return (
-            <Options onClick={this.widgetClick}>
-              {rest[WIDGET_OPTIONS]}
-            </Options>
-          );
+          if (widgets[WIDGET_OPTIONS]) {
+            return (
+              <Options onClick={this.widgetClick}>
+                {rest[WIDGET_OPTIONS]}
+              </Options>
+            );
+          }
         case WIDGET_YES_NO:
-          return (
-            <Options onClick={this.widgetClick}>
-              {[
-                { label: 'Sim', value: 'sim' },
-                { label: 'Não', value: 'nao' },
-              ]}
-            </Options>
-          );
+          if (widgets[WIDGET_YES_NO]) {
+            return (
+              <Options onClick={this.widgetClick}>
+                {[
+                  { label: 'Sim', value: 'sim' },
+                  { label: 'Não', value: 'nao' },
+                ]}
+              </Options>
+            );
+          }
         case WIDGET_THUMBS_UP_DOWN:
-          return (
-            <Options onClick={this.widgetClick}>
-              {[
-                { label: <Icon color="white" name="thumbs-down" />, value: 'thumbs-down' },
-                { label: <Icon color="white" name="thumbs-up" />, value: 'thumbs-up' },
-              ]}
-            </Options>
-          );
+          if (widgets[WIDGET_THUMBS_UP_DOWN]) {
+            return (
+              <Options onClick={this.widgetClick}>
+                {[
+                  { label: <Icon color="white" name="thumbs-down" />, value: 'thumbs-down' },
+                  { label: <Icon color="white" name="thumbs-up" />, value: 'thumbs-up' },
+                ]}
+              </Options>
+            );
+          }
         default:
           return disableInput(false);
       }
