@@ -1,6 +1,7 @@
 // IMPORTS
 import { node, number, string, bool } from 'prop-types';
 import React, { Component } from 'react';
+import Axios from 'axios';
 
 import { botAvatarImg, userAvatarImg } from '../../utils';
 import Icon from '../../atoms/icon';
@@ -12,12 +13,21 @@ import ChatBox from './components/chatBox';
 import BotFab from './components/botFab';
 
 
-const { conversation_api, workspace_id } = config;
+const { conversation_api, bot_api } = config;
 
 // COMPONENT
 class Chatbot extends Component {
   constructor(props) {
     super(props);
+
+    this.startBot = () => {
+      const { id } = this.props;
+      Axios.get(`${bot_api}?_id=${id}`)
+        .then((res) => {
+          this.setState({ botLoaded: true, bot: res.data });
+        })
+        .catch(err => console.log(err));
+    };
 
     // OPEN/CLOSES CHAT
     this.toogleChat = () => this.setState(({ open }) => ({ open: !open, newMessages: 0 }));
@@ -49,7 +59,6 @@ class Chatbot extends Component {
     this.state = {
       updateMessages: this.updateMessages,
       disableInput: this.disableInput,
-      workSpace: this.props.workSpace,
       endPoint: this.props.endPoint,
       timeOut: this.props.timeOut,
       toogleChat: this.toogleChat,
@@ -60,6 +69,10 @@ class Chatbot extends Component {
       newMessages: 0,
       messages: [],
     };
+  }
+
+  componentDidMount() {
+    this.startBot();
   }
 
   componentDidUpdate(prevPros, prevState) {
@@ -73,12 +86,13 @@ class Chatbot extends Component {
 
   render() {
     const { children, ...rest } = this.props;
+    const { botLoaded } = this.state;
     return (
       <Bot.Provider value={this.state}>
         {/* BOT BUTTON */}
         <BotFab>{children}</BotFab>
         {/* BOT WINDOW */}
-        <ChatBox {...rest} />
+        {botLoaded && <ChatBox {...rest} />}
       </Bot.Provider>
     );
   }
@@ -88,8 +102,8 @@ class Chatbot extends Component {
 Chatbot.propTypes = {
   /** path to the conversation api */
   endPoint: string,
-  /** the dialog workspace_id */
-  workSpace: string,
+  /** the bot profile id */
+  id: string,
   /** the name displayed close to the user avatar */
   userName: string,
   /** path to the image of the user avatar */
@@ -110,11 +124,11 @@ Chatbot.propTypes = {
 
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
+  id: '5c0acdec2c42de5e9d8d1580',
   endPoint: conversation_api,
   botTitle: 'Skynet ChatBot',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,
-  workSpace: workspace_id,
   userName: 'Sarah',
   botName: 'T-800',
   timeOut: 50000,

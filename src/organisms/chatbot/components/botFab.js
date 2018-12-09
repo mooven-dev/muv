@@ -13,10 +13,11 @@ class BotFab extends Component {
 
   render() {
     const { children } = this.props;
+    const { toogleChat, newMessages } = this.context;
     return (
-      <Fab onClick={this.context.toogleChat}>
+      <Fab onClick={toogleChat}>
         <span>
-          <Badge>{this.context.newMessages}</Badge>
+          <Badge>{newMessages}</Badge>
           {children}
         </span>
       </Fab>

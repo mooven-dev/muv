@@ -123,14 +123,15 @@ class BotFooter extends Component {
       const isUser = (message && !isBot);
       const text = (message || 'ola');
       // GET CONTEXT
-      const { messages, workSpace } = this.context;
+      const { messages, bot } = this.context;
       const lastMessage = (messages.length && messages[messages.length - 1]);
       const { context } = lastMessage;
       if (context) context._nextWidget = ''; // eslint-disable-line
       const time = moment().format('H:mm');
+      console.log(bot);
       // SETUP MESSAGE DATA
       const data = {
-        workspace_id: workSpace,
+        workspace_id: bot.workspace,
         context,
         time,
         input: {
