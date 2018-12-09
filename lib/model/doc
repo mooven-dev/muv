@@ -1,0 +1,27 @@
+
+---
+menu: __Type__
+name: __COMPONENT__
+route: /__component__
+---
+
+import { Playground, PropsTable } from 'docz';
+import __COMPONENT__ from '.';
+
+# __COMPONENT__
+
+## Use cases
+
+<div>
+  <__COMPONENT__ />
+</div>
+
+## PropsTable
+
+<PropsTable of={__COMPONENT__} />
+
+## Playground
+
+<Playground>
+  <__COMPONENT__ />
+</Playground>

@@ -1,0 +1,10 @@
+import React from 'react';
+
+import __COMPONENT__ from '.';
+
+it('should render a __component__', () => {
+  const wrapper = mount(
+    <__COMPONENT__ />,
+  );
+  expect(wrapper).toMatchSnapshot();
+});
