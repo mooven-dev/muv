@@ -28,6 +28,7 @@ height: ${({ height }) => height};
 margin: ${({ margin }) => margin};
 width: ${({ width }) => width};
 flex-direction: column;
+box-sizing: border-box;
 align-items: stretch;
 position: relative;
 `;
