@@ -11,7 +11,7 @@ const color = {
   warn: '#dd3333',
   success: '#33bb33',
   secondary: '#00245f',
-  primary: '#0081c8',
+  primary: '#00528F',
   // GREYSCALE
   white: '#fefefe',
   overlay: 'rgba(0, 0, 0, .15)',
