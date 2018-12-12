@@ -10,8 +10,15 @@ import Link from '../../atoms/link';
 
 // STYLES
 const StyledLink = styled(Link)`
-padding: .5rem;
 width: 100%;
+padding: .5rem 0;
+text-align: left;
+text-decoration: none;
+color: #000;
+font-size: 1rem;
+&:hover {
+  background-color: white;
+}
 `;
 
 const StyledMenu = styled.nav`
@@ -25,6 +32,9 @@ opacity: ${({ open }) => (open ? 1 : 0)};
 top: calc(100% + 1rem);
 position: absolute;
 left: 0;
+&:hover {
+  background-color: white;
+}
 `;
 
 // THEME DEFAULT
