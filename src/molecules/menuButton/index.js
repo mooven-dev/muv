@@ -12,7 +12,7 @@ const StyledMenuButton = styled.button`
 all: unset;
 position: relative;
 cursor: pointer;
-height: 1.5rem;
+height: 1.3rem;
 width: 2rem;
 padding: 0;
 > p {

@@ -25,7 +25,7 @@ const shape = {
   // FORMS
   float: `0 .5rem .5rem .125rem ${color.overlay}`,
   shadow: `0 .25rem .25rem 0 ${color.overlay}`,
-  border: `.125rem solid ${color.overlay}`,
+  border: `.1rem solid ${color.overlay}`,
   radius: '.5rem',
   size: '16px',
   // SPACE
