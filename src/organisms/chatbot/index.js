@@ -13,7 +13,7 @@ import ChatBox from './components/chatBox';
 import BotFab from './components/botFab';
 
 
-const { conversation_api, bot_api } = config;
+const { endPoint } = config;
 
 // COMPONENT
 class Chatbot extends Component {
@@ -22,7 +22,7 @@ class Chatbot extends Component {
 
     this.startBot = () => {
       const { id } = this.props;
-      Axios.get(`${bot_api}?_id=${id}`)
+      Axios.get(`${endPoint}bots/${id}`)
         .then((res) => {
           this.setState({ botLoaded: true, bot: res.data });
         })
@@ -100,8 +100,6 @@ class Chatbot extends Component {
 
 // DOCUMENTATION
 Chatbot.propTypes = {
-  /** path to the conversation api */
-  endPoint: string,
   /** the bot profile id */
   id: string,
   /** the name displayed close to the user avatar */
@@ -125,7 +123,6 @@ Chatbot.propTypes = {
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
   id: '5c0acdec2c42de5e9d8d1580',
-  endPoint: conversation_api,
   botTitle: 'Skynet ChatBot',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,
@@ -133,6 +130,7 @@ Chatbot.defaultProps = {
   botName: 'T-800',
   timeOut: 50000,
   open: false,
+  endPoint,
 };
 
 // EXPORT

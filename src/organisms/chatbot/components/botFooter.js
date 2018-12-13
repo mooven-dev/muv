@@ -10,7 +10,9 @@ import Icon from '../../../atoms/icon';
 import Row from '../../../atoms/row';
 import Col from '../../../atoms/col';
 import BotContext from '../context';
+import config from '../../../env';
 
+const { endPoint } = config;
 
 const StyledButton = styled(Button)`
 border-radius: 0;
@@ -59,10 +61,9 @@ class BotFooter extends Component {
 
     // SEND MESSAGE
     this.messageRequest = async (data, isUser) => {
-      const { endPoint } = this.context;
       // INPUT || USER
       if (isUser) await this.updateChat(data);
-      Axios.post(endPoint, JSON.stringify(data))
+      Axios.post(`${endPoint}conversation`, JSON.stringify(data))
         .then((res) => {
           const botMessage = res.data;
           botMessage.time = moment().format('H:mm');

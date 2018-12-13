@@ -20,9 +20,9 @@ StyledFieldset.defaultProps = {
 
 // COMPONENT
 const Fieldset = (props) => {
-  const { onChange, placeholder, type, children, label, warn, success, disabled, ...rest } = props;
+  const { onChange, placeholder, type, children, label, warn, success, disabled, value, ...rest } = props;
   const stateProps = { warn, success, disabled };
-  const inputProps = { onChange, placeholder, type, ...stateProps };
+  const inputProps = { onChange, placeholder, type, value, ...stateProps };
   return (
     <StyledFieldset {...rest}>
       <Text isLabel transform="capitalize">

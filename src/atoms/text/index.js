@@ -13,8 +13,8 @@ color: ${setColor({ theme, ...rest })};
 font-family: ${theme.font.family};
 text-transform: ${transform};
 text-align: ${align};
+margin: 0 .125em;
 line-height: 1;
-margin: 0;
 `);
 
 export const P = styled.p`
