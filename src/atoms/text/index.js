@@ -9,11 +9,12 @@ import { setColor } from '../../utils';
 const commonStyles = ({ transform, strong, align, theme, isLabel, spacing, ...rest }) => (`
 font-weight: ${(strong || isLabel ? 'bold' : 'inherit')};
 letter-spacing: ${spacing || theme.font.spacing};
+white-space: ${isLabel ? 'nowrap' : 'wrap'};
 color: ${setColor({ theme, ...rest })};
 font-family: ${theme.font.family};
 text-transform: ${transform};
 text-align: ${align};
-margin: 0 .125em;
+margin: .125em;
 line-height: 1;
 `);
 

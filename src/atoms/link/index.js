@@ -10,11 +10,13 @@ import themeDefault from '../../theme';
 const setTextColor = ({ theme, ...rest }) => setColor({ theme, ...rest }, theme.color.primary);
 
 const commomStyles = ({ disabled, theme, strong, noLine, ...rest }) => (`
+all: unset;
 text-decoration: ${noLine ? 'none' : 'underline'};
 font-weight: ${(strong ? 'bold' : 'inherit')};
 color: ${setTextColor({ theme, ...rest })};
 background: transparent;
 display: inline-block;
+font-size: 1rem;
 cursor: pointer;
 line-height: 1;
 outline: none;
