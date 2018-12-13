@@ -39,7 +39,7 @@ const shape = {
 const font = {
   // JUST ONE SET
   family: '"Ubuntu", sans-serif',
-  color: color.white,
+  color: color.black,
   // PROPORTIONAL TO LAYOUT FORMS
   size: shape.size,
   spacing: 0,
