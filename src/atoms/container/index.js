@@ -21,6 +21,7 @@ border: ${({ theme, bordered }) => (bordered ? theme.shape.border : 'none')};
 min-height: ${({ minHeight, full }) => (full ? '100vh' : minHeight)};
 display: ${({ flex, full }) => (full || flex ? 'flex' : 'block')};
 background: ${props => setColor(props, 'transparent')};
+overflow: ${({ cut }) => (cut ? 'hidden' : 'unset')};
 max-height: ${({ maxHeight }) => maxHeight};
 max-width: ${props => setMaxWidth(props)};
 min-width: ${({ minWidth }) => minWidth};

@@ -38,7 +38,7 @@ Span.defaultProps = {
 
 export const H1 = styled.h1`
 ${props => commonStyles(props)}
-font-size: 4rem;
+font-size: 3rem;
 `;
 
 H1.defaultProps = {
