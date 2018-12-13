@@ -32,7 +32,7 @@ padding: 0;
   }
   &:nth-child(2) {
     transform: scaleX(${({ open }) => (open ? '0' : '1')});
-    top: calc(50% - .125rem);
+    top: calc(50% - .1rem);
   }
   &:nth-child(3) {
     transform: rotate(${({ open }) => (open ? '-45deg' : '0deg')});

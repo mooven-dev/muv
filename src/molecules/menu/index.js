@@ -15,9 +15,9 @@ padding: .5rem 0;
 text-align: left;
 text-decoration: none;
 color: #000;
-font-size: 1rem;
 &:hover {
   background-color: white;
+  width: 100%;
 }
 `;
 
@@ -32,9 +32,7 @@ opacity: ${({ open }) => (open ? 1 : 0)};
 top: calc(100% + 1rem);
 position: absolute;
 left: 0;
-&:hover {
-  background-color: white;
-}
+
 `;
 
 // THEME DEFAULT
