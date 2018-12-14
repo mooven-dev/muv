@@ -116,7 +116,7 @@ class ChatMessage extends Component {
     this.renderWidget = () => {
       // SETUP
       const { _nextWidget, ...rest } = this.props.context;
-      const { disableInput, bot: { widgets } } = this.context;
+      const { disableInput, bot: { _widgets } } = this.context;
       const {
         WIDGET_THUMBS_UP_DOWN,
         WIDGET_OPTIONS_UNLOCK,
@@ -126,7 +126,7 @@ class ChatMessage extends Component {
       // RETURN RIGHT WIDGET
       switch (_nextWidget) {
         case WIDGET_OPTIONS_UNLOCK:
-          if (widgets[WIDGET_OPTIONS_UNLOCK]) {
+          if (_widgets[WIDGET_OPTIONS_UNLOCK]) {
             return (
               <Options onClick={this.widgetClick}>
                 {rest[WIDGET_OPTIONS_UNLOCK]}
@@ -134,7 +134,7 @@ class ChatMessage extends Component {
             );
           }
         case WIDGET_OPTIONS:
-          if (widgets[WIDGET_OPTIONS]) {
+          if (_widgets[WIDGET_OPTIONS]) {
             return (
               <Options onClick={this.widgetClick}>
                 {rest[WIDGET_OPTIONS]}
@@ -142,7 +142,7 @@ class ChatMessage extends Component {
             );
           }
         case WIDGET_YES_NO:
-          if (widgets[WIDGET_YES_NO]) {
+          if (_widgets[WIDGET_YES_NO]) {
             return (
               <Options onClick={this.widgetClick}>
                 {[
@@ -153,7 +153,7 @@ class ChatMessage extends Component {
             );
           }
         case WIDGET_THUMBS_UP_DOWN:
-          if (widgets[WIDGET_THUMBS_UP_DOWN]) {
+          if (_widgets[WIDGET_THUMBS_UP_DOWN]) {
             return (
               <Options onClick={this.widgetClick}>
                 {[
