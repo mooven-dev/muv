@@ -3,16 +3,14 @@ import { node, string, func, bool } from 'prop-types';
 import styled from 'styled-components';
 import React from 'react';
 
-import { setColor, disabledStyle } from '../../utils';
+import { setColor, disabledStyle, getColorProps } from '../../utils';
 import themeDefault from '../../theme';
 import Text from '../text';
 
 // STYLES
-const setBackground = ({ theme, ...rest }) => setColor({ theme, ...rest }, theme.color.primary);
-
-const setTextColor = ({ outline, theme, ...rest }) => {
-  if (outline) return setColor({ theme, ...rest }, theme.color.primary); // do not pass outline
-  return theme.color.white;
+const setBackground = ({ outline, theme, ...rest }) => {
+  if (outline) return theme.color.white;
+  return setColor({ theme, ...rest }, theme.color.primary); // do not pass outline
 };
 
 const setBordColor = ({ outline, theme, ...rest }) => {
@@ -25,11 +23,11 @@ border: ${theme.shape.border}; /* keep this line first */
 box-shadow: ${inset ? 'none' : theme.shape.shadow};
 border-color: ${setBordColor({ theme, ...rest })};
 background: ${setBackground({ theme, ...rest })};
-color: ${setTextColor({ theme, ...rest })};
 border-radius: ${theme.shape.radius};
 transition: ${theme.transition.time};
 width: ${inline ? 'unset' : '100%'};
 padding: ${theme.shape.padding};
+${disabled ? disabledStyle : ''}
 box-sizing: border-box;
 text-decoration: none;
 display: inline-block;
@@ -39,7 +37,6 @@ cursor: pointer;
 margin: 0;
 line-height: 1;
 outline: none;
-${disabled ? disabledStyle : ''}
 &:disabled {
   ${disabledStyle}
 };
@@ -67,9 +64,10 @@ StyledA.defaultProps = {
 
 // COMPONENT
 const Button = ({ href, onClick, children, ...props }) => {
+  const { colorProps, outline } = getColorProps(props);
   const returnContent = content => (
     (typeof content === 'string')
-      ? <Text align="center" white>{content}</Text>
+      ? <Text align="center" primary={outline} white={!outline} {...colorProps}>{content}</Text>
       : content
   );
   if (onClick) return <StyledButton onClick={onClick} {...props}>{returnContent(children)}</StyledButton>;
