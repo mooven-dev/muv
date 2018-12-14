@@ -1,6 +1,6 @@
 // IMPORTS
 import { node, bool } from 'prop-types';
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Overlay from '../../atoms/overlay';
@@ -22,21 +22,25 @@ StyledModal.defaultProps = {
 };
 
 // COMPONENT
-class Modal extends PureComponent {
+class Modal extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      visible: this.props.visible,
-    };
-    this.toogleModal = () => this.setState(prevState => ({ visible: !prevState.visible }));
+    this.state = {};
+    // IMPORTANT TO BE EXACTALLY TRUE OR FALSE HERE
+    this.open = () => this.setState({ visible: true });
+    this.close = () => this.setState({ visible: false });
   }
 
-  componentDidMount() {
-    if (this.props.visible === true) this.toogleModal();
-  }
-
-  componentWillUpdate(prevProps) {
-    if (this.props.visible === true && prevProps.visible === false) this.toogleModal();
+  static getDerivedStateFromProps(props, state) {
+    // FULL UNCONTROLLED
+    if (props.visible === undefined) return null;
+    // FULL CONTROLLED
+    if (state.visible === undefined) {
+      if (props.visible === true) return { visible: true };
+      return { visible: undefined };
+    }
+    // DEFAULT (GIVES CONTROLL)
+    return { visible: undefined };
   }
 
   render() {
@@ -47,9 +51,9 @@ class Modal extends PureComponent {
         {
           noButton
             ? null
-            : <Button onClick={this.toogleModal}>test</Button>
+            : <Button onClick={this.open}>test</Button>
         }
-        <Overlay visible={visible} onClick={this.toogleModal}>
+        <Overlay visible={visible} onClick={this.close}>
           <StyledModal {...this.props} visible={visible} onClick={e => e.stopPropagation()} />
         </Overlay>
       </>

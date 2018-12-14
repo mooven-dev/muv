@@ -20,7 +20,7 @@ const setBordColor = ({ outline, theme, ...rest }) => {
   return null;
 };
 
-const commonStyles = ({ inset, disabled, theme, ...rest }) => (`
+const commonStyles = ({ inline, inset, disabled, theme, ...rest }) => (`
 border: ${theme.shape.border}; /* keep this line first */
 box-shadow: ${inset ? 'none' : theme.shape.shadow};
 border-color: ${setBordColor({ theme, ...rest })};
@@ -28,6 +28,7 @@ background: ${setBackground({ theme, ...rest })};
 color: ${setTextColor({ theme, ...rest })};
 border-radius: ${theme.shape.radius};
 transition: ${theme.transition.time};
+width: ${inline ? 'unset' : '100%'};
 padding: ${theme.shape.padding};
 box-sizing: border-box;
 text-decoration: none;
@@ -35,10 +36,9 @@ display: inline-block;
 text-align: center;
 font-weight: 600;
 cursor: pointer;
+margin: 0;
 line-height: 1;
 outline: none;
-width: 100%;
-margin: 0;
 ${disabled ? disabledStyle : ''}
 &:disabled {
   ${disabledStyle}
