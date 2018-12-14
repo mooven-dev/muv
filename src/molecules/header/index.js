@@ -12,7 +12,7 @@ import Menu from '../menu';
 const Header = ({
   children, dark, title, fluid, left, leftProps, right, rightProps, ...rest
 }) => (
-  <Container fluid noRadius lightGray {...rest}>
+  <Container fluid noRadius darkBlue {...rest}>
     <Container fluid={fluid}>
       <Row justify="space-between">
         {/* MENU / LEFT COMPONENT */}

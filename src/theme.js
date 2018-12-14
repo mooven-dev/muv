@@ -19,6 +19,8 @@ const color = {
   gray: '#a9abae',
   darkGray: '#515151',
   black: '#222222',
+  // BLUESCALE
+  darkBlue: '#002C5F',
 };
 
 const shape = {
