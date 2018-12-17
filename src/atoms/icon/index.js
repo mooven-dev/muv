@@ -8,6 +8,7 @@ import themeDefault from '../../theme';
 
 // STYLES
 const StyledIcon = styled(Ionicon)`
+cursor: ${({ onClick }) => (onClick ? 'pointer' : 'unset')};
 transform: scale(1.25);
 `;
 
