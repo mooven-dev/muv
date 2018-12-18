@@ -18,7 +18,7 @@ export const animator = ({ time = defaultTheme.transition.time, name, from, to, 
   animation: ${name} ${time}
 `);
 
-export const createTheme = customTheme => _.merge(
+export const createTheme = (customTheme = {}) => _.merge(
   defaultTheme, customTheme, { animation: animation(animator) },
 );
 
