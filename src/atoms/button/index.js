@@ -23,6 +23,7 @@ border: ${theme.shape.border}; /* keep this line first */
 box-shadow: ${inset ? 'none' : theme.shape.shadow};
 border-color: ${setBordColor({ theme, ...rest })};
 background: ${setBackground({ theme, ...rest })};
+letter-spacing: ${theme.font.spacing};
 border-radius: ${theme.shape.radius};
 transition: ${theme.transition.time};
 width: ${inline ? 'unset' : '100%'};
@@ -34,9 +35,9 @@ display: inline-block;
 text-align: center;
 font-weight: 600;
 cursor: pointer;
-margin: 0;
 line-height: 1;
 outline: none;
+margin: 0;
 &:disabled {
   ${disabledStyle}
 };

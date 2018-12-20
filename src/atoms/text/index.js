@@ -14,7 +14,7 @@ color: ${setColor({ theme, ...rest })};
 font-family: ${theme.font.family};
 text-transform: ${transform};
 text-align: ${align};
-margin: .125em;
+margin: .125rem;
 line-height: 1;
 `);
 
