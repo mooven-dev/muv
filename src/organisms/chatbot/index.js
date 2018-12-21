@@ -24,7 +24,7 @@ class Chatbot extends Component {
       const { id } = this.props;
       Axios.get(`${endPoint}bots/${id}`)
         .then((res) => {
-          this.setState({ botLoaded: true, bot: res.data });
+          this.setState({ botLoaded: true, bot: res.data.payload });
         })
         .catch(err => console.log(err));
     };
