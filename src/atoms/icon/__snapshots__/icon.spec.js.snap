@@ -13,76 +13,16 @@ exports[`should render a icon 1`] = `
     icon="md-inherit"
     theme={
       Object {
-        "animation": Object {
-          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-        },
+        "animation": [Function],
         "color": Object {
           "black": "#222222",
+          "darkBlue": "#002C5F",
           "darkGray": "#515151",
           "error": "#dd3333",
           "gray": "#a9abae",
           "lightGray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0081c8",
+          "primary": "#00528F",
           "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
@@ -95,7 +35,7 @@ exports[`should render a icon 1`] = `
           "spacing": 0,
         },
         "shape": Object {
-          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "border": ".1rem solid rgba(0, 0, 0, .15)",
           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "maxWidth": "1280px",
@@ -113,92 +53,35 @@ exports[`should render a icon 1`] = `
     <StyledComponent
       color="inherit"
       fontSize="1rem"
-      forwardedClass={
+      forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
-            "isStatic": true,
-            "lastClassName": "hoAZYJ",
+            "isStatic": false,
+            "lastClassName": "bGxeiz",
             "rules": Array [
               "
+cursor: ",
+              [Function],
+              ";
 transform: scale(1.25);
 ",
             ],
           },
           "defaultProps": Object {
             "theme": Object {
-              "animation": Object {
-                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-              },
+              "animation": [Function],
               "color": Object {
                 "black": "#222222",
+                "darkBlue": "#002C5F",
                 "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
                 "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0081c8",
+                "primary": "#00528F",
                 "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
@@ -211,7 +94,7 @@ transform: scale(1.25);
                 "spacing": 0,
               },
               "shape": Object {
-                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "border": ".1rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "maxWidth": "1280px",
@@ -226,6 +109,7 @@ transform: scale(1.25);
             },
           },
           "displayName": "Styled(Ionicon)",
+          "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
           "target": [Function],
@@ -239,76 +123,16 @@ transform: scale(1.25);
       icon="md-inherit"
       theme={
         Object {
-          "animation": Object {
-            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-          },
+          "animation": [Function],
           "color": Object {
             "black": "#222222",
+            "darkBlue": "#002C5F",
             "darkGray": "#515151",
             "error": "#dd3333",
             "gray": "#a9abae",
             "lightGray": "#e5e5e5",
             "overlay": "rgba(0, 0, 0, .15)",
-            "primary": "#0081c8",
+            "primary": "#00528F",
             "secondary": "#00245f",
             "success": "#33bb33",
             "warn": "#dd3333",
@@ -321,7 +145,7 @@ transform: scale(1.25);
             "spacing": 0,
           },
           "shape": Object {
-            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "border": ".1rem solid rgba(0, 0, 0, .15)",
             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "maxWidth": "1280px",
@@ -338,7 +162,7 @@ transform: scale(1.25);
     >
       <Ionicon
         beat={false}
-        className="sc-bdVaJa hoAZYJ"
+        className="sc-bdVaJa bGxeiz"
         color="inherit"
         fontSize="1rem"
         icon="md-inherit"
@@ -347,76 +171,16 @@ transform: scale(1.25);
         style={Object {}}
         theme={
           Object {
-            "animation": Object {
-              "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-              "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-              "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-              "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-              "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-            },
+            "animation": [Function],
             "color": Object {
               "black": "#222222",
+              "darkBlue": "#002C5F",
               "darkGray": "#515151",
               "error": "#dd3333",
               "gray": "#a9abae",
               "lightGray": "#e5e5e5",
               "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0081c8",
+              "primary": "#00528F",
               "secondary": "#00245f",
               "success": "#33bb33",
               "warn": "#dd3333",
@@ -429,7 +193,7 @@ transform: scale(1.25);
               "spacing": 0,
             },
             "shape": Object {
-              "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "border": ".1rem solid rgba(0, 0, 0, .15)",
               "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
               "maxWidth": "1280px",
@@ -446,7 +210,7 @@ transform: scale(1.25);
       >
         <styled.svg
           beat={0}
-          className="sc-bdVaJa hoAZYJ"
+          className="sc-bdVaJa bGxeiz"
           fill="inherit"
           height="1rem"
           rotate={0}
@@ -456,7 +220,7 @@ transform: scale(1.25);
           width="1rem"
         >
           <svg
-            className="sc-bdVaJa hoAZYJ sc-bdVaJa fUuvxv"
+            className="sc-bdVaJa bGxeiz sc-bdVaJa fUuvxv"
             fill="inherit"
             height="1rem"
             rotate={0}

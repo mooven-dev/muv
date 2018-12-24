@@ -12,76 +12,16 @@ exports[`should render a col 1`] = `
     justify="flex-start"
     theme={
       Object {
-        "animation": Object {
-          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-        },
+        "animation": [Function],
         "color": Object {
           "black": "#222222",
+          "darkBlue": "#002C5F",
           "darkGray": "#515151",
           "error": "#dd3333",
           "gray": "#a9abae",
           "lightGray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0081c8",
+          "primary": "#00528F",
           "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
@@ -94,7 +34,7 @@ exports[`should render a col 1`] = `
           "spacing": 0,
         },
         "shape": Object {
-          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "border": ".1rem solid rgba(0, 0, 0, .15)",
           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "maxWidth": "1280px",
@@ -111,92 +51,33 @@ exports[`should render a col 1`] = `
   >
     <StyledComponent
       align="strech"
-      forwardedClass={
+      forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-htpNat",
             "isStatic": true,
-            "lastClassName": "cPqbHx",
+            "lastClassName": "VVRr",
             "rules": Array [
               "
 flex-direction: column;
+flex-basis: 0;
 ",
             ],
           },
           "defaultProps": Object {
             "theme": Object {
-              "animation": Object {
-                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-              },
+              "animation": [Function],
               "color": Object {
                 "black": "#222222",
+                "darkBlue": "#002C5F",
                 "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
                 "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0081c8",
+                "primary": "#00528F",
                 "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
@@ -209,7 +90,7 @@ flex-direction: column;
                 "spacing": 0,
               },
               "shape": Object {
-                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "border": ".1rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "maxWidth": "1280px",
@@ -224,6 +105,7 @@ flex-direction: column;
             },
           },
           "displayName": "Styled(Row)",
+          "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-htpNat",
           "target": [Function],
@@ -238,76 +120,16 @@ flex-direction: column;
       justify="flex-start"
       theme={
         Object {
-          "animation": Object {
-            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-          },
+          "animation": [Function],
           "color": Object {
             "black": "#222222",
+            "darkBlue": "#002C5F",
             "darkGray": "#515151",
             "error": "#dd3333",
             "gray": "#a9abae",
             "lightGray": "#e5e5e5",
             "overlay": "rgba(0, 0, 0, .15)",
-            "primary": "#0081c8",
+            "primary": "#00528F",
             "secondary": "#00245f",
             "success": "#33bb33",
             "warn": "#dd3333",
@@ -320,7 +142,7 @@ flex-direction: column;
             "spacing": 0,
           },
           "shape": Object {
-            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "border": ".1rem solid rgba(0, 0, 0, .15)",
             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "maxWidth": "1280px",
@@ -337,82 +159,22 @@ flex-direction: column;
     >
       <Row
         align="strech"
-        className="sc-htpNat cPqbHx"
+        className="sc-htpNat VVRr"
         grow={1}
         justify="flex-start"
         margin="0"
         theme={
           Object {
-            "animation": Object {
-              "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-              "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-              "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-              "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-              "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-            },
+            "animation": [Function],
             "color": Object {
               "black": "#222222",
+              "darkBlue": "#002C5F",
               "darkGray": "#515151",
               "error": "#dd3333",
               "gray": "#a9abae",
               "lightGray": "#e5e5e5",
               "overlay": "rgba(0, 0, 0, .15)",
-              "primary": "#0081c8",
+              "primary": "#00528F",
               "secondary": "#00245f",
               "success": "#33bb33",
               "warn": "#dd3333",
@@ -425,7 +187,7 @@ flex-direction: column;
               "spacing": 0,
             },
             "shape": Object {
-              "border": ".125rem solid rgba(0, 0, 0, .15)",
+              "border": ".1rem solid rgba(0, 0, 0, .15)",
               "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
               "margin": ".25rem .125rem",
               "maxWidth": "1280px",
@@ -442,82 +204,22 @@ flex-direction: column;
       >
         <Styled(Container)
           align="strech"
-          className="sc-htpNat cPqbHx"
+          className="sc-htpNat VVRr"
           grow={1}
           justify="flex-start"
           margin="0"
           theme={
             Object {
-              "animation": Object {
-                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-              },
+              "animation": [Function],
               "color": Object {
                 "black": "#222222",
+                "darkBlue": "#002C5F",
                 "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
                 "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0081c8",
+                "primary": "#00528F",
                 "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
@@ -530,7 +232,7 @@ flex-direction: column;
                 "spacing": 0,
               },
               "shape": Object {
-                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "border": ".1rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "maxWidth": "1280px",
@@ -547,8 +249,8 @@ flex-direction: column;
         >
           <StyledComponent
             align="strech"
-            className="sc-htpNat cPqbHx"
-            forwardedClass={
+            className="sc-htpNat VVRr"
+            forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
@@ -579,76 +281,16 @@ display: flex;
                 },
                 "defaultProps": Object {
                   "theme": Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -661,7 +303,7 @@ display: flex;
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -676,6 +318,7 @@ display: flex;
                   },
                 },
                 "displayName": "Styled(Container)",
+                "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-bwzfXH",
                 "target": [Function],
@@ -691,76 +334,16 @@ display: flex;
             margin="0"
             theme={
               Object {
-                "animation": Object {
-                  "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                  "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                  "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                  "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                  "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                },
+                "animation": [Function],
                 "color": Object {
                   "black": "#222222",
+                  "darkBlue": "#002C5F",
                   "darkGray": "#515151",
                   "error": "#dd3333",
                   "gray": "#a9abae",
                   "lightGray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0081c8",
+                  "primary": "#00528F",
                   "secondary": "#00245f",
                   "success": "#33bb33",
                   "warn": "#dd3333",
@@ -773,7 +356,7 @@ display: flex;
                   "spacing": 0,
                 },
                 "shape": Object {
-                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "border": ".1rem solid rgba(0, 0, 0, .15)",
                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "maxWidth": "1280px",
@@ -790,90 +373,31 @@ display: flex;
           >
             <Container
               align="strech"
-              className="sc-htpNat cPqbHx sc-bwzfXH gxWPbe"
+              className="sc-htpNat VVRr sc-bwzfXH gxWPbe"
               fluid={false}
               full={false}
               grow={1}
-              height="auto"
+              height=""
               justify="flex-start"
               margin="0"
-              maxHeight="auto"
-              minHeight="auto"
-              minWidth="auto"
+              maxHeight=""
+              maxWidth=""
+              minHeight=""
+              minWidth=""
               noRadius={false}
               padding="0"
               theme={
                 Object {
-                  "animation": Object {
-                    "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                    "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                    "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                    "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                    "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                  },
+                  "animation": [Function],
                   "color": Object {
                     "black": "#222222",
+                    "darkBlue": "#002C5F",
                     "darkGray": "#515151",
                     "error": "#dd3333",
                     "gray": "#a9abae",
                     "lightGray": "#e5e5e5",
                     "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0081c8",
+                    "primary": "#00528F",
                     "secondary": "#00245f",
                     "success": "#33bb33",
                     "warn": "#dd3333",
@@ -886,7 +410,7 @@ display: flex;
                     "spacing": 0,
                   },
                   "shape": Object {
-                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "border": ".1rem solid rgba(0, 0, 0, .15)",
                     "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
                     "maxWidth": "1280px",
@@ -900,93 +424,35 @@ display: flex;
                   },
                 }
               }
+              width="100%"
             >
               <styled.div
                 align="strech"
-                className="sc-htpNat cPqbHx sc-bwzfXH gxWPbe"
+                className="sc-htpNat VVRr sc-bwzfXH gxWPbe"
                 fluid={false}
                 full={false}
                 grow={1}
-                height="auto"
+                height=""
                 justify="flex-start"
                 margin="0"
-                maxHeight="auto"
-                minHeight="auto"
-                minWidth="auto"
+                maxHeight=""
+                maxWidth=""
+                minHeight=""
+                minWidth=""
                 noRadius={false}
                 padding="0"
                 theme={
                   Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -999,7 +465,7 @@ display: flex;
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -1013,137 +479,80 @@ display: flex;
                     },
                   }
                 }
+                width="100%"
               >
                 <StyledComponent
                   align="strech"
-                  className="sc-htpNat cPqbHx sc-bwzfXH gxWPbe"
+                  className="sc-htpNat VVRr sc-bwzfXH gxWPbe"
                   fluid={false}
-                  forwardedClass={
+                  forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bdVaJa",
                         "isStatic": false,
-                        "lastClassName": "eozBeU",
+                        "lastClassName": "QzoXA",
                         "rules": Array [
                           "
 padding: ",
                           [Function],
                           ";
-flex-basis: ",
-                          [Function],
-                          ";
 border-radius: ",
-                          [Function],
-                          ";
-max-width: ",
                           [Function],
                           ";
 border: ",
                           [Function],
                           ";
+min-height: ",
+                          [Function],
+                          ";
 display: ",
-                          [Function],
-                          ";
-height: ",
-                          [Function],
-                          ";
-width: ",
                           [Function],
                           ";
 background: ",
                           [Function],
                           ";
-min-height: ",
+overflow: ",
                           [Function],
                           ";
 max-height: ",
                           [Function],
                           ";
+max-width: ",
+                          [Function],
+                          ";
 min-width: ",
+                          [Function],
+                          ";
+height: ",
                           [Function],
                           ";
 margin: ",
                           [Function],
                           ";
+width: ",
+                          [Function],
+                          ";
 flex-direction: column;
+box-sizing: border-box;
 align-items: stretch;
+position: relative;
 ",
                         ],
                       },
                       "defaultProps": Object {
                         "theme": Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -1156,7 +565,7 @@ align-items: stretch;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -1171,6 +580,7 @@ align-items: stretch;
                         },
                       },
                       "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "sc-bdVaJa",
                       "target": "div",
@@ -1182,86 +592,27 @@ align-items: stretch;
                   forwardedRef={null}
                   full={false}
                   grow={1}
-                  height="auto"
+                  height=""
                   justify="flex-start"
                   margin="0"
-                  maxHeight="auto"
-                  minHeight="auto"
-                  minWidth="auto"
+                  maxHeight=""
+                  maxWidth=""
+                  minHeight=""
+                  minWidth=""
                   noRadius={false}
                   padding="0"
                   theme={
                     Object {
-                      "animation": Object {
-                        "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                        "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                        "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                        "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                        "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                      },
+                      "animation": [Function],
                       "color": Object {
                         "black": "#222222",
+                        "darkBlue": "#002C5F",
                         "darkGray": "#515151",
                         "error": "#dd3333",
                         "gray": "#a9abae",
                         "lightGray": "#e5e5e5",
                         "overlay": "rgba(0, 0, 0, .15)",
-                        "primary": "#0081c8",
+                        "primary": "#00528F",
                         "secondary": "#00245f",
                         "success": "#33bb33",
                         "warn": "#dd3333",
@@ -1274,7 +625,7 @@ align-items: stretch;
                         "spacing": 0,
                       },
                       "shape": Object {
-                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "border": ".1rem solid rgba(0, 0, 0, .15)",
                         "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "maxWidth": "1280px",
@@ -1288,10 +639,12 @@ align-items: stretch;
                       },
                     }
                   }
+                  width="100%"
                 >
                   <div
-                    className="sc-htpNat cPqbHx sc-bwzfXH gxWPbe sc-bdVaJa eozBeU"
-                    height="auto"
+                    className="sc-htpNat VVRr sc-bwzfXH gxWPbe sc-bdVaJa QzoXA"
+                    height=""
+                    width="100%"
                   >
                     col
                   </div>

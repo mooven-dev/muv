@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a switch 1`] = `
+<ToggleSwitch
+  ballColor="#fff"
+  ballColorActive="#f5f5f5"
+  bgToggled="#00245f"
+  borderColor="#ddd"
+  initial={false}
+  onClick={[Function]}
+  padding={3}
+  width={40}
+>
+  <styled.div
+    onClick={[Function]}
+    primary={true}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "bPGLpq",
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      primary={true}
+    >
+      <div
+        className="sc-bdVaJa bPGLpq"
+        onClick={[Function]}
+      >
+        <styled.div
+          ballColor="#fff"
+          ballColorActive="#f5f5f5"
+          bgToggled="#00245f"
+          borderColor="#ddd"
+          initial={false}
+          onClick={[Function]}
+          padding={3}
+          width={40}
+        >
+          <StyledComponent
+            ballColor="#fff"
+            ballColorActive="#f5f5f5"
+            bgToggled="#00245f"
+            borderColor="#ddd"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "AMtKD",
+                  "rules": Array [
+                    "
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  background-color: ",
+                    [Function],
+                    ";
+  height: ",
+                    [Function],
+                    "px;
+  width: ",
+                    [Function],
+                    "px;
+  border-radius: ",
+                    [Function],
+                    "px;
+  padding: ",
+                    [Function],
+                    "px;
+  border: 1px solid ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            initial={false}
+            onClick={[Function]}
+            padding={3}
+            width={40}
+          >
+            <div
+              className="sc-bwzfXH AMtKD"
+              onClick={[Function]}
+              width={40}
+            >
+              <styled.div
+                ballColor="#fff"
+                ballColorActive="#f5f5f5"
+                bgToggled="#00245f"
+                borderColor="#ddd"
+                initial={false}
+                onClick={[Function]}
+                padding={3}
+                width={40}
+              >
+                <StyledComponent
+                  ballColor="#fff"
+                  ballColorActive="#f5f5f5"
+                  bgToggled="#00245f"
+                  borderColor="#ddd"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htpNat",
+                        "isStatic": false,
+                        "lastClassName": "gAAwsB",
+                        "rules": Array [
+                          "
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+  transition: transform 0.3s cubic-bezier(1,.19,.15,.7);
+  transition-delay: 0.1s;
+  will-change: transform;
+  background-color: ",
+                          [Function],
+                          ";
+  border: 1px solid ",
+                          [Function],
+                          ";
+  height: ",
+                          [Function],
+                          "px;
+  width: ",
+                          [Function],
+                          "px;
+  transform: ",
+                          [Function],
+                          ";
+  &:active {
+    background-color: ",
+                          [Function],
+                          ";
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htpNat",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  initial={false}
+                  onClick={[Function]}
+                  padding={3}
+                  width={40}
+                >
+                  <div
+                    className="sc-htpNat gAAwsB"
+                    onClick={[Function]}
+                    width={40}
+                  />
+                </StyledComponent>
+              </styled.div>
+              <styled.div
+                ballColor="#fff"
+                ballColorActive="#f5f5f5"
+                bgToggled="#00245f"
+                borderColor="#ddd"
+                initial={false}
+                onClick={[Function]}
+                padding={3}
+                width={40}
+              >
+                <StyledComponent
+                  ballColor="#fff"
+                  ballColorActive="#f5f5f5"
+                  bgToggled="#00245f"
+                  borderColor="#ddd"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bxivhb",
+                        "isStatic": false,
+                        "lastClassName": "eFDjoy",
+                        "rules": Array [
+                          "
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(
+    circle, ",
+                          [Function],
+                          " 10%, transparent 10.01%
+  );
+  background-repeat: no-repeat;
+  background-position: 50%;
+  pointer-events: none;
+  transition: transform 0.5s, opacity 0.3s ease;
+  transform: ",
+                          [Function],
+                          ";
+  opacity: ",
+                          [Function],
+                          ";
+  position: absolute;
+  z-index: 1;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bxivhb",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  initial={false}
+                  onClick={[Function]}
+                  padding={3}
+                  width={40}
+                >
+                  <div
+                    className="sc-bxivhb eFDjoy"
+                    onClick={[Function]}
+                    width={40}
+                  />
+                </StyledComponent>
+              </styled.div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</ToggleSwitch>
+`;

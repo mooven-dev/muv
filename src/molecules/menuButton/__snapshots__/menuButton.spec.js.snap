@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a divider 1`] = `
-<Divider>
-  <styled.hr
+exports[`should render a menuButton 1`] = `
+<MenuButton
+  open={false}
+>
+  <styled.button
+    open={false}
     theme={
       Object {
         "animation": [Function],
@@ -50,18 +53,55 @@ exports[`should render a divider 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "ghzTZX",
+            "lastClassName": "cTLxvN",
             "rules": Array [
               "
-border: ",
+all: unset;
+position: relative;
+cursor: pointer;
+height: 1.3rem;
+width: 2rem;
+padding: 0;
+> p {
+  all: unset;
+  transition: ",
               [Function],
               ";
-margin: ",
+  border: ",
               [Function],
               ";
-border-right: 0;
-border-left: 0;
-border-top: 0;
+  border-color: ",
+              [Function],
+              ";
+  transform-origin: center;
+  border-radius: .125rem;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  content: '';
+  &:nth-child(1) {
+    transform: rotate(",
+              [Function],
+              ");
+    top: calc(",
+              [Function],
+              " - .125rem);
+  }
+  &:nth-child(2) {
+    transform: scaleX(",
+              [Function],
+              ");
+    top: calc(50% - .1rem);
+  }
+  &:nth-child(3) {
+    transform: rotate(",
+              [Function],
+              ");
+    bottom: calc(",
+              [Function],
+              " - .125rem);
+  }
+}
 ",
             ],
           },
@@ -103,17 +143,18 @@ border-top: 0;
               },
             },
           },
-          "displayName": "styled.hr",
+          "displayName": "styled.button",
           "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
-          "target": "hr",
+          "target": "button",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
       }
       forwardedRef={null}
+      open={false}
       theme={
         Object {
           "animation": [Function],
@@ -153,10 +194,15 @@ border-top: 0;
         }
       }
     >
-      <hr
-        className="sc-bdVaJa ghzTZX"
-      />
+      <button
+        className="sc-bdVaJa cTLxvN"
+        open={false}
+      >
+        <p />
+        <p />
+        <p />
+      </button>
     </StyledComponent>
-  </styled.hr>
-</Divider>
+  </styled.button>
+</MenuButton>
 `;
