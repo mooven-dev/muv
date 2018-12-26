@@ -25,76 +25,16 @@ exports[`should render a select 1`] = `
   <styled.div
     theme={
       Object {
-        "animation": Object {
-          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-        },
+        "animation": [Function],
         "color": Object {
           "black": "#222222",
+          "darkBlue": "#002C5F",
           "darkGray": "#515151",
           "error": "#dd3333",
           "gray": "#a9abae",
           "lightGray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0081c8",
+          "primary": "#00528F",
           "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
@@ -107,7 +47,7 @@ exports[`should render a select 1`] = `
           "spacing": 0,
         },
         "shape": Object {
-          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "border": ".1rem solid rgba(0, 0, 0, .15)",
           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "maxWidth": "1280px",
@@ -123,7 +63,7 @@ exports[`should render a select 1`] = `
     }
   >
     <StyledComponent
-      forwardedClass={
+      forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
@@ -141,76 +81,16 @@ width: 100%;
           },
           "defaultProps": Object {
             "theme": Object {
-              "animation": Object {
-                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-              },
+              "animation": [Function],
               "color": Object {
                 "black": "#222222",
+                "darkBlue": "#002C5F",
                 "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
                 "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0081c8",
+                "primary": "#00528F",
                 "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
@@ -223,7 +103,7 @@ width: 100%;
                 "spacing": 0,
               },
               "shape": Object {
-                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "border": ".1rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "maxWidth": "1280px",
@@ -238,6 +118,7 @@ width: 100%;
             },
           },
           "displayName": "styled.div",
+          "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-gqjmRU",
           "target": "div",
@@ -249,76 +130,16 @@ width: 100%;
       forwardedRef={null}
       theme={
         Object {
-          "animation": Object {
-            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-          },
+          "animation": [Function],
           "color": Object {
             "black": "#222222",
+            "darkBlue": "#002C5F",
             "darkGray": "#515151",
             "error": "#dd3333",
             "gray": "#a9abae",
             "lightGray": "#e5e5e5",
             "overlay": "rgba(0, 0, 0, .15)",
-            "primary": "#0081c8",
+            "primary": "#00528F",
             "secondary": "#00245f",
             "success": "#33bb33",
             "warn": "#dd3333",
@@ -331,7 +152,7 @@ width: 100%;
             "spacing": 0,
           },
           "shape": Object {
-            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "border": ".1rem solid rgba(0, 0, 0, .15)",
             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "maxWidth": "1280px",
@@ -352,76 +173,16 @@ width: 100%;
         <Styled(Text)
           theme={
             Object {
-              "animation": Object {
-                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-              },
+              "animation": [Function],
               "color": Object {
                 "black": "#222222",
+                "darkBlue": "#002C5F",
                 "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
                 "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0081c8",
+                "primary": "#00528F",
                 "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
@@ -434,7 +195,7 @@ width: 100%;
                 "spacing": 0,
               },
               "shape": Object {
-                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "border": ".1rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "maxWidth": "1280px",
@@ -450,7 +211,7 @@ width: 100%;
           }
         >
           <StyledComponent
-            forwardedClass={
+            forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
@@ -477,76 +238,16 @@ margin: 0;
                 },
                 "defaultProps": Object {
                   "theme": Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -559,7 +260,7 @@ margin: 0;
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -574,6 +275,7 @@ margin: 0;
                   },
                 },
                 "displayName": "Styled(Text)",
+                "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-iwsKbI",
                 "target": [Function],
@@ -586,76 +288,16 @@ margin: 0;
             forwardedRef={null}
             theme={
               Object {
-                "animation": Object {
-                  "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                  "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                  "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                  "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                  "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                },
+                "animation": [Function],
                 "color": Object {
                   "black": "#222222",
+                  "darkBlue": "#002C5F",
                   "darkGray": "#515151",
                   "error": "#dd3333",
                   "gray": "#a9abae",
                   "lightGray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0081c8",
+                  "primary": "#00528F",
                   "secondary": "#00245f",
                   "success": "#33bb33",
                   "warn": "#dd3333",
@@ -668,7 +310,7 @@ margin: 0;
                   "spacing": 0,
                 },
                 "shape": Object {
-                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "border": ".1rem solid rgba(0, 0, 0, .15)",
                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "maxWidth": "1280px",
@@ -691,76 +333,16 @@ margin: 0;
               strong={false}
               theme={
                 Object {
-                  "animation": Object {
-                    "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                    "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                    "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                    "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                    "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                  },
+                  "animation": [Function],
                   "color": Object {
                     "black": "#222222",
+                    "darkBlue": "#002C5F",
                     "darkGray": "#515151",
                     "error": "#dd3333",
                     "gray": "#a9abae",
                     "lightGray": "#e5e5e5",
                     "overlay": "rgba(0, 0, 0, .15)",
-                    "primary": "#0081c8",
+                    "primary": "#00528F",
                     "secondary": "#00245f",
                     "success": "#33bb33",
                     "warn": "#dd3333",
@@ -773,7 +355,7 @@ margin: 0;
                     "spacing": 0,
                   },
                   "shape": Object {
-                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                    "border": ".1rem solid rgba(0, 0, 0, .15)",
                     "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                     "margin": ".25rem .125rem",
                     "maxWidth": "1280px",
@@ -798,76 +380,16 @@ margin: 0;
                 strong={false}
                 theme={
                   Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -880,7 +402,7 @@ margin: 0;
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -899,14 +421,14 @@ margin: 0;
                 <StyledComponent
                   align="left"
                   className="sc-iwsKbI eUFIcZ"
-                  forwardedClass={
+                  forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bdVaJa",
                         "isStatic": false,
-                        "lastClassName": "epDkoj",
+                        "lastClassName": "bQiOmp",
                         "rules": Array [
                           "
 font-size: ",
@@ -920,76 +442,16 @@ font-size: ",
                       },
                       "defaultProps": Object {
                         "theme": Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -1002,7 +464,7 @@ font-size: ",
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -1017,6 +479,7 @@ font-size: ",
                         },
                       },
                       "displayName": "styled.p",
+                      "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "sc-bdVaJa",
                       "target": "p",
@@ -1031,76 +494,16 @@ font-size: ",
                   strong={false}
                   theme={
                     Object {
-                      "animation": Object {
-                        "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                        "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                        "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                        "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                        "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                      },
+                      "animation": [Function],
                       "color": Object {
                         "black": "#222222",
+                        "darkBlue": "#002C5F",
                         "darkGray": "#515151",
                         "error": "#dd3333",
                         "gray": "#a9abae",
                         "lightGray": "#e5e5e5",
                         "overlay": "rgba(0, 0, 0, .15)",
-                        "primary": "#0081c8",
+                        "primary": "#00528F",
                         "secondary": "#00245f",
                         "success": "#33bb33",
                         "warn": "#dd3333",
@@ -1113,7 +516,7 @@ font-size: ",
                         "spacing": 0,
                       },
                       "shape": Object {
-                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "border": ".1rem solid rgba(0, 0, 0, .15)",
                         "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "maxWidth": "1280px",
@@ -1130,7 +533,7 @@ font-size: ",
                   transform="none"
                 >
                   <p
-                    className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
+                    className="sc-iwsKbI eUFIcZ sc-bdVaJa bQiOmp"
                     transform="none"
                   >
                     Selecione...
@@ -1166,76 +569,16 @@ font-size: ",
           selected={false}
           theme={
             Object {
-              "animation": Object {
-                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-              },
+              "animation": [Function],
               "color": Object {
                 "black": "#222222",
+                "darkBlue": "#002C5F",
                 "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
                 "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0081c8",
+                "primary": "#00528F",
                 "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
@@ -1248,7 +591,7 @@ font-size: ",
                 "spacing": 0,
               },
               "shape": Object {
-                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "border": ".1rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "maxWidth": "1280px",
@@ -1264,14 +607,14 @@ font-size: ",
           }
         >
           <StyledComponent
-            forwardedClass={
+            forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-dnqmqq",
                   "isStatic": false,
-                  "lastClassName": "dphkXG",
+                  "lastClassName": "fBVDtC",
                   "rules": Array [
                     "
 ",
@@ -1300,76 +643,16 @@ top: 0;
                 },
                 "defaultProps": Object {
                   "theme": Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -1382,7 +665,7 @@ top: 0;
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -1397,6 +680,7 @@ top: 0;
                   },
                 },
                 "displayName": "styled.button",
+                "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-dnqmqq",
                 "target": "button",
@@ -1431,76 +715,16 @@ top: 0;
             selected={false}
             theme={
               Object {
-                "animation": Object {
-                  "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                  "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                  "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                  "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                  "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                },
+                "animation": [Function],
                 "color": Object {
                   "black": "#222222",
+                  "darkBlue": "#002C5F",
                   "darkGray": "#515151",
                   "error": "#dd3333",
                   "gray": "#a9abae",
                   "lightGray": "#e5e5e5",
                   "overlay": "rgba(0, 0, 0, .15)",
-                  "primary": "#0081c8",
+                  "primary": "#00528F",
                   "secondary": "#00245f",
                   "success": "#33bb33",
                   "warn": "#dd3333",
@@ -1513,7 +737,7 @@ top: 0;
                   "spacing": 0,
                 },
                 "shape": Object {
-                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                  "border": ".1rem solid rgba(0, 0, 0, .15)",
                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                   "margin": ".25rem .125rem",
                   "maxWidth": "1280px",
@@ -1529,7 +753,7 @@ top: 0;
             }
           >
             <button
-              className="sc-dnqmqq dphkXG"
+              className="sc-dnqmqq fBVDtC"
               onBlur={[Function]}
               onCancel={[Function]}
               onClick={[Function]}
@@ -1540,76 +764,16 @@ top: 0;
               <Styled(Text)
                 theme={
                   Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -1622,7 +786,7 @@ top: 0;
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -1638,7 +802,7 @@ top: 0;
                 }
               >
                 <StyledComponent
-                  forwardedClass={
+                  forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
@@ -1665,76 +829,16 @@ margin: 0;
                       },
                       "defaultProps": Object {
                         "theme": Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -1747,7 +851,7 @@ margin: 0;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -1762,6 +866,7 @@ margin: 0;
                         },
                       },
                       "displayName": "Styled(Text)",
+                      "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "sc-iwsKbI",
                       "target": [Function],
@@ -1774,76 +879,16 @@ margin: 0;
                   forwardedRef={null}
                   theme={
                     Object {
-                      "animation": Object {
-                        "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                        "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                        "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                        "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                        "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                      },
+                      "animation": [Function],
                       "color": Object {
                         "black": "#222222",
+                        "darkBlue": "#002C5F",
                         "darkGray": "#515151",
                         "error": "#dd3333",
                         "gray": "#a9abae",
                         "lightGray": "#e5e5e5",
                         "overlay": "rgba(0, 0, 0, .15)",
-                        "primary": "#0081c8",
+                        "primary": "#00528F",
                         "secondary": "#00245f",
                         "success": "#33bb33",
                         "warn": "#dd3333",
@@ -1856,7 +901,7 @@ margin: 0;
                         "spacing": 0,
                       },
                       "shape": Object {
-                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "border": ".1rem solid rgba(0, 0, 0, .15)",
                         "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "maxWidth": "1280px",
@@ -1879,76 +924,16 @@ margin: 0;
                     strong={false}
                     theme={
                       Object {
-                        "animation": Object {
-                          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                        },
+                        "animation": [Function],
                         "color": Object {
                           "black": "#222222",
+                          "darkBlue": "#002C5F",
                           "darkGray": "#515151",
                           "error": "#dd3333",
                           "gray": "#a9abae",
                           "lightGray": "#e5e5e5",
                           "overlay": "rgba(0, 0, 0, .15)",
-                          "primary": "#0081c8",
+                          "primary": "#00528F",
                           "secondary": "#00245f",
                           "success": "#33bb33",
                           "warn": "#dd3333",
@@ -1961,7 +946,7 @@ margin: 0;
                           "spacing": 0,
                         },
                         "shape": Object {
-                          "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "border": ".1rem solid rgba(0, 0, 0, .15)",
                           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                           "margin": ".25rem .125rem",
                           "maxWidth": "1280px",
@@ -1986,76 +971,16 @@ margin: 0;
                       strong={false}
                       theme={
                         Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -2068,7 +993,7 @@ margin: 0;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -2087,14 +1012,14 @@ margin: 0;
                       <StyledComponent
                         align="left"
                         className="sc-iwsKbI eUFIcZ"
-                        forwardedClass={
+                        forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-bdVaJa",
                               "isStatic": false,
-                              "lastClassName": "epDkoj",
+                              "lastClassName": "bQiOmp",
                               "rules": Array [
                                 "
 font-size: ",
@@ -2108,76 +1033,16 @@ font-size: ",
                             },
                             "defaultProps": Object {
                               "theme": Object {
-                                "animation": Object {
-                                  "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                                  "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                                  "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                                  "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                                  "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                                },
+                                "animation": [Function],
                                 "color": Object {
                                   "black": "#222222",
+                                  "darkBlue": "#002C5F",
                                   "darkGray": "#515151",
                                   "error": "#dd3333",
                                   "gray": "#a9abae",
                                   "lightGray": "#e5e5e5",
                                   "overlay": "rgba(0, 0, 0, .15)",
-                                  "primary": "#0081c8",
+                                  "primary": "#00528F",
                                   "secondary": "#00245f",
                                   "success": "#33bb33",
                                   "warn": "#dd3333",
@@ -2190,7 +1055,7 @@ font-size: ",
                                   "spacing": 0,
                                 },
                                 "shape": Object {
-                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "border": ".1rem solid rgba(0, 0, 0, .15)",
                                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                                   "margin": ".25rem .125rem",
                                   "maxWidth": "1280px",
@@ -2205,6 +1070,7 @@ font-size: ",
                               },
                             },
                             "displayName": "styled.p",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
                             "styledComponentId": "sc-bdVaJa",
                             "target": "p",
@@ -2219,76 +1085,16 @@ font-size: ",
                         strong={false}
                         theme={
                           Object {
-                            "animation": Object {
-                              "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                              "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                              "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                              "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                              "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                            },
+                            "animation": [Function],
                             "color": Object {
                               "black": "#222222",
+                              "darkBlue": "#002C5F",
                               "darkGray": "#515151",
                               "error": "#dd3333",
                               "gray": "#a9abae",
                               "lightGray": "#e5e5e5",
                               "overlay": "rgba(0, 0, 0, .15)",
-                              "primary": "#0081c8",
+                              "primary": "#00528F",
                               "secondary": "#00245f",
                               "success": "#33bb33",
                               "warn": "#dd3333",
@@ -2301,7 +1107,7 @@ font-size: ",
                               "spacing": 0,
                             },
                             "shape": Object {
-                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                              "border": ".1rem solid rgba(0, 0, 0, .15)",
                               "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                               "margin": ".25rem .125rem",
                               "maxWidth": "1280px",
@@ -2318,7 +1124,7 @@ font-size: ",
                         transform="none"
                       >
                         <p
-                          className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
+                          className="sc-iwsKbI eUFIcZ sc-bdVaJa bQiOmp"
                           transform="none"
                         >
                           Selecione...
@@ -2333,76 +1139,16 @@ font-size: ",
                 onClick={[Function]}
                 theme={
                   Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -2415,7 +1161,7 @@ font-size: ",
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -2431,7 +1177,7 @@ font-size: ",
                 }
               >
                 <StyledComponent
-                  forwardedClass={
+                  forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
@@ -2458,76 +1204,16 @@ margin: 0;
                       },
                       "defaultProps": Object {
                         "theme": Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -2540,7 +1226,7 @@ margin: 0;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -2555,6 +1241,7 @@ margin: 0;
                         },
                       },
                       "displayName": "Styled(Text)",
+                      "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "sc-iwsKbI",
                       "target": [Function],
@@ -2568,76 +1255,16 @@ margin: 0;
                   onClick={[Function]}
                   theme={
                     Object {
-                      "animation": Object {
-                        "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                        "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                        "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                        "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                        "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                      },
+                      "animation": [Function],
                       "color": Object {
                         "black": "#222222",
+                        "darkBlue": "#002C5F",
                         "darkGray": "#515151",
                         "error": "#dd3333",
                         "gray": "#a9abae",
                         "lightGray": "#e5e5e5",
                         "overlay": "rgba(0, 0, 0, .15)",
-                        "primary": "#0081c8",
+                        "primary": "#00528F",
                         "secondary": "#00245f",
                         "success": "#33bb33",
                         "warn": "#dd3333",
@@ -2650,7 +1277,7 @@ margin: 0;
                         "spacing": 0,
                       },
                       "shape": Object {
-                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "border": ".1rem solid rgba(0, 0, 0, .15)",
                         "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "maxWidth": "1280px",
@@ -2674,76 +1301,16 @@ margin: 0;
                     strong={false}
                     theme={
                       Object {
-                        "animation": Object {
-                          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                        },
+                        "animation": [Function],
                         "color": Object {
                           "black": "#222222",
+                          "darkBlue": "#002C5F",
                           "darkGray": "#515151",
                           "error": "#dd3333",
                           "gray": "#a9abae",
                           "lightGray": "#e5e5e5",
                           "overlay": "rgba(0, 0, 0, .15)",
-                          "primary": "#0081c8",
+                          "primary": "#00528F",
                           "secondary": "#00245f",
                           "success": "#33bb33",
                           "warn": "#dd3333",
@@ -2756,7 +1323,7 @@ margin: 0;
                           "spacing": 0,
                         },
                         "shape": Object {
-                          "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "border": ".1rem solid rgba(0, 0, 0, .15)",
                           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                           "margin": ".25rem .125rem",
                           "maxWidth": "1280px",
@@ -2782,76 +1349,16 @@ margin: 0;
                       strong={false}
                       theme={
                         Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -2864,7 +1371,7 @@ margin: 0;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -2883,14 +1390,14 @@ margin: 0;
                       <StyledComponent
                         align="left"
                         className="sc-iwsKbI eUFIcZ"
-                        forwardedClass={
+                        forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-bdVaJa",
                               "isStatic": false,
-                              "lastClassName": "epDkoj",
+                              "lastClassName": "bQiOmp",
                               "rules": Array [
                                 "
 font-size: ",
@@ -2904,76 +1411,16 @@ font-size: ",
                             },
                             "defaultProps": Object {
                               "theme": Object {
-                                "animation": Object {
-                                  "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                                  "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                                  "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                                  "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                                  "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                                },
+                                "animation": [Function],
                                 "color": Object {
                                   "black": "#222222",
+                                  "darkBlue": "#002C5F",
                                   "darkGray": "#515151",
                                   "error": "#dd3333",
                                   "gray": "#a9abae",
                                   "lightGray": "#e5e5e5",
                                   "overlay": "rgba(0, 0, 0, .15)",
-                                  "primary": "#0081c8",
+                                  "primary": "#00528F",
                                   "secondary": "#00245f",
                                   "success": "#33bb33",
                                   "warn": "#dd3333",
@@ -2986,7 +1433,7 @@ font-size: ",
                                   "spacing": 0,
                                 },
                                 "shape": Object {
-                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "border": ".1rem solid rgba(0, 0, 0, .15)",
                                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                                   "margin": ".25rem .125rem",
                                   "maxWidth": "1280px",
@@ -3001,6 +1448,7 @@ font-size: ",
                               },
                             },
                             "displayName": "styled.p",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
                             "styledComponentId": "sc-bdVaJa",
                             "target": "p",
@@ -3016,76 +1464,16 @@ font-size: ",
                         strong={false}
                         theme={
                           Object {
-                            "animation": Object {
-                              "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                              "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                              "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                              "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                              "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                            },
+                            "animation": [Function],
                             "color": Object {
                               "black": "#222222",
+                              "darkBlue": "#002C5F",
                               "darkGray": "#515151",
                               "error": "#dd3333",
                               "gray": "#a9abae",
                               "lightGray": "#e5e5e5",
                               "overlay": "rgba(0, 0, 0, .15)",
-                              "primary": "#0081c8",
+                              "primary": "#00528F",
                               "secondary": "#00245f",
                               "success": "#33bb33",
                               "warn": "#dd3333",
@@ -3098,7 +1486,7 @@ font-size: ",
                               "spacing": 0,
                             },
                             "shape": Object {
-                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                              "border": ".1rem solid rgba(0, 0, 0, .15)",
                               "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                               "margin": ".25rem .125rem",
                               "maxWidth": "1280px",
@@ -3115,7 +1503,7 @@ font-size: ",
                         transform="none"
                       >
                         <p
-                          className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
+                          className="sc-iwsKbI eUFIcZ sc-bdVaJa bQiOmp"
                           onClick={[Function]}
                           transform="none"
                         >
@@ -3131,76 +1519,16 @@ font-size: ",
                 onClick={[Function]}
                 theme={
                   Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -3213,7 +1541,7 @@ font-size: ",
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -3229,7 +1557,7 @@ font-size: ",
                 }
               >
                 <StyledComponent
-                  forwardedClass={
+                  forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
@@ -3256,76 +1584,16 @@ margin: 0;
                       },
                       "defaultProps": Object {
                         "theme": Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -3338,7 +1606,7 @@ margin: 0;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -3353,6 +1621,7 @@ margin: 0;
                         },
                       },
                       "displayName": "Styled(Text)",
+                      "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "sc-iwsKbI",
                       "target": [Function],
@@ -3366,76 +1635,16 @@ margin: 0;
                   onClick={[Function]}
                   theme={
                     Object {
-                      "animation": Object {
-                        "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                        "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                        "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                        "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                        "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                      },
+                      "animation": [Function],
                       "color": Object {
                         "black": "#222222",
+                        "darkBlue": "#002C5F",
                         "darkGray": "#515151",
                         "error": "#dd3333",
                         "gray": "#a9abae",
                         "lightGray": "#e5e5e5",
                         "overlay": "rgba(0, 0, 0, .15)",
-                        "primary": "#0081c8",
+                        "primary": "#00528F",
                         "secondary": "#00245f",
                         "success": "#33bb33",
                         "warn": "#dd3333",
@@ -3448,7 +1657,7 @@ margin: 0;
                         "spacing": 0,
                       },
                       "shape": Object {
-                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "border": ".1rem solid rgba(0, 0, 0, .15)",
                         "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "maxWidth": "1280px",
@@ -3472,76 +1681,16 @@ margin: 0;
                     strong={false}
                     theme={
                       Object {
-                        "animation": Object {
-                          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                        },
+                        "animation": [Function],
                         "color": Object {
                           "black": "#222222",
+                          "darkBlue": "#002C5F",
                           "darkGray": "#515151",
                           "error": "#dd3333",
                           "gray": "#a9abae",
                           "lightGray": "#e5e5e5",
                           "overlay": "rgba(0, 0, 0, .15)",
-                          "primary": "#0081c8",
+                          "primary": "#00528F",
                           "secondary": "#00245f",
                           "success": "#33bb33",
                           "warn": "#dd3333",
@@ -3554,7 +1703,7 @@ margin: 0;
                           "spacing": 0,
                         },
                         "shape": Object {
-                          "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "border": ".1rem solid rgba(0, 0, 0, .15)",
                           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                           "margin": ".25rem .125rem",
                           "maxWidth": "1280px",
@@ -3580,76 +1729,16 @@ margin: 0;
                       strong={false}
                       theme={
                         Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -3662,7 +1751,7 @@ margin: 0;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -3681,14 +1770,14 @@ margin: 0;
                       <StyledComponent
                         align="left"
                         className="sc-iwsKbI eUFIcZ"
-                        forwardedClass={
+                        forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-bdVaJa",
                               "isStatic": false,
-                              "lastClassName": "epDkoj",
+                              "lastClassName": "bQiOmp",
                               "rules": Array [
                                 "
 font-size: ",
@@ -3702,76 +1791,16 @@ font-size: ",
                             },
                             "defaultProps": Object {
                               "theme": Object {
-                                "animation": Object {
-                                  "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                                  "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                                  "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                                  "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                                  "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                                },
+                                "animation": [Function],
                                 "color": Object {
                                   "black": "#222222",
+                                  "darkBlue": "#002C5F",
                                   "darkGray": "#515151",
                                   "error": "#dd3333",
                                   "gray": "#a9abae",
                                   "lightGray": "#e5e5e5",
                                   "overlay": "rgba(0, 0, 0, .15)",
-                                  "primary": "#0081c8",
+                                  "primary": "#00528F",
                                   "secondary": "#00245f",
                                   "success": "#33bb33",
                                   "warn": "#dd3333",
@@ -3784,7 +1813,7 @@ font-size: ",
                                   "spacing": 0,
                                 },
                                 "shape": Object {
-                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "border": ".1rem solid rgba(0, 0, 0, .15)",
                                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                                   "margin": ".25rem .125rem",
                                   "maxWidth": "1280px",
@@ -3799,6 +1828,7 @@ font-size: ",
                               },
                             },
                             "displayName": "styled.p",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
                             "styledComponentId": "sc-bdVaJa",
                             "target": "p",
@@ -3814,76 +1844,16 @@ font-size: ",
                         strong={false}
                         theme={
                           Object {
-                            "animation": Object {
-                              "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                              "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                              "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                              "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                              "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                            },
+                            "animation": [Function],
                             "color": Object {
                               "black": "#222222",
+                              "darkBlue": "#002C5F",
                               "darkGray": "#515151",
                               "error": "#dd3333",
                               "gray": "#a9abae",
                               "lightGray": "#e5e5e5",
                               "overlay": "rgba(0, 0, 0, .15)",
-                              "primary": "#0081c8",
+                              "primary": "#00528F",
                               "secondary": "#00245f",
                               "success": "#33bb33",
                               "warn": "#dd3333",
@@ -3896,7 +1866,7 @@ font-size: ",
                               "spacing": 0,
                             },
                             "shape": Object {
-                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                              "border": ".1rem solid rgba(0, 0, 0, .15)",
                               "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                               "margin": ".25rem .125rem",
                               "maxWidth": "1280px",
@@ -3913,7 +1883,7 @@ font-size: ",
                         transform="none"
                       >
                         <p
-                          className="sc-iwsKbI eUFIcZ sc-bdVaJa epDkoj"
+                          className="sc-iwsKbI eUFIcZ sc-bdVaJa bQiOmp"
                           onClick={[Function]}
                           transform="none"
                         >
@@ -3927,76 +1897,16 @@ font-size: ",
               <Styled(Arrow)
                 theme={
                   Object {
-                    "animation": Object {
-                      "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                      "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                      "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                      "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                      "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                    },
+                    "animation": [Function],
                     "color": Object {
                       "black": "#222222",
+                      "darkBlue": "#002C5F",
                       "darkGray": "#515151",
                       "error": "#dd3333",
                       "gray": "#a9abae",
                       "lightGray": "#e5e5e5",
                       "overlay": "rgba(0, 0, 0, .15)",
-                      "primary": "#0081c8",
+                      "primary": "#00528F",
                       "secondary": "#00245f",
                       "success": "#33bb33",
                       "warn": "#dd3333",
@@ -4009,7 +1919,7 @@ font-size: ",
                       "spacing": 0,
                     },
                     "shape": Object {
-                      "border": ".125rem solid rgba(0, 0, 0, .15)",
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
                       "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                       "margin": ".25rem .125rem",
                       "maxWidth": "1280px",
@@ -4025,7 +1935,7 @@ font-size: ",
                 }
               >
                 <StyledComponent
-                  forwardedClass={
+                  forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
@@ -4048,76 +1958,16 @@ margin: 0;
                       },
                       "defaultProps": Object {
                         "theme": Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -4130,7 +1980,7 @@ margin: 0;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -4145,6 +1995,7 @@ margin: 0;
                         },
                       },
                       "displayName": "Styled(Arrow)",
+                      "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "sc-gZMcBi",
                       "target": [Function],
@@ -4157,76 +2008,16 @@ margin: 0;
                   forwardedRef={null}
                   theme={
                     Object {
-                      "animation": Object {
-                        "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                        "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                        "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                        "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                        "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                      },
+                      "animation": [Function],
                       "color": Object {
                         "black": "#222222",
+                        "darkBlue": "#002C5F",
                         "darkGray": "#515151",
                         "error": "#dd3333",
                         "gray": "#a9abae",
                         "lightGray": "#e5e5e5",
                         "overlay": "rgba(0, 0, 0, .15)",
-                        "primary": "#0081c8",
+                        "primary": "#00528F",
                         "secondary": "#00245f",
                         "success": "#33bb33",
                         "warn": "#dd3333",
@@ -4239,7 +2030,7 @@ margin: 0;
                         "spacing": 0,
                       },
                       "shape": Object {
-                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                        "border": ".1rem solid rgba(0, 0, 0, .15)",
                         "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                         "margin": ".25rem .125rem",
                         "maxWidth": "1280px",
@@ -4258,76 +2049,16 @@ margin: 0;
                     className="sc-gZMcBi bNtIrL"
                     theme={
                       Object {
-                        "animation": Object {
-                          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                        },
+                        "animation": [Function],
                         "color": Object {
                           "black": "#222222",
+                          "darkBlue": "#002C5F",
                           "darkGray": "#515151",
                           "error": "#dd3333",
                           "gray": "#a9abae",
                           "lightGray": "#e5e5e5",
                           "overlay": "rgba(0, 0, 0, .15)",
-                          "primary": "#0081c8",
+                          "primary": "#00528F",
                           "secondary": "#00245f",
                           "success": "#33bb33",
                           "warn": "#dd3333",
@@ -4340,7 +2071,7 @@ margin: 0;
                           "spacing": 0,
                         },
                         "shape": Object {
-                          "border": ".125rem solid rgba(0, 0, 0, .15)",
+                          "border": ".1rem solid rgba(0, 0, 0, .15)",
                           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                           "margin": ".25rem .125rem",
                           "maxWidth": "1280px",
@@ -4360,76 +2091,16 @@ margin: 0;
                       className="sc-gZMcBi bNtIrL"
                       theme={
                         Object {
-                          "animation": Object {
-                            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                          },
+                          "animation": [Function],
                           "color": Object {
                             "black": "#222222",
+                            "darkBlue": "#002C5F",
                             "darkGray": "#515151",
                             "error": "#dd3333",
                             "gray": "#a9abae",
                             "lightGray": "#e5e5e5",
                             "overlay": "rgba(0, 0, 0, .15)",
-                            "primary": "#0081c8",
+                            "primary": "#00528F",
                             "secondary": "#00245f",
                             "success": "#33bb33",
                             "warn": "#dd3333",
@@ -4442,7 +2113,7 @@ margin: 0;
                             "spacing": 0,
                           },
                           "shape": Object {
-                            "border": ".125rem solid rgba(0, 0, 0, .15)",
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
                             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                             "margin": ".25rem .125rem",
                             "maxWidth": "1280px",
@@ -4461,7 +2132,7 @@ margin: 0;
                     >
                       <StyledComponent
                         className="sc-gZMcBi bNtIrL"
-                        forwardedClass={
+                        forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
@@ -4483,76 +2154,16 @@ display: inline-block;
                             },
                             "defaultProps": Object {
                               "theme": Object {
-                                "animation": Object {
-                                  "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                                  "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                                  "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                                  "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                                  "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                                },
+                                "animation": [Function],
                                 "color": Object {
                                   "black": "#222222",
+                                  "darkBlue": "#002C5F",
                                   "darkGray": "#515151",
                                   "error": "#dd3333",
                                   "gray": "#a9abae",
                                   "lightGray": "#e5e5e5",
                                   "overlay": "rgba(0, 0, 0, .15)",
-                                  "primary": "#0081c8",
+                                  "primary": "#00528F",
                                   "secondary": "#00245f",
                                   "success": "#33bb33",
                                   "warn": "#dd3333",
@@ -4565,7 +2176,7 @@ display: inline-block;
                                   "spacing": 0,
                                 },
                                 "shape": Object {
-                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "border": ".1rem solid rgba(0, 0, 0, .15)",
                                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                                   "margin": ".25rem .125rem",
                                   "maxWidth": "1280px",
@@ -4581,6 +2192,7 @@ display: inline-block;
                               "type": "span",
                             },
                             "displayName": "Styled(Text)",
+                            "foldedComponentIds": Array [],
                             "render": [Function],
                             "styledComponentId": "sc-htoDjs",
                             "target": [Function],
@@ -4593,76 +2205,16 @@ display: inline-block;
                         forwardedRef={null}
                         theme={
                           Object {
-                            "animation": Object {
-                              "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                              "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                              "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                              "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                              "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                            },
+                            "animation": [Function],
                             "color": Object {
                               "black": "#222222",
+                              "darkBlue": "#002C5F",
                               "darkGray": "#515151",
                               "error": "#dd3333",
                               "gray": "#a9abae",
                               "lightGray": "#e5e5e5",
                               "overlay": "rgba(0, 0, 0, .15)",
-                              "primary": "#0081c8",
+                              "primary": "#00528F",
                               "secondary": "#00245f",
                               "success": "#33bb33",
                               "warn": "#dd3333",
@@ -4675,7 +2227,7 @@ display: inline-block;
                               "spacing": 0,
                             },
                             "shape": Object {
-                              "border": ".125rem solid rgba(0, 0, 0, .15)",
+                              "border": ".1rem solid rgba(0, 0, 0, .15)",
                               "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                               "margin": ".25rem .125rem",
                               "maxWidth": "1280px",
@@ -4700,76 +2252,16 @@ display: inline-block;
                           strong={false}
                           theme={
                             Object {
-                              "animation": Object {
-                                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                              },
+                              "animation": [Function],
                               "color": Object {
                                 "black": "#222222",
+                                "darkBlue": "#002C5F",
                                 "darkGray": "#515151",
                                 "error": "#dd3333",
                                 "gray": "#a9abae",
                                 "lightGray": "#e5e5e5",
                                 "overlay": "rgba(0, 0, 0, .15)",
-                                "primary": "#0081c8",
+                                "primary": "#00528F",
                                 "secondary": "#00245f",
                                 "success": "#33bb33",
                                 "warn": "#dd3333",
@@ -4782,7 +2274,7 @@ display: inline-block;
                                 "spacing": 0,
                               },
                               "shape": Object {
-                                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                "border": ".1rem solid rgba(0, 0, 0, .15)",
                                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                                 "margin": ".25rem .125rem",
                                 "maxWidth": "1280px",
@@ -4808,76 +2300,16 @@ display: inline-block;
                             strong={false}
                             theme={
                               Object {
-                                "animation": Object {
-                                  "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                                  "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                                  "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                                  "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                                  "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                                },
+                                "animation": [Function],
                                 "color": Object {
                                   "black": "#222222",
+                                  "darkBlue": "#002C5F",
                                   "darkGray": "#515151",
                                   "error": "#dd3333",
                                   "gray": "#a9abae",
                                   "lightGray": "#e5e5e5",
                                   "overlay": "rgba(0, 0, 0, .15)",
-                                  "primary": "#0081c8",
+                                  "primary": "#00528F",
                                   "secondary": "#00245f",
                                   "success": "#33bb33",
                                   "warn": "#dd3333",
@@ -4890,7 +2322,7 @@ display: inline-block;
                                   "spacing": 0,
                                 },
                                 "shape": Object {
-                                  "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                  "border": ".1rem solid rgba(0, 0, 0, .15)",
                                   "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                                   "margin": ".25rem .125rem",
                                   "maxWidth": "1280px",
@@ -4910,14 +2342,14 @@ display: inline-block;
                             <StyledComponent
                               align="left"
                               className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI"
-                              forwardedClass={
+                              forwardedComponent={
                                 Object {
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-bwzfXH",
                                     "isStatic": false,
-                                    "lastClassName": "ihaFJe",
+                                    "lastClassName": "edonuT",
                                     "rules": Array [
                                       "
 font-size: ",
@@ -4931,76 +2363,16 @@ font-size: ",
                                   },
                                   "defaultProps": Object {
                                     "theme": Object {
-                                      "animation": Object {
-                                        "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                                        "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                                        "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                                        "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                                        "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                                      },
+                                      "animation": [Function],
                                       "color": Object {
                                         "black": "#222222",
+                                        "darkBlue": "#002C5F",
                                         "darkGray": "#515151",
                                         "error": "#dd3333",
                                         "gray": "#a9abae",
                                         "lightGray": "#e5e5e5",
                                         "overlay": "rgba(0, 0, 0, .15)",
-                                        "primary": "#0081c8",
+                                        "primary": "#00528F",
                                         "secondary": "#00245f",
                                         "success": "#33bb33",
                                         "warn": "#dd3333",
@@ -5013,7 +2385,7 @@ font-size: ",
                                         "spacing": 0,
                                       },
                                       "shape": Object {
-                                        "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                        "border": ".1rem solid rgba(0, 0, 0, .15)",
                                         "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                                         "margin": ".25rem .125rem",
                                         "maxWidth": "1280px",
@@ -5028,6 +2400,7 @@ font-size: ",
                                     },
                                   },
                                   "displayName": "styled.span",
+                                  "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-bwzfXH",
                                   "target": "span",
@@ -5042,76 +2415,16 @@ font-size: ",
                               strong={false}
                               theme={
                                 Object {
-                                  "animation": Object {
-                                    "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                                    "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                                    "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                                    "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                                    "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-                                  },
+                                  "animation": [Function],
                                   "color": Object {
                                     "black": "#222222",
+                                    "darkBlue": "#002C5F",
                                     "darkGray": "#515151",
                                     "error": "#dd3333",
                                     "gray": "#a9abae",
                                     "lightGray": "#e5e5e5",
                                     "overlay": "rgba(0, 0, 0, .15)",
-                                    "primary": "#0081c8",
+                                    "primary": "#00528F",
                                     "secondary": "#00245f",
                                     "success": "#33bb33",
                                     "warn": "#dd3333",
@@ -5124,7 +2437,7 @@ font-size: ",
                                     "spacing": 0,
                                   },
                                   "shape": Object {
-                                    "border": ".125rem solid rgba(0, 0, 0, .15)",
+                                    "border": ".1rem solid rgba(0, 0, 0, .15)",
                                     "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                                     "margin": ".25rem .125rem",
                                     "maxWidth": "1280px",
@@ -5142,7 +2455,7 @@ font-size: ",
                               up={false}
                             >
                               <span
-                                className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI sc-bwzfXH ihaFJe"
+                                className="sc-gZMcBi bNtIrL sc-htoDjs hEAdvI sc-bwzfXH edonuT"
                                 transform="none"
                               >
                                 ◄

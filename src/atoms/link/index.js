@@ -14,6 +14,7 @@ all: unset;
 text-decoration: ${noLine ? 'none' : 'underline'};
 font-weight: ${(strong ? 'bold' : 'inherit')};
 color: ${setTextColor({ theme, ...rest })};
+letter-spacing: ${theme.font.spacing};
 background: transparent;
 display: inline-block;
 font-size: 1rem;

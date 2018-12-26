@@ -5,76 +5,16 @@ exports[`should render a loader 1`] = `
   <styled.span
     theme={
       Object {
-        "animation": Object {
-          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-        },
+        "animation": [Function],
         "color": Object {
           "black": "#222222",
+          "darkBlue": "#002C5F",
           "darkGray": "#515151",
           "error": "#dd3333",
           "gray": "#a9abae",
           "lightGray": "#e5e5e5",
           "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0081c8",
+          "primary": "#00528F",
           "secondary": "#00245f",
           "success": "#33bb33",
           "warn": "#dd3333",
@@ -87,7 +27,7 @@ exports[`should render a loader 1`] = `
           "spacing": 0,
         },
         "shape": Object {
-          "border": ".125rem solid rgba(0, 0, 0, .15)",
+          "border": ".1rem solid rgba(0, 0, 0, .15)",
           "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
           "margin": ".25rem .125rem",
           "maxWidth": "1280px",
@@ -103,14 +43,14 @@ exports[`should render a loader 1`] = `
     }
   >
     <StyledComponent
-      forwardedClass={
+      forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "gSDhbA",
+            "lastClassName": "crFZWw",
             "rules": Array [
               "
 display: inline-block;
@@ -156,76 +96,16 @@ span {
           },
           "defaultProps": Object {
             "theme": Object {
-              "animation": Object {
-                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-              },
+              "animation": [Function],
               "color": Object {
                 "black": "#222222",
+                "darkBlue": "#002C5F",
                 "darkGray": "#515151",
                 "error": "#dd3333",
                 "gray": "#a9abae",
                 "lightGray": "#e5e5e5",
                 "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0081c8",
+                "primary": "#00528F",
                 "secondary": "#00245f",
                 "success": "#33bb33",
                 "warn": "#dd3333",
@@ -238,7 +118,7 @@ span {
                 "spacing": 0,
               },
               "shape": Object {
-                "border": ".125rem solid rgba(0, 0, 0, .15)",
+                "border": ".1rem solid rgba(0, 0, 0, .15)",
                 "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
                 "margin": ".25rem .125rem",
                 "maxWidth": "1280px",
@@ -253,6 +133,7 @@ span {
             },
           },
           "displayName": "styled.span",
+          "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-bdVaJa",
           "target": "span",
@@ -264,76 +145,16 @@ span {
       forwardedRef={null}
       theme={
         Object {
-          "animation": Object {
-            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-          },
+          "animation": [Function],
           "color": Object {
             "black": "#222222",
+            "darkBlue": "#002C5F",
             "darkGray": "#515151",
             "error": "#dd3333",
             "gray": "#a9abae",
             "lightGray": "#e5e5e5",
             "overlay": "rgba(0, 0, 0, .15)",
-            "primary": "#0081c8",
+            "primary": "#00528F",
             "secondary": "#00245f",
             "success": "#33bb33",
             "warn": "#dd3333",
@@ -346,7 +167,7 @@ span {
             "spacing": 0,
           },
           "shape": Object {
-            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "border": ".1rem solid rgba(0, 0, 0, .15)",
             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "maxWidth": "1280px",
@@ -362,7 +183,7 @@ span {
       }
     >
       <span
-        className="sc-bdVaJa gSDhbA"
+        className="sc-bdVaJa crFZWw"
       >
         <span />
         <span />

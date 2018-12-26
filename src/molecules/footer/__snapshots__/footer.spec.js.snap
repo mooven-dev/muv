@@ -1,304 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render a footer 1`] = `
-<Footer>
-  <styled.footer
-    theme={
-      Object {
-        "animation": Object {
-          "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-          "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-          "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-          "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-          "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-        },
-        "color": Object {
-          "black": "#222222",
-          "darkGray": "#515151",
-          "error": "#dd3333",
-          "gray": "#a9abae",
-          "lightGray": "#e5e5e5",
-          "overlay": "rgba(0, 0, 0, .15)",
-          "primary": "#0081c8",
-          "secondary": "#00245f",
-          "success": "#33bb33",
-          "warn": "#dd3333",
-          "white": "#fefefe",
-        },
-        "font": Object {
-          "color": "#222222",
-          "family": "\\"Ubuntu\\", sans-serif",
-          "size": "16px",
-          "spacing": 0,
-        },
-        "shape": Object {
-          "border": ".125rem solid rgba(0, 0, 0, .15)",
-          "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
-          "margin": ".25rem .125rem",
-          "maxWidth": "1280px",
-          "padding": ".75rem .875rem",
-          "radius": ".5rem",
-          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-          "size": "16px",
-        },
-        "transition": Object {
-          "time": ".3s ease",
-        },
-      }
-    }
+<Footer
+  title="props.title"
+>
+  <Container
+    fluid={true}
+    full={false}
+    height=""
+    lightGray={true}
+    margin="0 auto"
+    maxHeight=""
+    maxWidth=""
+    minHeight=""
+    minWidth=""
+    noRadius={true}
+    padding="0"
+    width="100%"
   >
-    <StyledComponent
-      forwardedClass={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "vSNlF",
-            "rules": Array [
-              "
-color: ",
-              [Function],
-              ";
-",
-            ],
-          },
-          "defaultProps": Object {
-            "theme": Object {
-              "animation": Object {
-                "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-                "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-                "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-                "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-                "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-              },
-              "color": Object {
-                "black": "#222222",
-                "darkGray": "#515151",
-                "error": "#dd3333",
-                "gray": "#a9abae",
-                "lightGray": "#e5e5e5",
-                "overlay": "rgba(0, 0, 0, .15)",
-                "primary": "#0081c8",
-                "secondary": "#00245f",
-                "success": "#33bb33",
-                "warn": "#dd3333",
-                "white": "#fefefe",
-              },
-              "font": Object {
-                "color": "#222222",
-                "family": "\\"Ubuntu\\", sans-serif",
-                "size": "16px",
-                "spacing": 0,
-              },
-              "shape": Object {
-                "border": ".125rem solid rgba(0, 0, 0, .15)",
-                "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
-                "margin": ".25rem .125rem",
-                "maxWidth": "1280px",
-                "padding": ".75rem .875rem",
-                "radius": ".5rem",
-                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
-                "size": "16px",
-              },
-              "transition": Object {
-                "time": ".3s ease",
-              },
-            },
-          },
-          "displayName": "styled.footer",
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "footer",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <styled.div
+      fluid={true}
+      full={false}
+      height=""
+      lightGray={true}
+      margin="0 auto"
+      maxHeight=""
+      maxWidth=""
+      minHeight=""
+      minWidth=""
+      noRadius={true}
+      padding="0"
       theme={
         Object {
-          "animation": Object {
-            "bounce": "
-  @keyframes bounce {
-    from {
-      bottom: 0;
-    }
-    25% {bottom: .5rem;}
-    to {
-      bottom: 0
-    }
-  }
-  animation: bounce .3s ease
-",
-            "fadeIn": "
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
-  }
-  animation: fadeIn .3s ease
-",
-            "fadeOut": "
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    
-    to {
-      opacity: 0;
-    }
-  }
-  animation: fadeOut .3s ease
-",
-            "popIn": "
-  @keyframes popIn {
-    from {
-      transform: scale(0);
-    }
-    
-    to {
-      transform: scale(1);
-    }
-  }
-  animation: popIn .3s ease
-",
-            "popOut": "
-  @keyframes popOut {
-    from {
-      transform: scale(1);
-    }
-    
-    to {
-      transform: scale(0);
-    }
-  }
-  animation: popOut .3s ease
-",
-          },
+          "animation": [Function],
           "color": Object {
             "black": "#222222",
+            "darkBlue": "#002C5F",
             "darkGray": "#515151",
             "error": "#dd3333",
             "gray": "#a9abae",
             "lightGray": "#e5e5e5",
             "overlay": "rgba(0, 0, 0, .15)",
-            "primary": "#0081c8",
+            "primary": "#00528F",
             "secondary": "#00245f",
             "success": "#33bb33",
             "warn": "#dd3333",
@@ -311,7 +54,7 @@ color: ",
             "spacing": 0,
           },
           "shape": Object {
-            "border": ".125rem solid rgba(0, 0, 0, .15)",
+            "border": ".1rem solid rgba(0, 0, 0, .15)",
             "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
             "margin": ".25rem .125rem",
             "maxWidth": "1280px",
@@ -325,13 +68,1040 @@ color: ",
           },
         }
       }
+      width="100%"
     >
-      <footer
-        className="sc-bdVaJa vSNlF"
+      <StyledComponent
+        fluid={true}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "hKmQZt",
+              "rules": Array [
+                "
+padding: ",
+                [Function],
+                ";
+border-radius: ",
+                [Function],
+                ";
+border: ",
+                [Function],
+                ";
+min-height: ",
+                [Function],
+                ";
+display: ",
+                [Function],
+                ";
+background: ",
+                [Function],
+                ";
+overflow: ",
+                [Function],
+                ";
+max-height: ",
+                [Function],
+                ";
+max-width: ",
+                [Function],
+                ";
+min-width: ",
+                [Function],
+                ";
+height: ",
+                [Function],
+                ";
+margin: ",
+                [Function],
+                ";
+width: ",
+                [Function],
+                ";
+flex-direction: column;
+box-sizing: border-box;
+align-items: stretch;
+position: relative;
+",
+              ],
+            },
+            "defaultProps": Object {
+              "theme": Object {
+                "animation": [Function],
+                "color": Object {
+                  "black": "#222222",
+                  "darkBlue": "#002C5F",
+                  "darkGray": "#515151",
+                  "error": "#dd3333",
+                  "gray": "#a9abae",
+                  "lightGray": "#e5e5e5",
+                  "overlay": "rgba(0, 0, 0, .15)",
+                  "primary": "#00528F",
+                  "secondary": "#00245f",
+                  "success": "#33bb33",
+                  "warn": "#dd3333",
+                  "white": "#fefefe",
+                },
+                "font": Object {
+                  "color": "#222222",
+                  "family": "\\"Ubuntu\\", sans-serif",
+                  "size": "16px",
+                  "spacing": 0,
+                },
+                "shape": Object {
+                  "border": ".1rem solid rgba(0, 0, 0, .15)",
+                  "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                  "margin": ".25rem .125rem",
+                  "maxWidth": "1280px",
+                  "padding": ".75rem .875rem",
+                  "radius": ".5rem",
+                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                  "size": "16px",
+                },
+                "transition": Object {
+                  "time": ".3s ease",
+                },
+              },
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        full={false}
+        height=""
+        lightGray={true}
+        margin="0 auto"
+        maxHeight=""
+        maxWidth=""
+        minHeight=""
+        minWidth=""
+        noRadius={true}
+        padding="0"
+        theme={
+          Object {
+            "animation": [Function],
+            "color": Object {
+              "black": "#222222",
+              "darkBlue": "#002C5F",
+              "darkGray": "#515151",
+              "error": "#dd3333",
+              "gray": "#a9abae",
+              "lightGray": "#e5e5e5",
+              "overlay": "rgba(0, 0, 0, .15)",
+              "primary": "#00528F",
+              "secondary": "#00245f",
+              "success": "#33bb33",
+              "warn": "#dd3333",
+              "white": "#fefefe",
+            },
+            "font": Object {
+              "color": "#222222",
+              "family": "\\"Ubuntu\\", sans-serif",
+              "size": "16px",
+              "spacing": 0,
+            },
+            "shape": Object {
+              "border": ".1rem solid rgba(0, 0, 0, .15)",
+              "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+              "margin": ".25rem .125rem",
+              "maxWidth": "1280px",
+              "padding": ".75rem .875rem",
+              "radius": ".5rem",
+              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+              "size": "16px",
+            },
+            "transition": Object {
+              "time": ".3s ease",
+            },
+          }
+        }
+        width="100%"
       >
-        footer
-      </footer>
-    </StyledComponent>
-  </styled.footer>
+        <div
+          className="sc-bdVaJa hVdSti"
+          height=""
+          width="100%"
+        >
+          <Container
+            fluid={false}
+            full={false}
+            height=""
+            margin="0 auto"
+            maxHeight=""
+            maxWidth=""
+            minHeight=""
+            minWidth=""
+            noRadius={false}
+            padding="0"
+            width="100%"
+          >
+            <styled.div
+              fluid={false}
+              full={false}
+              height=""
+              margin="0 auto"
+              maxHeight=""
+              maxWidth=""
+              minHeight=""
+              minWidth=""
+              noRadius={false}
+              padding="0"
+              theme={
+                Object {
+                  "animation": [Function],
+                  "color": Object {
+                    "black": "#222222",
+                    "darkBlue": "#002C5F",
+                    "darkGray": "#515151",
+                    "error": "#dd3333",
+                    "gray": "#a9abae",
+                    "lightGray": "#e5e5e5",
+                    "overlay": "rgba(0, 0, 0, .15)",
+                    "primary": "#00528F",
+                    "secondary": "#00245f",
+                    "success": "#33bb33",
+                    "warn": "#dd3333",
+                    "white": "#fefefe",
+                  },
+                  "font": Object {
+                    "color": "#222222",
+                    "family": "\\"Ubuntu\\", sans-serif",
+                    "size": "16px",
+                    "spacing": 0,
+                  },
+                  "shape": Object {
+                    "border": ".1rem solid rgba(0, 0, 0, .15)",
+                    "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                    "margin": ".25rem .125rem",
+                    "maxWidth": "1280px",
+                    "padding": ".75rem .875rem",
+                    "radius": ".5rem",
+                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                    "size": "16px",
+                  },
+                  "transition": Object {
+                    "time": ".3s ease",
+                  },
+                }
+              }
+              width="100%"
+            >
+              <StyledComponent
+                fluid={false}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "hKmQZt",
+                      "rules": Array [
+                        "
+padding: ",
+                        [Function],
+                        ";
+border-radius: ",
+                        [Function],
+                        ";
+border: ",
+                        [Function],
+                        ";
+min-height: ",
+                        [Function],
+                        ";
+display: ",
+                        [Function],
+                        ";
+background: ",
+                        [Function],
+                        ";
+overflow: ",
+                        [Function],
+                        ";
+max-height: ",
+                        [Function],
+                        ";
+max-width: ",
+                        [Function],
+                        ";
+min-width: ",
+                        [Function],
+                        ";
+height: ",
+                        [Function],
+                        ";
+margin: ",
+                        [Function],
+                        ";
+width: ",
+                        [Function],
+                        ";
+flex-direction: column;
+box-sizing: border-box;
+align-items: stretch;
+position: relative;
+",
+                      ],
+                    },
+                    "defaultProps": Object {
+                      "theme": Object {
+                        "animation": [Function],
+                        "color": Object {
+                          "black": "#222222",
+                          "darkBlue": "#002C5F",
+                          "darkGray": "#515151",
+                          "error": "#dd3333",
+                          "gray": "#a9abae",
+                          "lightGray": "#e5e5e5",
+                          "overlay": "rgba(0, 0, 0, .15)",
+                          "primary": "#00528F",
+                          "secondary": "#00245f",
+                          "success": "#33bb33",
+                          "warn": "#dd3333",
+                          "white": "#fefefe",
+                        },
+                        "font": Object {
+                          "color": "#222222",
+                          "family": "\\"Ubuntu\\", sans-serif",
+                          "size": "16px",
+                          "spacing": 0,
+                        },
+                        "shape": Object {
+                          "border": ".1rem solid rgba(0, 0, 0, .15)",
+                          "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                          "margin": ".25rem .125rem",
+                          "maxWidth": "1280px",
+                          "padding": ".75rem .875rem",
+                          "radius": ".5rem",
+                          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                          "size": "16px",
+                        },
+                        "transition": Object {
+                          "time": ".3s ease",
+                        },
+                      },
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                full={false}
+                height=""
+                margin="0 auto"
+                maxHeight=""
+                maxWidth=""
+                minHeight=""
+                minWidth=""
+                noRadius={false}
+                padding="0"
+                theme={
+                  Object {
+                    "animation": [Function],
+                    "color": Object {
+                      "black": "#222222",
+                      "darkBlue": "#002C5F",
+                      "darkGray": "#515151",
+                      "error": "#dd3333",
+                      "gray": "#a9abae",
+                      "lightGray": "#e5e5e5",
+                      "overlay": "rgba(0, 0, 0, .15)",
+                      "primary": "#00528F",
+                      "secondary": "#00245f",
+                      "success": "#33bb33",
+                      "warn": "#dd3333",
+                      "white": "#fefefe",
+                    },
+                    "font": Object {
+                      "color": "#222222",
+                      "family": "\\"Ubuntu\\", sans-serif",
+                      "size": "16px",
+                      "spacing": 0,
+                    },
+                    "shape": Object {
+                      "border": ".1rem solid rgba(0, 0, 0, .15)",
+                      "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                      "margin": ".25rem .125rem",
+                      "maxWidth": "1280px",
+                      "padding": ".75rem .875rem",
+                      "radius": ".5rem",
+                      "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                      "size": "16px",
+                    },
+                    "transition": Object {
+                      "time": ".3s ease",
+                    },
+                  }
+                }
+                width="100%"
+              >
+                <div
+                  className="sc-bdVaJa eROMLd"
+                  height=""
+                  width="100%"
+                >
+                  <Row
+                    align="stretch"
+                    grow={1}
+                    hasContent={true}
+                    justify="space-around"
+                    margin="0"
+                  >
+                    <Styled(Container)
+                      align="stretch"
+                      grow={1}
+                      hasContent={true}
+                      justify="space-around"
+                      margin="0"
+                      theme={
+                        Object {
+                          "animation": [Function],
+                          "color": Object {
+                            "black": "#222222",
+                            "darkBlue": "#002C5F",
+                            "darkGray": "#515151",
+                            "error": "#dd3333",
+                            "gray": "#a9abae",
+                            "lightGray": "#e5e5e5",
+                            "overlay": "rgba(0, 0, 0, .15)",
+                            "primary": "#00528F",
+                            "secondary": "#00245f",
+                            "success": "#33bb33",
+                            "warn": "#dd3333",
+                            "white": "#fefefe",
+                          },
+                          "font": Object {
+                            "color": "#222222",
+                            "family": "\\"Ubuntu\\", sans-serif",
+                            "size": "16px",
+                            "spacing": 0,
+                          },
+                          "shape": Object {
+                            "border": ".1rem solid rgba(0, 0, 0, .15)",
+                            "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                            "margin": ".25rem .125rem",
+                            "maxWidth": "1280px",
+                            "padding": ".75rem .875rem",
+                            "radius": ".5rem",
+                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                            "size": "16px",
+                          },
+                          "transition": Object {
+                            "time": ".3s ease",
+                          },
+                        }
+                      }
+                    >
+                      <StyledComponent
+                        align="stretch"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-dnqmqq",
+                              "isStatic": false,
+                              "lastClassName": "iVDAbD",
+                              "rules": Array [
+                                "
+justify-content: ",
+                                [Function],
+                                ";
+align-items: ",
+                                [Function],
+                                ";
+margin: ",
+                                [Function],
+                                ";
+flex-grow: ",
+                                [Function],
+                                ";
+flex-direction: row;
+max-width: unset;
+flex-shrink: 1;
+display: flex;
+",
+                              ],
+                            },
+                            "defaultProps": Object {
+                              "theme": Object {
+                                "animation": [Function],
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkBlue": "#002C5F",
+                                  "darkGray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightGray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#00528F",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".1rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "maxWidth": "1280px",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".5rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              },
+                            },
+                            "displayName": "Styled(Container)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-dnqmqq",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        grow={1}
+                        hasContent={true}
+                        justify="space-around"
+                        margin="0"
+                        theme={
+                          Object {
+                            "animation": [Function],
+                            "color": Object {
+                              "black": "#222222",
+                              "darkBlue": "#002C5F",
+                              "darkGray": "#515151",
+                              "error": "#dd3333",
+                              "gray": "#a9abae",
+                              "lightGray": "#e5e5e5",
+                              "overlay": "rgba(0, 0, 0, .15)",
+                              "primary": "#00528F",
+                              "secondary": "#00245f",
+                              "success": "#33bb33",
+                              "warn": "#dd3333",
+                              "white": "#fefefe",
+                            },
+                            "font": Object {
+                              "color": "#222222",
+                              "family": "\\"Ubuntu\\", sans-serif",
+                              "size": "16px",
+                              "spacing": 0,
+                            },
+                            "shape": Object {
+                              "border": ".1rem solid rgba(0, 0, 0, .15)",
+                              "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                              "margin": ".25rem .125rem",
+                              "maxWidth": "1280px",
+                              "padding": ".75rem .875rem",
+                              "radius": ".5rem",
+                              "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                              "size": "16px",
+                            },
+                            "transition": Object {
+                              "time": ".3s ease",
+                            },
+                          }
+                        }
+                      >
+                        <Container
+                          align="stretch"
+                          className="sc-dnqmqq iVDAbD"
+                          fluid={false}
+                          full={false}
+                          grow={1}
+                          hasContent={true}
+                          height=""
+                          justify="space-around"
+                          margin="0"
+                          maxHeight=""
+                          maxWidth=""
+                          minHeight=""
+                          minWidth=""
+                          noRadius={false}
+                          padding="0"
+                          theme={
+                            Object {
+                              "animation": [Function],
+                              "color": Object {
+                                "black": "#222222",
+                                "darkBlue": "#002C5F",
+                                "darkGray": "#515151",
+                                "error": "#dd3333",
+                                "gray": "#a9abae",
+                                "lightGray": "#e5e5e5",
+                                "overlay": "rgba(0, 0, 0, .15)",
+                                "primary": "#00528F",
+                                "secondary": "#00245f",
+                                "success": "#33bb33",
+                                "warn": "#dd3333",
+                                "white": "#fefefe",
+                              },
+                              "font": Object {
+                                "color": "#222222",
+                                "family": "\\"Ubuntu\\", sans-serif",
+                                "size": "16px",
+                                "spacing": 0,
+                              },
+                              "shape": Object {
+                                "border": ".1rem solid rgba(0, 0, 0, .15)",
+                                "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                                "margin": ".25rem .125rem",
+                                "maxWidth": "1280px",
+                                "padding": ".75rem .875rem",
+                                "radius": ".5rem",
+                                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                "size": "16px",
+                              },
+                              "transition": Object {
+                                "time": ".3s ease",
+                              },
+                            }
+                          }
+                          width="100%"
+                        >
+                          <styled.div
+                            align="stretch"
+                            className="sc-dnqmqq iVDAbD"
+                            fluid={false}
+                            full={false}
+                            grow={1}
+                            hasContent={true}
+                            height=""
+                            justify="space-around"
+                            margin="0"
+                            maxHeight=""
+                            maxWidth=""
+                            minHeight=""
+                            minWidth=""
+                            noRadius={false}
+                            padding="0"
+                            theme={
+                              Object {
+                                "animation": [Function],
+                                "color": Object {
+                                  "black": "#222222",
+                                  "darkBlue": "#002C5F",
+                                  "darkGray": "#515151",
+                                  "error": "#dd3333",
+                                  "gray": "#a9abae",
+                                  "lightGray": "#e5e5e5",
+                                  "overlay": "rgba(0, 0, 0, .15)",
+                                  "primary": "#00528F",
+                                  "secondary": "#00245f",
+                                  "success": "#33bb33",
+                                  "warn": "#dd3333",
+                                  "white": "#fefefe",
+                                },
+                                "font": Object {
+                                  "color": "#222222",
+                                  "family": "\\"Ubuntu\\", sans-serif",
+                                  "size": "16px",
+                                  "spacing": 0,
+                                },
+                                "shape": Object {
+                                  "border": ".1rem solid rgba(0, 0, 0, .15)",
+                                  "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                                  "margin": ".25rem .125rem",
+                                  "maxWidth": "1280px",
+                                  "padding": ".75rem .875rem",
+                                  "radius": ".5rem",
+                                  "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                  "size": "16px",
+                                },
+                                "transition": Object {
+                                  "time": ".3s ease",
+                                },
+                              }
+                            }
+                            width="100%"
+                          >
+                            <StyledComponent
+                              align="stretch"
+                              className="sc-dnqmqq iVDAbD"
+                              fluid={false}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bdVaJa",
+                                    "isStatic": false,
+                                    "lastClassName": "hKmQZt",
+                                    "rules": Array [
+                                      "
+padding: ",
+                                      [Function],
+                                      ";
+border-radius: ",
+                                      [Function],
+                                      ";
+border: ",
+                                      [Function],
+                                      ";
+min-height: ",
+                                      [Function],
+                                      ";
+display: ",
+                                      [Function],
+                                      ";
+background: ",
+                                      [Function],
+                                      ";
+overflow: ",
+                                      [Function],
+                                      ";
+max-height: ",
+                                      [Function],
+                                      ";
+max-width: ",
+                                      [Function],
+                                      ";
+min-width: ",
+                                      [Function],
+                                      ";
+height: ",
+                                      [Function],
+                                      ";
+margin: ",
+                                      [Function],
+                                      ";
+width: ",
+                                      [Function],
+                                      ";
+flex-direction: column;
+box-sizing: border-box;
+align-items: stretch;
+position: relative;
+",
+                                    ],
+                                  },
+                                  "defaultProps": Object {
+                                    "theme": Object {
+                                      "animation": [Function],
+                                      "color": Object {
+                                        "black": "#222222",
+                                        "darkBlue": "#002C5F",
+                                        "darkGray": "#515151",
+                                        "error": "#dd3333",
+                                        "gray": "#a9abae",
+                                        "lightGray": "#e5e5e5",
+                                        "overlay": "rgba(0, 0, 0, .15)",
+                                        "primary": "#00528F",
+                                        "secondary": "#00245f",
+                                        "success": "#33bb33",
+                                        "warn": "#dd3333",
+                                        "white": "#fefefe",
+                                      },
+                                      "font": Object {
+                                        "color": "#222222",
+                                        "family": "\\"Ubuntu\\", sans-serif",
+                                        "size": "16px",
+                                        "spacing": 0,
+                                      },
+                                      "shape": Object {
+                                        "border": ".1rem solid rgba(0, 0, 0, .15)",
+                                        "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                                        "margin": ".25rem .125rem",
+                                        "maxWidth": "1280px",
+                                        "padding": ".75rem .875rem",
+                                        "radius": ".5rem",
+                                        "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                        "size": "16px",
+                                      },
+                                      "transition": Object {
+                                        "time": ".3s ease",
+                                      },
+                                    },
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bdVaJa",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              full={false}
+                              grow={1}
+                              hasContent={true}
+                              height=""
+                              justify="space-around"
+                              margin="0"
+                              maxHeight=""
+                              maxWidth=""
+                              minHeight=""
+                              minWidth=""
+                              noRadius={false}
+                              padding="0"
+                              theme={
+                                Object {
+                                  "animation": [Function],
+                                  "color": Object {
+                                    "black": "#222222",
+                                    "darkBlue": "#002C5F",
+                                    "darkGray": "#515151",
+                                    "error": "#dd3333",
+                                    "gray": "#a9abae",
+                                    "lightGray": "#e5e5e5",
+                                    "overlay": "rgba(0, 0, 0, .15)",
+                                    "primary": "#00528F",
+                                    "secondary": "#00245f",
+                                    "success": "#33bb33",
+                                    "warn": "#dd3333",
+                                    "white": "#fefefe",
+                                  },
+                                  "font": Object {
+                                    "color": "#222222",
+                                    "family": "\\"Ubuntu\\", sans-serif",
+                                    "size": "16px",
+                                    "spacing": 0,
+                                  },
+                                  "shape": Object {
+                                    "border": ".1rem solid rgba(0, 0, 0, .15)",
+                                    "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                                    "margin": ".25rem .125rem",
+                                    "maxWidth": "1280px",
+                                    "padding": ".75rem .875rem",
+                                    "radius": ".5rem",
+                                    "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                    "size": "16px",
+                                  },
+                                  "transition": Object {
+                                    "time": ".3s ease",
+                                  },
+                                }
+                              }
+                              width="100%"
+                            >
+                              <div
+                                className="sc-dnqmqq iVDAbD sc-bdVaJa hKmQZt"
+                                height=""
+                                width="100%"
+                              >
+                                <Text
+                                  align="left"
+                                  isLabel={true}
+                                  small={false}
+                                  strong={false}
+                                  transform="none"
+                                  type=""
+                                >
+                                  <styled.p
+                                    align="left"
+                                    isLabel={true}
+                                    small={false}
+                                    strong={false}
+                                    theme={
+                                      Object {
+                                        "animation": [Function],
+                                        "color": Object {
+                                          "black": "#222222",
+                                          "darkBlue": "#002C5F",
+                                          "darkGray": "#515151",
+                                          "error": "#dd3333",
+                                          "gray": "#a9abae",
+                                          "lightGray": "#e5e5e5",
+                                          "overlay": "rgba(0, 0, 0, .15)",
+                                          "primary": "#00528F",
+                                          "secondary": "#00245f",
+                                          "success": "#33bb33",
+                                          "warn": "#dd3333",
+                                          "white": "#fefefe",
+                                        },
+                                        "font": Object {
+                                          "color": "#222222",
+                                          "family": "\\"Ubuntu\\", sans-serif",
+                                          "size": "16px",
+                                          "spacing": 0,
+                                        },
+                                        "shape": Object {
+                                          "border": ".1rem solid rgba(0, 0, 0, .15)",
+                                          "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                                          "margin": ".25rem .125rem",
+                                          "maxWidth": "1280px",
+                                          "padding": ".75rem .875rem",
+                                          "radius": ".5rem",
+                                          "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                          "size": "16px",
+                                        },
+                                        "transition": Object {
+                                          "time": ".3s ease",
+                                        },
+                                      }
+                                    }
+                                    transform="none"
+                                  >
+                                    <StyledComponent
+                                      align="left"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bwzfXH",
+                                            "isStatic": false,
+                                            "lastClassName": "YAiyI",
+                                            "rules": Array [
+                                              "
+font-size: ",
+                                              [Function],
+                                              ";
+",
+                                              [Function],
+                                              "
+",
+                                            ],
+                                          },
+                                          "defaultProps": Object {
+                                            "theme": Object {
+                                              "animation": [Function],
+                                              "color": Object {
+                                                "black": "#222222",
+                                                "darkBlue": "#002C5F",
+                                                "darkGray": "#515151",
+                                                "error": "#dd3333",
+                                                "gray": "#a9abae",
+                                                "lightGray": "#e5e5e5",
+                                                "overlay": "rgba(0, 0, 0, .15)",
+                                                "primary": "#00528F",
+                                                "secondary": "#00245f",
+                                                "success": "#33bb33",
+                                                "warn": "#dd3333",
+                                                "white": "#fefefe",
+                                              },
+                                              "font": Object {
+                                                "color": "#222222",
+                                                "family": "\\"Ubuntu\\", sans-serif",
+                                                "size": "16px",
+                                                "spacing": 0,
+                                              },
+                                              "shape": Object {
+                                                "border": ".1rem solid rgba(0, 0, 0, .15)",
+                                                "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                                                "margin": ".25rem .125rem",
+                                                "maxWidth": "1280px",
+                                                "padding": ".75rem .875rem",
+                                                "radius": ".5rem",
+                                                "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                                "size": "16px",
+                                              },
+                                              "transition": Object {
+                                                "time": ".3s ease",
+                                              },
+                                            },
+                                          },
+                                          "displayName": "styled.p",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bwzfXH",
+                                          "target": "p",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      isLabel={true}
+                                      small={false}
+                                      strong={false}
+                                      theme={
+                                        Object {
+                                          "animation": [Function],
+                                          "color": Object {
+                                            "black": "#222222",
+                                            "darkBlue": "#002C5F",
+                                            "darkGray": "#515151",
+                                            "error": "#dd3333",
+                                            "gray": "#a9abae",
+                                            "lightGray": "#e5e5e5",
+                                            "overlay": "rgba(0, 0, 0, .15)",
+                                            "primary": "#00528F",
+                                            "secondary": "#00245f",
+                                            "success": "#33bb33",
+                                            "warn": "#dd3333",
+                                            "white": "#fefefe",
+                                          },
+                                          "font": Object {
+                                            "color": "#222222",
+                                            "family": "\\"Ubuntu\\", sans-serif",
+                                            "size": "16px",
+                                            "spacing": 0,
+                                          },
+                                          "shape": Object {
+                                            "border": ".1rem solid rgba(0, 0, 0, .15)",
+                                            "float": "0 .5rem .5rem .125rem rgba(0, 0, 0, .15)",
+                                            "margin": ".25rem .125rem",
+                                            "maxWidth": "1280px",
+                                            "padding": ".75rem .875rem",
+                                            "radius": ".5rem",
+                                            "shadow": "0 .25rem .25rem 0 rgba(0, 0, 0, .15)",
+                                            "size": "16px",
+                                          },
+                                          "transition": Object {
+                                            "time": ".3s ease",
+                                          },
+                                        }
+                                      }
+                                      transform="none"
+                                    >
+                                      <p
+                                        className="sc-bwzfXH YAiyI"
+                                        transform="none"
+                                      >
+                                        props.title
+                                         © 
+                                        2018
+                                      </p>
+                                    </StyledComponent>
+                                  </styled.p>
+                                </Text>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </Container>
+                      </StyledComponent>
+                    </Styled(Container)>
+                  </Row>
+                </div>
+              </StyledComponent>
+            </styled.div>
+          </Container>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Container>
 </Footer>
 `;
