@@ -167,11 +167,11 @@ class BotFooter extends Component {
         <Row grow={0} padding="0">
           <Col padding="0">
             <StyledInput
+              value={text}
               disabled={disabled || !open}
               disabledPlaceholder="Aguarde..."
               placeholder="Digite sua mensagem..."
-              onChange={e => this.changeText(e)}
-              value={text}
+              onChange={value => this.setState({ text: value })}
             />
           </Col>
           <Col padding="0" grow={0}>

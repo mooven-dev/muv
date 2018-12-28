@@ -10,7 +10,7 @@ import Text from '../../atoms/text';
 // STYLES
 const StyledFieldset = styled.fieldset`
 margin: ${({ theme }) => theme.shape.margin};
-border: none;
+border-width: 0;
 padding: 0;
 `;
 
