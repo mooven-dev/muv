@@ -77,7 +77,9 @@ const propTypes = {
 class ToggleSwitch extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      toggled: this.props.value,
+    };
 
     this.toggle = (e) => {
       if (e) e.stopPropagation();
