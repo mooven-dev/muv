@@ -18,6 +18,7 @@ z-index: 9;
 
 const FloatOption = styled(Text)`
 padding: ${({ theme }) => theme.shape.padding};
+cursor: pointer;
 margin: 0;
 `;
 
@@ -52,10 +53,11 @@ class Input extends Component {
       e.preventDefault();
       onChange(value);
       if (autocomplete && value.length >= 3) {
-        this.setState({ value,
+        this.setState({
           autocomplete: autocomplete.filter(
-            item => item.includes(value),
-          ) });
+            ({ label }) => label.includes(value),
+          ),
+        });
       } else {
         this.setState({ value, autocomplete: [] });
       }
@@ -63,17 +65,17 @@ class Input extends Component {
     this.autocomplete = () => {
       const { autocomplete } = this.state;
       const { onChange } = this.props;
-      return autocomplete.map(item => (
+      return autocomplete.map(({ label, data }) => (
         <FloatOption
           onClick={() => {
             this.setState({
               autocomplete: [],
-              value: item,
+              value: label,
             });
-            onChange(item);
+            onChange(data);
           }}
         >
-          {item}
+          {label}
         </FloatOption>
       ));
     };

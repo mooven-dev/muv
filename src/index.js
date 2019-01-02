@@ -11,7 +11,7 @@ import { version } from '../package.json';
 import { createTheme } from './utils';
 
 // ATOMS
-import Switch from '../src/atoms/switch';
+import Switch from './atoms/switch';
 import Badge from './atoms/badge';
 import Counter from './atoms/counter';
 import Loader from './atoms/loader';
