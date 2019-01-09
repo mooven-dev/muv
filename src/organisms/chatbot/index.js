@@ -29,6 +29,9 @@ class Chatbot extends Component {
         .catch(err => console.log(err));
     };
 
+    // GENERIC CONTEXT METHOD
+    this.toContext = data => this.setState(data);
+
     // OPEN/CLOSES CHAT
     this.toogleChat = () => this.setState(({ open }) => ({ open: !open, newMessages: 0 }));
 
@@ -60,10 +63,13 @@ class Chatbot extends Component {
       updateMessages: this.updateMessages,
       disableInput: this.disableInput,
       endPoint: this.props.endPoint,
+      personas: this.props.personas,
+      botName: this.props.botName,
       timeOut: this.props.timeOut,
       toogleChat: this.toogleChat,
       changeName: this.changeName,
       resetWarns: this.resetWarns,
+      toContext: this.toContext,
       closeBot: this.closeBot,
       open: this.props.open,
       newMessages: 0,
@@ -118,6 +124,7 @@ Chatbot.propTypes = {
   children: node,
   /** sets if the bot starts opened */
   open: bool,
+  personas: bool,
 };
 
 Chatbot.defaultProps = {
@@ -130,6 +137,7 @@ Chatbot.defaultProps = {
   botName: 'T-800',
   timeOut: 50000,
   open: false,
+  personas: false,
   endPoint,
 };
 

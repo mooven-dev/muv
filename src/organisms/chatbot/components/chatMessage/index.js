@@ -5,7 +5,7 @@ import { node, bool, string, objectOf, any } from 'prop-types';
 import htmlParser from 'react-html-parser';
 import styled from 'styled-components';
 
-import { botAvatarImg, userAvatarImg } from '../../../../utils';
+import { botAvatarImg, userAvatarImg, PersonasAvatar } from '../../../../utils';
 import Container from '../../../../atoms/container';
 import Loader from '../../../../atoms/loader';
 import themeDefault from '../../../../theme';
@@ -195,6 +195,7 @@ class ChatMessage extends Component {
 
   render() {
     const { user, userAvatar, userName, botAvatar, botName, time } = this.props;
+    const { botName: contextBotName } = this.context;
     const { content, height } = this.state;
     return (
       <Container>
@@ -206,7 +207,7 @@ class ChatMessage extends Component {
           <Balloon user={user} primary={user} lightGray={!user} grow={5 / 6} margin=".5rem" bordered hasContent>
 
             {/* USER OR BOT NAME */}
-            <Name white={user} isLabel>{(user ? userName : botName)}</Name>
+            <Name white={user} isLabel>{(user ? userName : contextBotName || botName)}</Name>
 
             {/* SHOW MESSAGE CONTENT (COULD INCLUDES WIDGET) */}
             <Content contentHeight={height}>

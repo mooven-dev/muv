@@ -82,4 +82,10 @@ margin: 0;
 
 // useful defaults
 export const userAvatarImg = 'http://www.robots-and-dragons.de/sites/default/files/styles/artikel_-_bild__ber_artikel/public/field/image/preview/terminator-linda-hamilton.jpg?itok=J4P32hm8';
+
 export const botAvatarImg = 'https://slm-assets2.secondlife.com/assets/6327589/view_large/Snapshot_025.jpg?1348721138';
+
+
+export const avatarHyunImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/hyun.gif';
+
+export const avatarDayImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/hyun.gif';
