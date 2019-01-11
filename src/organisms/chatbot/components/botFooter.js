@@ -171,18 +171,14 @@ class BotFooter extends Component {
       snd.play();
       const _this = this;
       let x = 0;
-      const interim = setInterval(function () {
-        console.log('AAAAAH=>', _this.props.finalTranscript)
+      const transcript = setInterval(function () {
         _this.setState({text: _this.props.finalTranscript});
         if (_this.props.finalTranscript != "") { 
-          window.clearInterval(interim)
+          window.clearInterval(transcript)
           _this.props.resetTranscript();
           _this.submitMessage();
         } else if (++x > 5) {
-          React.render(
-            <Speech text="Welcome to react speech" />,
-            document.getElementById('node')
-          );
+          window.clearInterval(transcript)
           _this.setState({text: 'Falha ao captar aúdio, tente novamente.'}); // change to audio
           _this.props.resetTranscript();
         }
