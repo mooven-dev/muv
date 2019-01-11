@@ -132,7 +132,7 @@ class BotFooter extends Component {
       console.log(bot);
       // SETUP MESSAGE DATA
       const data = {
-        workspace_id: bot.workspace,
+        workspace_id: bot._workspace,
         context,
         time,
         input: {

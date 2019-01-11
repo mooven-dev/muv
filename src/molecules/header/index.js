@@ -12,14 +12,14 @@ import Menu from '../menu';
 const Header = ({
   children, dark, title, fluid, left, leftProps, right, rightProps, ...rest
 }) => (
-  <Container fluid noRadius lightGray {...rest}>
+  <Container fluid noRadius secondary {...rest}>
     <Container fluid={fluid}>
       <Row justify="space-between">
         {/* MENU / LEFT COMPONENT */}
         <Col hasContent grow={0}>{left(leftProps)}</Col>
         {/* PAGE TITLE */}
         <Col hasContent align="center">
-          <Text transform="capitalize" white={dark} type="h3">{title}</Text>
+          <Text transform="capitalize" white type="h3">{title}</Text>
         </Col>
         {/* RIGHT COMPONENT */}
         <Col hasContent grow={0}>{right(rightProps)}</Col>

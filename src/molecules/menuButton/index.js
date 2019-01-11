@@ -19,7 +19,8 @@ padding: 0;
   all: unset;
   transition: ${({ theme }) => theme.transition.time};
   border: ${({ theme }) => theme.shape.border};
-  border-color: ${props => setColor(props)};
+  /* border-color: ${props => setColor(props)}; */
+  border-color: #fff;
   transform-origin: center;
   border-radius: .125rem;
   display: inline-block;
