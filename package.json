@@ -25,6 +25,7 @@
     "buble": "0.19.4",
     "chalk": "^2.4.1",
     "clean-webpack-plugin": "^0.1.19",
+    "core-js": "^2.6.1",
     "docz": "^0.12.13",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
