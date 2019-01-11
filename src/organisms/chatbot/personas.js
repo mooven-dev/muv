@@ -26,7 +26,7 @@ StyledPersonas.defaultProps = {
 
 const AvatarPersonas = styled.img`
 background-image: url(${({ src }) => src});
-padding: 3.5rem 0;
+margin: 3.5rem 0;
 height: 110px;
 width: 110px;
 bottom: 0;
@@ -73,7 +73,7 @@ class Personas extends Component {
         {personas && !dismissPersonas && (
         <StyledPersonas>
           <Col content align="center" justify="space-around">
-            <AvatarPersonas src={(avatar ? avatarHyun : avatarDay)} />
+            <AvatarPersonas src={(avatarDay)} />
             <StyledText type="h6" center white>
 							Olá ; )
               {' '}

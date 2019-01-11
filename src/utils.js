@@ -88,4 +88,4 @@ export const botAvatarImg = 'https://slm-assets2.secondlife.com/assets/6327589/v
 
 export const avatarHyunImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/hyun.gif';
 
-export const avatarDayImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/hyun.gif';
+export const avatarDayImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/dai.gif';
