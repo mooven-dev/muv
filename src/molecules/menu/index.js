@@ -14,6 +14,7 @@ width: 100%;
 padding: .5rem 0;
 text-align: left;
 text-decoration: none;
+font-size: 0.8rem;
 color: #000;
 &:hover {
   background-color: white;

@@ -2,6 +2,7 @@
 import { node, number, string, bool } from 'prop-types';
 import React, { Component } from 'react';
 import Axios from 'axios';
+import Cookies from 'js-cookie';
 
 import { botAvatarImg, userAvatarImg } from '../../utils';
 import Icon from '../../atoms/icon';
@@ -22,7 +23,7 @@ class Chatbot extends Component {
 
     this.startBot = () => {
       const { id } = this.props;
-      Axios.get(`${endPoint}bots/${id}`)
+      Axios.get(`${endPoint}bots/${id}`, { headers: { Authorization: `Bearer ${Cookies.get('token')}` } })
         .then((res) => {
           this.setState({ botLoaded: true, bot: res.data.payload });
         })
@@ -122,12 +123,14 @@ Chatbot.propTypes = {
 
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
-  id: '5c0acdec2c42de5e9d8d1580',
+  // id: '5c0acdec2c42de5e9d8d1580',
+  id: '5c37929d1383230052785021',
   botTitle: 'Skynet ChatBot',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,
-  userName: 'Sarah',
-  botName: 'T-800',
+  userName: 'User',
+  // botName: 'T-800',
+  botName: 'IT Chatbot',
   timeOut: 50000,
   open: false,
   endPoint,
