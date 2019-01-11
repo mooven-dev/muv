@@ -2,6 +2,7 @@
 import { node, number, string, bool } from 'prop-types';
 import React, { Component } from 'react';
 import Axios from 'axios';
+import Cookies from 'js-cookie';
 
 import { botAvatarImg, userAvatarImg } from '../../utils';
 import Icon from '../../atoms/icon';
@@ -22,12 +23,15 @@ class Chatbot extends Component {
 
     this.startBot = () => {
       const { id } = this.props;
-      Axios.get(`${endPoint}bots/${id}`)
+      Axios.get(`${endPoint}bots/${id}`, { headers: { Authorization: `Bearer ${Cookies.get('token')}` } })
         .then((res) => {
           this.setState({ botLoaded: true, bot: res.data.payload });
         })
         .catch(err => console.log(err));
     };
+
+    // GENERIC CONTEXT METHOD
+    this.toContext = data => this.setState(data);
 
     // OPEN/CLOSES CHAT
     this.toogleChat = () => this.setState(({ open }) => ({ open: !open, newMessages: 0 }));
@@ -60,10 +64,13 @@ class Chatbot extends Component {
       updateMessages: this.updateMessages,
       disableInput: this.disableInput,
       endPoint: this.props.endPoint,
+      personas: this.props.personas,
+      botName: this.props.botName,
       timeOut: this.props.timeOut,
       toogleChat: this.toogleChat,
       changeName: this.changeName,
       resetWarns: this.resetWarns,
+      toContext: this.toContext,
       closeBot: this.closeBot,
       open: this.props.open,
       newMessages: 0,
@@ -118,18 +125,22 @@ Chatbot.propTypes = {
   children: node,
   /** sets if the bot starts opened */
   open: bool,
+  personas: bool,
 };
 
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
-  id: '5c0acdec2c42de5e9d8d1580',
-  botTitle: 'Skynet ChatBot',
+  // id: '5c0acdec2c42de5e9d8d1580',
+  id: '5c37929d1383230052785021',
+  botTitle: 'IT Helper',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,
-  userName: 'Sarah',
-  botName: 'T-800',
+  userName: 'User',
+  // botName: 'T-800',
+  botName: 'IT Chatbot',
   timeOut: 50000,
   open: false,
+  personas: false,
   endPoint,
 };
 
