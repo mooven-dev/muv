@@ -135,12 +135,12 @@ Chatbot.defaultProps = {
   botTitle: 'Skynet ChatBot',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,
+  router: () => null,
   userName: 'User',
-  // botName: 'T-800',
-  botName: 'IT Chatbot',
+  botName: 'T-800',
+  personas: false,
   timeOut: 50000,
   open: false,
-  personas: false,
   endPoint,
 };
 

@@ -27,8 +27,8 @@ letter-spacing: ${theme.font.spacing};
 border-radius: ${theme.shape.radius};
 transition: ${theme.transition.time};
 width: ${inline ? 'unset' : '100%'};
-padding: ${theme.shape.padding};
 ${disabled ? disabledStyle : ''}
+padding: ${theme.shape.padding};
 box-sizing: border-box;
 text-decoration: none;
 display: inline-block;

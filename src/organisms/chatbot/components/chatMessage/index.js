@@ -1,11 +1,10 @@
-
 // IMPORTS
-import React, { PureComponent as Component } from 'react';
 import { node, bool, string, objectOf, any } from 'prop-types';
+import React, { PureComponent as Component } from 'react';
 import htmlParser from 'react-html-parser';
 import styled from 'styled-components';
 
-import { botAvatarImg, userAvatarImg, PersonasAvatar } from '../../../../utils';
+import { botAvatarImg, userAvatarImg } from '../../../../utils';
 import Container from '../../../../atoms/container';
 import Loader from '../../../../atoms/loader';
 import themeDefault from '../../../../theme';
@@ -38,17 +37,17 @@ flex-basis: 0;
 const Hour = styled(Text)`
 position: absolute;
 text-align: right;
-font-size: .5rem;
-padding: .5rem;
-opacity: .7;
+font-size: 0.5rem;
+padding: 0.5rem;
+opacity: 0.7;
 bottom: 0;
 right: 0;
 `;
 
 const Name = styled(Text)`
-margin-bottom: .5rem;
-font-size: .75rem;
-opacity: .7;
+margin-bottom: 0.5rem;
+font-size: 0.75rem;
+opacity: 0.7;
 `;
 
 const Avatar = styled.div`
@@ -68,17 +67,15 @@ Avatar.defaultProps = {
 };
 
 const Content = styled.div`
+height: calc(${({ contentHeight }) => contentHeight}px + .5rem);
 transition: ${({ theme }) => theme.transition.time};
-height: ${({ contentHeight }) => contentHeight}px;
-padding-bottom: .125rem;
-margin-bottom: .5rem;
+margin-bottom: 0.5rem;
 overflow: hidden;
 `;
 
 Content.defaultProps = {
   theme: themeDefault,
 };
-
 
 // COMPONENT
 class ChatMessage extends Component {
@@ -101,7 +98,13 @@ class ChatMessage extends Component {
     // PARSE STRINGS TO HTML (IF IT HAVE)
     this.parseText = () => {
       const { children, user } = this.props;
-      if (typeof children === 'string') return <Text small white={user}>{htmlParser(children)}</Text>;
+      if (typeof children === 'string') {
+        return (
+          <Text small white={user}>
+            {htmlParser(children)}
+          </Text>
+        );
+      }
       return children;
     };
 
@@ -115,14 +118,20 @@ class ChatMessage extends Component {
     // RENDER THE WIDGETS AFTER THE MESSAGE TEXT (IF ANY)
     this.renderWidget = () => {
       // SETUP
-      const { _nextWidget, ...rest } = this.props.context;
-      const { disableInput, bot: { _widgets } } = this.context;
+      const { context, router } = this.props;
+      const { _nextWidget, ITSM_page, ...rest } = context;
+      const {
+        disableInput,
+        bot: { _widgets },
+      } = this.context;
       const {
         WIDGET_THUMBS_UP_DOWN,
         WIDGET_OPTIONS_UNLOCK,
         WIDGET_OPTIONS,
         WIDGET_YES_NO,
       } = constants;
+      // CHANGE ROUTER
+      if (ITSM_page && router) router.push(ITSM_page);
       // RETURN RIGHT WIDGET
       switch (_nextWidget) {
         case WIDGET_OPTIONS_UNLOCK:
@@ -157,8 +166,14 @@ class ChatMessage extends Component {
             return (
               <Options onClick={this.widgetClick}>
                 {[
-                  { label: <Icon color="white" name="thumbs-down" />, value: 'thumbs-down' },
-                  { label: <Icon color="white" name="thumbs-up" />, value: 'thumbs-up' },
+                  {
+                    label: <Icon color="white" name="thumbs-down" />,
+                    value: 'thumbs-down',
+                  },
+                  {
+                    label: <Icon color="white" name="thumbs-up" />,
+                    value: 'thumbs-up',
+                  },
                 ]}
               </Options>
             );
@@ -184,7 +199,7 @@ class ChatMessage extends Component {
         this.setState({ content }, this.updateHeight);
       };
       // EXECUTION
-      setTimeout(renderContent, (user ? 300 : 600));
+      setTimeout(renderContent, user ? 300 : 600);
     };
   }
 
@@ -201,33 +216,43 @@ class ChatMessage extends Component {
       <Container>
         <MessageRow align="flex-end" user={user}>
           {/* USER OR BOT AVATAR IMAGE */}
-          <Avatar bordered padding="1px" grow={0} src={(user ? userAvatar : botAvatar)} />
+          <Avatar
+            bordered
+            padding="1px"
+            grow={0}
+            src={user ? userAvatar : botAvatar}
+          />
 
           {/* MESSAGE BOX */}
-          <Balloon user={user} primary={user} lightGray={!user} grow={5 / 6} margin=".5rem" bordered hasContent>
-
+          <Balloon
+            user={user}
+            primary={user}
+            lightGray={!user}
+            grow={5 / 6}
+            margin=".5rem"
+            bordered
+            hasContent
+          >
             {/* USER OR BOT NAME */}
-            <Name white={user} isLabel>{(user ? userName : contextBotName || botName)}</Name>
+            <Name white={user} isLabel>
+              {user ? userName : contextBotName || botName}
+            </Name>
 
             {/* SHOW MESSAGE CONTENT (COULD INCLUDES WIDGET) */}
             <Content contentHeight={height}>
-              <div ref={this.contentRef}>
-                {content}
-              </div>
+              <div ref={this.contentRef}>{content}</div>
             </Content>
 
             {/* SHOW THE MESSAGE TIMESTAMP OR LOADER */}
             <Hour white={user}>
-              {content ? <span>{ time }</span> : <Loader white />}
+              {content ? <span>{time}</span> : <Loader white />}
             </Hour>
-
           </Balloon>
         </MessageRow>
       </Container>
     );
   }
 }
-
 
 // DOCUMENTATION
 ChatMessage.propTypes = {
