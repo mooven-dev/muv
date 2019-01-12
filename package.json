@@ -48,6 +48,7 @@
     "react-dom": "^16.6.3",
     "react-html-parser": "^2.0.2",
     "react-ionicons": "^2.1.6",
+    "react-speech-recognition": "^1.0.7",
     "serve": "^10.0.2",
     "styled-components": "^4.1.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
