@@ -121,6 +121,7 @@ class ChatMessage extends Component {
       const { context, router } = this.props;
       const { _nextWidget, ITSM_page, ...rest } = context;
       const {
+        toContext,
         disableInput,
         bot: { _widgets },
       } = this.context;
@@ -129,11 +130,26 @@ class ChatMessage extends Component {
         WIDGET_OPTIONS_UNLOCK,
         WIDGET_OPTIONS,
         WIDGET_YES_NO,
+        WIDGET_EMAIL,
+        WIDGET_NAME,
+        WIDGET_CPF,
       } = constants;
       // CHANGE ROUTER
       if (ITSM_page && router) router.push(ITSM_page);
       // RETURN RIGHT WIDGET
       switch (_nextWidget) {
+        case WIDGET_EMAIL:
+          if (_widgets[WIDGET_EMAIL]) {
+            return toContext({ inputValidation: 'email' });
+          }
+        case WIDGET_NAME:
+          if (_widgets[WIDGET_NAME]) {
+            return toContext({ inputValidation: 'name' });
+          }
+        case WIDGET_CPF:
+          if (_widgets[WIDGET_CPF]) {
+            return toContext({ inputValidation: 'cpf' });
+          }
         case WIDGET_OPTIONS_UNLOCK:
           if (_widgets[WIDGET_OPTIONS_UNLOCK]) {
             return (
