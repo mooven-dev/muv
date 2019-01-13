@@ -53,8 +53,7 @@ class Input extends Component {
       const { value } = e.target;
       e.preventDefault();
       // VALIDATION
-      // const { data, error } = validator[validate || 'default'](value);
-      const { data, error } = validator.cpf(value);
+      const { data, error } = validator[validate || 'default'](value);
       // RETURN VALUE AND ERROR TO PARENT
       onValidate(error);
       onChange(data);

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import moment from 'moment';
 import Axios from 'axios';
 
-import constants from './chatMessage/constants';
 import Button from '../../../atoms/button';
 import themeDefault from '../../../theme';
 import Input from '../../../atoms/input';
@@ -37,20 +36,9 @@ StyledInput.defaultProps = {
 };
 
 class BotFooter extends Component {
-  static Instance() { }; // eslint-disable-line
-
-  /**
-   * @type {BotFooter}
-   */
-
-  static send(text) {
-    BotFooter.Instance.sendMessage(text, true);
-  }
-
   constructor(props) {
     super(props);
     this.state = {};
-    BotFooter.Instance = this;
     // UPDATE CHAT SCREEEN
     this.updateChat = (message) => {
       // SETUP
@@ -189,6 +177,7 @@ class BotFooter extends Component {
   componentDidMount() {
     // START CONVERSATION
     this.sendMessage();
+    this.context.toContext({ sendMessage: this.sendMessage });
   }
 
   render() {

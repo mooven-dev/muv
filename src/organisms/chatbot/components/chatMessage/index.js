@@ -110,8 +110,8 @@ class ChatMessage extends Component {
 
     //
     this.widgetClick = (value) => {
-      const { disableInput } = this.context;
-      BotFooter.send(value);
+      const { disableInput, sendMessage } = this.context;
+      sendMessage(value, true);
       disableInput(false);
     };
 
