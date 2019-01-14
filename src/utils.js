@@ -82,10 +82,8 @@ margin: 0;
 
 // useful defaults
 export const userAvatarImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/user_avatar.png';
-
 export const botAvatarImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/new-logo.svg';
-
-
 export const avatarHyunImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/hyun.gif';
-
-export const avatarDayImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/hyun.gif';
+export const hyun = 'https://br-hnd-dlg.mybluemix.net/images/web-chat/hyun_persona.jpg';
+export const avatarDayImg = 'https://s3-sa-east-1.amazonaws.com/muv-assets/dai.gif';
+export const dai = 'https://br-hnd-dlg.mybluemix.net/images/web-chat/dai_persona.jpg';

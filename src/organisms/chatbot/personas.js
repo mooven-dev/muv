@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import themeDefault from '../../theme';
-import BotContext from './context';
 import Button from '../../atoms/button';
-import Col from '../../atoms/col';
+import themeDefault from '../../theme';
 import Text from '../../atoms/text';
+import BotContext from './context';
+import Col from '../../atoms/col';
 
-import { avatarHyunImg, avatarDayImg } from '../../utils';
+import { avatarDayImg, avatarHyunImg, hyun, dai } from '../../utils';
 
 const StyledPersonas = styled.aside`
-/* background: linear-gradient(#00245f, 85%, white); */
 background: ${({ theme }) => theme.color.secondary};
 position: absolute;
 z-index: 1;
@@ -63,46 +62,51 @@ class Personas extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.selectPersona = () => {
+      const { avatarHyun, avatarDay, nameHyun, nameDay, gifHyun, gifDai } = this.props;
+      const choseOne = (Math.random() > 0.5);
+      this.context.toContext({
+        botAvatar: choseOne ? avatarHyun : avatarDay,
+        personaGif: choseOne ? gifHyun : gifDai,
+        botName: choseOne ? nameHyun : nameDay,
+      });
+    };
+  }
+
+  componentWillMount() {
+    this.selectPersona();
   }
 
   render() {
-    const { personas, toContext, dismissPersonas } = this.context;
-    const { avatar, avatarHyun, avatarDay, nameHyun, nameDay } = this.props;
+    const { personas, dismissPersonas, toContext, personaGif, botName } = this.context;
     return (
       <div>
         {personas && !dismissPersonas && (
-        <StyledPersonas>
-          <Col content align="center" justify="space-around">
-            <AvatarPersonas src={(avatarDay)} />
-            <StyledText type="h6" center white>
-							Olá ; )
-              {' '}
-              <br />
-              {' '}
-Eu sou
-              {' '}
-              {(avatar ? nameHyun : nameDay)}
-, assistente virtual da Hyundai!
-              {' '}
-              <br />
-              {' '}
-Estou aqui para tirar dúvidas sobre a
-              {' '}
-              <br />
-              {' '}
-marca, carros e outros assuntos.
-              {' '}
-              <br />
-            </StyledText>
-            <StyledButton inline onClick={() => toContext({ botName: 'Hyun', dismissPersonas: true })}>VAMOS COMEÇAR ?</StyledButton>
-            <StyledText type="h6" white>
-Para descobrir novidades Hyundai
-            </StyledText>
-            <StyledAnchor href="https://www.hyundai.com.br/">
-Clique Aqui
-            </StyledAnchor>
-          </Col>
-        </StyledPersonas>
+          <StyledPersonas>
+            <Col content align="center" justify="space-around">
+              <AvatarPersonas src={personaGif} />
+              <StyledText type="h6" center white>
+                Olá ; )
+                <br />
+                Eu sou
+                {' '}
+                {botName}
+                , assistente virtual da Hyundai!
+                <br />
+                Estou aqui para tirar dúvidas sobre a
+                <br />
+                marca, carros e outros assuntos.
+                <br />
+              </StyledText>
+              <StyledButton inline onClick={() => toContext({ dismissPersonas: true })}>VAMOS COMEÇAR ?</StyledButton>
+              <StyledText type="h6" white>
+                Para descobrir novidades Hyundai
+              </StyledText>
+              <StyledAnchor href="https://www.hyundai.com.br/">
+                Clique Aqui
+              </StyledAnchor>
+            </Col>
+          </StyledPersonas>
         )}
       </div>
     );
@@ -110,10 +114,11 @@ Clique Aqui
 }
 
 Personas.defaultProps = {
-  avatarHyun: avatarHyunImg,
-  avatarDay: avatarDayImg,
+  gifHyun: avatarHyunImg,
+  gifDai: avatarDayImg,
+  avatarHyun: hyun,
+  avatarDay: dai,
   nameHyun: 'Hyun',
-  avatar: false,
   nameDay: 'Day',
 };
 

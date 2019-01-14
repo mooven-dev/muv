@@ -14,10 +14,10 @@ import Icon from '../../../../atoms/icon';
 import Row from '../../../../atoms/row';
 import Col from '../../../../atoms/col';
 import BotContext from '../../context';
+import BuildYour from '../build-your';
 import Options from './widgetOptions';
 import BotFooter from '../botFooter';
 import constants from './constants';
-import BuildYour from '../build-your';
 
 // UNIQUE COMPONENTS
 const MessageRow = styled(Row)`
@@ -248,18 +248,18 @@ class ChatMessage extends Component {
   }
 
   render() {
-    const { user, userAvatar, userName, botAvatar, botName, time } = this.props;
-    const { botName: contextBotName } = this.context;
+    const { user, userAvatar, userName, botAvatar: propsBotAvatar, botName: propsBotName, time } = this.props;
+    const { botName: contextBotName, botAvatar: contextBotAvatar } = this.context;
     const { content, height } = this.state;
     return (
       <Container>
         <MessageRow align="flex-end" user={user}>
           {/* USER OR BOT AVATAR IMAGE */}
           <Avatar
-            bordered
+            src={user ? userAvatar : contextBotAvatar || propsBotAvatar}
             padding="1px"
+            bordered
             grow={0}
-            src={user ? userAvatar : botAvatar}
           />
 
           {/* MESSAGE BOX */}
@@ -274,7 +274,7 @@ class ChatMessage extends Component {
           >
             {/* USER OR BOT NAME */}
             <Name white={user} isLabel>
-              {user ? userName : contextBotName || botName}
+              {user ? userName : contextBotName || propsBotName}
             </Name>
 
             {/* SHOW MESSAGE CONTENT (COULD INCLUDES WIDGET) */}
