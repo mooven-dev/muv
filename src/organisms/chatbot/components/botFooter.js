@@ -162,6 +162,7 @@ class BotFooter extends Component {
       const snd = new Audio(`data:audio/wav;base64,${base64string}`);
       snd.play();
       let x = 0;
+      const _this = this;
       const transcript = setInterval(() => {
         if (_this.props.finalTranscript != "") {
           _this.setState({ text: _this.props.finalTranscript });
@@ -176,8 +177,9 @@ class BotFooter extends Component {
       }, 500);
     };
     this.speak = async (message) => {
+      console.log(this.props.botName)
       let awsCredentials = new AWS.Credentials('AKIAIXKXOD2WJYLWL3EQ', 'fxFrsXvdaYRnFrND4Ye+k6oPVM52L+m+RKm7e64u');
-      let pollyVoiceId = this.props.botName == 'Hyun' ? 'Ricardo' : 'Vitoria';
+      let pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
       let settings = {
         awsCredentials,
         awsRegion: 'us-east-1',
