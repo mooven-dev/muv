@@ -15,6 +15,7 @@ import config from '../../../env';
 
 require('events').EventEmitter.defaultMaxListeners = 15;
 const JSON = require('circular-json');
+
 const { endPoint } = config;
 
 const StyledButton = styled(Button)`
@@ -161,38 +162,38 @@ class BotFooter extends Component {
       const snd = new Audio(`data:audio/wav;base64,${base64string}`);
       snd.play();
       let x = 0;
-      const transcript = setInterval(function () {
-        if (_this.props.finalTranscript != "") { 
-          _this.setState({text: _this.props.finalTranscript});
+      const transcript = setInterval(() => {
+        if (_this.props.finalTranscript != "") {
+          _this.setState({ text: _this.props.finalTranscript });
           window.clearInterval(transcript)
           voiceActive = true;
           _this.submitMessage();
         } else if (++x > 5) {
           window.clearInterval(transcript)
-          _this.setState({text: 'Falha ao captar aúdio, tente novamente.'}); // change to audio
+          _this.setState({ text: 'Falha ao captar aúdio, tente novamente.' }); // change to audio
         }
         _this.props.resetTranscript();
       }, 500);
-    }
+    };
     this.speak = async (message) => {
-      var awsCredentials = new AWS.Credentials("AKIAIXKXOD2WJYLWL3EQ", "fxFrsXvdaYRnFrND4Ye+k6oPVM52L+m+RKm7e64u");
-      var pollyVoiceId = this.props.botName == "Hyun" ? 'Ricardo' : 'Vitoria';
-      var settings = {
-          awsCredentials: awsCredentials,
-          awsRegion: "us-east-1",
-          pollyVoiceId: pollyVoiceId,
-          cacheSpeech: true
-      }
-      var kathy = ChattyKathy(settings);
-      
+      let awsCredentials = new AWS.Credentials('AKIAIXKXOD2WJYLWL3EQ', 'fxFrsXvdaYRnFrND4Ye+k6oPVM52L+m+RKm7e64u');
+      let pollyVoiceId = this.props.botName == 'Hyun' ? 'Ricardo' : 'Vitoria';
+      let settings = {
+        awsCredentials,
+        awsRegion: 'us-east-1',
+        pollyVoiceId,
+        cacheSpeech: true,
+      };
+      let kathy = ChattyKathy(settings);
+
       kathy.Speak(message.output.text.join('.'));
 
       if (kathy.IsSpeaking()) {
-          kathy.ShutUp(); 
+        kathy.ShutUp();
       }
 
       kathy.ForgetCachedSpeech();
-    }
+    };
   }
 
   componentDidMount() {
