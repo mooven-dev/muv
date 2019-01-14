@@ -40,6 +40,7 @@ class BotFooter extends Component {
     super(props);
     this.state = {};
     // UPDATE CHAT SCREEEN
+    let voiceActive = false;
     this.updateChat = (message) => {
       // SETUP
       const { messages, disableInput } = this.context;
@@ -61,6 +62,7 @@ class BotFooter extends Component {
           botMessage.time = moment().format('H:mm');
           // OUTPUT || BOT
           this.updateChat(botMessage);
+          (voiceActive && this.speak(botMessage));
         })
         .catch(err => console.log('error', err)); // eslint-disable-line
     };
@@ -159,19 +161,38 @@ class BotFooter extends Component {
       const snd = new Audio(`data:audio/wav;base64,${base64string}`);
       snd.play();
       let x = 0;
-      const transcript = setInterval(() => {
-        this.setState({ text: this.props.finalTranscript });
-        if (this.props.finalTranscript != '') {
-          window.clearInterval(transcript);
-          this.props.resetTranscript();
-          this.submitMessage();
+      const transcript = setInterval(function () {
+        if (_this.props.finalTranscript != "") { 
+          _this.setState({text: _this.props.finalTranscript});
+          window.clearInterval(transcript)
+          voiceActive = true;
+          _this.submitMessage();
         } else if (++x > 5) {
-          window.clearInterval(transcript);
-          this.setState({ text: 'Falha ao captar aúdio, tente novamente.' }); // change to audio
-          this.props.resetTranscript();
+          window.clearInterval(transcript)
+          _this.setState({text: 'Falha ao captar aúdio, tente novamente.'}); // change to audio
         }
+        _this.props.resetTranscript();
       }, 500);
-    };
+    }
+    this.speak = async (message) => {
+      var awsCredentials = new AWS.Credentials("AKIAIXKXOD2WJYLWL3EQ", "fxFrsXvdaYRnFrND4Ye+k6oPVM52L+m+RKm7e64u");
+      var pollyVoiceId = this.props.botName == "Hyun" ? 'Ricardo' : 'Vitoria';
+      var settings = {
+          awsCredentials: awsCredentials,
+          awsRegion: "us-east-1",
+          pollyVoiceId: pollyVoiceId,
+          cacheSpeech: true
+      }
+      var kathy = ChattyKathy(settings);
+      
+      kathy.Speak(message.output.text.join('.'));
+
+      if (kathy.IsSpeaking()) {
+          kathy.ShutUp(); 
+      }
+
+      kathy.ForgetCachedSpeech();
+    }
   }
 
   componentDidMount() {
