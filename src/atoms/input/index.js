@@ -1,10 +1,11 @@
 // IMPORTS
 import React, { PureComponent as Component } from 'react';
-import { bool, string } from 'prop-types';
+import { bool, string, func } from 'prop-types';
 import styled from 'styled-components';
 
 import { inputStyle } from '../../utils';
 import themeDefault from '../../theme';
+import validator from './validators';
 import Text from '../text';
 
 // STYLES
@@ -48,10 +49,15 @@ class Input extends Component {
       if (actualDisabled === false && prevDisabled === true) this.autoFocus();
     };
     this.handleChange = (e) => {
-      const { onChange, autocomplete } = this.props;
+      const { onChange, onValidate, autocomplete, validate } = this.props;
       const { value } = e.target;
       e.preventDefault();
-      onChange(value);
+      // VALIDATION
+      const { data, error } = validator[validate || 'default'](value);
+      // RETURN VALUE AND ERROR TO PARENT
+      onValidate(error);
+      onChange(data);
+      // AUTOCOMPLETE
       if (autocomplete && value.length >= 3) {
         this.setState({
           autocomplete: autocomplete.filter(
@@ -59,7 +65,7 @@ class Input extends Component {
           ),
         });
       } else {
-        this.setState({ value, autocomplete: [] });
+        this.setState({ error, value: data, autocomplete: [] });
       }
     };
     this.autocomplete = () => {
@@ -86,16 +92,16 @@ class Input extends Component {
   }
 
   render() {
-    const { error, disabledPlaceholder, disabled, placeholder, autocomplete } = this.props;
-    const { value } = this.state;
+    const { error: propsError, disabledPlaceholder, disabled, placeholder, autocomplete } = this.props;
+    const { error: stateError, value } = this.state;
     return (
       <>
         <StyledInput
-          warn={error}
           value={value}
           {...this.props}
           ref={this.inputRef}
           onChange={this.handleChange}
+          warn={propsError || stateError}
           placeholder={disabled ? disabledPlaceholder : placeholder}
         />
         {autocomplete && <Wrapper>{this.autocomplete()}</Wrapper>}
@@ -118,11 +124,15 @@ Input.propTypes = {
   success: bool,
   /** receive placeholder props */
   placeholder: string,
+  onValidate: func,
+  onChange: func,
 };
 
 Input.defaultProps = {
+  onValidate: err => console.log('err', err),
   disabledPlaceholder: 'disabled',
   placeholder: 'placeholder',
+  onChange: value => value,
   disabled: false,
   success: false,
   error: false,
