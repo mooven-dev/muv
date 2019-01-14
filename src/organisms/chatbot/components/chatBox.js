@@ -10,6 +10,7 @@ import Row from '../../../atoms/row';
 import BotFooter from './botFooter';
 import BotContext from '../context';
 import ChatArea from './chatArea';
+import Personas from '../personas';
 
 
 const StyledChatBox = styled(Container)`
@@ -32,6 +33,10 @@ StyledChatBox.defaultProps = {
   width: '320px',
 };
 
+const Wrap = styled.div`
+position: relative;
+`;
+
 class ChatBox extends Component {
   constructor(props) {
     super(props);
@@ -40,20 +45,27 @@ class ChatBox extends Component {
 
   render() {
     const { open, isLoad, toogleChat } = this.context;
-    const { botTitle, ...rest } = this.props;
+    const { botTitle, botName, ...rest } = this.props;
     return (
       <StyledChatBox flex open={(isLoad && open)}>
-        {/* HEADER */}
-        <Row noRadius secondary grow={0} hasContent bordered justify="space-between">
-          <Text white strong>{botTitle}</Text>
-          <Link white noLine onClick={toogleChat}>
-            <Icon color="white" name="close" />
-          </Link>
-        </Row>
-        {/* BODY (MESSAGES GOES HERE) */}
-        <ChatArea {...rest} />
-        {/* FOOTER */}
-        <BotFooter />
+        <Wrap>
+          {/* PERSONAS */}
+          <Personas />
+
+          {/* HEADER */}
+          <Row noRadius secondary grow={0} hasContent bordered justify="space-between">
+            <Text white strong>{botTitle}</Text>
+            <Link white noLine onClick={toogleChat}>
+              <Icon color="white" name="close" />
+            </Link>
+          </Row>
+
+          {/* BODY (MESSAGES GOES HERE) */}
+          <ChatArea {...rest} />
+
+          {/* FOOTER */}
+          <BotFooter botName={botName}/>
+        </Wrap>
       </StyledChatBox>
     );
   }
