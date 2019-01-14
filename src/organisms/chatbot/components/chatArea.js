@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     &::-webkit-scrollbar-track { display: none; }
     &::-webkit-scrollbar { display: none; }
   }
-`
+`;
 
 Body.defaultProps = {
   hasContent: true,
@@ -38,29 +38,23 @@ class ChatArea extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-  }
-
-  scrollToBottom() {
+    this.scrollToBottom = () => {
       if (!this.scrollView) return;
       this.scrollView.scrollToBottom();
-  };
+    };
 
-  scrollToTop() {
+    this.scrollToTop = () => {
       if (!this.scrollView) return;
       this.scrollView.scrollToTop();
-  };
-
-  handleScroll = ({ scrollTop, scrollBottom }) => {
-      console.log('scrollTop', scrollTop);
-      console.log('scrollBottom', scrollBottom);
-  };
+    };
+  }
 
   render() {
     const { messages } = this.context;
     return (
       <Body>
         <div>
-          <ReverseScroll width={'100%'} height={'450px'} className={'reverseScroll'} ref={ref => (this.scrollView = ref)} onScroll={this.handleScroll}>
+          <ReverseScroll width="100%" height="450px" className="reverseScroll" ref={ref => (this.scrollView = ref)}>
             {
               messages.map(({ output, input, ...rest }, index) => (
                 <ChatMessage
@@ -75,7 +69,7 @@ class ChatArea extends Component {
             }
           </ReverseScroll>
         </div>
-        <GlobalStyle/>
+        <GlobalStyle />
       </Body>
     );
   }
