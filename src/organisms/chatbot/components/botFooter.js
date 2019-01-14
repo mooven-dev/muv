@@ -51,6 +51,7 @@ class BotFooter extends Component {
     this.state = {};
     BotFooter.Instance = this;
     // UPDATE CHAT SCREEEN
+    let voiceActive = false;
     this.updateChat = (message) => {
       // SETUP
       const { messages, disableInput } = this.context;
@@ -72,6 +73,7 @@ class BotFooter extends Component {
           botMessage.time = moment().format('H:mm');
           // OUTPUT || BOT
           this.updateChat(botMessage);
+          (voiceActive && this.speak(botMessage));
         })
         .catch(err => console.log('error', err)); // eslint-disable-line
     };
@@ -171,22 +173,25 @@ class BotFooter extends Component {
       snd.play();
       const _this = this;
       let x = 0;
-      const interim = setInterval(function () {
+      const transcript = setInterval(function () {
         console.log('AAAAAH=>', _this.props.finalTranscript)
         _this.setState({text: _this.props.finalTranscript});
         if (_this.props.finalTranscript != "") { 
-          window.clearInterval(interim)
+          window.clearInterval(transcript)
+          voiceActive = true;
           _this.submitMessage();
         } else if (++x > 5) {
+          window.clearInterval(transcript)
           _this.setState({text: 'Falha ao captar aúdio, tente novamente.'}); // change to audio
         }
         _this.props.resetTranscript();
-        _this.speak();
       }, 500);
+
     }
-    this.speak = async () => {
+    this.speak = async (message) => {
+
       var awsCredentials = new AWS.Credentials("AKIAIXKXOD2WJYLWL3EQ", "fxFrsXvdaYRnFrND4Ye+k6oPVM52L+m+RKm7e64u");
-      var pollyVoiceId = true ? 'Ricardo' : 'Vitoria';
+      var pollyVoiceId = this.props.botName == "Hyun" ? 'Ricardo' : 'Vitoria';
       var settings = {
           awsCredentials: awsCredentials,
           awsRegion: "us-east-1",
@@ -195,7 +200,7 @@ class BotFooter extends Component {
       }
       var kathy = ChattyKathy(settings);
       
-      kathy.Speak("Me ajuda, estou sendo comitada");
+      kathy.Speak(message.output.text.join('.'));
 
       if (kathy.IsSpeaking()) {
           kathy.ShutUp(); 

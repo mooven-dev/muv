@@ -40,7 +40,7 @@ class ChatBox extends Component {
 
   render() {
     const { open, isLoad, toogleChat } = this.context;
-    const { botTitle, ...rest } = this.props;
+    const { botTitle, botName, ...rest } = this.props;
     return (
       <StyledChatBox flex open={(isLoad && open)}>
         {/* HEADER */}
@@ -53,7 +53,7 @@ class ChatBox extends Component {
         {/* BODY (MESSAGES GOES HERE) */}
         <ChatArea {...rest} />
         {/* FOOTER */}
-        <BotFooter />
+        <BotFooter botName={botName}/>
       </StyledChatBox>
     );
   }
