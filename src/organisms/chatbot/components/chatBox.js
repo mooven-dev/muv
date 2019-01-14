@@ -64,7 +64,7 @@ class ChatBox extends Component {
           <ChatArea {...rest} />
 
           {/* FOOTER */}
-          <BotFooter botName={botName}/>
+          <BotFooter botName={botName} />
         </Wrap>
       </StyledChatBox>
     );
