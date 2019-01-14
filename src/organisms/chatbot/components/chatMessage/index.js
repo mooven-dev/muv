@@ -4,6 +4,7 @@ import React, { PureComponent as Component } from 'react';
 import { node, bool, string, objectOf, any } from 'prop-types';
 import htmlParser from 'react-html-parser';
 import styled from 'styled-components';
+import Utils from '../build-your/helper/utils';
 
 import { botAvatarImg, userAvatarImg } from '../../../../utils';
 import Container from '../../../../atoms/container';
@@ -17,6 +18,7 @@ import BotContext from '../../context';
 import Options from './widgetOptions';
 import BotFooter from '../botFooter';
 import constants from './constants';
+import BuildYour from '../build-your';
 
 // UNIQUE COMPONENTS
 const MessageRow = styled(Row)`
@@ -97,12 +99,27 @@ class ChatMessage extends Component {
       const { height } = this.contentRef.current.getBoundingClientRect();
       this.setState({ height });
     };
-
+    this.cntFixed = Utils.createElement('div', { class: 'web-chat-fixed-container' });
     // PARSE STRINGS TO HTML (IF IT HAVE)
     this.parseText = () => {
       const { children, user } = this.props;
       if (typeof children === 'string') return <Text small white={user}>{htmlParser(children)}</Text>;
       return children;
+    };
+
+    this.startBuildYour = () => {
+      const { disableInput } = this.context;
+      const build = new BuildYour({
+        postMessage: BotFooter.send(this),
+        $elPanelCar: this.cntFixed,
+        onClosed: () => {
+          // this.chat.checkerTimerPaused = false;
+          disableInput(false);
+        },
+      });
+      build.start().then(() => {
+        disableInput(true);
+      });
     };
 
     //
@@ -122,6 +139,7 @@ class ChatMessage extends Component {
         WIDGET_OPTIONS_UNLOCK,
         WIDGET_OPTIONS,
         WIDGET_YES_NO,
+        WIDGET_BUILD,
       } = constants;
       // RETURN RIGHT WIDGET
       switch (_nextWidget) {
@@ -162,6 +180,11 @@ class ChatMessage extends Component {
                 ]}
               </Options>
             );
+          }
+        case WIDGET_BUILD:
+          if (_widgets[WIDGET_BUILD]) {
+            this.startBuildYour();
+            break;
           }
         default:
           return disableInput(false);

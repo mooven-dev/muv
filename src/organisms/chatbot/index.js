@@ -122,7 +122,7 @@ Chatbot.propTypes = {
 
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
-  id: '5c3928871383230052785027',
+  id: '5c0acdec2c42de5e9d8d1580',
   botTitle: 'Skynet ChatBot',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,

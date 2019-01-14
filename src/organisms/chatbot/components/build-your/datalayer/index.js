@@ -255,6 +255,7 @@ export const getInfoCar = ({
 };
 
 export const loadData = () => {
+  console.log('#TOAQUI')
     return new Promise((resolve, reject) => {
       if (dataLayer) {
         resolve(dataLayer);
@@ -262,7 +263,7 @@ export const loadData = () => {
       Axios.get(dataApi)
         .then((res) => {
             dataLayer = normalizeData(res);
-            resolve(dataLayer);
+            resolve(res);
         })
         .catch(err => console.log(err));     
     });
