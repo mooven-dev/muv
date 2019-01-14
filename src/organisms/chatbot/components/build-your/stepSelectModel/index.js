@@ -1,5 +1,5 @@
 import rendeModelOption from './modelOption';
-import Utils from '../../helpers/utils';
+import Utils from '../helper/utils';
 import Gallery from '../components/gallery';
 
 const renderHtml = () => `
@@ -22,7 +22,7 @@ const registerEvents = (el, onSelect) => {
   const items = el.querySelectorAll('.wch-step-select-item');
   if (!items) return;
   items.forEach((item) => {
-    item.addEventListener('click', (e) => {
+    item.addEventListener('click', () => {
       const type = item.getAttribute('data-model');
       onSelect({ model: type });
     });

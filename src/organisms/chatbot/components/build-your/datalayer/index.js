@@ -122,6 +122,25 @@ export const getBasePrice = (modelName) => {
   return priceFormated(basePrice);
 };
 
+export const getEnginesByModel = (model) => {
+  const { uniqueEngines, models } = dataLayer;
+  const enginesModel = models.reduce((acc, item) => {
+    if (item['model'] !== model || uniqueEngines.indexOf(item['engine']) < 0) {
+      return acc;
+    }
+    const engine = [
+      item['engine'],
+      item['transmissionType'],
+      item['transmission'],
+      item['fuel'],
+      item['doors']
+    ];
+    return [...acc, engine.join('|')]
+  }, []);
+  return uniq(enginesModel);
+};
+
+
 export const getTrimsByModelEngine = ({ model, engine }) => {
     const { uniqueTrims, models } = dataLayer;
     const arrEngine = engine.split('|');

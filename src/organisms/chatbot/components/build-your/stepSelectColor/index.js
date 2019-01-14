@@ -22,7 +22,7 @@ const registerEvents = (el, onSelect) => {
   const items = el.querySelectorAll('.wch-step-select-item');
   if (!items) return;
   items.forEach((item) => {
-    item.addEventListener('click', (e) => {
+    item.addEventListener('click', () => {
       const color = item.getAttribute('data-color');
       onSelect({ color });
     });
