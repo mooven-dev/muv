@@ -30,6 +30,7 @@ const registerEvents = (el, onSelect) => {
 };
 
 const render = (data, onSelect) => {
+  console.log(data);
   const el = mount(data);
   registerEvents(el, onSelect);
   return el;

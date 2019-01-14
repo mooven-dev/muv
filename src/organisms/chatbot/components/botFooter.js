@@ -14,7 +14,7 @@ import BotContext from '../context';
 import config from '../../../env';
 
 require('events').EventEmitter.defaultMaxListeners = 15;
-
+const JSON = require('circular-json');
 const { endPoint } = config;
 
 const StyledButton = styled(Button)`

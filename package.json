@@ -24,6 +24,7 @@
     "babel-loader": "^8.0.4",
     "buble": "0.19.4",
     "chalk": "^2.4.1",
+    "circular-json": "^0.5.9",
     "clean-webpack-plugin": "^0.1.19",
     "core-js": "^2.6.1",
     "docz": "^0.12.13",

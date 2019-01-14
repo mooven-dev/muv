@@ -262,8 +262,8 @@ export const loadData = () => {
       }
       Axios.get(dataApi)
         .then((res) => {
-            dataLayer = normalizeData(res);
-            resolve(res);
+            dataLayer = normalizeData(res.data);
+            resolve(normalizeData(res.data));
         })
         .catch(err => console.log(err));     
     });
