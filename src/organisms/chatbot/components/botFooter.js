@@ -176,17 +176,32 @@ class BotFooter extends Component {
         _this.setState({text: _this.props.finalTranscript});
         if (_this.props.finalTranscript != "") { 
           window.clearInterval(interim)
-          _this.props.resetTranscript();
           _this.submitMessage();
         } else if (++x > 5) {
-          React.render(
-            <Speech text="Welcome to react speech" />,
-            document.getElementById('node')
-          );
           _this.setState({text: 'Falha ao captar aúdio, tente novamente.'}); // change to audio
-          _this.props.resetTranscript();
         }
+        _this.props.resetTranscript();
+        _this.speak();
       }, 500);
+    }
+    this.speak = async () => {
+      var awsCredentials = new AWS.Credentials("AKIAIXKXOD2WJYLWL3EQ", "fxFrsXvdaYRnFrND4Ye+k6oPVM52L+m+RKm7e64u");
+      var pollyVoiceId = true ? 'Ricardo' : 'Vitoria';
+      var settings = {
+          awsCredentials: awsCredentials,
+          awsRegion: "us-east-1",
+          pollyVoiceId: pollyVoiceId,
+          cacheSpeech: true
+      }
+      var kathy = ChattyKathy(settings);
+      
+      kathy.Speak("Me ajuda, estou sendo comitada");
+
+      if (kathy.IsSpeaking()) {
+          kathy.ShutUp(); 
+      }
+
+      kathy.ForgetCachedSpeech();
     }
   }
 
