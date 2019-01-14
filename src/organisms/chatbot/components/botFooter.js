@@ -178,7 +178,7 @@ class BotFooter extends Component {
     };
     this.speak = async (message) => {
       console.log(this.props.botName)
-      let awsCredentials = new AWS.Credentials('AKIAIXKXOD2WJYLWL3EQ', 'fxFrsXvdaYRnFrND4Ye+k6oPVM52L+m+RKm7e64u');
+      let awsCredentials = new AWS.Credentials('AKIAJNUQP2TTIJIK6VNA', 'QdyHAGC1gfr05Bz8i8xBnWHiKUhkmJs6TKC1aTJa');
       let pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
       let settings = {
         awsCredentials,
