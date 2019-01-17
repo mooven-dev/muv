@@ -202,11 +202,11 @@ class ChatMessage extends Component {
                 {[
                   {
                     label: <Icon color="white" name="thumbs-down" />,
-                    value: 'thumbs-down',
+                    value: 'thumbs_down',
                   },
                   {
                     label: <Icon color="white" name="thumbs-up" />,
-                    value: 'thumbs-up',
+                    value: 'thumbs_up',
                   },
                 ]}
               </Options>
