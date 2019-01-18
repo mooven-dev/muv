@@ -314,11 +314,11 @@ ChatMessage.propTypes = {
 };
 
 ChatMessage.defaultProps = {
-  children: 'Come with me if you want to live!',
+  children: 'Desculpe, não consegui compreender a sua dúvida. Posso te ajudar com mais alguma coisa?',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,
-  userName: 'Sarah',
-  botName: 'T-800',
+  userName: 'User',
+  botName: 'Assistente Virtual',
   user: false,
   context: {},
   time: '',

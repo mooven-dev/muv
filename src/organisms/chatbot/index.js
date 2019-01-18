@@ -130,13 +130,13 @@ Chatbot.propTypes = {
 
 Chatbot.defaultProps = {
   children: <Icon fontSize="2rem" name="contacts" color="white" />,
-  id: '5c0acdec2c42de5e9d8d1580',
-  botTitle: 'Skynet Chatbot',
+  id: '5c3b749b138323005278502a',
+  botTitle: 'Assistente Hyundai',
   userAvatar: userAvatarImg,
   botAvatar: botAvatarImg,
   router: () => null,
   userName: 'User',
-  botName: 'T-800',
+  botName: 'Assistente Virtual',
   personas: false,
   timeOut: 50000,
   open: false,
