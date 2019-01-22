@@ -37,6 +37,7 @@ Body.defaultProps = {
 class ChatArea extends Component {
   constructor(props) {
     super(props);
+
     this.state = {};
     this.scrollToBottom = () => {
       if (!this.scrollView) return;
@@ -53,6 +54,7 @@ class ChatArea extends Component {
     const { messages } = this.context;
     return (
       <Body>
+
         <div>
           <ReverseScroll width="100%" height="450px" className="reverseScroll" ref={ref => (this.scrollView = ref)}>
             {

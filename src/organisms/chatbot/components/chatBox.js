@@ -61,7 +61,7 @@ class ChatBox extends Component {
           </Row>
 
           {/* BODY (MESSAGES GOES HERE) */}
-          <ChatArea {...rest} />
+          <ChatArea {...this.props} {...rest} />
 
           {/* FOOTER */}
           <BotFooter botName={botName} />

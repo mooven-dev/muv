@@ -119,7 +119,7 @@ Personas.defaultProps = {
   avatarHyun: hyun,
   avatarDay: dai,
   nameHyun: 'Hyun',
-  nameDay: 'Day',
+  nameDay: 'Dai',
 };
 
 Personas.contextType = BotContext;
