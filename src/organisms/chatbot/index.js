@@ -23,7 +23,8 @@ class Chatbot extends Component {
 
     this.startBot = () => {
       const { id } = this.props;
-      Axios.get(`${endPoint}bots/${id}`, { headers: { Authorization: `Bearer ${Cookies.get('token')}` } })
+      const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzBmZTFhMDdkNTE2NDA4MTg0NWYyZmUiLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmIkMTAkOG5maC9OdS5wNjZISFJwb0FHTGNsdTVhcEVySVlJOWthMEZyYzI4N1NXOWlDRFhyT0FRTFMiLCJfX3YiOjAsImlhdCI6MTU0NDY0MTA0N30.DJuxJGl-9OBI62M7iV0dCdewdeCZRUInisXptKUfP7A";
+      Axios.get(`${endPoint}bots/${id}`, { headers: { Authorization: `Bearer ${token}` } })
         .then((res) => {
           this.setState({ botLoaded: true, bot: res.data.payload });
         })
