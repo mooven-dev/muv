@@ -136,7 +136,7 @@ Chatbot.defaultProps = {
   botAvatar: botAvatarImg,
   router: () => null,
   userName: 'User',
-  botName: 'Assistente Virtual',
+  botName: 'Please inform botName Property',
   personas: false,
   timeOut: 50000,
   open: false,

@@ -248,7 +248,7 @@ class ChatMessage extends Component {
   }
 
   render() {
-    const { user, userAvatar, userName, botAvatar: propsBotAvatar, botName: propsBotName, time } = this.props;
+    const { user, userAvatar, userName, time } = this.props;
     const { botName: contextBotName, botAvatar: contextBotAvatar } = this.context;
     const { content, height } = this.state;
     return (
@@ -256,12 +256,11 @@ class ChatMessage extends Component {
         <MessageRow align="flex-end" user={user}>
           {/* USER OR BOT AVATAR IMAGE */}
           <Avatar
-            src={user ? userAvatar : contextBotAvatar || propsBotAvatar}
+            src={user ? userAvatar : this.props.botAvatar || contextBotAvatar}
             padding="1px"
             bordered
             grow={0}
           />
-
           {/* MESSAGE BOX */}
           <Balloon
             user={user}
@@ -274,7 +273,7 @@ class ChatMessage extends Component {
           >
             {/* USER OR BOT NAME */}
             <Name white={user} isLabel>
-              {user ? userName : contextBotName || propsBotName}
+              {user ? userName : this.props.botName || contextBotName }
             </Name>
 
             {/* SHOW MESSAGE CONTENT (COULD INCLUDES WIDGET) */}
