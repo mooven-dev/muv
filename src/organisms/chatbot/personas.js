@@ -61,15 +61,32 @@ text-decoration:none;
 class Personas extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { personaSelected: false };
     this.selectPersona = () => {
       const { avatarHyun, avatarDay, nameHyun, nameDay, gifHyun, gifDai } = this.props;
       const choseOne = (Math.random() > 0.5);
-      this.context.toContext({
-        botAvatar: choseOne ? avatarHyun : avatarDay,
-        personaGif: choseOne ? gifHyun : gifDai,
-        botName: choseOne ? nameHyun : nameDay,
-      });
+      // caso seja indicado o botname na propriedade, assume que pulou o processo de
+      // escolha de personas
+      // console.log(this.props);
+
+      if (this.props.personas === true) {
+        // console.log('passei no personas');
+        this.context.toContext({
+          botAvatar: choseOne ? avatarHyun : avatarDay,
+          personaGif: choseOne ? gifHyun : gifDai,
+          botName: choseOne ? nameHyun : nameDay,
+        });
+      } else {
+        // console.log('passei no props');
+        this.context.toContext({
+          botAvatar: this.props.botAvatar,
+          personaGif: this.props.botGif,
+          botName: this.props.botName,
+        });
+      }
+      setTimeout(() => {
+        this.setState({ personaSelected: true });
+      }, 4000);
     };
   }
 
@@ -85,19 +102,31 @@ class Personas extends Component {
           <StyledPersonas>
             <Col content align="center" justify="space-around">
               <AvatarPersonas src={personaGif} />
-              <StyledText type="h6" center white>
-                Olá ; )
-                <br />
-                Eu sou
-                {' '}
-                {botName}
-                , assistente virtual da Hyundai!
-                <br />
-                Estou aqui para tirar dúvidas sobre a
-                <br />
-                marca, carros e outros assuntos.
-                <br />
-              </StyledText>
+              {
+                  this.state.personaSelected
+                    ? (
+                      <StyledText type="h6" center white>
+                    Olá ; )
+                        <br />
+                    Eu sou
+                        {' '}
+                        {botName}
+                    , assistente virtual da Hyundai!
+                        <br />
+                    Estou aqui para tirar dúvidas sobre a
+                        <br />
+                    marca, carros e outros assuntos.
+                        <br />
+                      </StyledText>
+                    )
+                    : (
+                      <StyledText type="h6" center white>
+                    Selecionando seu assistente
+                      </StyledText>
+                    )
+              }
+
+
               <StyledButton inline onClick={() => toContext({ dismissPersonas: true })}>VAMOS COMEÇAR ?</StyledButton>
               <StyledText type="h6" white>
                 Para descobrir novidades Hyundai

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import moment from 'moment';
 import Axios from 'axios';
 
+import { Object } from 'core-js';
 import Button from '../../../atoms/button';
 import themeDefault from '../../../theme';
 import Input from '../../../atoms/input';
@@ -121,8 +122,16 @@ class BotFooter extends Component {
       // GET CONTEXT
       const { messages, bot } = this.context;
       const lastMessage = (messages.length && messages[messages.length - 1]);
-      const { context } = lastMessage;
-      if (context) context._nextWidget = ''; // eslint-disable-line
+      let { context } = lastMessage;
+      if (context == undefined) { context = { botName: '' }; }
+
+
+      if (context) {
+        context._nextWidget = ''; // eslint-disable-line
+      }
+
+      if (this.context.botName) { context.botName = this.context.botName; }
+
       const time = moment().format('H:mm');
       // SETUP MESSAGE DATA
       const data = {
@@ -164,30 +173,30 @@ class BotFooter extends Component {
       let x = 0;
       const _this = this;
       const transcript = setInterval(() => {
-        if (_this.props.finalTranscript != "") {
+        if (_this.props.finalTranscript != '') {
           _this.setState({ text: _this.props.finalTranscript });
-          window.clearInterval(transcript)
+          window.clearInterval(transcript);
           voiceActive = true;
           _this.submitMessage();
         } else if (++x > 5) {
-          window.clearInterval(transcript)
+          window.clearInterval(transcript);
           _this.setState({ text: 'Falha ao captar aúdio, tente novamente.' }); // change to audio
         }
         _this.props.resetTranscript();
       }, 500);
     };
     this.speak = async (message) => {
-      console.log(this.props.botName)
-      let awsCredentials = new AWS.Credentials('AKIAJYV6275VYYGL2FQQ', 'vD28MbTkRP56b38p8m1EIUedSFDwUR9lpIyWWGwm');
-      
-      let pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
-      let settings = {
+      console.log(this.props.botName);
+      const awsCredentials = new AWS.Credentials('AKIAJYV6275VYYGL2FQQ', 'vD28MbTkRP56b38p8m1EIUedSFDwUR9lpIyWWGwm');
+
+      const pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
+      const settings = {
         awsCredentials,
         awsRegion: 'us-east-1',
         pollyVoiceId,
         cacheSpeech: true,
       };
-      let kathy = ChattyKathy(settings);
+      const kathy = ChattyKathy(settings);
 
       kathy.Speak(message.output.text.join('.'));
 

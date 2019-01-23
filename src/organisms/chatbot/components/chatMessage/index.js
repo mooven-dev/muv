@@ -136,7 +136,7 @@ class ChatMessage extends Component {
     this.renderWidget = () => {
       // SETUP
       const { context, router } = this.props;
-      const { _nextWidget, ITSM_page, ...rest } = context;
+      const { _nextWidget, ITSM_page, persona, ...rest } = context;
       const {
         toContext,
         disableInput,
@@ -151,11 +151,16 @@ class ChatMessage extends Component {
         WIDGET_EMAIL,
         WIDGET_NAME,
         WIDGET_CPF,
+        WIDGET_PERSONA,
       } = constants;
       // CHANGE ROUTER
       if (ITSM_page && router) router.push(ITSM_page);
       // RETURN RIGHT WIDGET
       switch (_nextWidget) {
+        case WIDGET_PERSONA:
+          if (_widgets[WIDGET_PERSONA]) {
+            return toContext({ inputValidation: 'quem é você' });
+          }
         case WIDGET_EMAIL:
           if (_widgets[WIDGET_EMAIL]) {
             return toContext({ inputValidation: 'email' });
@@ -249,14 +254,19 @@ class ChatMessage extends Component {
 
   render() {
     const { user, userAvatar, userName, time } = this.props;
+    // const { user, userAvatar, userName, time, ame } = this.props;
     const { botName: contextBotName, botAvatar: contextBotAvatar } = this.context;
     const { content, height } = this.state;
+
+    console.log(this.context.botName);
+
     return (
       <Container>
         <MessageRow align="flex-end" user={user}>
           {/* USER OR BOT AVATAR IMAGE */}
           <Avatar
-            src={user ? userAvatar : this.props.botAvatar || contextBotAvatar}
+            // src={user ? userAvatar : (this.props.botAvatar || contextBotAvatar)}
+            src={user ? userAvatar : this.context.botAvatar}
             padding="1px"
             bordered
             grow={0}
@@ -273,7 +283,8 @@ class ChatMessage extends Component {
           >
             {/* USER OR BOT NAME */}
             <Name white={user} isLabel>
-              {user ? userName : this.props.botName || contextBotName }
+              {/* {user ? userName : this.props.botName || contextBotName } */}
+              {user ? userName : this.context.botName }
             </Name>
 
             {/* SHOW MESSAGE CONTENT (COULD INCLUDES WIDGET) */}
