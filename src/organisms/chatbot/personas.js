@@ -86,7 +86,7 @@ class Personas extends Component {
       }
       setTimeout(() => {
         this.setState({ personaSelected: true });
-      }, 4000);
+      }, 5000);
     };
   }
 
