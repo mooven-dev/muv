@@ -56,7 +56,7 @@ class ChatArea extends Component {
       <Body>
 
         <div>
-          <ReverseScroll width="100%" height="450px" className="reverseScroll" ref={ref => (this.scrollView = ref)}>
+          <ReverseScroll width="100%" height="auto" className="reverseScroll" ref={ref => (this.scrollView = ref)}>
             {
               messages.map(({ output, input, ...rest }, index) => (
                 <ChatMessage
