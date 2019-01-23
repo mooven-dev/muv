@@ -50,7 +50,7 @@ class ChatBox extends Component {
       <StyledChatBox flex open={(isLoad && open)}>
         <Wrap>
           {/* PERSONAS */}
-          <Personas />
+          <Personas {...this.props} {...rest} />
 
           {/* HEADER */}
           <Row noRadius secondary grow={0} hasContent bordered justify="space-between">
@@ -64,7 +64,7 @@ class ChatBox extends Component {
           <ChatArea {...this.props} {...rest} />
 
           {/* FOOTER */}
-          <BotFooter botName={botName} />
+          <BotFooter botName={botName} {...this.props} {...rest} />
         </Wrap>
       </StyledChatBox>
     );
