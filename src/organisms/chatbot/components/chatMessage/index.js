@@ -163,34 +163,44 @@ class ChatMessage extends Component {
           }
         case WIDGET_EMAIL:
           if (_widgets[WIDGET_EMAIL]) {
+            console.log('WIDGET_EMAIL');
             return toContext({ inputValidation: 'email' });
           }
         case WIDGET_NAME:
           if (_widgets[WIDGET_NAME]) {
+            console.log('WIDGET_NAME');
             return toContext({ inputValidation: 'name' });
           }
+
         case WIDGET_CPF:
           if (_widgets[WIDGET_CPF]) {
+            console.log('WIDGET_CPF');
             return toContext({ inputValidation: 'cpf' });
           }
+
         case WIDGET_OPTIONS_UNLOCK:
           if (_widgets[WIDGET_OPTIONS_UNLOCK]) {
+            console.log('WIDGET_OPTIONS_UNLOCK');
             return (
               <Options onClick={this.widgetClick}>
                 {rest[WIDGET_OPTIONS_UNLOCK]}
               </Options>
             );
           }
+
         case WIDGET_OPTIONS:
           if (_widgets[WIDGET_OPTIONS]) {
+            console.log('WIDGET_OPTIONS');
             return (
               <Options onClick={this.widgetClick}>
                 {rest[WIDGET_OPTIONS]}
               </Options>
             );
           }
+
         case WIDGET_YES_NO:
           if (_widgets[WIDGET_YES_NO]) {
+            console.log('WIDGET_YES_NO');
             return (
               <Options onClick={this.widgetClick}>
                 {[
@@ -202,6 +212,7 @@ class ChatMessage extends Component {
           }
         case WIDGET_THUMBS_UP_DOWN:
           if (_widgets[WIDGET_THUMBS_UP_DOWN]) {
+            console.log('WIDGET_THUMBS_UP_DOWN');
             return (
               <Options onClick={this.widgetClick}>
                 {[
@@ -217,10 +228,11 @@ class ChatMessage extends Component {
               </Options>
             );
           }
+
         case WIDGET_BUILD:
           if (_widgets[WIDGET_BUILD]) {
+            console.log('WIDGET_BUILD');
             this.startBuildYour();
-            break;
           }
         default:
           return disableInput(false);

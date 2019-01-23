@@ -129,8 +129,12 @@ class BotFooter extends Component {
       if (context) {
         context._nextWidget = ''; // eslint-disable-line
       }
-
       if (this.context.botName) { context.botName = this.context.botName; }
+      context.bot = bot;
+      // context.minPriceCRETA = bot.minPriceCRETA;
+      // context.maxPriceCRETA = bot.maxPriceCRETA;
+      // context.minPriceHB20 = bot.minPriceHB20;
+      // context.maxPriceHB20 = bot.maxPriceHB20;
 
       const time = moment().format('H:mm');
       // SETUP MESSAGE DATA
