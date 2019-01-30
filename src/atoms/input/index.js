@@ -3,6 +3,7 @@ import React, { PureComponent as Component } from 'react';
 import { bool, string, func } from 'prop-types';
 import styled from 'styled-components';
 
+import BotContext from '../../organisms/chatbot/context';
 import { inputStyle } from '../../utils';
 import themeDefault from '../../theme';
 import validator from './validators';
@@ -49,8 +50,7 @@ class Input extends Component {
       if (actualDisabled === false && prevDisabled === true) this.autoFocus();
     };
     this.handleChange = (e) => {
-      console.log('handleChange');
-      const { onChange, onValidate, autocomplete, validate } = this.props;
+      const { onChange, onValidate, autocomplete, validate} = this.props;
       const { value } = e.target;
       e.preventDefault();
       // VALIDATION
@@ -58,8 +58,6 @@ class Input extends Component {
       // RETURN VALUE AND ERROR TO PARENT
       onValidate(error);
       onChange(data);
-      console.log('ONCHANGE=>', onChange(data));
-      console.log('ONVALIDATE=>', onValidate(error))
       // AUTOCOMPLETE
       if (autocomplete && value.length >= 3) {
         this.setState({
@@ -68,7 +66,12 @@ class Input extends Component {
           ),
         });
       } else {
-        this.setState({ error, value: data, autocomplete: [] });
+        this.setState({error, value: data, autocomplete: [] });
+        const {
+          toContext,
+          disableButton,
+        } = this.context;
+        return toContext({ disableButton: !error });
       }
     };
     this.autocomplete = () => {
@@ -132,7 +135,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
-  onValidate: err => console.log('err', err),
+  onValidate: err => err,
   disabledPlaceholder: 'disabled',
   placeholder: 'placeholder',
   onChange: value => value,
@@ -141,6 +144,8 @@ Input.defaultProps = {
   error: false,
   type: 'text',
 };
+
+Input.contextType = BotContext;
 
 // EXPORT
 export default Input;

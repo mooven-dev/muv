@@ -58,7 +58,6 @@ class BotFooter extends Component {
       let botMessage = {};
       // INPUT || USER
       if (isUser) await this.updateChat(data);
-      console.log('botMessage', botMessage);
       Axios.post(`${this.context.bot.backend_endpoint}conversation`, JSON.stringify(data))
         .then((res) => {
           botMessage = res.data;
@@ -92,7 +91,6 @@ class BotFooter extends Component {
         },
         method: 'POST',
       };
-      console.log('vai chamar o google', options);
       // CHAMANDO O SERVIÇO DO GOOGLE SEM SE PREOCUPAR COM O RETORNO
       Axios(options).catch(err => console.log('error ao chamar google', err));
     };
@@ -218,7 +216,6 @@ class BotFooter extends Component {
       }, 500);
     };
     this.speak = async (message) => {
-      console.log(this.props.botName);
       const awsCredentials = new AWS.Credentials('AKIAJYV6275VYYGL2FQQ', 'vD28MbTkRP56b38p8m1EIUedSFDwUR9lpIyWWGwm');
 
       const pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
@@ -248,7 +245,7 @@ class BotFooter extends Component {
 
   render() {
     // SpeechRecognition
-    const { open, disabled, inputValidation } = this.context;
+    const { open, disabled, inputValidation, disableButton } = this.context;
     const { browserSupportsSpeechRecognition } = this.props;
     const { text } = this.state;
     return (
@@ -258,6 +255,7 @@ class BotFooter extends Component {
             <StyledInput
               value={text}
               validate={inputValidation}
+              mask={inputValidation}
               disabled={disabled || !open}
               disabledPlaceholder="Aguarde..."
               placeholder="Digite sua mensagem..."
@@ -269,7 +267,7 @@ class BotFooter extends Component {
               inset
               secondary
               onClick={this.submitMessage}
-              disabled={disabled || !text}
+              disabled={disabled || !text || disableButton}
             >
               <Icon name="paper-plane" color="white" />
             </StyledButton>

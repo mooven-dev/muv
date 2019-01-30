@@ -1,4 +1,3 @@
-
 import CPF from 'gerador-validador-cpf';
 
 export const validateCPF = cpf => ({
@@ -17,12 +16,12 @@ export const validateEmail = (email) => {
 };
 
 export const validatePhone = (phone) => {
-  const regex = /^[1-9]{2}\-[2-9][0-9]{7,8}$/;
+  const regex = /^\([1-9]{2}\)[2-9][0-9]{7,8}$/;
   return { data: phone, error: regex.test(phone) };
 };
 
 export default {
-  default: data => ({ data, error: false }),
+  default: data => ({ data, error: true }),
   email: data => validateEmail(data),
   name: data => validateName(data),
   cpf: data => validateCPF(data),

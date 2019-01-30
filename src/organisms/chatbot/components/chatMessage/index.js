@@ -165,32 +165,26 @@ class ChatMessage extends Component {
       // RETURN RIGHT WIDGET
       switch (_nextWidget) {
         case WIDGET_PERSONA:
-          console.log('WIDGET_PERSONA');
           if (_widgets[WIDGET_PERSONA]) {
             return toContext({ inputValidation: 'quem é você', disabled: false});
           }
         case WIDGET_EMAIL:
-          console.log('WIDGET_EMAIL');
           if (_widgets[WIDGET_EMAIL]) {
             return toContext({ inputValidation: 'email', disabled: false});
           }
         case WIDGET_NAME:
-          console.log('WIDGET_NAME');
           if (_widgets[WIDGET_NAME]) {
             return toContext({ inputValidation: 'name', disabled: false});
           }
         case WIDGET_CPF:
-          console.log('WIDGET_CPF');
           if (_widgets[WIDGET_CPF]) {
             return toContext({ inputValidation: 'cpf', disabled: false});
           }
         case WIDGET_MOBILE:
-          console.log('WIDGET_MOBILE');
           if (_widgets[WIDGET_MOBILE]) {
             return toContext({ inputValidation: 'phone', disabled: false});
           }
         case WIDGET_OPTIONS_UNLOCK:
-          console.log('WIDGET_OPTIONS_UNLOCK');
           if (_widgets[WIDGET_OPTIONS_UNLOCK]) {
             return (
               <Options onClick={this.widgetClick}>
@@ -200,7 +194,6 @@ class ChatMessage extends Component {
           }
 
         case WIDGET_OPTIONS:
-          console.log('WIDGET_OPTIONS');
           if (_widgets[WIDGET_OPTIONS]) {
             return (
               <Options onClick={this.widgetClick}>
@@ -210,7 +203,6 @@ class ChatMessage extends Component {
           }
 
         case WIDGET_YES_NO:
-          console.log('WIDGET_YES_NO');
           if (_widgets[WIDGET_YES_NO]) {
             return (
               <Options onClick={this.widgetClick}>
@@ -222,7 +214,6 @@ class ChatMessage extends Component {
             );
           }
         case WIDGET_THUMBS_UP_DOWN:
-          console.log('WIDGET_THUMBS_UP_DOWN');
           if (_widgets[WIDGET_THUMBS_UP_DOWN]) {
             return (
               <Options onClick={this.widgetClick}>
@@ -241,17 +232,14 @@ class ChatMessage extends Component {
           }
 
         case WIDGET_BUILD:
-          console.log('WIDGET_BUILD');
           if (_widgets[WIDGET_BUILD]) {
             this.startBuildYour();
           }
         case WIDGET_STORES:
-          console.log('WIDGET_STORES');
           if (_widgets[WIDGET_BUILD]) {
             this.startStores();
           }
         default:
-          console.log('DEFAULT');
           return disableInput(false);
       }
     };
@@ -286,8 +274,6 @@ class ChatMessage extends Component {
     // const { user, userAvatar, userName, time, ame } = this.props;
     const { botName: contextBotName, botAvatar: contextBotAvatar } = this.context;
     const { content, height } = this.state;
-
-    console.log(this.context.botName);
 
     return (
       <Container>
