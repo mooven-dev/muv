@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import moment from 'moment';
 import Axios from 'axios';
 
-import { Object } from 'core-js';
-import InputMask from 'react-input-mask';
 import Button from '../../../atoms/button';
 import themeDefault from '../../../theme';
 import Input from '../../../atoms/input';
@@ -57,17 +55,46 @@ class BotFooter extends Component {
 
     // SEND MESSAGE
     this.messageRequest = async (data, isUser) => {
+      let botMessage = {};
       // INPUT || USER
       if (isUser) await this.updateChat(data);
-      Axios.post(`${endPoint}conversation`, JSON.stringify(data))
+      console.log('botMessage', botMessage);
+      Axios.post(`${this.context.bot.backend_endpoint}conversation`, JSON.stringify(data))
         .then((res) => {
-          const botMessage = res.data;
+          botMessage = res.data;
           botMessage.time = moment().format('HH:mm');
           // OUTPUT || BOT
           this.updateChat(botMessage);
           (voiceActive && this.speak(botMessage));
         })
-        .catch(err => console.log('error', err)); // eslint-disable-line
+        .catch(err => console.log('error', err)) // eslint-disable-line 
+        .finally(() => {
+          this.storeGoogleAnalytics(botMessage);
+        });
+    };
+
+
+    this.storeGoogleAnalytics = (params) => {
+      const intent = params.intents.length > 0 ? params.intents[0].intent : '';
+      const options = {
+        url: 'https://www.google-analytics.com/collect',
+        data: {
+          v: '1',
+          t: 'pageview',
+          tid: this.context.bot.google_analytics.tid,
+          dh: this.context.bot.google_analytics.dh,
+          dt: this.context.bot.google_analytics.dt,
+          dp: intent,
+          cid: params.context.bot.clientId,
+        },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        method: 'POST',
+      };
+      console.log('vai chamar o google', options);
+      // CHAMANDO O SERVIÇO DO GOOGLE SEM SE PREOCUPAR COM O RETORNO
+      Axios(options).catch(err => console.log('error ao chamar google', err));
     };
 
     // RESET INNACTIVITY WARNS
@@ -191,11 +218,11 @@ class BotFooter extends Component {
       }, 500);
     };
     this.speak = async (message) => {
-      console.log(this.props.botName)
-      let awsCredentials = new AWS.Credentials('AKIAJYV6275VYYGL2FQQ', 'vD28MbTkRP56b38p8m1EIUedSFDwUR9lpIyWWGwm');
+      console.log(this.props.botName);
+      const awsCredentials = new AWS.Credentials('AKIAJYV6275VYYGL2FQQ', 'vD28MbTkRP56b38p8m1EIUedSFDwUR9lpIyWWGwm');
 
-      let pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
-      let settings = {
+      const pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
+      const settings = {
         awsCredentials,
         awsRegion: 'us-east-1',
         pollyVoiceId,
