@@ -24,14 +24,23 @@ class Chatbot extends Component {
     this.startBot = () => {
       const { id } = this.props;
       const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzBmZTFhMDdkNTE2NDA4MTg0NWYyZmUiLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmIkMTAkOG5maC9OdS5wNjZISFJwb0FHTGNsdTVhcEVySVlJOWthMEZyYzI4N1NXOWlDRFhyT0FRTFMiLCJfX3YiOjAsImlhdCI6MTU0NDY0MTA0N30.DJuxJGl-9OBI62M7iV0dCdewdeCZRUInisXptKUfP7A';
-      Axios.get(`${endPoint}bots/${id}`, { headers: { Authorization: `Bearer ${token}` } })
+      // Axios.get(`${endPoint}chatbots/${id}`, { headers: { Authorization: `Bearer ${token}` } })
+
+      // SOLITANDO AO SERVIDOR AS CONFIGURAÇÕES REFENTE AO CHATBOT
+      Axios.get(`${endPoint}chatbots/${id}`)
         .then((res) => {
-          this.setState({ botLoaded: true, bot: res.data.payload });
-          console.log(this.state.bot);
+          // criando chave unica de acesso
+          const resData = res.data;
+          resData.clientId = `x${Math.random().toString(36).slice(-8)}`;
+          this.setState(
+            { botLoaded: true, bot: resData },
+          );
         })
         .catch(err => console.log(err));
     };
 
+
+    // confirmar item DR
     // GENERIC CONTEXT METHOD
     this.toContext = data => this.setState(data);
 

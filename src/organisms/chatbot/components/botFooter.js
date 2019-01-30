@@ -56,18 +56,45 @@ class BotFooter extends Component {
 
     // SEND MESSAGE
     this.messageRequest = async (data, isUser) => {
+      let botMessage = {};
       // INPUT || USER
       if (isUser) await this.updateChat(data);
-      Axios.post(`${endPoint}conversation`, JSON.stringify(data))
+      Axios.post(`${this.context.bot.backend_endpoint}conversation`, JSON.stringify(data))
         .then((res) => {
-          const botMessage = res.data;
+          botMessage = res.data;
           botMessage.time = moment().format('H:mm');
           // OUTPUT || BOT
           this.updateChat(botMessage);
           (voiceActive && this.speak(botMessage));
         })
-        .catch(err => console.log('error', err)); // eslint-disable-line
+        .catch(err => console.log('error', err)) // eslint-disable-line
+        .finally(() => {
+          this.storeGoogleAnalytics(botMessage);
+        });
     };
+
+    this.storeGoogleAnalytics = (params) => {
+      const intent = params.intents.length > 0 ? params.intents[0].intent : '';
+      const options = {
+        url: 'https://www.google-analytics.com/collect',
+        data: {
+          v: '1',
+          t: 'pageview',
+          tid: this.context.bot.google_analytics.tid,
+          dh: this.context.bot.google_analytics.dh,
+          dt: this.context.bot.google_analytics.dt,
+          dp: intent,
+          cid: params.context.bot.clientId,
+        },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        method: 'POST',
+      };
+      console.log('vai chamar o google', options);
+      // CHAMANDO O SERVIÇO DO GOOGLE SEM SE PREOCUPAR COM O RETORNO
+      Axios(options).catch(err => console.log('error ao chamar google', err));
+    },
 
     // RESET INNACTIVITY WARNS
     this.resetWarns = () => {
@@ -131,10 +158,6 @@ class BotFooter extends Component {
       }
       if (this.context.botName) { context.botName = this.context.botName; }
       context.bot = bot;
-      // context.minPriceCRETA = bot.minPriceCRETA;
-      // context.maxPriceCRETA = bot.maxPriceCRETA;
-      // context.minPriceHB20 = bot.minPriceHB20;
-      // context.maxPriceHB20 = bot.maxPriceHB20;
 
       const time = moment().format('H:mm');
       // SETUP MESSAGE DATA
@@ -146,6 +169,7 @@ class BotFooter extends Component {
           text,
         },
       };
+      console.log('Data', data);
       await this.startFirstWarn(data);
       this.messageRequest(data, isUser);
     };
