@@ -78,10 +78,11 @@ class Personas extends Component {
         });
       } else {
         // console.log('passei no props');
+        console.log('OI', this.context.bot);
         this.context.toContext({
-          botAvatar: this.props.botAvatar,
+          botAvatar: this.context.bot.identities[0].avatar,
           personaGif: this.props.botGif,
-          botName: this.props.botName,
+          botName: this.context.bot.identities[0].name,
         });
       }
       setTimeout(() => {
