@@ -16,9 +16,15 @@ export const validateEmail = (email) => {
   return { data: email, error: regex.test(email) };
 };
 
+export const validatePhone = (phone) => {
+  const regex = /^[1-9]{2}\-[2-9][0-9]{7,8}$/;
+  return { data: phone, error: regex.test(phone) };
+};
+
 export default {
   default: data => ({ data, error: false }),
   email: data => validateEmail(data),
   name: data => validateName(data),
   cpf: data => validateCPF(data),
+  phone: data => validatePhone(data)
 };

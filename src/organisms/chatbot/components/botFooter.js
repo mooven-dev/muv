@@ -5,6 +5,7 @@ import moment from 'moment';
 import Axios from 'axios';
 
 import { Object } from 'core-js';
+import InputMask from 'react-input-mask';
 import Button from '../../../atoms/button';
 import themeDefault from '../../../theme';
 import Input from '../../../atoms/input';
@@ -61,7 +62,7 @@ class BotFooter extends Component {
       Axios.post(`${endPoint}conversation`, JSON.stringify(data))
         .then((res) => {
           const botMessage = res.data;
-          botMessage.time = moment().format('H:mm');
+          botMessage.time = moment().format('HH:mm');
           // OUTPUT || BOT
           this.updateChat(botMessage);
           (voiceActive && this.speak(botMessage));
@@ -190,11 +191,11 @@ class BotFooter extends Component {
       }, 500);
     };
     this.speak = async (message) => {
-      console.log(this.props.botName);
-      const awsCredentials = new AWS.Credentials('AKIAJYV6275VYYGL2FQQ', 'vD28MbTkRP56b38p8m1EIUedSFDwUR9lpIyWWGwm');
+      console.log(this.props.botName)
+      let awsCredentials = new AWS.Credentials('AKIAJYV6275VYYGL2FQQ', 'vD28MbTkRP56b38p8m1EIUedSFDwUR9lpIyWWGwm');
 
-      const pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
-      const settings = {
+      let pollyVoiceId = this.props.botName == 'Day' ? 'Vitoria' : 'Ricardo';
+      let settings = {
         awsCredentials,
         awsRegion: 'us-east-1',
         pollyVoiceId,

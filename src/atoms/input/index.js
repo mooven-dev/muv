@@ -49,6 +49,7 @@ class Input extends Component {
       if (actualDisabled === false && prevDisabled === true) this.autoFocus();
     };
     this.handleChange = (e) => {
+      console.log('handleChange');
       const { onChange, onValidate, autocomplete, validate } = this.props;
       const { value } = e.target;
       e.preventDefault();
@@ -57,6 +58,8 @@ class Input extends Component {
       // RETURN VALUE AND ERROR TO PARENT
       onValidate(error);
       onChange(data);
+      console.log('ONCHANGE=>', onChange(data));
+      console.log('ONVALIDATE=>', onValidate(error))
       // AUTOCOMPLETE
       if (autocomplete && value.length >= 3) {
         this.setState({
