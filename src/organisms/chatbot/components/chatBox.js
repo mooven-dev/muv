@@ -45,6 +45,7 @@ class ChatBox extends Component {
 
   render() {
     const { open, isLoad, toogleChat } = this.context;
+    // const { name } = this.state;
     const { botTitle, botName, ...rest } = this.props;
     return (
       <StyledChatBox flex open={(isLoad && open)}>
@@ -54,7 +55,7 @@ class ChatBox extends Component {
 
           {/* HEADER */}
           <Row noRadius secondary grow={0} hasContent bordered justify="space-between">
-            <Text white strong>{botTitle}</Text>
+            <Text white strong>{this.context.bot.title}</Text>
             <Link white noLine onClick={toogleChat}>
               <Icon color="white" name="close" />
             </Link>
